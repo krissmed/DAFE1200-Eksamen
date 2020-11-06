@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    display:flex;
+    z-index: 99;
+    justify-content: space-between;
+    background-color: aliceblue;
+    align-items: center;
+}
+#navLogo{
+    margin-left: 10px;
+    width: 120px;
+    height: 120px;
+}
+#navElements{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    align-items: center;
+}
+#firstSlide{
+    position: absolute;
+    padding: 0 20 0 20;
+    background-color: #EDEAE2;
+    height: 100%;
+    width: 100%;
+}
+#secoundSlide{
+    background-color: #E2D9C3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+footer{
+    background-color: beige;
+}
+#solution{
+    margin-right: 100px;
+}
+nav h1{
+    font-size: 2em;
+}
