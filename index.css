@@ -11,7 +11,7 @@ body{
         display:flex;
         z-index: 0;
         justify-content: space-between;
-        background-color: aliceblue;
+        background-color: #68946a;
         align-items: center; 
     }
     #navLogo{
@@ -21,9 +21,13 @@ body{
     }
     #navElements{
         display: flex;
-        justify-content: space-between;
-        padding-right: 50px;
+        justify-content: space-between  ;
+        margin-right: 50px;
         align-items: center;
+        background-color: #6fab72;
+    }
+    #navElements a{
+        font-size: xx-large;
     }
     #hamburgerMenu{
         display: none;
@@ -45,7 +49,7 @@ body{
         display:flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: aliceblue;
+        background-color: #68946a;
     }
     #navLogo{
         margin-left: 10px;
@@ -59,23 +63,27 @@ body{
         justify-content: space-between;
         padding-right: 50px;
         align-items: flex-start;
+        background-color: #6fab72;
         z-index: 99;
+    }
+    #navElements a{
+        font-size: xx-large;
     }
     .container {
         display: inline-block;
         cursor: pointer;
-      }
-      #bar1, #bar2, #bar3 {
-        width: 25px;
-        height: 2.5px;
+    }
+    #bar1, #bar2, #bar3 {
+        width: 35px;
+        height: 5px;
         background-color: #333;
-        margin: 5px 0;
-      }
+        margin: 10px 0;
+    }
     #solution{
         margin-right: 100px;
     }
-    nav h1{
-        font-size: 1em;
+    #navElements a:hover{
+        background-color: #6fab72;
     }
 }
 #content{
