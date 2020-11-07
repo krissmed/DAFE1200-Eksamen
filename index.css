@@ -1,46 +1,77 @@
 body{
     margin: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #eceae2;
 }
-nav{
-    position: absolute;
-    width: 100%;
-    display:flex;
-    z-index: 99;
-    justify-content: space-between;
-    background-color: aliceblue;
-    align-items: center;
+@media (min-width: 1000px){
+    nav{
+        position: fixed;
+        width: 100%;
+        display:flex;
+        z-index: 0;
+        justify-content: space-between;
+        background-color: aliceblue;
+        align-items: center; 
+    }
+    #navLogo{
+        margin-left: 10px;
+        width: 120px;
+        height: 120px;
+    }
+    #navElements{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 50px;
+        align-items: center;
+    }
+    #solution{
+        margin-right: 100px;
+    }
+    nav h1{
+        font-size: 2em;
+    }
 }
-#navLogo{
-    margin-left: 10px;
-    width: 120px;
-    height: 120px;
+@media (max-width: 1000px){
+    nav{
+        position: fixed;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: aliceblue;
+    }
+    #navLogo{
+        margin-left: 10px;
+        display: none;
+        width: 50px;
+        height: 50px;
+    }
+    #navElements{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 50px;
+        align-items: center;
+        display: none;
+        z-index: 99;
+    }
+    #solution{
+        margin-right: 100px;
+    }
+    nav h1{
+        font-size: 2em;
+    }
 }
-#navElements{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 50px;
-    align-items: center;
+#content{
+    padding: 0px 30px 0px 30px;
+    background-color: #eceae2;
+    margin-top: 101px;
 }
-#firstSlide{
-    position: absolute;
-    padding: 0 20 0 20;
-    background-color: #EDEAE2;
-    height: 100%;
-    width: 100%;
-}
-#secoundSlide{
-    background-color: #E2D9C3;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+#slogan{
+    margin-left: 30%;
+    margin-top: 25%;
+    font-size: 3em;
 }
 footer{
     background-color: beige;
-}
-#solution{
-    margin-right: 100px;
-}
-nav h1{
-    font-size: 2em;
 }
