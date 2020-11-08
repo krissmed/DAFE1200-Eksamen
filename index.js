@@ -46,6 +46,19 @@ function selectActiveSite() {
         appLink.classList.remove("active");
                 }
 }
+// Making the hamburger menu show/not show the menu
+// Gather html elements
+var headerMenu = document.getElementById("headerMenu");
+// Function which toggles hamburgermenu on/off
+function openMenu(){
+    if(headerMenu.style.display == "flex"){
+        headerMenu.style.display = "";
+    }
+    else if (headerMenu.style.display === ""){
+        headerMenu.style.display = "flex";
+    }
+    console.log("Toggle Hamburger Menu")
+}
 
 /*------------------------------------------------- DENNE FUNKER IKKE*//*
 

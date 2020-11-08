@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="assets/icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Final Project Example</title>
     <link rel="stylesheet" href="index.css">
@@ -8,20 +10,24 @@
 <body>
 <!--HEADER-->
     <header>
-        <!--LOGO-->
-        <a href="#mainSite"><span class="headerLogo">
-            LOGO
-        </span></a>
+        <!--LOGO. Only visible in format where window > 1140px -->
+        <a href="#mainSite"><img id="headerLogo"src="assets/logo.png"></a>
+        <!-- Hamburger Menu (Only visible in format where window < 1140px)-->
+        <div id="mamburgerMenu">
+            <div onclick="openMenu()" class="hamMenu"></div>
+            <div onclick="openMenu()" class="hamMenu"></div>
+            <div onclick="openMenu()" class="hamMenu"></div>
+        </div>
         <!--MENU-->
-        <ul class="headerMenu">
-            <li class="menuLi main"> <a href="#mainSite"> Home </a> </li>
-            <li class="menuLi challenge"> <a href="#challengeSite1"> Challenge </a> </li>
-            <li class="menuLi solution"> <a href="#solutionSite1"> Solution </a> </li>
-            <li class="menuLi app"> <a href="#appSite1"> App </a> </li>
+        <ul id="headerMenu">
+            <li class="menuLi main"><a href="#mainSite"> Home </a></li>
+            <li class="menuLi challenge"><a href="#challengeSite1"> Challenge </a></li>
+            <li class="menuLi solution"><a href="#solutionSite1"> Solution </a></li>
+            <li class="menuLi app"><a href="#appSite1"> App </a></li>
         </ul>
     </header>
 
-<!--CONTAINER MAINSITE-->
+    <!--CONTAINER MAINSITE-->
     <div id="mainSite">
 
         <!--BACKGROUND PICTURE-->
@@ -211,7 +217,6 @@
     </div>
 
 </div>
-
 
 <!--Plasseres nederst for å laste inn side først-->
 <script src="index.js"></script>

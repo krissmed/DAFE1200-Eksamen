@@ -8,9 +8,7 @@ body {
     margin: 0;
     font-family: Helvetica, serif;
 }
-
-/*--------------------------------------------------------------*/
-
+/*--------------------------------------------------------------------*/
 /*NavBar on each Site*/
 .SiteMenu {
     list-style-type: none;
@@ -22,24 +20,26 @@ body {
     height: 4vh;
     width: 35vw;
     padding: 1.5vw;
-}
+}  
+
     .siteMenuLi {
-    font-size: 1vw;
-    font-weight: bold;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-bottom: 0.5vh;
-    text-transform: uppercase;
-    border-bottom: 3px solid green;
-}
+        font-size: 1vw;
+        font-weight: bold;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-bottom: 0.5vh;
+        text-transform: uppercase;
+        border-bottom: 3px solid green;
+    }
+
         .siteMenuLi a {
-    text-decoration: none;
-    color: green;
-}
+            text-decoration: none;
+            color: green;
+        }
             .active1, .siteMenuLi:hover {
-    border-bottom: 3px solid lightgreen;
-    color: lightgreen;
-}
+                border-bottom: 3px solid lightgreen;
+                color: lightgreen;
+            }
 
 /*--------------------------------------------------------------*/
 /*MAIN SITE*/
@@ -49,255 +49,307 @@ body {
 }
 
 /*Header*/
-header {
-    background-color: white;
-    height: 12vh;
-    width: 100vw;
-    position: fixed;
-    box-shadow: 1px 1px 7px 2px green;
-    z-index: 2;
-}
-    /*Header Logo*/
-        .headerLogo {
-            font-weight: bold;
-            color: white;
-            background-color: green;
-            border: 1vw solid springgreen;
-            height: 4vh;
-            width: 3vw;
-            border-radius: 50%;
-            text-align: center;
-            padding: 1vw;
-            position: absolute;
-            top: 1vh;
-            left: 3vw;
-            bottom: 1vh;
-        }
-
-/*MENU*/
-.headerMenu {
-            list-style-type: none;
-            display: flex;
-            float: right;
-            margin-right: 3vw;
-            margin-top: 5vh;
-        }
-    .menuLi {
-                font-size: 1.5vw;
-                padding-left: 5vw;
-                padding-right: 5vw;
-                padding-bottom: 1vh;
-                text-transform: uppercase;
-                font-weight: bolder;
-                border-bottom: 3px solid springgreen;
-            }
-        .menuLi a {
-        text-decoration: none;
-        color: green;
+@media (min-width: 1140px){ /* This code only applies when window size is bigger than 1140px */
+    /* Hamburger nav (Only visible in format < 1140px)*/
+    .hamMenu{
+        display:none;
     }
-            .menuLi:hover {
-                border-bottom: 3px solid green;
-                transform: scale(1.1);
-                transition: transform 0.1s;
+    header {
+        background-color: white;
+        height: 150px;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 1px 1px 7px 2px green;
+        z-index: 2;
+    }
+        /*Header Logo*/
+            #headerLogo {
+                height: 150px;
+                width: auto;
+                margin-left: 25px;
             }
-                .active {
+
+    /*MENU*/
+    #headerMenu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        margin-right: 150px;
+        margin-top: 50px;
+    }
+        .menuLi {
+            font-size: 2em;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-transform: uppercase;
+            border-bottom: 3px solid springgreen;
+        }
+            .menuLi a {
+                text-decoration: none;
+                color: green;
+            }
+                .menuLi:hover {
                     border-bottom: 3px solid green;
+                    transform: scale(1.1);
+                    transition: transform 0.1s;
                 }
-
+                    .active {
+                        border-bottom: 3px solid green;
+                    }
+    }
+@media (max-width: 1140px){ /* This code only applies when window size is smaller than 1140px */
+    #hamburgerMeny{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .hamMenu{
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        z-index: 99;
+    }
+    header {
+        background-color: white;
+        height: px;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 1px 1px 7px 2px green;
+        z-index: 2;
+    }
+        /*Header Logo*/
+            #headerLogo {
+                display: none;
+            }
+    /*MENU*/
+    #headerMenu {
+        display: none;
+        list-style-type: none;
+        flex-direction: column;
+        margin-right:50px;
+        margin-top:15px;
+    }
+        .menuLi {
+            margin-top: 25px;
+            font-size: 2em;
+            padding-left: 0px;
+            padding-right: 50px;
+            text-transform: uppercase;
+            border-bottom: 3px solid springgreen;
+        }
+            .menuLi a {
+                text-decoration: none;
+                color: green;
+            }
+                .menuLi:hover {
+                    border-bottom: 3px solid green;
+                    transform: scale(1.1);
+                    transition: transform 0.1s;
+                }
+                    .active {
+                        border-bottom: 3px solid green;
+                    }
+}
+    
     /*Background image*/
-.backgroundWindmills {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    opacity: .5;
-}
-
-/*Quote*/
-.quote {
-    height: 5vh;
-    width: 80vw;
-    border-bottom: 3px solid white;
-    border-top: 3px solid white;
-    padding: 1vw 0;
-    position: absolute;
-    text-align: center;
-    top: 69vh; /* ;) */
-    left: 10vw;
-    font-size: 2.2vw;
-    font-weight: bolder;
-    font-family: "Bodoni 72", serif;
-    letter-spacing: .7px;
-    text-transform: uppercase;
-    color: white;
-}
-    .underQuote {
+    .backgroundWindmills {
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+    }
+    
+    /*Quote*/
+    .quote {
+        height: 5vh;
+        width: 80vw;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        padding: 1vw 0;
         position: absolute;
-        top: 79vh;
-        left: 40vw;
-        font-weight: bold;
-        color: white;
-        text-transform: uppercase;
+        text-align: center;
+        top: 69vh; /* ;) */
+        left: 10vw;
+        font-size: 2.2vw;
+        font-weight: bolder;
         font-family: "Bodoni 72", serif;
         letter-spacing: .7px;
+        text-transform: uppercase;
+        color: white;
     }
-
-/*--------------------------------------------------------------*/
-/*CHALLENGE SITE*/
-#challengeSite {
-    height: 100vh;
-    width: 300vw;
-    display: flex;
-    flex-direction: row;
-}
-
-        #challengeSite1, #challengeSite2, #challengeSite3 {
-    height: 100vh;
-    width: 100vw;
-
-}
-
-/*******************/
-/*SITE 1*/
-    /*Tree Image*/
-    .challengeSiteTreePic {
-        position: absolute;
-        right: 8vw;
-        top: 150vh;
-        height: 35vh;
-        width: 35vw;
-        float: right;
-        border-radius: 25px;
-        box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-    }
-
-        /*Textbox*/
-        .infoTextChallenge {
-            position: relative;
-            top: 32vh;
-            left: 5vw;
-            height: 40vh;
-            width: 42vw;
-            display: inline-block;
-            padding: 2vw;
-            color: green;
-        }
-            /*Headline*/
-            .infoTextHeadline {
-                font-weight: bolder;
-                font-size: 3vw;
-                font-style: normal;
-                text-align: center;
-                text-transform: uppercase;
-                width: 30vw;
-            }
-                /*InfoText*/
-                .infoText {
-                    letter-spacing: 1px;
-                    line-height: 2.2vw;
-                    font-size: 1.3vw;
-
-                }
-
-/*******************/
-/*SITE 2*/
-    /*Info-text*/
-    .challengeSite2Description {
-        position: relative;
-        display: inline-block;
-        top: 3vh;
-        left: 3vw;
-        height: 40vh;
-        width: 42vw;
-        padding: 2vw;
-        color: green;
-    }
-        /*Headline*/
-        .site2DescHeadline {
-            font-weight: bolder;
-            font-size: 3vw;
-        }
-            /*Paragraf*/
-            .site2DescInfo {
-                line-height: 1.5vw;
-                letter-spacing: 1px;
-                font-size: 1.2vw;
-            }
-
-        /*Image Environment*/
-        .environmentImage {
+        .underQuote {
             position: absolute;
-            left: 65vw;
-            top: 24vh;
-            height: 50vh;
-            width: 20vw;
+            top: 79vh;
+            left: 40vw;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            font-family: "Bodoni 72", serif;
+            letter-spacing: .7px;
+        }
+    
+    /*--------------------------------------------------------------*/
+    /*CHALLENGE SITE*/
+    #challengeSite {
+        height: 100vh;
+        width: 300vw;
+        display: flex;
+        flex-direction: row;
+    }
+    
+            #challengeSite1, #challengeSite2, #challengeSite3 {
+        height: 100vh;
+        width: 100vw;
+    
+    }
+    
+    /*******************/
+    /*SITE 1*/
+        /*Tree Image*/
+        .challengeSiteTreePic {
+            position: absolute;
+            right: 8vw;
+            top: 150vh;
+            height: 35vh;
+            width: 35vw;
             float: right;
             border-radius: 25px;
             box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
         }
-
-/*******************/
-/*SITE 3*/
-
-/*Image polluted city*/
-.pollutedImgSite3 {
-    position: relative;
-    right: 8vw;
-    top: 30vh;
-    height: 37vh;
-    width: 35vw;
-    float: right;
-    border-radius: 25px;
-    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-}
-
-/*--------------------------------------------------------------*/
-/*SOLUTION SITE*/
-#solutionSite {
-    height: 100vh;
-    width: 300vw;
-    display: flex;
-    flex-direction: row;
-}
-
-    #solutionSite1, #solutionSite2, #solutionSite3 {
-        height: 100vh;
-        width: 100vw;
-    }
-
-    /*Image site 1*/
-    .solutionBulb {
+    
+            /*Textbox*/
+            .infoTextChallenge {
+                position: relative;
+                top: 32vh;
+                left: 5vw;
+                height: 40vh;
+                width: 42vw;
+                display: inline-block;
+                padding: 2vw;
+                color: green;
+            }
+                /*Headline*/
+                .infoTextHeadline {
+                    font-weight: bolder;
+                    font-size: 3vw;
+                    font-style: normal;
+                    text-align: center;
+                    text-transform: uppercase;
+                    width: 30vw;
+                }
+                    /*InfoText*/
+                    .infoText {
+                        letter-spacing: 1px;
+                        line-height: 2.2vw;
+                        font-size: 1.3vw;
+    
+                    }
+    
+    /*******************/
+    /*SITE 2*/
+        /*Info-text*/
+        .challengeSite2Description {
+            position: relative;
+            display: inline-block;
+            top: 3vh;
+            left: 3vw;
+            height: 40vh;
+            width: 42vw;
+            padding: 2vw;
+            color: green;
+        }
+            /*Headline*/
+            .site2DescHeadline {
+                font-weight: bolder;
+                font-size: 3vw;
+            }
+                /*Paragraf*/
+                .site2DescInfo {
+                    line-height: 1.5vw;
+                    letter-spacing: 1px;
+                    font-size: 1.2vw;
+                }
+    
+            /*Image Environment*/
+            .environmentImage {
+                position: absolute;
+                left: 65vw;
+                top: 24vh;
+                height: 50vh;
+                width: 20vw;
+                float: right;
+                border-radius: 25px;
+                box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+            }
+    
+    /*******************/
+    /*SITE 3*/
+    
+    /*Image polluted city*/
+    .pollutedImgSite3 {
         position: relative;
         right: 8vw;
-        top: 37vh;
-        height: 35vh;
+        top: 30vh;
+        height: 37vh;
         width: 35vw;
         float: right;
         border-radius: 25px;
         box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
     }
-
-/*--------------------------------------------------------------*/
-/*SOLUTION SITE*/
-#appSite {
-    height: 100vh;
-    width: 300vw;
-    display: flex;
-    flex-direction: row;
-}
-
-    #appSite1, #appSite2, #appSite3 {
+    
+    /*--------------------------------------------------------------*/
+    /*SOLUTION SITE*/
+    #solutionSite {
         height: 100vh;
-        width: 100vw;
+        width: 300vw;
+        display: flex;
+        flex-direction: row;
     }
-
-    /*Image*/
-    .appImg {
-        position: relative;
-        right: 18vw;
-        top: 25vh;
-        height: 55vh;
-        width: 25vw;
-        float: right;
-        border-radius: 25px;
-        box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+    
+        #solutionSite1, #solutionSite2, #solutionSite3 {
+            height: 100vh;
+            width: 100vw;
+        }
+    
+        /*Image site 1*/
+        .solutionBulb {
+            position: relative;
+            right: 8vw;
+            top: 37vh;
+            height: 35vh;
+            width: 35vw;
+            float: right;
+            border-radius: 25px;
+            box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+        }
+    
+    /*--------------------------------------------------------------*/
+    /*SOLUTION SITE*/
+    #appSite {
+        height: 100vh;
+        width: 300vw;
+        display: flex;
+        flex-direction: row;
     }
+    
+        #appSite1, #appSite2, #appSite3 {
+            height: 100vh;
+            width: 100vw;
+        }
+    
+        /*Image*/
+        .appImg {
+            position: relative;
+            right: 18vw;
+            top: 25vh;
+            height: 55vh;
+            width: 25vw;
+            float: right;
+            border-radius: 25px;
+            box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+        }
