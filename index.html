@@ -13,7 +13,7 @@
         <!--LOGO. Only visible in format where window > 1140px -->
         <a href="#mainSite"><img id="headerLogo"src="assets/logo.png"></a>
         <!-- Hamburger Menu (Only visible in format where window < 1140px)-->
-        <div id="mamburgerMenu">
+        <div id="hamburgerMenu">
             <div onclick="openMenu()" class="hamMenu"></div>
             <div onclick="openMenu()" class="hamMenu"></div>
             <div onclick="openMenu()" class="hamMenu"></div>
@@ -21,7 +21,7 @@
         <!--MENU-->
         <ul id="headerMenu">
             <li class="menuLi main"><a href="#mainSite"> Home </a></li>
-            <li class="menuLi challenge"><a href="#challengeSite1"> Challenge </a></li>
+            <li class="menuLi challenge"><a href="#challenge"> Challenge </a></li>
             <li class="menuLi solution"><a href="#solutionSite1"> Solution </a></li>
             <li class="menuLi app"><a href="#appSite1"> App </a></li>
         </ul>
@@ -41,43 +41,35 @@
             <i class="underQuote">LoremIpsum LoremIpsum LoremIpsum</i>
 
     </div>
-
+    <div id="challenge"></div> <!-- This is to make sure the header moves above the site menu-->
+    <!--Menu Challenge site 1-->
+    <ul class="SiteMenu">
+        <li class="siteMenuLi intro 1"> <a onclick="showIntro('challenge')"> Intro </a> </li>
+        <li class="siteMenuLi description 2"> <a onclick="show('challengeSite2')"> Description </a> </li>
+        <li class="siteMenuLi visibility 3"> <a onclick="show('challengeSite3')"> Visibility in Society </a></li>
+    </ul>
 <!--CONTAINER CHALLENGE-->
     <div id="challengeSite">
 
     <!--CONTAINER CHALLENGE SITE 1-->
         <div id="challengeSite1">
 
-            <!--Menu Challenge site 1-->
-                <ul class="SiteMenu">
-                    <li class="siteMenuLi intro 1"> <a href="#challengeSite1"> Intro </a> </li>
-                    <li class="siteMenuLi description 2"> <a href="#challengeSite2"> Description </a> </li>
-                    <li class="siteMenuLi visibility 3"> <a href="#challengeSite3"> Visibility in Society </a></li>
-                </ul>
-
     <!--Text-box on site-->
-        <span class="infoTextChallenge">
+        <span id="infoTextChallenge">
 
             <i class="infoTextHeadline">Challenge Intro</i>
 
                 <p class="infoText">
                     Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende InnovasjonInspirerendeMotiverende Innovasjon
                 </p>
+                <!--Image down right-->
+                <img class="challengeSiteTreePic" src="Images/background_tree.jpeg" alt="Dead Tree">
 
         </span>
-
-        <!--Image down right-->
-        <img class="challengeSiteTreePic" src="Images/background_tree.jpeg" alt="Dead Tree">
         </div>
 
     <!--CONTAINER CHALLENGE SITE 2-->
     <div id="challengeSite2">
-            <!--Menu Challenge site 1-->
-            <ul class="SiteMenu">
-                <li class="siteMenuLi intro 1"> <a href="#challengeSite1"> Intro </a> </li>
-                <li class="siteMenuLi description 2"> <a href="#challengeSite2"> Description </a> </li>
-                <li class="siteMenuLi visibility 3"> <a href="#challengeSite3"> Visibility in Society </a></li>
-            </ul>
 
         <!--Text-box-->
         <div class="challengeSite2Description">

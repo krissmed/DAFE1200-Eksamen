@@ -15,8 +15,8 @@ body {
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 56vw;
-    top: 18vh;
+    left: 7vw;
+    top: 12vh;
     height: 4vh;
     width: 35vw;
     padding: 1.5vw;
@@ -159,7 +159,7 @@ body {
     
     /*Background image*/
     .backgroundWindmills {
-        height: 100vh;
+        height: auto;
         width: 100vw;
         background-color: black;
     }
@@ -202,36 +202,40 @@ body {
         flex-direction: row;
     }
     
-            #challengeSite1, #challengeSite2, #challengeSite3 {
+        #challengeSite2, #challengeSite3 {
         height: 100vh;
         width: 100vw;
-    
     }
     
     /*******************/
     /*SITE 1*/
+    #challengeSite1{
+        height: 100vh;
+        width: 100vw;
+    }
         /*Tree Image*/
         .challengeSiteTreePic {
             position: absolute;
-            right: 8vw;
-            top: 150vh;
+            right: 0vw;
+            top: 6vh;
             height: 35vh;
             width: 35vw;
             float: right;
             border-radius: 25px;
             box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+            border: solid black 1px;
         }
     
             /*Textbox*/
-            .infoTextChallenge {
+            #infoTextChallenge {
                 position: relative;
-                top: 32vh;
+                top: 13vh;
                 left: 5vw;
                 height: 40vh;
-                width: 42vw;
+                width: 90vw;
                 display: inline-block;
-                padding: 2vw;
                 color: green;
+                border: solid black 1px;
             }
                 /*Headline*/
                 .infoTextHeadline {
@@ -241,13 +245,16 @@ body {
                     text-align: center;
                     text-transform: uppercase;
                     width: 30vw;
+                    border: solid black 1px;
                 }
                     /*InfoText*/
                     .infoText {
                         letter-spacing: 1px;
                         line-height: 2.2vw;
                         font-size: 1.3vw;
-    
+                        width: 53vw;
+                        height: 30vh;
+                        border: solid black 1px;
                     }
     
     /*******************/
