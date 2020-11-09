@@ -60,20 +60,15 @@ function openMenu(){
     console.log("Toggle Hamburger Menu") // Troubleshoot 
 }
 /* IKKE FERDIG */
-
-console.log(challengeSite1.style.display);
-
-function showIntro(content){
-    var challengeSite1 = document.getElementById("challengeSite1")
-    var challengeSite1 = document.getElementById("challengeSite2")
-    var challengeSite1 = document.getElementById("challengeSite3")
-
-    console.log("Button pressed")
-    if(content === "challenge"){
-        console.log("ChallengeSite1");
-        console.log(challengeSite1.style);
-        challengeSite1.style.display = "";
+var infoTextChallenge = document.getElementById("infoTextChallenge");
+function showIntro(){
+    if(infoTextChallenge.style.marginLeft == "0"){
+        infoTextChallenge.style.marginLeft = "-200vw";
     }
+    else if (infoTextChallenge.style.marginLeft === "-200vw"){
+        infoTextChallenge.style.marginLeft = "0vw";
+    }
+    console.log(infoTextChallenge.style.marginLeft) // Troubleshoot 
 }
 
 /*------------------------------------------------- DENNE FUNKER IKKE*//*

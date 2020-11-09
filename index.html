@@ -13,10 +13,10 @@
         <!--LOGO. Only visible in format where window > 1140px -->
         <a href="#mainSite"><img id="headerLogo"src="assets/logo.png"></a>
         <!-- Hamburger Menu (Only visible in format where window < 1140px)-->
-        <div id="hamburgerMenu">
-            <div onclick="openMenu()" class="hamMenu"></div>
-            <div onclick="openMenu()" class="hamMenu"></div>
-            <div onclick="openMenu()" class="hamMenu"></div>
+        <div onclick="openMenu()" id="hamburgerMenu">
+            <div class="hamMenu"></div>
+            <div class="hamMenu"></div>
+            <div class="hamMenu"></div>
         </div>
         <!--MENU-->
         <ul id="headerMenu">
@@ -25,90 +25,82 @@
             <li class="menuLi solution"><a href="#solutionSite1"> Solution </a></li>
             <li class="menuLi app"><a href="#appSite1"> App </a></li>
         </ul>
+
     </header>
 
     <!--CONTAINER MAINSITE-->
     <div id="mainSite">
-
         <!--BACKGROUND PICTURE-->
-            <img src="Images/background_windmills.jpeg" class="backgroundWindmills" alt="Background Picture">
-
+        <img src="assets/background_windmills.jpeg" id="backgroundWindmills" alt="Background Picture">
         <!--MAINQUOTE-->
-        <span class="quote">
-                LoremIpsum Lorem Ipsum LoremIpsum LoremIpsum
+        <span id="quote">
+            LoremIpsum Lorem Ipsum LoremIpsum LoremIpsum
         </span>
         <!--UNDER THE QUOTE-->
-            <i class="underQuote">LoremIpsum LoremIpsum LoremIpsum</i>
-
+        <i id="underQuote">
+            LoremIpsum LoremIpsum LoremIpsum
+        </i>
     </div>
+
     <div id="challenge"></div> <!-- This is to make sure the header moves above the site menu-->
+    
     <!--Menu Challenge site 1-->
-    <ul class="SiteMenu">
+    <ul class="siteMenu">
         <li class="siteMenuLi intro 1"> <a onclick="showIntro('challenge')"> Intro </a> </li>
         <li class="siteMenuLi description 2"> <a onclick="show('challengeSite2')"> Description </a> </li>
         <li class="siteMenuLi visibility 3"> <a onclick="show('challengeSite3')"> Visibility in Society </a></li>
     </ul>
+
 <!--CONTAINER CHALLENGE-->
     <div id="challengeSite">
-
     <!--CONTAINER CHALLENGE SITE 1-->
         <div id="challengeSite1">
-
     <!--Text-box on site-->
-        <span id="infoTextChallenge">
+            <span id="infoText">
 
-            <i class="infoTextHeadline">Challenge Intro</i>
+            <i class="headline">Challenge Intro</i>
 
                 <p class="infoText">
                     Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende InnovasjonInspirerendeMotiverende Innovasjon
                 </p>
                 <!--Image down right-->
-                <img class="challengeSiteTreePic" src="Images/background_tree.jpeg" alt="Dead Tree">
-
+                <img id="challengeSiteTreePic" src="assets/background_tree.jpeg" alt="Dead Tree">
         </span>
         </div>
 
     <!--CONTAINER CHALLENGE SITE 2-->
-    <div id="challengeSite2">
+        <div id="challengeSite2">
 
-        <!--Text-box-->
-        <div class="challengeSite2Description">
-            <span class="site2DescHeadline">Description</span>
-                <p class="site2DescInfo">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero aliquet, accumsan sem nec, iaculis erat. Etiam eleifend mattis metus, a maximus nunc imperdiet non. Nunc sit amet pulvinar lorem, a pellentesque tortor. Mauris commodo tincidunt metus, in sollicitudin tortor posuere eget. Nullam dignissim, ligula id consequat auctor, leo velit rhoncus nisl, quis viverra eros elit at felis. In vitae diam interdum, cursus justo pellentesque, dapibus arcu. Cras convallis, nunc vel ullamcorper suscipit, orci nunc pellentesque nulla, in varius neque nisi nec massa. Duis at ex et felis convallis pulvinar quis ac purus. Pellentesque vestibulum tristique rhoncus. Proin laoreet sem sit amet ligula mollis facilisis at nec ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sed auctor augue. Fusce eros dui, auctor vitae maximus eu, cursus a orci. Nunc molestie, tellus eget bibendum sagittis, lectus sem facilisis nibh, ut placerat justo diam ac lacus. Maecenas ultricies auctor eros, quis semper odio varius eu. Vestibulum ac sagittis ante.
-<br>
-                    Mauris tortor ex, hendrerit a elementum nec, pharetra quis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vehicula felis pretium elit varius mattis. Etiam ornare lectus nec ante condimentum aliquet. Donec condimentum nunc nec nisi eleifend sodales. Ut sagittis tempor metus. Aliquam venenatis vehicula purus. Sed est nulla, sodales vel ex ut, rutrum malesuada arcu. Mauris vel vulputate quam, et iaculis diam. Fusce dapibus nulla id quam consectetur, non auctor orci convallis.
-                </p>
+            <!--Text-box-->
+            <div id="challengeSite2Description">
+                <span class="headline">Description</span>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero aliquet, accumsan sem nec, iaculis erat. Etiam eleifend mattis metus, a maximus nunc imperdiet non. Nunc sit amet pulvinar lorem, a pellentesque tortor. Mauris commodo tincidunt metus, in sollicitudin tortor posuere eget. Nullam dignissim, ligula id consequat auctor, leo velit rhoncus nisl, quis viverra eros elit at felis. In vitae diam interdum, cursus justo pellentesque, dapibus arcu. Cras convallis, nunc vel ullamcorper suscipit, orci nunc pellentesque nulla, in varius neque nisi nec massa. Duis at ex et felis convallis pulvinar quis ac purus. Pellentesque vestibulum tristique rhoncus. Proin laoreet sem sit amet ligula mollis facilisis at nec ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sed auctor augue. Fusce eros dui, auctor vitae maximus eu, cursus a orci. Nunc molestie, tellus eget bibendum sagittis, lectus sem facilisis nibh, ut placerat justo diam ac lacus. Maecenas ultricies auctor eros, quis semper odio varius eu. Vestibulum ac sagittis ante.
+            <br>
+                        Mauris tortor ex, hendrerit a elementum nec, pharetra quis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vehicula felis pretium elit varius mattis. Etiam ornare lectus nec ante condimentum aliquet. Donec condimentum nunc nec nisi eleifend sodales. Ut sagittis tempor metus. Aliquam venenatis vehicula purus. Sed est nulla, sodales vel ex ut, rutrum malesuada arcu. Mauris vel vulputate quam, et iaculis diam. Fusce dapibus nulla id quam consectetur, non auctor orci convallis.
+                    </p>
 
-            <!--Image down right challenge site 2-->
-            <img class="environmentImage" src="Images/climate_change.jpeg" alt="climate change">
+                <!--Image down right challenge site 2-->
+                <img id="environmentImage" src="assets/climate_change.jpeg" alt="climate change">
 
+            </div>
         </div>
-    </div>
 
         <!--CONTAINER CHALLENGE SITE 3-->
-        <div id="challengeSite3">
-            <!--Menu Challenge site 1-->
-            <ul class="SiteMenu">
-                <li class="siteMenuLi intro 1"> <a href="#challengeSite1"> Intro </a> </li>
-                <li class="siteMenuLi description 2"> <a href="#challengeSite2"> Description </a> </li>
-                <li class="siteMenuLi visibility 3"> <a href="#challengeSite3"> Visibility in Society </a></li>
-            </ul>
-            
+        <div id="challengeSite3">            
             <!--Image site 3-->
-            <img class="pollutedImgSite3" src="Images/polluted_city.jpeg" alt="Polluted City" >
+            <img id="pollutedImgSite3" src="assets/polluted_city.jpeg" alt="Polluted City" >
 
             <!--Text box-->
-            <div class="challengeSite2Description">
-                <span class="site2DescHeadline">Visibility in Society</span>
-                    <p class="site2DescInfo">
+            <div id="challengeSite3Description">
+                <h1 class="headline">Visibility in Society</h1>
+                    <p class="paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim metus nec faucibus venenatis. Maecenas ligula sapien, eleifend a pretium ut, vestibulum sed velit. Maecenas mattis accumsan nunc, sit amet consectetur metus. Integer sed erat neque. Aliquam eleifend velit id dui varius, eget blandit mi lacinia. Donec id consectetur odio, nec vulputate mauris. Morbi id bibendum velit. Mauris hendrerit porta ligula, vitae auctor tortor maximus a. Ut tincidunt, ipsum sed ultricies viverra, neque eros dictum diam, et bibendum dolor nibh sed ipsum. Nam aliquet mauris quam, at fermentum odio viverra vitae. Cras fringilla augue id neque pretium porttitor.
-<br>
+            <br>
                         Curabitur aliquam sem turpis. Nulla sem nulla, varius porttitor lacus suscipit, pulvinar maximus lectus. Donec at augue orci. Proin non finibus orci. Donec dignissim massa ut convallis laoreet. Phasellus et risus at augue egestas imperdiet sed eu felis. Donec felis velit, pretium et tristique ut, dapibus vel ligula. Phasellus luctus, elit nec.
                     </p>
             </div>
         </div>
-
     </div>
 
 <!--CONTAINER SOLUTION-->
@@ -118,7 +110,7 @@
     <div id="solutionSite1">
 
         <!--Menu Challenge site 1-->
-        <ul class="SiteMenu">
+        <ul class="siteMenu">
             <li class="siteMenuLi intro"> <a href="#solutionSite1"> Intro </a> </li>
             <li class="siteMenuLi description"> <a href="#solutionSite2"> Description </a> </li>
             <li class="siteMenuLi visibility"> <a href="#solutionSite3"> x </a></li>
@@ -126,9 +118,9 @@
 
 
         <!--Text-box on site-->
-        <span class="infoTextChallenge">
+        <span class="infoText">
 
-            <i class="infoTextHeadline">Solution Intro</i>
+            <i class="headline">Solution Intro</i>
 
                 <p class="infoText">
                     Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende InnovasjonInspirerendeMotiverende Innovasjon
@@ -137,18 +129,13 @@
 
 
         <!--Image down right-->
-        <img class="solutionBulb" src="Images/ligtbulb.jpeg" alt="Light Bulb">
+        <img class="solutionBulb" src="assets/ligtbulb.jpeg" alt="Light Bulb">
 
     </div>
 
     <!--CONTAINER CHALLENGE SITE 2-->
     <div id="solutionSite2">
-        <!--Menu Challenge site 1-->
-        <ul class="SiteMenu">
-            <li class="siteMenuLi intro"> <a href="#solutionSite1"> Intro </a> </li>
-            <li class="siteMenuLi description"> <a href="#solutionSite2"> Description </a> </li>
-            <li class="siteMenuLi visibility"> <a href="#solutionSite3"> x </a></li>
-        </ul>
+
     </div>
 
     <!--CONTAINER CHALLENGE SITE 3-->
@@ -168,49 +155,39 @@
     <div id="appSite1">
 
         <!--Menu Challenge site 1-->
-        <ul class="SiteMenu">
+        <ul class="siteMenu">
             <li class="siteMenuLi intro"> <a href="#appSite1"> Intro </a> </li>
             <li class="siteMenuLi description"> <a href="#appSite2"> Description </a> </li>
             <li class="siteMenuLi visibility"> <a href="#appSite3"> x </a></li>
         </ul>
 
         <!--Text-box on site-->
-        <span class="infoTextChallenge">
+        <span class="infoText">
 
-            <i class="infoTextHeadline">App Intro</i>
+            <i class="headline">App Intro</i>
 
                 <p class="infoText">
                     Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende InnovasjonInspirerendeMotiverende Innovasjon
                 </p>
         </span>
 
-        <img class="appImg" src="Images/appImg.jpeg" alt="App Site1">
+        <img class="appImg" src="assets/appImg.jpeg" alt="App Site1">
 
     </div>
 
     <!--CONTAINER CHALLENGE SITE 2-->
     <div id="appSite2">
-        <!--Menu Challenge site 1-->
-        <ul class="SiteMenu">
-            <li class="siteMenuLi intro"> <a href="#appSite1"> Intro </a> </li>
-            <li class="siteMenuLi description"> <a href="#appSite2"> Description </a> </li>
-            <li class="siteMenuLi visibility"> <a href="#appSite3"> x </a></li>
-        </ul>
+
     </div>
 
     <!--CONTAINER CHALLENGE SITE 3-->
     <div id="appSite3">
-        <!--Menu Challenge site 1-->
-        <ul class="SiteMenu">
-            <li class="siteMenuLi intro"> <a href="#appSite1"> Intro </a> </li>
-            <li class="siteMenuLi description"> <a href="#appSite2"> Description </a> </li>
-            <li class="siteMenuLi visibility"> <a href="#appSite3"> x </a></li>
-        </ul>
+
     </div>
 
 </div>
 
-<!--Plasseres nederst for å laste inn side først-->
+<!--Placed at the bottom to load the body first-->
 <script src="index.js"></script>
 
 </body>
