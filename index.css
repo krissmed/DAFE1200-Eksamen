@@ -124,10 +124,7 @@ body {
     }
         /*Header Logo*/
             #headerLogo {
-                position: relative;
-                height: 50px;
-                width: auto;
-                margin-left: 50%;
+                display: none;
             }
     /*MENU*/
     #headerMenu {
