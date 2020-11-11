@@ -48,6 +48,7 @@ body {
         text-transform: uppercase;
         border-bottom: 3px solid green;
         cursor: pointer;
+        user-select: none;
     }
 
         .siteMenuLi a {
@@ -68,6 +69,7 @@ body {
         position: relative;
         left: 0vw;
         top: 12vh;
+        width: auto;
         height: 100px;
         padding: 1.5px;
         z-index: 1;
@@ -86,6 +88,7 @@ body {
             text-decoration: none;
             color: green;
             cursor: pointer;
+            user-select: none;
         }
             .siteMenuLi:hover {
                 border-bottom: 3px solid lightgreen;
@@ -116,6 +119,7 @@ body {
         flex-direction: row;
         box-shadow: 1px 1px 7px 2px green;
         z-index: 2;
+        user-select: none;
     }
         /*Header Logo*/
             #headerLogo {
@@ -179,6 +183,7 @@ body {
         justify-content: space-between;
         box-shadow: 1px 1px 7px 2px green;
         z-index: 2;
+        user-select: none;
     }
         /*Header Logo*/
             #headerLogo {
