@@ -98,7 +98,7 @@ function showChallengeSite3(){
     }
 }
 
-/*------------------------------------------------- DENNE FUNKER IKKE*//*
+/*------------------------------------------------- DENNE FUNKER IKKE. ok*//*
 
 /*MAKING THE MENULINK ON SITEs ACTIVE DEPENDING ON WHERE THE USER IS
 
