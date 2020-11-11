@@ -86,6 +86,7 @@ function showChallengeSite1(){
 function showChallengeSite2(){
     if (challengeSite2.style.marginLeft === "-500vw"){
         challengeSite1.style.marginLeft = "-200vw"; // Moving challengeSite1 container off screen
+        challengeSite1.style.display = "";
         challengeSite2.style.marginLeft = "0vw"; // Moving challengeSite2 container on screen
         challengeSite3.style.marginLeft = "-500vw"; // Moving challengeSite3 container off screen
     }
