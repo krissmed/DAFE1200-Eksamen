@@ -71,7 +71,7 @@ function showIntro(){
     console.log(infoTextChallenge.style.marginLeft) // Troubleshoot 
 }
 
-/*------------------------------------------------- DENNE FUNKER IKKE*//*
+/*------------------------------------------------- DENNE FUNKER IKKE. ok*//*
 
 /*MAKING THE MENULINK ON SITEs ACTIVE DEPENDING ON WHERE THE USER IS
 
