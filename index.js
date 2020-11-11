@@ -59,6 +59,7 @@ function openMenu(){
     }
     console.log("Toggle Hamburger Menu") // Troubleshoot 
 }
+
 /* IKKE FERDIG */
 var challengeSite1 = document.getElementById("challengeSite1");
 var challengeSite2 = document.getElementById("challengeSite2");
