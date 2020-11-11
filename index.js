@@ -73,30 +73,36 @@ var challengeSite1 = document.getElementById("challengeSite1");
 var challengeSite2 = document.getElementById("challengeSite2");
 var challengeSite3 = document.getElementById("challengeSite3");
 
-/* To show challenge Site 1 Container */
+/* To show challenge Site 1 Container*/
 function showChallengeSite1(){
-    if (challengeSite1.style.marginLeft === "-200vw"){
-        challengeSite1.style.marginLeft = "0vw"; // Moving challengeSite1 container on screen
-        challengeSite2.style.marginLeft = "-500vw"; // Moving challengeSite1 container off screen
-        challengeSite3.style.marginLeft = "-500vw"; // Moving challengeSite1 container off screen
+    console.log("0");
+    if (challengeSite1.style.display === "none"){
+        console.log("1");
+        challengeSite1.style.display = "block"; // Moving challengeSite1 container on screen
+        challengeSite2.style.display = "none"; // Moving challengeSite1 container off screen
+        challengeSite3.style.display = "none"; // Moving challengeSite1 container off screen
     }
 }
 
-/* To show challenge Site 2 Container */
+/* To show challenge Site 2 Container*/
 function showChallengeSite2(){
-    if (challengeSite2.style.marginLeft === "-500vw"){
-        challengeSite1.style.marginLeft = "-200vw"; // Moving challengeSite1 container off screen
-        challengeSite2.style.marginLeft = "0vw"; // Moving challengeSite2 container on screen
-        challengeSite3.style.marginLeft = "-500vw"; // Moving challengeSite3 container off screen
+    console.log("2");
+    if (challengeSite2.style.display === "none"){
+        console.log("3");
+        challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
+        challengeSite2.style.display = "block"; // Moving challengeSite2 container on screen
+        challengeSite3.style.display = "none"; // Moving challengeSite3 container off screen
     }
 }
 
-/* To show challenge Site 3 Container */
+/* To show challenge Site 3 Container*/
 function showChallengeSite3(){
-    if (challengeSite3.style.marginLeft === "-500vw"){
-        challengeSite1.style.marginLeft = "-200vw"; // Moving challengeSite1 container off screen
-        challengeSite2.style.marginLeft = "-500vw"; // Moving challengeSite2 container off screen
-        challengeSite3.style.marginLeft = "0vw"; // Moving challengeSite3 container on screen
+    console.log("4");
+    if (challengeSite3.style.display === "none"){
+        console.log("5");
+        challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
+        challengeSite2.style.display = "none"; // Moving challengeSite2 container off screen
+        challengeSite3.style.display = "block"; // Moving challengeSite3 container on screen
     }
 }
 
