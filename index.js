@@ -61,14 +61,31 @@ function openMenu(){
 }
 /* IKKE FERDIG */
 var challengeSite1 = document.getElementById("challengeSite1");
-function showIntro(){
-    if(challengeSite1.style.marginLeft == "0px"){
-        challengeSite1.style.marginLeft = "-200vw";
-    }
-    else if (challengeSite1.style.marginLeft === "-200vw"){
+var challengeSite2 = document.getElementById("challengeSite2");
+var challengeSite3 = document.getElementById("challengeSite3");
+function showChallengeSite1(){
+    if (challengeSite1.style.marginLeft === "-200vw"){
         challengeSite1.style.marginLeft = "0vw";
+        challengeSite2.style.marginLeft = "-500vw";
+        challengeSite3.style.marginLeft = "-500vw";
     }
-    console.log(challengeSite1.style) // Troubleshoot 
+    console.log(challengeSite1.style.marginLeft) // Troubleshoot 
+}
+function showChallengeSite2(){
+    if (challengeSite2.style.marginLeft === "-500vw"){
+        challengeSite1.style.marginLeft = "-200vw";
+        challengeSite2.style.marginLeft = "0vw";
+        challengeSite3.style.marginLeft = "-500vw";
+    }
+    console.log(challengeSite2.style.marginLeft) // Troubleshoot 
+}
+function showChallengeSite3(){
+    if (challengeSite3.style.marginLeft === "-500vw"){
+        challengeSite1.style.marginLeft = "-200vw";
+        challengeSite2.style.marginLeft = "-500vw";
+        challengeSite3.style.marginLeft = "0vw";
+    }
+    console.log(challengeSite3.style.marginLeft) // Troubleshoot 
 }
 
 /*------------------------------------------------- DENNE FUNKER IKKE*//*
