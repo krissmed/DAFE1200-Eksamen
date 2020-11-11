@@ -10,7 +10,7 @@
 <body>
 <!--HEADER-->
     <header>
-        <!--LOGO. Only visible in format where window > 1140px -->
+        <!-- LOGO. Only visible in format where window > 1140px -->
         <a href="#mainSite"><img id="headerLogo"src="assets/logo.png"></a>
         <!-- Hamburger Menu (Only visible in format where window < 1140px)-->
         <div onclick="openMenu()" id="hamburgerMenu">
@@ -25,7 +25,6 @@
             <li class="menuLi solution"><a href="#solutionSite1"> Solution </a></li>
             <li class="menuLi app"><a href="#appSite1"> App </a></li>
         </ul>
-
     </header>
 
     <!--CONTAINER MAINSITE-->
@@ -44,30 +43,27 @@
 
     <div id="challenge"></div> <!-- This is to make sure the header moves above the site menu-->
     
-    <!--Menu Challenge site 1-->
+    <!--Horizontal menu 1-->
     <ul class="siteMenu">
         <li class="siteMenuLi intro 1"> <a onclick="showChallengeSite1()"> Intro </a> </li>
         <li class="siteMenuLi description 2"> <a onclick="showChallengeSite2()"> Description </a> </li>
         <li class="siteMenuLi visibility 3"> <a onclick="showChallengeSite3()"> Visibility in Society </a></li>
     </ul>
 
-<!--CONTAINER CHALLENGE-->
+<!--Challenge Container-->
     <div id="challengeSite">
-    <!--CONTAINER CHALLENGE SITE 1-->
-        <div>
-    <!--Text-box on site-->
-            <span id="challengeSite1" style="margin-left: 0vw;">
+    <!-- Intro Container -->
+            <span id="challengeSite1" style="margin-left: 0vw;"> <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
 
             <i class="headline">Challenge Intro</i>
 
                 <p class="infoText">
                     Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende InnovasjonInspirerendeMotiverende Innovasjon
                 </p>
-                <!--Image down right-->
+                <!--Challenge intro image-->
                 <img id="challengeSiteTreePic" src="assets/background_tree.jpeg" alt="Dead Tree">
         </span>
         </div>
-
     <!--CONTAINER CHALLENGE SITE 2-->
         <div id="challengeSite2" style="margin-left: -500vw;">
 
@@ -186,6 +182,63 @@
     </div>
 
 </div>
+
+<footer class="footer">
+    <div class="footer__addr">
+      <img class="footerlogo"id="headerLogo"src="assets/logo.png">
+          
+      <h2>Contact</h2>
+      
+      <address>
+       Osloveien 23, Oslo, Norway<br>
+            
+        <a class="footer__btn" href="mailto:Support@energy++.com">Email Us</a>
+      </address>
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Support</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Contact us</a>
+          </li>
+  
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+              
+          <li>
+            <a href="#">Kristian er teit</a>
+          </li>
+        </ul>
+      </li>
+    
+      
+      <li class="nav__item">
+        <h2 class="nav__title">Legal</h2>
+        
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+          
+          <li>
+            <a href="#">Sitemap</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <p>&copy; 2020 Energy++. All rights reserved.</p>
+    </div>
+  </footer>
 
 <!--Placed at the bottom to load the body first-->
 <script src="index.js"></script>
