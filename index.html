@@ -13,17 +13,17 @@
         <!-- LOGO. Only visible in format where window > 1140px -->
         <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
         <!-- Hamburger Menu (Only visible in format where window < 1140px)-->
-        <div onclick="openMenu()" id="hamburgerMenu">
+        <div onclick="toggleMenu()" id="hamburgerMenu">
             <div class="hamMenu"></div>
             <div class="hamMenu"></div>
             <div class="hamMenu"></div>
         </div>
         <!--MENU-->
         <ul id="headerMenu">
-            <li class="menuLi main"><a href="#mainSite"> Home </a></li>
-            <li class="menuLi challenge"><a href="#challenge"> Challenge </a></li>
-            <li class="menuLi solution"><a href="#solutionSite1"> Solution </a></li>
-            <li class="menuLi app"><a href="#appSite1"> App </a></li>
+            <li onclick="toggleMenu()" class="menuLi main"><a href="#mainSite"> Home </a></li>
+            <li onclick="toggleMenu()" class="menuLi challenge"><a href="#challenge"> Challenge </a></li>
+            <li onclick="toggleMenu()" class="menuLi solution"><a href="#solutionSite1"> Solution </a></li>
+            <li onclick="toggleMenu()" class="menuLi app"><a href="#appSite1"> App </a></li>
         </ul>
     </header>
 
@@ -33,11 +33,11 @@
         <img src="assets/background_windmills.jpeg" id="backgroundWindmills" alt="Background Picture">
         <!--MAINQUOTE-->
         <span id="quote">
-            LoremIpsum Lorem Ipsum LoremIpsum LoremIpsum
+            Be the change you wish to see in the world
         </span>
         <!--UNDER THE QUOTE-->
         <i id="underQuote">
-            LoremIpsum LoremIpsum LoremIpsum
+            – Mahatma Gandhi
         </i>
     </div>
 

@@ -54,15 +54,17 @@ function selectActiveSite() {
 var headerMenu = document.getElementById("headerMenu");
 
 // Function which toggles hamburgermenu on/off
-function openMenu(){
+function toggleMenu(){
     if(headerMenu.style.display == "flex"){
         headerMenu.style.display = "";
     }
     else if (headerMenu.style.display === ""){
         headerMenu.style.display = "flex";
     }
+
     console.log("Toggle Hamburger Menu") // Troubleshoot 
 }
+
 
 
 /*---------------------------------------------------------------------*/

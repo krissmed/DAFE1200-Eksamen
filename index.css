@@ -202,12 +202,12 @@ body {
         flex-direction: row;
     }
     
-    /*******************/
+    /*-----------------------------------------------------------------*/
     /*SITE 1*/
     #challengeSite1, #challengeSite2, #challengeSite3 {
         height: 100vh;
         width: 100vw;
-        position: relative;
+        display: relative;
         top: 20vh;
         left: 5vw;
         display: inline-block;
