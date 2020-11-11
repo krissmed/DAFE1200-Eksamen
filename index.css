@@ -341,9 +341,9 @@ body {
     
         /*Image site 1*/
         .solutionBulb {
-            position: absolute;
-            right: 10vw;
-            top: 20vh;
+            position: relative;
+            right: 14vw;
+            top: 0vh;
             height: auto;
             width: 40vh;
             float: right;
@@ -364,21 +364,25 @@ body {
         #appSite1, #appSite2, #appSite3 {
             height: 100vh;
             width: 100vw;
+            top: 12vh;
+            left: 5vw;
+            color: green;
+            position: relative;
         }
     
         /*Image*/
         .appImg {
-            position: relative;
-            right: 18vw;
-            top: 25vh;
+            position: absolute;
+            right: 12vw;
+            top: 15vh;
             height: 55vh;
             width: 25vw;
             float: right;
             border-radius: 25px;
             box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
         }
-        
-        
+
+/*--------------------------------------------------------------*/
         .footer {
             display: flex;
             flex-flow: row wrap;
