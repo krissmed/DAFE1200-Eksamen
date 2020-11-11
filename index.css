@@ -60,6 +60,39 @@ body {
                 color: lightgreen;
                 transition: color 0.2s, border 0.2s;
             }
+@media (max-width: 700px){ /* Breakpoint for the horizontal menus. This activates when the window size is lower than 700px */
+    .siteMenu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 0vw;
+        top: 12vh;
+        height: 100px;
+        padding: 1.5px;
+        z-index: 1;
+        line-height: 1px;
+    }  
+        .siteMenuLi {
+            margin-top: 17px;
+            font-size: 1.5em;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            text-transform: uppercase;
+            border-bottom: 3px solid green;
+            cursor: pointer;
+        }
+        .siteMenuLi a {
+            text-decoration: none;
+            color: green;
+            cursor: pointer;
+        }
+            .siteMenuLi:hover {
+                border-bottom: 3px solid lightgreen;
+                color: lightgreen;
+                transition: color 0.2s, border 0.2s;
+            }
+}
 /*--------------------------------------------------------------*/
 /*MAIN SITE*/
 #mainSite {
@@ -127,6 +160,9 @@ body {
     #hamburgerMeny{
         margin-top: 15px;
         margin-left: 15px;
+    }
+    #line1, #line2, #line3{
+    transform-origin: top;
     }
     .hamMenu{
         width: 35px;
