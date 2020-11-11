@@ -52,14 +52,14 @@ body {
 }
 
 /*Header*/
-@media (min-width: 140px){ /* This code only applies when window size is bigger than 1140px */
+@media (min-width: 900px){ /* This code only applies when window size is bigger than 1140px */
     /* Hamburger nav (Only visible in format < 1140px)*/
     .hamMenu{
         display:none;
     }
     header {
         background-color: white;
-        height: 15vh;
+        height: 10vh;
         width: 100%;
         position: fixed;
         display: flex;
@@ -70,7 +70,7 @@ body {
     }
         /*Header Logo*/
             #headerLogo {
-                height: 15vh;
+                height: 10vh;
                 width: auto;
                 margin-left: 0.5VW;
             }
@@ -105,7 +105,7 @@ body {
                         border-bottom: 3px solid green;
                     }
     }
-@media screen and (max-width: 140px){ /* This code only applies when window size is smaller than 1140px */
+@media screen and (max-width: 900px) and (orientation: portrait){ /* This code only applies when window size is smaller than 1140px */
     #hamburgerMeny{
         margin-top: 15px;
         margin-left: 15px;
@@ -162,6 +162,14 @@ body {
 @media screen and (orientation: portrait) and (max-width: 1000){
     #backgroundWindmills {
         height: 100vh;
+    }
+}
+@media screen and (max-height: 700px) and (orientation: landscape){
+    header{
+        height: 70px;
+    }
+    #headerLogo{
+        height: 69px; /* ;) */
     }
 }
 
