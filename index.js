@@ -106,43 +106,91 @@ function showChallengeSite3(){
 
 /*------------------------------------------------- DENNE FUNKER IKKE. ok*//*
 
-/*MAKING THE MENULINK ON SITEs ACTIVE DEPENDING ON WHERE THE USER IS
+/*---------------------------------------------------------------------*/
 
-let navLink1 = document.getElementsByClassName("1")[0];
-let navLink2 = document.getElementsByClassName("2")[0];
-let navLink3 = document.getElementsByClassName("3")[0];
+/* Gather HTML elements from index.html */
 
-document.getElementsByClassName("siteMenuLi").onclick = selectActiveSiteChallenge();
+var solutionSite1 = document.getElementById("solutionSite1");
+var solutionSite2 = document.getElementById("solutionSite2");
+var solutionSite3 = document.getElementById("solutionSite3");
 
+/* To show solution Site 1 Container*/
+function showSolutionSite1(){
+    console.log("0");
+    if (solutionSite1.style.display === "none"){
+        console.log("1");
+        solutionSite1.style.display = "block"; // Makes challengeSite1 container visible
+        solutionSite2.style.display = "none"; // Makes challengeSite1 container hidde
+        solutionSite3.style.display = "none"; // Makes challengeSite1 container hidden
+    }
+}
 
+/* To show solution Site 2 Container*/
+function showSolutionSite2(){
 
-function selectActiveSiteChallenge() {
-console.log("0")
-
-    /*if the window is scrolled down furter than 200vh (2times the screen height) and horizontal
-    * more than 200vw
-    if (window.scrollY > window.innerHeight * 1.9 && window.scrollX > window.innerWidth * 1.9) {
-
-        /*active class added visibility
-        navLink3.classList.add("active1");
-
-        /*active class removed from the others so its only 1 link active
-        navLink2.classList.remove("active1");
-        navLink1.classList.remove("active1");
+    console.log("2");
+    if (solutionSite2.style.display === "none"){
+        console.log("3");
+        solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
+        solutionSite2.style.display = "block"; // Makes challengeSite2 container visible
+        solutionSite3.style.display = "none"; // Makes challengeSite3 container hidden
 
     }
-        else if (window.scrollY > window.innerHeight * 1.9 && window.scrollX > window.innerWidth) {
+}
+/* To show solution Site 3 Container*/
+function showSolutionSite3(){
+    console.log("4");
+    if (solutionSite3.style.display === "none"){
+        console.log("5");
+        solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
+        solutionSite2.style.display = "none"; // Makes challengeSite2 container hidden
+        solutionSite3.style.display = "block"; // Makes challengeSite3 container visible
+    }
+}
 
-            navLink2.classList.add("active1");
+/*---------------------------------------------------------------------*/
 
-            navLink1.classList.remove("active1");
-            navLink3.classList.remove("active1");
-        }
-            else if (window.scrollY > window.innerHeight * 1.9 && window.scrollX > 0) {
-                navLink1.classList.add("active1");
+/* Gather HTML elements from index.html */
 
-                navLink3.classList.remove("active1");
-                navLink2.classList.remove("active1");
-            }
+var appSite1 = document.getElementById("appSite1");
+var appSite2 = document.getElementById("appSite2");
+var appSite3 = document.getElementById("appSite3");
 
-}*/
+/* To show solution Site 1 Container*/
+function showAppSite1(){
+    console.log("0");
+    if (appSite1.style.display === "none"){
+        console.log("1");
+        appSite1.style.display = "block"; // Makes appSite1 container visible
+        appSite2.style.display = "none"; // Makes appSite1 container hidde
+        appSite3.style.display = "none"; // Makes appSite1 container hidden
+    }
+}
+
+/* To show solution Site 2 Container*/
+function showAppSite2(){
+
+    console.log("2");
+    if (appSite2.style.display === "none"){
+        console.log("3");
+        appSite1.style.display = "none"; // Makes appSite1 container hidden
+        appSite2.style.display = "block"; // Makes appSite2 container visible
+        appSite3.style.display = "none"; // Makes appSite3 container hidden
+
+    }
+}
+
+
+
+/* To show solution Site 3 Container*/
+function showAppSite3(){
+    console.log("4");
+    if (appSite3.style.display === "none"){
+        console.log("5");
+        appSite1.style.display = "none"; // Makes appSite1 container hidden
+        appSite2.style.display = "none"; // Makes appSite2 container hidden
+        appSite3.style.display = "block"; // Makes appSite3 container visible
+    }
+}
+
+

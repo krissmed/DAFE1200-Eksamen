@@ -15,18 +15,19 @@ body {
     flex-direction: row;
     position: relative;
     left: 4vw;
-    top: 21vh;
+    top: 12vh;
     height: 4vh;
-    width: 35vw;
+    width: auto;
     padding: 1.5vw;
     z-index: 1;
+    line-height: 1px;
 }  
     .siteMenuLi {
-        font-size: 1vw;
-        font-weight: bold;
+        font-size: 1.5em;
+        letter-spacing: 1px;
         padding-left: 2vw;
         padding-right: 2vw;
-        padding-bottom: 0.5vh;
+        padding-bottom: 1vh;
         text-transform: uppercase;
         border-bottom: 3px solid green;
     }
@@ -36,7 +37,7 @@ body {
             color: green;
             cursor: pointer;
         }
-            .active1, .siteMenuLi:hover {
+            .siteMenuLi:hover {
                 border-bottom: 3px solid lightgreen;
                 color: lightgreen;
             }
@@ -66,7 +67,7 @@ body {
         z-index: 2;
     }
         /*Header Logo*/
-            #headerLogo {
+            #header_Logo {
                 height: 10vh;
                 width: auto;
                 margin-left: 0.5VW;
@@ -100,6 +101,7 @@ body {
                 }
                     .active {
                         border-bottom: 3px solid green;
+
                     }
     }
 @media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 1140px */
@@ -111,7 +113,7 @@ body {
         width: 35px;
         height: 5px;
         background-color: black;
-        margin: 6px 0px;
+        margin: 6px 0;
     }
     header {
         background-color: white;
@@ -138,7 +140,7 @@ body {
         .menuLi {
             margin-top: 25px;
             font-size: 2em;
-            padding-left: 0px;
+            padding-left: 0;
             padding-right: 50px;
             text-transform: uppercase;
             border-bottom: 3px solid springgreen;
@@ -156,10 +158,7 @@ body {
                         border-bottom: 3px solid green;
                     }
 }
-/*-------------------------------------------------------------*/
-/*Front Image + quote */
-
-@media screen and (orientation: portrait) and (max-width: 1000){
+@media screen and (orientation: portrait) and (max-width: 1000px){
     #backgroundWindmills {
         height: 100vh;
     }
@@ -194,7 +193,7 @@ body {
         font-size: 2.2vw;
         font-weight: bolder;
         font-family: "Bodoni 72", serif;
-        letter-spacing: .7px;
+        letter-spacing: 1px;
         text-transform: uppercase;
         color: white;
     }
@@ -206,7 +205,7 @@ body {
             color: white;
             text-transform: uppercase;
             font-family: "Bodoni 72", serif;
-            letter-spacing: .7px;
+            letter-spacing: 1px;
         }
     
     /*--------------------------------------------------------------*/
@@ -217,13 +216,13 @@ body {
         display: flex;
         flex-direction: row;
     }
-    
+
     /*-----------------------------------------------------------------*/
     /*SITE 1*/
     #challengeSite1, #challengeSite2, #challengeSite3 {
         height: 100vh;
         width: 100vw;
-        top: 20vh;
+        top: 12vh;
         left: 5vw;
         color: green;
         position: relative;
@@ -290,7 +289,7 @@ body {
                 }
     
             /*Image Environment*/
-            #environmentImage {
+            .environmentImage {
                 position: absolute;
                 left: 65vw;
                 top: 16vh;
@@ -324,26 +323,31 @@ body {
         display: flex;
         flex-direction: row;
     }
-    
+
         #solutionSite1, #solutionSite2, #solutionSite3 {
             height: 100vh;
             width: 100vw;
+            top: 12vh;
+            left: 5vw;
+            color: green;
+            position: relative;
         }
     
         /*Image site 1*/
         .solutionBulb {
             position: relative;
-            right: 8vw;
-            top: 37vh;
-            height: 35vh;
-            width: 35vw;
+            right: 14vw;
+            top: 0;
+            height: auto;
+            width: 40vh;
             float: right;
             border-radius: 25px;
             box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+            border: solid black 1px;
         }
     
     /*--------------------------------------------------------------*/
-    /*SOLUTION SITE*/
+    /*APP SITE*/
     #appSite {
         height: 100vh;
         width: 100vw;
@@ -354,21 +358,25 @@ body {
         #appSite1, #appSite2, #appSite3 {
             height: 100vh;
             width: 100vw;
+            top: 12vh;
+            left: 5vw;
+            color: green;
+            position: relative;
         }
     
         /*Image*/
         .appImg {
-            position: relative;
-            right: 18vw;
-            top: 25vh;
+            position: absolute;
+            right: 12vw;
+            top: 15vh;
             height: 55vh;
             width: 25vw;
             float: right;
             border-radius: 25px;
             box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
         }
-        
-        
+
+/*--------------------------------------------------------------*/
         .footer {
             display: flex;
             flex-flow: row wrap;
@@ -396,7 +404,6 @@ body {
          
           
           .nav__title {
-            font-weight: 400;
             font-size: 2em;
             font-weight: bold;
           }
@@ -412,7 +419,7 @@ body {
             justify-content: center;
             height: 36px;
             max-width: max-content;
-            background-color: rgb(33, 33, 33, 0.07);
+            background-color: rgba(33, 33, 33, 0.07);
             border-radius: 100px;
             color: #454545;
             line-height: 0;
@@ -482,10 +489,10 @@ body {
             }
             
             .footer__addr {
-              flex: 1 0px;
+              flex: 1 0;
             }
             
             .footer__nav {
-              flex: 2 0px;
+              flex: 2 0;
             }
           }
