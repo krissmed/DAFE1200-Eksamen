@@ -360,13 +360,16 @@ body {
             border-radius: 25px;
             box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
         }
+        
+        
         .footer {
             display: flex;
             flex-flow: row wrap;
             padding: 30px 30px 20px 30px;
-            color: #2f2f2f;
-            background-color: #fff;
+            color: black;
+            background-color: #e6e6e6;
             border-top: 1px solid #e5e5e5;
+            
           }
           
           .footer > * {
@@ -383,20 +386,17 @@ body {
             height: auto;
           }
           
-          .footer__addr h2 {
-            margin-top: 1.3em;
-            font-size: 15px;
-            font-weight: 400;
-          }
+         
           
           .nav__title {
             font-weight: 400;
-            font-size: 15px;
+            font-size: 2em;
+            font-weight: bold;
           }
           
           .footer address {
             font-style: normal;
-            color: #999;
+            color:#454545;
           }
           
           .footer__btn {
@@ -407,7 +407,7 @@ body {
             max-width: max-content;
             background-color: rgb(33, 33, 33, 0.07);
             border-radius: 100px;
-            color: #2f2f2f;
+            color: #454545;
             line-height: 0;
             margin: 0.6em 0;
             font-size: 1rem;
@@ -420,7 +420,7 @@ body {
           }
           
           .footer li {
-            line-height: 2em;
+            line-height: 3em;
           }
           
           .footer a {
@@ -438,7 +438,8 @@ body {
           }
           
           .nav__ul a {
-            color: #999;
+            color: #454545;
+            font-size: 20px;
           }
           
           .nav__ul--extra {
@@ -449,7 +450,7 @@ body {
           .legal {
             display: flex;
             flex-wrap: wrap;
-            color: #999;
+            color: #454545;
           }
             
           .legal__links {
