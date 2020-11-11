@@ -86,12 +86,14 @@ function showChallengeSite1(){
 
 /* To show challenge Site 2 Container*/
 function showChallengeSite2(){
+
     console.log("2");
     if (challengeSite2.style.display === "none"){
         console.log("3");
         challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
         challengeSite2.style.display = "block"; // Moving challengeSite2 container on screen
         challengeSite3.style.display = "none"; // Moving challengeSite3 container off screen
+
     }
 }
 
