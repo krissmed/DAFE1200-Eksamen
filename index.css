@@ -17,7 +17,7 @@ body {
     flex-direction: row;
     position: relative;
     left: 4vw;
-    top: 21vh;
+    top: 12vh;
     height: 4vh;
     width: 35vw;
     padding: 1.5vw;
@@ -223,7 +223,7 @@ body {
     #challengeSite1, #challengeSite2, #challengeSite3 {
         height: 100vh;
         width: 100vw;
-        top: 20vh;
+        top: 12vh;
         left: 5vw;
         color: green;
         position: relative;
