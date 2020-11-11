@@ -23,7 +23,7 @@ function selectActiveSite() {
                 challengeLink.classList.remove("active");
                 mainLink.classList.remove("active");
     }
-        else if (window.scrollY > window.innerHeight * 1.8) {
+        else if (window.scrollY > window.innerHeight * 1.9) {
 
             solutionLink.classList.add("active");
 
@@ -31,7 +31,7 @@ function selectActiveSite() {
         challengeLink.classList.remove("active");
         appLink.classList.remove("active");
         }
-            else if (window.scrollY > window.innerHeight * 0.8) {
+            else if (window.scrollY > window.innerHeight * 0.9) {
                 challengeLink.classList.add("active");
 
         mainLink.classList.remove("active");
@@ -179,8 +179,6 @@ function showAppSite2(){
 
     }
 }
-
-
 
 /* To show solution Site 3 Container*/
 function showAppSite3(){
