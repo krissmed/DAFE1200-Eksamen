@@ -11,7 +11,7 @@
 <!--HEADER-->
     <header>
         <!-- LOGO. Only visible in format where window > 1140px -->
-        <a href="#mainSite"><img id="headerLogo"src="assets/logo.png"></a>
+        <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
         <!-- Hamburger Menu (Only visible in format where window < 1140px)-->
         <div onclick="toggleMenu()" id="hamburgerMenu">
             <div class="hamMenu"></div>
@@ -53,19 +53,21 @@
 <!--Challenge Container-->
     <div id="challengeSite">
     <!-- Intro Container -->
-            <span id="challengeSite1" style="margin-left: 0vw; display: block"> <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
 
-            <i class="headline">Challenge Intro</i>
+            <div id="challengeSite1" style="display: block"> <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
+
+            <span class="headline">Challenge Intro</span>
 
                 <p class="infoText">
                     Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende InnovasjonInspirerendeMotiverende Innovasjon
                 </p>
                 <!--Challenge intro image-->
                 <img id="challengeSiteTreePic" src="assets/background_tree.jpeg" alt="Dead Tree">
-        </span>
         </div>
-    <!--Container challenge site 2-->
-        <div id="challengeSite2" style="margin-left: -500vw;">
+  
+    <!--CONTAINER CHALLENGE SITE 2-->
+        <div id="challengeSite2" style="display: none">
+
 
             <!--Text-box-->
             <div id="challengeSite2Description">
@@ -82,8 +84,9 @@
             </div>
         </div>
 
-        <!--Container challenge site 3-->
-        <div id="challengeSite3" style="margin-left: -500vw">            
+        <!--CONTAINER CHALLENGE SITE 3-->
+        <div id="challengeSite3" style="display: none">
+
             <!--Image site 3-->
             <img id="pollutedImgSite3" src="assets/polluted_city.jpeg" alt="Polluted City" >
 
@@ -175,7 +178,14 @@
 <footer class="footer">
     
     <div class="footer__addr">
-        <img class="footerlogo"id="headerLogo"src="assets/logo.png">
+
+      <img class="footerlogo" id="headerLogo" src="assets/logo.png" alt="logo footer">
+          
+      <h2>Contact</h2>
+      
+      <address>
+       Osloveien 23, Oslo, Norway<br>
+
             
         <h2 class="nav_title">Contact</h2>
         
