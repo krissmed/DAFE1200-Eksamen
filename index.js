@@ -80,9 +80,9 @@ function showChallengeSite1(){
     console.log("0");
     if (challengeSite1.style.display === "none"){
         console.log("1");
-        challengeSite1.style.display = "block"; // Moving challengeSite1 container on screen
-        challengeSite2.style.display = "none"; // Moving challengeSite1 container off screen
-        challengeSite3.style.display = "none"; // Moving challengeSite1 container off screen
+        challengeSite1.style.display = "block"; // Makes challengeSite1 container on screen
+        challengeSite2.style.display = "none"; // Makes challengeSite1 container off screen
+        challengeSite3.style.display = "none"; // Makes challengeSite1 container off screen
     }
 }
 
@@ -112,43 +112,47 @@ function showChallengeSite3(){
 
 /*------------------------------------------------- DENNE FUNKER IKKE. ok*//*
 
-/*MAKING THE MENULINK ON SITEs ACTIVE DEPENDING ON WHERE THE USER IS
+/*---------------------------------------------------------------------*/
 
-let navLink1 = document.getElementsByClassName("1")[0];
-let navLink2 = document.getElementsByClassName("2")[0];
-let navLink3 = document.getElementsByClassName("3")[0];
+/* Gather HTML elements from index.html */
 
-document.getElementsByClassName("siteMenuLi").onclick = selectActiveSiteChallenge();
+var solutionSite1 = document.getElementById("solutionSite1");
+var solutionSite2 = document.getElementById("solutionSite2");
+var solutionSite3 = document.getElementById("solutionSite3");
 
+/* To show solution Site 1 Container*/
+function showSolutionSite1(){
+    console.log("0");
+    if (solutionSite1.style.display === "none"){
+        console.log("1");
+        solutionSite1.style.display = "block"; // Makes challengeSite1 container visible
+        solutionSite2.style.display = "none"; // Makes challengeSite1 container hidde
+        solutionSite3.style.display = "none"; // Makes challengeSite1 container hidden
+    }
+}
 
+/* To show solution Site 2 Container*/
+function showSolutionSite2(){
 
-function selectActiveSiteChallenge() {
-console.log("0")
-
-    /*if the window is scrolled down furter than 200vh (2times the screen height) and horizontal
-    * more than 200vw
-    if (window.scrollY > window.innerHeight * 1.9 && window.scrollX > window.innerWidth * 1.9) {
-
-        /*active class added visibility
-        navLink3.classList.add("active1");
-
-        /*active class removed from the others so its only 1 link active
-        navLink2.classList.remove("active1");
-        navLink1.classList.remove("active1");
+    console.log("2");
+    if (solutionSite2.style.display === "none"){
+        console.log("3");
+        solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
+        solutionSite2.style.display = "block"; // Makes challengeSite2 container visible
+        solutionSite3.style.display = "none"; // Makes challengeSite3 container hidden
 
     }
-        else if (window.scrollY > window.innerHeight * 1.9 && window.scrollX > window.innerWidth) {
+}
 
-            navLink2.classList.add("active1");
+/* To show solution Site 3 Container*/
+function showSolutionSite3(){
+    console.log("4");
+    if (solutionSite3.style.display === "none"){
+        console.log("5");
+        solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
+        solutionSite2.style.display = "none"; // Makes challengeSite2 container hidden
+        solutionSite3.style.display = "block"; // Makes challengeSite3 container visible
+    }
+}
 
-            navLink1.classList.remove("active1");
-            navLink3.classList.remove("active1");
-        }
-            else if (window.scrollY > window.innerHeight * 1.9 && window.scrollX > 0) {
-                navLink1.classList.add("active1");
 
-                navLink3.classList.remove("active1");
-                navLink2.classList.remove("active1");
-            }
-
-}*/
