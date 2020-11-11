@@ -60,15 +60,15 @@ function openMenu(){
     console.log("Toggle Hamburger Menu") // Troubleshoot 
 }
 /* IKKE FERDIG */
-var infoTextChallenge = document.getElementById("infoTextChallenge");
+var challengeSite1 = document.getElementById("challengeSite1");
 function showIntro(){
-    if(infoTextChallenge.style.marginLeft == "0"){
-        infoTextChallenge.style.marginLeft = "-200vw";
+    if(challengeSite1.style.marginLeft == "0px"){
+        challengeSite1.style.marginLeft = "-200vw";
     }
-    else if (infoTextChallenge.style.marginLeft === "-200vw"){
-        infoTextChallenge.style.marginLeft = "0vw";
+    else if (challengeSite1.style.marginLeft === "-200vw"){
+        challengeSite1.style.marginLeft = "0vw";
     }
-    console.log(infoTextChallenge.style.marginLeft) // Troubleshoot 
+    console.log(challengeSite1.style) // Troubleshoot 
 }
 
 /*------------------------------------------------- DENNE FUNKER IKKE*//*
