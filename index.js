@@ -60,15 +60,32 @@ function openMenu(){
     console.log("Toggle Hamburger Menu") // Troubleshoot 
 }
 /* IKKE FERDIG */
-var infoTextChallenge = document.getElementById("infoTextChallenge");
-function showIntro(){
-    if(infoTextChallenge.style.marginLeft == "0"){
-        infoTextChallenge.style.marginLeft = "-200vw";
+var challengeSite1 = document.getElementById("challengeSite1");
+var challengeSite2 = document.getElementById("challengeSite2");
+var challengeSite3 = document.getElementById("challengeSite3");
+function showChallengeSite1(){
+    if (challengeSite1.style.marginLeft === "-200vw"){
+        challengeSite1.style.marginLeft = "0vw";
+        challengeSite2.style.marginLeft = "-500vw";
+        challengeSite3.style.marginLeft = "-500vw";
     }
-    else if (infoTextChallenge.style.marginLeft === "-200vw"){
-        infoTextChallenge.style.marginLeft = "0vw";
+    console.log(challengeSite1.style.marginLeft) // Troubleshoot 
+}
+function showChallengeSite2(){
+    if (challengeSite2.style.marginLeft === "-500vw"){
+        challengeSite1.style.marginLeft = "-200vw";
+        challengeSite2.style.marginLeft = "0vw";
+        challengeSite3.style.marginLeft = "-500vw";
     }
-    console.log(infoTextChallenge.style.marginLeft) // Troubleshoot 
+    console.log(challengeSite2.style.marginLeft) // Troubleshoot 
+}
+function showChallengeSite3(){
+    if (challengeSite3.style.marginLeft === "-500vw"){
+        challengeSite1.style.marginLeft = "-200vw";
+        challengeSite2.style.marginLeft = "-500vw";
+        challengeSite3.style.marginLeft = "0vw";
+    }
+    console.log(challengeSite3.style.marginLeft) // Troubleshoot 
 }
 
 /*------------------------------------------------- DENNE FUNKER IKKE. ok*//*
