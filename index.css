@@ -52,7 +52,7 @@ body {
 }
 
 /*Header*/
-@media (min-width: 1140px){ /* This code only applies when window size is bigger than 1140px */
+@media (min-width: 140px){ /* This code only applies when window size is bigger than 1140px */
     /* Hamburger nav (Only visible in format < 1140px)*/
     .hamMenu{
         display:none;
@@ -63,9 +63,8 @@ body {
         width: 100%;
         position: fixed;
         display: flex;
-        text-align: center;
-        flex-direction: row;
         justify-content: space-between;
+        flex-direction: row;
         box-shadow: 1px 1px 7px 2px green;
         z-index: 2;
     }
@@ -73,7 +72,7 @@ body {
             #headerLogo {
                 height: 15vh;
                 width: auto;
-                margin-left: 25px;
+                margin-left: 0.5VW;
             }
 
     /*MENU*/
@@ -81,21 +80,23 @@ body {
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        margin-right: 150px;
-        margin-top: 50px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        align-items: center;
+        margin-top: 3vh;
+        margin-right: 5vw;
     }
         .menuLi {
             font-size: 2em;
-            padding-left: 50px;
-            padding-right: 50px;
             text-transform: uppercase;
-            border-bottom: 3px solid springgreen;
         }
             .menuLi a {
+                padding-bottom: 5px;
                 text-decoration: none;
                 color: green;
             }
-                .menuLi:hover {
+                .menuLi a:hover {
                     border-bottom: 3px solid green;
                     transform: scale(1.1);
                     transition: transform 0.1s;
@@ -104,7 +105,7 @@ body {
                         border-bottom: 3px solid green;
                     }
     }
-@media screen and (max-width: 1140px), screen and (max-height: ){ /* This code only applies when window size is smaller than 1140px */
+@media screen and (max-width: 140px){ /* This code only applies when window size is smaller than 1140px */
     #hamburgerMeny{
         margin-top: 15px;
         margin-left: 15px;
@@ -158,13 +159,17 @@ body {
                         border-bottom: 3px solid green;
                     }
 }
+@media screen and (orientation: portrait) and (max-width: 1000){
+    #backgroundWindmills {
+        height: 100vh;
+    }
+}
 
     
     /*Background image*/
     #backgroundWindmills {
         height: auto;
         width: 100vw;
-        background-color: black;
     }
     
     /*Quote*/
