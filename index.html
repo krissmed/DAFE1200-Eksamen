@@ -10,7 +10,7 @@
 <body>
 <!--HEADER-->
     <header>
-        <!--LOGO. Only visible in format where window > 1140px -->
+        <!-- LOGO. Only visible in format where window > 1140px -->
         <a href="#mainSite"><img id="headerLogo"src="assets/logo.png"></a>
         <!-- Hamburger Menu (Only visible in format where window < 1140px)-->
         <div onclick="openMenu()" id="hamburgerMenu">
@@ -25,7 +25,6 @@
             <li class="menuLi solution"><a href="#solutionSite1"> Solution </a></li>
             <li class="menuLi app"><a href="#appSite1"> App </a></li>
         </ul>
-
     </header>
 
     <!--CONTAINER MAINSITE-->
@@ -44,30 +43,27 @@
 
     <div id="challenge"></div> <!-- This is to make sure the header moves above the site menu-->
     
-    <!--Menu Challenge site 1-->
+    <!--Horizontal menu 1-->
     <ul class="siteMenu">
         <li class="siteMenuLi intro 1"> <a onclick="showChallengeSite1()"> Intro </a> </li>
         <li class="siteMenuLi description 2"> <a onclick="showChallengeSite2()"> Description </a> </li>
         <li class="siteMenuLi visibility 3"> <a onclick="showChallengeSite3()"> Visibility in Society </a></li>
     </ul>
 
-<!--CONTAINER CHALLENGE-->
+<!--Challenge Container-->
     <div id="challengeSite">
-    <!--CONTAINER CHALLENGE SITE 1-->
-        <div>
-    <!--Text-box on site-->
-            <span id="challengeSite1" style="margin-left: 0vw;">
+    <!-- Intro Container -->
+            <span id="challengeSite1" style="margin-left: 0vw;"> <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
 
             <i class="headline">Challenge Intro</i>
 
                 <p class="infoText">
                     Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende InnovasjonInspirerendeMotiverende Innovasjon
                 </p>
-                <!--Image down right-->
+                <!--Challenge intro image-->
                 <img id="challengeSiteTreePic" src="assets/background_tree.jpeg" alt="Dead Tree">
         </span>
         </div>
-
     <!--CONTAINER CHALLENGE SITE 2-->
         <div id="challengeSite2" style="margin-left: -500vw;">
 
@@ -141,11 +137,7 @@
     <!--CONTAINER CHALLENGE SITE 3-->
     <div id="solutionSite3">
         <!--Menu Challenge site 1-->
-        <ul class="SiteMenu">
-            <li class="siteMenuLi intro"> <a href="#solutionSite1"> Intro </a> </li>
-            <li class="siteMenuLi description"> <a href="#solutionSite2"> Description </a> </li>
-            <li class="siteMenuLi visibility"> <a href="#solutionSite3"> x </a></li>
-        </ul>
+
     </div>
 </div>
 
@@ -155,11 +147,6 @@
     <div id="appSite1">
 
         <!--Menu Challenge site 1-->
-        <ul class="siteMenu">
-            <li class="siteMenuLi intro"> <a href="#appSite1"> Intro </a> </li>
-            <li class="siteMenuLi description"> <a href="#appSite2"> Description </a> </li>
-            <li class="siteMenuLi visibility"> <a href="#appSite3"> x </a></li>
-        </ul>
 
         <!--Text-box on site-->
         <span class="infoText">

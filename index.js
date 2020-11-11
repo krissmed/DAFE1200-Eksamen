@@ -46,9 +46,13 @@ function selectActiveSite() {
         appLink.classList.remove("active");
                 }
 }
-// Making the hamburger menu show/not show the menu
+/*-------------------------------------------------------------------------*/
+
+/* Making the hamburger menu show/not show the menu */
+
 // Gather html elements
 var headerMenu = document.getElementById("headerMenu");
+
 // Function which toggles hamburgermenu on/off
 function openMenu(){
     if(headerMenu.style.display == "flex"){
@@ -59,33 +63,41 @@ function openMenu(){
     }
     console.log("Toggle Hamburger Menu") // Troubleshoot 
 }
-/* IKKE FERDIG */
+
+
+/*---------------------------------------------------------------------*/
+
+/* Gather HTML elements from index.html */
+
 var challengeSite1 = document.getElementById("challengeSite1");
 var challengeSite2 = document.getElementById("challengeSite2");
 var challengeSite3 = document.getElementById("challengeSite3");
+
+/* To show challenge Site 1 Container */
 function showChallengeSite1(){
     if (challengeSite1.style.marginLeft === "-200vw"){
-        challengeSite1.style.marginLeft = "0vw";
-        challengeSite2.style.marginLeft = "-500vw";
-        challengeSite3.style.marginLeft = "-500vw";
+        challengeSite1.style.marginLeft = "0vw"; // Moving challengeSite1 container on screen
+        challengeSite2.style.marginLeft = "-500vw"; // Moving challengeSite1 container off screen
+        challengeSite3.style.marginLeft = "-500vw"; // Moving challengeSite1 container off screen
     }
-    console.log(challengeSite1.style.marginLeft) // Troubleshoot 
 }
+
+/* To show challenge Site 2 Container */
 function showChallengeSite2(){
     if (challengeSite2.style.marginLeft === "-500vw"){
-        challengeSite1.style.marginLeft = "-200vw";
-        challengeSite2.style.marginLeft = "0vw";
-        challengeSite3.style.marginLeft = "-500vw";
+        challengeSite1.style.marginLeft = "-200vw"; // Moving challengeSite1 container off screen
+        challengeSite2.style.marginLeft = "0vw"; // Moving challengeSite2 container on screen
+        challengeSite3.style.marginLeft = "-500vw"; // Moving challengeSite3 container off screen
     }
-    console.log(challengeSite2.style.marginLeft) // Troubleshoot 
 }
+
+/* To show challenge Site 3 Container */
 function showChallengeSite3(){
     if (challengeSite3.style.marginLeft === "-500vw"){
-        challengeSite1.style.marginLeft = "-200vw";
-        challengeSite2.style.marginLeft = "-500vw";
-        challengeSite3.style.marginLeft = "0vw";
+        challengeSite1.style.marginLeft = "-200vw"; // Moving challengeSite1 container off screen
+        challengeSite2.style.marginLeft = "-500vw"; // Moving challengeSite2 container off screen
+        challengeSite3.style.marginLeft = "0vw"; // Moving challengeSite3 container on screen
     }
-    console.log(challengeSite3.style.marginLeft) // Troubleshoot 
 }
 
 /*------------------------------------------------- DENNE FUNKER IKKE. ok*//*
