@@ -21,6 +21,7 @@ body {
     height: 4vh;
     width: 35vw;
     padding: 1.5vw;
+    z-index: 1;
 }  
 
     .siteMenuLi {
@@ -46,7 +47,7 @@ body {
 /*--------------------------------------------------------------*/
 /*MAIN SITE*/
 #mainSite {
-    height: 100vh;
+    height: auto;
     width: 100vw;
 }
 
@@ -207,13 +208,12 @@ body {
     #challengeSite1, #challengeSite2, #challengeSite3 {
         height: 100vh;
         width: 100vw;
-        display: relative;
         top: 20vh;
         left: 5vw;
-        display: inline-block;
         color: green;
+        position: relative;
     }
-    
+
         /*Tree Image*/
         #challengeSiteTreePic {
             position: absolute;
@@ -274,13 +274,14 @@ body {
                     letter-spacing: 1px;
                     font-size: 1.2vw;
                     position: relative;
+                    width: 45vw;
                 }
     
             /*Image Environment*/
             #environmentImage {
                 position: absolute;
                 left: 65vw;
-                top: 24vh;
+                top: 16vh;
                 height: 50vh;
                 width: 20vw;
                 float: right;
