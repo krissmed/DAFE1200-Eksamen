@@ -7,6 +7,23 @@ body {
     font-family: Helvetica, serif;
     overflow-x: hidden;
 }
+/* Custom Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 /*--------------------------------------------------------------------*/
 /*NavBar on each Site*/
 .siteMenu {
@@ -30,6 +47,7 @@ body {
         padding-bottom: 1vh;
         text-transform: uppercase;
         border-bottom: 3px solid green;
+        cursor: pointer;
     }
 
         .siteMenuLi a {
@@ -40,8 +58,8 @@ body {
             .siteMenuLi:hover {
                 border-bottom: 3px solid lightgreen;
                 color: lightgreen;
+                transition: color 0.2s, border 0.2s;
             }
-
 /*--------------------------------------------------------------*/
 /*MAIN SITE*/
 #mainSite {
@@ -49,7 +67,7 @@ body {
     width: 100vw;
 }
 /*----------------------------------------------------------------------*/
-/*Header*/
+/*Nav*/
 @media (min-width: 900px){ /* This code only applies when window size is bigger than 1140px */
     /* Hamburger nav (Only visible in format < 1140px)*/
     .hamMenu{
@@ -67,7 +85,7 @@ body {
         z-index: 2;
     }
         /*Header Logo*/
-            #header_Logo {
+            #headerLogo {
                 height: 10vh;
                 width: auto;
                 margin-left: 0.5VW;
@@ -82,7 +100,6 @@ body {
         flex-wrap: nowrap;
         flex-grow: 1;
         align-items: center;
-        margin-top: 3vh;
         margin-right: 5vw;
     }
         .menuLi {
@@ -93,17 +110,19 @@ body {
                 padding-bottom: 5px;
                 text-decoration: none;
                 color: green;
+                transition: border 0.05s;
+                transition-timing-function: ease-in-out;
             }
                 .menuLi a:hover {
                     border-bottom: 3px solid green;
-                    transform: scale(1.1);
-                    transition: transform 0.1s;
+                    transition: border 0.1s;
+                    transition-timing-function: ease-in-out;
                 }
                     .active {
                         border-bottom: 3px solid green;
-
                     }
-    }
+}
+
 @media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 1140px */
     #hamburgerMeny{
         margin-top: 15px;
@@ -163,16 +182,18 @@ body {
         height: 100vh;
     }
 }
-@media screen and (max-height: 700px) and (orientation: landscape){
+@media screen and (max-height: 700px){
     header{
         height: 70px;
     }
     #headerLogo{
-        height: 69px; /* ;) */
+        height: 69px;
+        width: auto;
     }
 }
+/*-------------------------------------------------------------------------------*/
+    /*Top image and quotes */
 
-    
     /*Background image*/
     #backgroundWindmills {
         height: 100vh;
@@ -188,9 +209,9 @@ body {
         padding: 1vw 0;
         position: absolute;
         text-align: center;
-        top: 69vh; /* ;) */
+        top: 500px; /* ;) */
         left: 10vw;
-        font-size: 2.2vw;
+        font-size: 2em;
         font-weight: bolder;
         font-family: "Bodoni 72", serif;
         letter-spacing: 1px;
@@ -215,11 +236,11 @@ body {
         width: 100vw;
         display: flex;
         flex-direction: row;
+        background-color: #cdd1ce;
     }
 
-    /*-----------------------------------------------------------------*/
-    /*SITE 1*/
-    #challengeSite1, #challengeSite2, #challengeSite3 {
+    
+    #challengeSite1, #challengeSite2, #challengeSite3 {/* Can be redone as a class */
         height: 100vh;
         width: 100vw;
         top: 12vh;
@@ -227,6 +248,8 @@ body {
         color: green;
         position: relative;
     }
+/*------------------------------------------------------------------------------*/
+        /*SITE 1*/
 
         /*Tree Image*/
         #challengeSiteTreePic {
@@ -261,7 +284,7 @@ body {
                         height: 30vh;
                     }
     
-    /*******************/
+/*---------------------------------------------------------------------------------------------*/
     /*SITE 2*/
         /*Info-text*/
         .challengeSite2Description {
@@ -322,6 +345,7 @@ body {
         width: 100vw;
         display: flex;
         flex-direction: row;
+        background-color: #b6bab7;
     }
 
         #solutionSite1, #solutionSite2, #solutionSite3 {
@@ -353,6 +377,8 @@ body {
         width: 100vw;
         display: flex;
         flex-direction: row;
+        background-color: #cdd1ce;
+        ;
     }
     
         #appSite1, #appSite2, #appSite3 {
@@ -370,13 +396,15 @@ body {
             right: 12vw;
             top: 15vh;
             height: 55vh;
-            width: 25vw;
+            width: auto;
             float: right;
             border-radius: 25px;
             box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
         }
 
 /*--------------------------------------------------------------*/
+
+        /*  FOOTER */
         .footer {
             display: flex;
             flex-flow: row wrap;

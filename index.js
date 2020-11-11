@@ -13,38 +13,40 @@ function selectActiveSite() {
     let appLink = document.getElementsByClassName("app")[0];
 
     /*if the window is scrolled down furter than 300vh (3times the screen height)*/
-    if (window.scrollY > window.innerHeight * 2.9) {
+    if (window.scrollY > window.innerHeight * 3) {
 
         /*active class added app*/
-            appLink.classList.add("active");
+        appLink.classList.add("active");
 
-            /*active class removed from the others so its only 1 link active*/
-                solutionLink.classList.remove("active");
-                challengeLink.classList.remove("active");
-                mainLink.classList.remove("active");
+        /*active class removed from the others so its only 1 link active*/
+        solutionLink.classList.remove("active");
+        challengeLink.classList.remove("active");
+        mainLink.classList.remove("active");
     }
-        else if (window.scrollY > window.innerHeight * 1.8) {
+    else if (window.scrollY > window.innerHeight * 2) {
 
-            solutionLink.classList.add("active");
+        solutionLink.classList.add("active");
 
         mainLink.classList.remove("active");
         challengeLink.classList.remove("active");
         appLink.classList.remove("active");
         }
-            else if (window.scrollY > window.innerHeight * 0.8) {
-                challengeLink.classList.add("active");
+    else if (window.scrollY > window.innerHeight * 1) {
+
+        challengeLink.classList.add("active");
 
         mainLink.classList.remove("active");
         solutionLink.classList.remove("active");
         appLink.classList.remove("active");
             }
-                else if (window.scrollY > 0 ) {
-                    mainLink.classList.add("active");
+    else if (window.scrollY > 0 ) {
+
+        mainLink.classList.add("active");
 
         challengeLink.classList.remove("active");
         solutionLink.classList.remove("active");
         appLink.classList.remove("active");
-                }
+    }
 }
 /*-------------------------------------------------------------------------*/
 
