@@ -212,7 +212,7 @@ body {
         display: inline-block;
         color: green;
     }
-    
+
         /*Tree Image*/
         #challengeSiteTreePic {
             position: absolute;
@@ -273,6 +273,7 @@ body {
                     letter-spacing: 1px;
                     font-size: 1.2vw;
                     position: relative;
+                    width: 45vw;
                 }
     
             /*Image Environment*/
