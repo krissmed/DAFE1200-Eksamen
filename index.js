@@ -143,7 +143,6 @@ function showSolutionSite2(){
 
     }
 }
-
 /* To show solution Site 3 Container*/
 function showSolutionSite3(){
     console.log("4");
@@ -152,6 +151,51 @@ function showSolutionSite3(){
         solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
         solutionSite2.style.display = "none"; // Makes challengeSite2 container hidden
         solutionSite3.style.display = "block"; // Makes challengeSite3 container visible
+    }
+}
+
+/*---------------------------------------------------------------------*/
+
+/* Gather HTML elements from index.html */
+
+var appSite1 = document.getElementById("appSite1");
+var appSite2 = document.getElementById("appSite2");
+var appSite3 = document.getElementById("appSite3");
+
+/* To show solution Site 1 Container*/
+function showAppSite1(){
+    console.log("0");
+    if (appSite1.style.display === "none"){
+        console.log("1");
+        appSite1.style.display = "block"; // Makes appSite1 container visible
+        appSite2.style.display = "none"; // Makes appSite1 container hidde
+        appSite3.style.display = "none"; // Makes appSite1 container hidden
+    }
+}
+
+/* To show solution Site 2 Container*/
+function showAppSite2(){
+
+    console.log("2");
+    if (appSite2.style.display === "none"){
+        console.log("3");
+        appSite1.style.display = "none"; // Makes appSite1 container hidden
+        appSite2.style.display = "block"; // Makes appSite2 container visible
+        appSite3.style.display = "none"; // Makes appSite3 container hidden
+
+    }
+}
+
+
+
+/* To show solution Site 3 Container*/
+function showAppSite3(){
+    console.log("4");
+    if (appSite3.style.display === "none"){
+        console.log("5");
+        appSite1.style.display = "none"; // Makes appSite1 container hidden
+        appSite2.style.display = "none"; // Makes appSite2 container hidden
+        appSite3.style.display = "block"; // Makes appSite3 container visible
     }
 }
 
