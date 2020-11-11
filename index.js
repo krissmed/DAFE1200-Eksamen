@@ -64,9 +64,11 @@ function openMenu(){
     console.log("Toggle Hamburger Menu") // Troubleshoot 
 }
 
+
 /*---------------------------------------------------------------------*/
 
 /* Gather HTML elements from index.html */
+
 var challengeSite1 = document.getElementById("challengeSite1");
 var challengeSite2 = document.getElementById("challengeSite2");
 var challengeSite3 = document.getElementById("challengeSite3");
