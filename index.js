@@ -13,7 +13,7 @@ function selectActiveSite() {
     let appLink = document.getElementsByClassName("app")[0];
 
     /*if the window is scrolled down furter than 300vh (3times the screen height)*/
-    if (window.scrollY > window.innerHeight * 2.9 ) {
+    if (window.scrollY > window.innerHeight * 2.9) {
 
         /*active class added app*/
             appLink.classList.add("active");
@@ -23,7 +23,7 @@ function selectActiveSite() {
                 challengeLink.classList.remove("active");
                 mainLink.classList.remove("active");
     }
-        else if (window.scrollY > window.innerHeight * 1.9) {
+        else if (window.scrollY > window.innerHeight * 1.8) {
 
             solutionLink.classList.add("active");
 
@@ -31,7 +31,7 @@ function selectActiveSite() {
         challengeLink.classList.remove("active");
         appLink.classList.remove("active");
         }
-            else if (window.scrollY > window.innerHeight * 0.9) {
+            else if (window.scrollY > window.innerHeight * 0.8) {
                 challengeLink.classList.add("active");
 
         mainLink.classList.remove("active");
@@ -77,9 +77,7 @@ var challengeSite3 = document.getElementById("challengeSite3");
 
 /* To show challenge Site 1 Container*/
 function showChallengeSite1(){
-    console.log("0");
     if (challengeSite1.style.display === "none"){
-        console.log("1");
         challengeSite1.style.display = "block"; // Moving challengeSite1 container on screen
         challengeSite2.style.display = "none"; // Moving challengeSite1 container off screen
         challengeSite3.style.display = "none"; // Moving challengeSite1 container off screen
@@ -89,9 +87,7 @@ function showChallengeSite1(){
 /* To show challenge Site 2 Container*/
 function showChallengeSite2(){
 
-    console.log("2");
     if (challengeSite2.style.display === "none"){
-        console.log("3");
         challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
         challengeSite2.style.display = "block"; // Moving challengeSite2 container on screen
         challengeSite3.style.display = "none"; // Moving challengeSite3 container off screen
@@ -101,9 +97,7 @@ function showChallengeSite2(){
 
 /* To show challenge Site 3 Container*/
 function showChallengeSite3(){
-    console.log("4");
     if (challengeSite3.style.display === "none"){
-        console.log("5");
         challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
         challengeSite2.style.display = "none"; // Moving challengeSite2 container off screen
         challengeSite3.style.display = "block"; // Moving challengeSite3 container on screen

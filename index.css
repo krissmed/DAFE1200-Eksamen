@@ -1,8 +1,6 @@
 html {
     scroll-behavior: smooth;
 }
-
-
 body {
     /*Cover whole site*/
     margin: 0;
@@ -23,7 +21,6 @@ body {
     padding: 1.5vw;
     z-index: 1;
 }  
-
     .siteMenuLi {
         font-size: 1vw;
         font-weight: bold;
@@ -50,7 +47,7 @@ body {
     height: auto;
     width: 100vw;
 }
-
+/*----------------------------------------------------------------------*/
 /*Header*/
 @media (min-width: 900px){ /* This code only applies when window size is bigger than 1140px */
     /* Hamburger nav (Only visible in format < 1140px)*/
@@ -105,7 +102,7 @@ body {
                         border-bottom: 3px solid green;
                     }
     }
-@media screen and (max-width: 900px) and (orientation: portrait){ /* This code only applies when window size is smaller than 1140px */
+@media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 1140px */
     #hamburgerMeny{
         margin-top: 15px;
         margin-left: 15px;
@@ -159,6 +156,9 @@ body {
                         border-bottom: 3px solid green;
                     }
 }
+/*-------------------------------------------------------------*/
+/*Front Image + quote */
+
 @media screen and (orientation: portrait) and (max-width: 1000){
     #backgroundWindmills {
         height: 100vh;
@@ -176,8 +176,8 @@ body {
     
     /*Background image*/
     #backgroundWindmills {
-        height: auto;
-        width: 100vw;
+        height: 100vh;
+        width: auto;
     }
     
     /*Quote*/
@@ -243,9 +243,6 @@ body {
         }
     
             /*Textbox*/
-            #infoText{
-
-            }
                 /*Headline*/
                 .headline {
                     font-weight: bolder;
