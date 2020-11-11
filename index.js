@@ -12,7 +12,7 @@ function selectActiveSite() {
     let solutionLink = document.getElementsByClassName("solution")[0];
     let appLink = document.getElementsByClassName("app")[0];
 
-    /*if the window is scrolled down furter than 300vh (3times the screen height)*/
+    /*if the window is scrolled down furter than 300vh (3times the screen height) the app link is active*/
     if (window.scrollY > window.innerHeight * 2.9 ) {
 
         /*active class added app*/

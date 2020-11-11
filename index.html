@@ -22,8 +22,8 @@
         <ul id="headerMenu">
             <li onclick="toggleMenu()" class="menuLi main"><a href="#mainSite"> Home </a></li>
             <li onclick="toggleMenu()" class="menuLi challenge"><a href="#challenge"> Challenge </a></li>
-            <li onclick="toggleMenu()" class="menuLi solution"><a href="#solutionSite1"> Solution </a></li>
-            <li onclick="toggleMenu()" class="menuLi app"><a href="#appSite1"> App </a></li>
+            <li onclick="toggleMenu()" class="menuLi solution"><a href="#solution"> Solution </a></li>
+            <li onclick="toggleMenu()" class="menuLi app"><a href="#app"> App </a></li>
         </ul>
     </header>
 
@@ -102,15 +102,19 @@
         </div>
     </div>
 
+
+<div id="solution"></div><!-- This is to make sure the header moves above the site menu-->
+
+<!--Horizontal menu 1-->
+<ul class="siteMenu">
+    <li class="siteMenuLi"> <a onclick="showSolutionSite1()"> Intro </a> </li>
+    <li class="siteMenuLi"> <a onclick="showSolutionSite2()"> Description </a> </li>
+    <li class="siteMenuLi"> <a onclick="showSolutionSite3()"> Visibility in Society </a></li>
+</ul>
+
 <!--Container Solution-->
 <div id="solutionSite">
 
-    <!--Horizontal menu 1-->
-    <ul class="siteMenu">
-        <li class="siteMenuLi"> <a onclick="showSolutionSite1()"> Intro </a> </li>
-        <li class="siteMenuLi"> <a onclick="showSolutionSite2()"> Description </a> </li>
-        <li class="siteMenuLi"> <a onclick="showSolutionSite3()"> Visibility in Society </a></li>
-    </ul>
 
         <!-- Intro Container -->
         <div id="solutionSite1" style="display: block"> <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
@@ -159,6 +163,7 @@
     </div>
 </div>
 
+<div id="app"></div><!-- This is to make sure the header moves above the site menu-->
 
 <!--CONTAINER APP-->
 <div id="appSite">
