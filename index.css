@@ -58,10 +58,11 @@ body {
     }
     header {
         background-color: white;
-        height: 150px;
+        height: 15vh;
         width: 100%;
         position: fixed;
         display: flex;
+        text-align: center;
         flex-direction: row;
         justify-content: space-between;
         box-shadow: 1px 1px 7px 2px green;
@@ -69,7 +70,7 @@ body {
     }
         /*Header Logo*/
             #headerLogo {
-                height: 150px;
+                height: 15vh;
                 width: auto;
                 margin-left: 25px;
             }
@@ -102,7 +103,7 @@ body {
                         border-bottom: 3px solid green;
                     }
     }
-@media (max-width: 1140px){ /* This code only applies when window size is smaller than 1140px */
+@media screen and (max-width: 1140px), screen and (max-height: ){ /* This code only applies when window size is smaller than 1140px */
     #hamburgerMeny{
         margin-top: 15px;
         margin-left: 15px;
@@ -156,6 +157,7 @@ body {
                         border-bottom: 3px solid green;
                     }
 }
+
     
     /*Background image*/
     #backgroundWindmills {
