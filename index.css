@@ -173,6 +173,10 @@ body {
     #line1, #line2, #line3{
     transform-origin: top;
     }
+    #line0:hover {
+        color: green;
+        cursor: pointer;
+    }
     .hamMenu{
         width: 35px;
         height: 5px;

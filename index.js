@@ -101,7 +101,15 @@ function toggleMenu(){
 
 //Function that collapses hamburgermenu when an site is selected
 function collapseHamMenu() {
+    headerMenu.style.display = "";
 
+    line1.style.transform = "rotate(0deg)";
+    line1.style.opacity = "1";
+    line2.style.opacity = "1";
+    line3.style.transform = "rotate(0deg)";
+    line3.style.opacity = "1";
+
+    line0.innerHTML="";
 }
 
 /*---------------------------------------------------------------------*/
