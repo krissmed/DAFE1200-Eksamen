@@ -155,9 +155,14 @@ body {
                     transition: border 0.1s;
                     transition-timing-function: ease-in-out;
                 }
+                    /*Adds this active class in JS*/
                     .active {
                         border-bottom: 3px solid green;
                     }
+                        /*Removes the border when the already active class is hovered. Prevents double underline*/
+                        .active:hover {
+                            border-bottom: none;
+                        }
 }
 
 @media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 1140px */

@@ -10,6 +10,7 @@ let challengeLink = document.getElementsByClassName("challenge")[0];
 let solutionLink = document.getElementsByClassName("solution")[0];
 let appLink = document.getElementsByClassName("app")[0];
 
+/*Makes sure the HOME-link is active at first even when user is not scrolling*/
     if (window.scrollY >= 0 ) {
 
         mainLink.classList.add("active");
@@ -23,7 +24,7 @@ function selectActiveSite() {
 
 
     /*if the window is scrolled down furter than 300vh (3times the screen height)*/
-    if (window.scrollY > window.innerHeight * 3) {
+    if (window.scrollY > window.innerHeight * 2.9) {
 
         /*active class added app*/
         appLink.classList.add("active");
