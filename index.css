@@ -253,14 +253,14 @@ body {
     
     /*Quote*/
     #quote {
-        height: 5vh;
+        height: auto;
         width: 80vw;
         border-bottom: 3px solid white;
         border-top: 3px solid white;
         padding: 1vw 0;
         position: absolute;
         text-align: center;
-        top: 500px; /* ;) */
+        top: 40vw;
         left: 10vw;
         font-size: 2em;
         font-weight: bolder;
@@ -270,14 +270,14 @@ body {
         color: white;
     }
         #underQuote {
-            position: absolute;
-            top: 79vh;
-            left: 40vw;
-            font-weight: bold;
+            font-size: .8em;
+            font-style: normal;
             color: white;
             text-transform: uppercase;
             font-family: "Bodoni 72", serif;
             letter-spacing: 1px;
+            border-top: 3px solid white;
+            padding-top: 1vw;
         }
     
     /*--------------------------------------------------------------*/
