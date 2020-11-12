@@ -58,7 +58,6 @@ body {
         }
             .siteMenuLi:hover {
                 border-bottom: 3px solid lightgreen;
-                color: lightgreen;
                 transition: color 0.2s, border 0.2s;
             }
 @media (max-width: 700px){ /* Breakpoint for the horizontal menus. This activates when the window size is lower than 700px */
