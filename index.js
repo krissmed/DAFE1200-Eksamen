@@ -4,13 +4,23 @@
 /*when the windown scrolls, the function starts*/
 window.onscroll = function() {selectActiveSite()};
 
+/*gathering all the elements*/
+let mainLink = document.getElementsByClassName("main")[0];
+let challengeLink = document.getElementsByClassName("challenge")[0];
+let solutionLink = document.getElementsByClassName("solution")[0];
+let appLink = document.getElementsByClassName("app")[0];
+
+    if (window.scrollY >= 0 ) {
+
+        mainLink.classList.add("active");
+
+        challengeLink.classList.remove("active");
+        solutionLink.classList.remove("active");
+        appLink.classList.remove("active");
+    }
+
 function selectActiveSite() {
 
-/*gathering all the elements*/
-    let mainLink = document.getElementsByClassName("main")[0];
-    let challengeLink = document.getElementsByClassName("challenge")[0];
-    let solutionLink = document.getElementsByClassName("solution")[0];
-    let appLink = document.getElementsByClassName("app")[0];
 
     /*if the window is scrolled down furter than 300vh (3times the screen height)*/
     if (window.scrollY > window.innerHeight * 3) {
@@ -23,7 +33,8 @@ function selectActiveSite() {
         challengeLink.classList.remove("active");
         mainLink.classList.remove("active");
     }
-    else if (window.scrollY > window.innerHeight * 2) {
+
+        else if (window.scrollY > window.innerHeight * 1.9) {
 
         solutionLink.classList.add("active");
 
@@ -31,15 +42,16 @@ function selectActiveSite() {
         challengeLink.classList.remove("active");
         appLink.classList.remove("active");
         }
-    else if (window.scrollY > window.innerHeight * 1) {
 
-        challengeLink.classList.add("active");
+            else if (window.scrollY > window.innerHeight * 0.9) {
 
-        mainLink.classList.remove("active");
-        solutionLink.classList.remove("active");
-        appLink.classList.remove("active");
+                challengeLink.classList.add("active");
+
+                mainLink.classList.remove("active");
+                solutionLink.classList.remove("active");
+                appLink.classList.remove("active");
             }
-    else if (window.scrollY > 0 ) {
+    else if (window.scrollY > -1 ) {
 
         mainLink.classList.add("active");
 
@@ -194,8 +206,6 @@ function showAppSite2(){
 
     }
 }
-
-
 
 /* To show solution Site 3 Container*/
 function showAppSite3(){
