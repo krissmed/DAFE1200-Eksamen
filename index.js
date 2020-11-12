@@ -67,6 +67,7 @@ function selectActiveSite() {
 
 // Gather html elements
 var headerMenu = document.getElementById("headerMenu");
+var line0 = document.getElementById("line0");
 var line1 = document.getElementById("line1");
 var line2 = document.getElementById("line2");
 var line3 = document.getElementById("line3");
@@ -74,26 +75,34 @@ var line3 = document.getElementById("line3");
 // Function which toggles hamburgermenu on/off
 function toggleMenu(){
 
-
     if(headerMenu.style.display == "flex"){
         headerMenu.style.display = "";
         
-        line1.style.transform = "rotate(0deg)"
-        line1.style.opacity = "0%"
-        line3.style.transform = "rotate(0deg)"
-    }
-    else if (headerMenu.style.display === ""){
-        headerMenu.style.display = "flex";
-        
-        line1.style.transform = "rotate(-45deg)"
-        line1.style.opacity = "100%"
-        line3.style.transform = "rotate(45deg)"
-    }
+        line1.style.transform = "rotate(0deg)";
+        line1.style.opacity = "1";
+        line2.style.opacity = "1";
+        line3.style.transform = "rotate(0deg)";
+        line3.style.opacity = "1";
 
-    console.log("Toggle Hamburger Menu") // Troubleshoot 
+        line0.innerHTML="";
+    }
+        else if (headerMenu.style.display === ""){
+            headerMenu.style.display = "flex";
+
+            line1.style.opacity = "0";
+            line2.style.opacity = "0";
+            line3.style.opacity = "0";
+
+            line0.innerHTML="<h2>EXIT</h2>";
+        }
+
+        console.log("Toggle Hamburger Menu") // Troubleshoot
 }
 
+//Function that collapses hamburgermenu when an site is selected
+function collapseHamMenu() {
 
+}
 
 /*---------------------------------------------------------------------*/
 
@@ -112,27 +121,25 @@ function showChallengeSite1(){
     }
 }
 
-/* To show challenge Site 2 Container*/
-function showChallengeSite2(){
+    /* To show challenge Site 2 Container*/
+    function showChallengeSite2(){
 
-    if (challengeSite2.style.display === "none"){
-        challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
-        challengeSite2.style.display = "block"; // Moving challengeSite2 container on screen
-        challengeSite3.style.display = "none"; // Moving challengeSite3 container off screen
+        if (challengeSite2.style.display === "none"){
+            challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
+            challengeSite2.style.display = "block"; // Moving challengeSite2 container on screen
+            challengeSite3.style.display = "none"; // Moving challengeSite3 container off screen
 
+        }
     }
-}
 
-/* To show challenge Site 3 Container*/
-function showChallengeSite3(){
-    if (challengeSite3.style.display === "none"){
-        challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
-        challengeSite2.style.display = "none"; // Moving challengeSite2 container off screen
-        challengeSite3.style.display = "block"; // Moving challengeSite3 container on screen
-    }
-}
-
-/*------------------------------------------------- DENNE FUNKER IKKE. ok*//*
+        /* To show challenge Site 3 Container*/
+        function showChallengeSite3(){
+            if (challengeSite3.style.display === "none"){
+                challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
+                challengeSite2.style.display = "none"; // Moving challengeSite2 container off screen
+                challengeSite3.style.display = "block"; // Moving challengeSite3 container on screen
+            }
+        }
 
 /*---------------------------------------------------------------------*/
 
@@ -153,28 +160,28 @@ function showSolutionSite1(){
     }
 }
 
-/* To show solution Site 2 Container*/
-function showSolutionSite2(){
+    /* To show solution Site 2 Container*/
+    function showSolutionSite2(){
 
-    console.log("2");
-    if (solutionSite2.style.display === "none"){
-        console.log("3");
-        solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
-        solutionSite2.style.display = "block"; // Makes challengeSite2 container visible
-        solutionSite3.style.display = "none"; // Makes challengeSite3 container hidden
+        console.log("2");
+        if (solutionSite2.style.display === "none"){
+            console.log("3");
+            solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
+            solutionSite2.style.display = "block"; // Makes challengeSite2 container visible
+            solutionSite3.style.display = "none"; // Makes challengeSite3 container hidden
 
+        }
     }
-}
-/* To show solution Site 3 Container*/
-function showSolutionSite3(){
-    console.log("4");
-    if (solutionSite3.style.display === "none"){
-        console.log("5");
-        solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
-        solutionSite2.style.display = "none"; // Makes challengeSite2 container hidden
-        solutionSite3.style.display = "block"; // Makes challengeSite3 container visible
-    }
-}
+        /* To show solution Site 3 Container*/
+        function showSolutionSite3(){
+            console.log("4");
+            if (solutionSite3.style.display === "none"){
+                console.log("5");
+                solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
+                solutionSite2.style.display = "none"; // Makes challengeSite2 container hidden
+                solutionSite3.style.display = "block"; // Makes challengeSite3 container visible
+            }
+        }
 
 /*---------------------------------------------------------------------*/
 
@@ -195,28 +202,28 @@ function showAppSite1(){
     }
 }
 
-/* To show solution Site 2 Container*/
-function showAppSite2(){
+    /* To show solution Site 2 Container*/
+    function showAppSite2(){
 
-    console.log("2");
-    if (appSite2.style.display === "none"){
-        console.log("3");
-        appSite1.style.display = "none"; // Makes appSite1 container hidden
-        appSite2.style.display = "block"; // Makes appSite2 container visible
-        appSite3.style.display = "none"; // Makes appSite3 container hidden
+        console.log("2");
+        if (appSite2.style.display === "none"){
+            console.log("3");
+            appSite1.style.display = "none"; // Makes appSite1 container hidden
+            appSite2.style.display = "block"; // Makes appSite2 container visible
+            appSite3.style.display = "none"; // Makes appSite3 container hidden
 
+        }
     }
-}
 
-/* To show solution Site 3 Container*/
-function showAppSite3(){
-    console.log("4");
-    if (appSite3.style.display === "none"){
-        console.log("5");
-        appSite1.style.display = "none"; // Makes appSite1 container hidden
-        appSite2.style.display = "none"; // Makes appSite2 container hidden
-        appSite3.style.display = "block"; // Makes appSite3 container visible
-    }
-}
+        /* To show solution Site 3 Container*/
+        function showAppSite3(){
+            console.log("4");
+            if (appSite3.style.display === "none"){
+                console.log("5");
+                appSite1.style.display = "none"; // Makes appSite1 container hidden
+                appSite2.style.display = "none"; // Makes appSite2 container hidden
+                appSite3.style.display = "block"; // Makes appSite3 container visible
+            }
+        }
 
 
