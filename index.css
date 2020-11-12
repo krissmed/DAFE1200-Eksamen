@@ -67,11 +67,11 @@ body {
         display: flex;
         flex-direction: column;
         position: relative;
-        left: 0vw;
+        left: 0;
         top: 12vh;
         width: auto;
         height: 100px;
-        padding: 1.5px;
+        padding: 2px;
         z-index: 1;
         line-height: 1px;
     }  
@@ -104,8 +104,8 @@ body {
 }
 /*----------------------------------------------------------------------*/
 /*Nav*/
-@media (min-width: 900px){ /* This code only applies when window size is bigger than 1140px */
-    /* Hamburger nav (Only visible in format < 1140px)*/
+@media (min-width: 900px){ /* This code only applies when window size is bigger than 900px */
+    /* Hamburger nav (Only visible in format < 900px)*/
     .hamMenu{
         display:none;
     }
@@ -165,7 +165,7 @@ body {
                         }
 }
 
-@media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 1140px */
+@media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
     #hamburgerMeny{
         margin-top: 15px;
         margin-left: 15px;
@@ -173,11 +173,16 @@ body {
     #line1, #line2, #line3{
     transform-origin: top;
     }
+    #line0:hover {
+        color: green;
+        cursor: pointer;
+    }
     .hamMenu{
         width: 35px;
         height: 5px;
         background-color: black;
-        margin: 6px 0;
+        margin: 6px 3px;
+
     }
     header {
         background-color: white;

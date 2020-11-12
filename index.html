@@ -10,20 +10,21 @@
 <body>
 <!--HEADER-->
     <header>
-        <!-- LOGO. Only visible in format where window > 1140px -->
-        <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
-        <!-- Hamburger Menu (Only visible in format where window < 1140px)-->
-        <div onclick="toggleMenu()" id="hamburgerMenu">
-            <div class="hamMenu" id="line1"></div>
-            <div class="hamMenu" id="line2"></div>
-            <div class="hamMenu" id="line3"></div>
-        </div>
+            <!-- LOGO. Only visible in format where window > 900px -->
+            <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
+            <!-- Hamburger Menu (Only visible in format where window < 900px)-->
+            <div onclick="toggleMenu()" id="hamburgerMenu">
+                <div id="line0"></div>
+                <div class="hamMenu" id="line1"></div>
+                <div class="hamMenu" id="line2"></div>
+                <div class="hamMenu" id="line3"></div>
+            </div>
         <!--MENU-->
         <ul id="headerMenu">
-            <li class="menuLi main"><a href="#mainSite"> Home </a></li>
-            <li class="menuLi challenge"><a href="#challengeSite"> Challenge </a></li>
-            <li class="menuLi solution"><a href="#solutionSite"> Solution </a></li>
-            <li class="menuLi app"><a href="#appSite"> App </a></li>
+            <li class="menuLi main" onclick="collapseHamMenu()"><a href="#mainSite"> Home </a></li>
+            <li class="menuLi challenge" onclick="collapseHamMenu()"><a href="#challengeSite"> Challenge </a></li>
+            <li class="menuLi solution" onclick="collapseHamMenu()"><a href="#solutionSite"> Solution </a></li>
+            <li class="menuLi app" onclick="collapseHamMenu()"><a href="#appSite"> App </a></li>
         </ul>
     </header>
 
@@ -224,7 +225,6 @@
               
           <a class="footer__btn" href="mailto:Support@energy++.com">Email Us</a>
         </address>
-      </address>
       </div>
     
     <ul class="footer__nav">
