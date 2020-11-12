@@ -11,19 +11,19 @@
 <!--HEADER-->
     <header>
         <!-- LOGO. Only visible in format where window > 1140px -->
-        <a href="#mainSite"><img id="header_Logo" src="assets/logo.png" alt="logo header"></a>
+        <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
         <!-- Hamburger Menu (Only visible in format where window < 1140px)-->
         <div onclick="toggleMenu()" id="hamburgerMenu">
-            <div class="hamMenu"></div>
-            <div class="hamMenu"></div>
-            <div class="hamMenu"></div>
+            <div class="hamMenu" id="line1"></div>
+            <div class="hamMenu" id="line2"></div>
+            <div class="hamMenu" id="line3"></div>
         </div>
         <!--MENU-->
         <ul id="headerMenu">
             <li class="menuLi main"><a href="#mainSite"> Home </a></li>
-            <li class="menuLi challenge"><a href="#challenge"> Challenge </a></li>
-            <li class="menuLi solution"><a href="#solution"> Solution </a></li>
-            <li class="menuLi app"><a href="#app"> App </a></li>
+            <li class="menuLi challenge"><a href="#challengeSite"> Challenge </a></li>
+            <li class="menuLi solution"><a href="#solutionSite"> Solution </a></li>
+            <li class="menuLi app"><a href="#appSite"> App </a></li>
         </ul>
     </header>
 
@@ -41,17 +41,15 @@
         </i>
     </div>
 
-    <div id="challenge"></div> <!-- This is to make sure the header moves above the site menu-->
-    
-    <!--Horizontal menu 1-->
-    <ul class="siteMenu">
-        <li class="siteMenuLi"> <a onclick="showChallengeSite1()"> Intro </a> </li>
-        <li class="siteMenuLi"> <a onclick="showChallengeSite2()"> Description </a> </li>
-        <li class="siteMenuLi"> <a onclick="showChallengeSite3()"> Visibility in Society </a></li>
-    </ul>
-
 <!--Challenge Container-->
     <div id="challengeSite">
+        <div>
+            <!--Horizontal menu 1-->
+        <ul class="siteMenu">
+            <li class="siteMenuLi" onclick="showChallengeSite1()"> <a> Intro </a> </li>
+            <li class="siteMenuLi" onclick="showChallengeSite2()"> <a> Description </a> </li>
+            <li class="siteMenuLi" onclick="showChallengeSite3()"> <a> Visibility in Society </a></li>
+        </ul>
     <!-- Intro Container -->
 
             <div id="challengeSite1" style="display: block"> <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
@@ -64,6 +62,7 @@
                 <!--Challenge intro image-->
                 <img id="challengeSiteTreePic" src="assets/background_tree.jpeg" alt="Dead Tree">
         </div>
+
   
     <!--Challenge Container 2-->
         <div id="challengeSite2" style="display: none">
@@ -101,21 +100,16 @@
             </div>
         </div>
     </div>
-
-
-<div id="solution"></div><!-- This is to make sure the header moves above the site menu-->
-
-<!--Horizontal menu 1-->
-<ul class="siteMenu">
-    <li class="siteMenuLi"> <a onclick="showSolutionSite1()"> Intro </a> </li>
-    <li class="siteMenuLi"> <a onclick="showSolutionSite2()"> Description </a> </li>
-    <li class="siteMenuLi"> <a onclick="showSolutionSite3()"> Visibility in Society </a></li>
-</ul>
-
+    </div>
 <!--Container Solution-->
 <div id="solutionSite">
-
-
+    <div>
+    <!--Horizontal menu 2-->
+    <ul class="siteMenu">
+        <li class="siteMenuLi" onclick="showSolutionSite1()"> <a> Intro </a> </li>
+        <li class="siteMenuLi" onclick="showSolutionSite2()"> <a> Description </a> </li>
+        <li class="siteMenuLi" onclick="showSolutionSite3()"> <a> Visibility in Society </a></li>
+    </ul>
         <!-- Intro Container -->
         <div id="solutionSite1" style="display: block"> <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
 
@@ -152,7 +146,7 @@
 
         <!--Text-box-->
         <div id="solutionSite3Description">
-            <span class="headline">Visible in soc</span>
+            <span class="headline">Visible in Society</span>
             <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel pharetra sem, ac malesuada enim. Nullam non congue urna, at fermentum risus. Integer tristique enim ligula. Nullam laoreet vehicula viverra. Donec vel metus orci. Vivamus et tortor vulputate, vestibulum sapien tempor, condimentum lacus. Suspendisse porta pellentesque augue non pretium. Vivamus gravida augue risus, vitae laoreet tortor tempor id. Curabitur lacinia augue sit amet tellus faucibus imperdiet. Cras molestie ante non interdum venenatis. Suspendisse porta lobortis aliquet. Nunc malesuada orci non erat hendrerit, a finibus lectus gravida. Sed efficitur commodo sapien vel congue. Donec lacinia nisi tellus, eleifend viverra magna bibendum ac.</p>
 
@@ -162,18 +156,20 @@
         </div>
     </div>
 </div>
-
+</div>
 <div id="app"></div><!-- This is to make sure the header moves above the site menu-->
 
-<!--Horizontal menu 1-->
-<ul class="siteMenu">
-    <li class="siteMenuLi"> <a onclick="showAppSite1()"> Intro </a> </li>
-    <li class="siteMenuLi"> <a onclick="showAppSite2()"> Description </a> </li>
-    <li class="siteMenuLi"> <a onclick="showAppSite3()"> Visibility in Society </a></li>
-</ul>
+
 
 <!--CONTAINER APP-->
 <div id="appSite">
+    <div>
+        <!--Horizontal menu 3-->
+        <ul class="siteMenu">
+            <li class="siteMenuLi" onclick="showAppSite1()"> <a> Intro </a> </li>
+            <li class="siteMenuLi" onclick="showAppSite2()"> <a> Description </a> </li>
+            <li class="siteMenuLi" onclick="showAppSite3()"> <a> Visibility in Society </a></li>
+        </ul>
     <!-- Intro Container -->
     <div id="appSite1" style="display: block"> <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
 
@@ -199,7 +195,7 @@
                 Mauris tortor ex, hendrerit a elementum nec, pharetra quis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vehicula felis pretium elit varius mattis. Etiam ornare lectus nec ante condimentum aliquet. Donec condimentum nunc nec nisi eleifend sodales. Ut sagittis tempor metus. Aliquam venenatis vehicula purus. Sed est nulla, sodales vel ex ut, rutrum malesuada arcu. Mauris vel vulputate quam, et iaculis diam. Fusce dapibus nulla id quam consectetur, non auctor orci convallis.
             </p>
         </div>
-    </div>
+        </div>
 
         <!--CONTAINER SOLUTION SITE 3-->
     <div id="appSite3" style="display: none">
@@ -209,17 +205,17 @@
                 <span class="headline">Our App</span>
                 <p class="paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel pharetra sem, ac malesuada enim. Nullam non congue urna, at fermentum risus. Integer tristique enim ligula. Nullam laoreet vehicula viverra. Donec vel metus orci. Vivamus et tortor vulputate, vestibulum sapien tempor, condimentum lacus. Suspendisse porta pellentesque augue non pretium. Vivamus gravida augue risus, vitae laoreet tortor tempor id. Curabitur lacinia augue sit amet tellus faucibus imperdiet. Cras molestie ante non interdum venenatis. Suspendisse porta lobortis aliquet. Nunc malesuada orci non erat hendrerit, a finibus lectus gravida. Sed efficitur commodo sapien vel congue. Donec lacinia nisi tellus, eleifend viverra magna bibendum ac.</p>
-
             </div>
         </div>
-
     </div>
+</div>
 
+ <!-- FOOTER CONTAINER -->
 <footer class="footer">
     
     <div class="footer__addr">
 
-      <img class="footerlogo" id="headerLogo" src="assets/logo.png" alt="logo footer">
+      <img class="footerlogo" src="assets/logo.png" alt="logo footer">
           
       <h2>Contact</h2>
       

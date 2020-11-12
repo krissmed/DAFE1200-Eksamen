@@ -13,38 +13,49 @@ function selectActiveSite() {
     let appLink = document.getElementsByClassName("app")[0];
 
     /*if the window is scrolled down furter than 300vh (3times the screen height)*/
-    if (window.scrollY > window.innerHeight * 2.9) {
+    if (window.scrollY > window.innerHeight * 3) {
 
         /*active class added app*/
-            appLink.classList.add("active");
+        appLink.classList.add("active");
 
-            /*active class removed from the others so its only 1 link active*/
-                solutionLink.classList.remove("active");
-                challengeLink.classList.remove("active");
-                mainLink.classList.remove("active");
+        /*active class removed from the others so its only 1 link active*/
+        solutionLink.classList.remove("active");
+        challengeLink.classList.remove("active");
+        mainLink.classList.remove("active");
     }
+<<<<<<< HEAD
         else if (window.scrollY > window.innerHeight * 1.9) {
+=======
+    else if (window.scrollY > window.innerHeight * 2) {
+>>>>>>> 6d7d844e3fd0abbb68469f256c418a1de6dd11a2
 
-            solutionLink.classList.add("active");
+        solutionLink.classList.add("active");
 
         mainLink.classList.remove("active");
         challengeLink.classList.remove("active");
         appLink.classList.remove("active");
         }
+<<<<<<< HEAD
             else if (window.scrollY > window.innerHeight * 0.9) {
                 challengeLink.classList.add("active");
+=======
+    else if (window.scrollY > window.innerHeight * 1) {
+
+        challengeLink.classList.add("active");
+>>>>>>> 6d7d844e3fd0abbb68469f256c418a1de6dd11a2
 
         mainLink.classList.remove("active");
         solutionLink.classList.remove("active");
         appLink.classList.remove("active");
             }
-                else if (window.scrollY > 0 ) {
-                    mainLink.classList.add("active");
+    else if (window.scrollY > 0 ) {
+
+        mainLink.classList.add("active");
 
         challengeLink.classList.remove("active");
         solutionLink.classList.remove("active");
         appLink.classList.remove("active");
-                }
+    }
 }
 /*-------------------------------------------------------------------------*/
 
@@ -52,14 +63,27 @@ function selectActiveSite() {
 
 // Gather html elements
 var headerMenu = document.getElementById("headerMenu");
+var line1 = document.getElementById("line1");
+var line2 = document.getElementById("line2");
+var line3 = document.getElementById("line3");
 
 // Function which toggles hamburgermenu on/off
 function toggleMenu(){
+
+
     if(headerMenu.style.display == "flex"){
         headerMenu.style.display = "";
+        
+        line1.style.transform = "rotate(0deg)"
+        line1.style.opacity = "0%"
+        line3.style.transform = "rotate(0deg)"
     }
     else if (headerMenu.style.display === ""){
         headerMenu.style.display = "flex";
+        
+        line1.style.transform = "rotate(-45deg)"
+        line1.style.opacity = "100%"
+        line3.style.transform = "rotate(45deg)"
     }
 
     console.log("Toggle Hamburger Menu") // Troubleshoot 
