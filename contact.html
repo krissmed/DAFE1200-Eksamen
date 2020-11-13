@@ -1,203 +1,215 @@
 <html>
+
 <head>
-
-    <link rel="stylesheet" href="contact.css">
-
+  <link rel="icon" href="assets/icon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Energy++</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
-        <!-- LOGO. Only visible in format where window > 900px -->
-        <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
-        <!-- Hamburger Menu (Only visible in format where window < 900px)-->
-        <div onclick="toggleMenu()" id="hamburgerMenu">
-            <div id="line0"></div>
-            <div class="hamMenu" id="line1"></div>
-            <div class="hamMenu" id="line2"></div>
-            <div class="hamMenu" id="line3"></div>
-        </div>
+  <header>
+    <!-- LOGO. Only visible in format where window > 900px -->
+    <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
+    <!-- Hamburger Menu (Only visible in format where window < 900px)-->
+    <div onclick="toggleMenu()" id="hamburgerMenu">
+      <div id="line0"></div>
+      <div class="hamMenu" onclick="toggleMenu()" id="line1"></div>
+      <div class="hamMenu" onclick="toggleMenu()" id="line2"></div>
+      <div class="hamMenu" onclick="toggleMenu()" id="line3"></div>
+    </div>
     <!--MENU-->
     <ul id="headerMenu">
-        <li class="menuLi main" onclick="collapseHamMenu()"><a href="#mainSite"> Home </a></li>
-        <li class="menuLi challenge" onclick="collapseHamMenu()"><a href="#challengeSite"> FAQ </a></li>
-        <li class="menuLi solution" onclick="collapseHamMenu()"><a href="#solutionSite"> Kundeservice </a></li>
-        <li class="menuLi app" onclick="collapseHamMenu()"><a href="#appSite"> App </a></li>
+      <li class="menuLi main" onclick="collapseHamMenu()"><a href="#mainSite"> Home </a></li>
+      <li class="menuLi challenge" onclick="collapseHamMenu()"><a href="#faq"> FAQ </a></li>
+      <li class="menuLi solution" onclick="collapseHamMenu()"><a href="#customerSupport"> Customer Support </a></li>
+      <li class="menuLi app" onclick="collapseHamMenu()"><a href="#appSite"> App </a></li>
     </ul>
-</header>
+  </header>
 
-<div id="mainSite">
+  <div id="mainSite">
 
-  <!--BACKGROUND PICTURE-->
-      <img src="assets/kundeservice.jpg" class="backgroundWindmills" alt="Background Picture">
+    <!--BACKGROUND PICTURE-->
+    <img src="assets/kundeservice.jpg" class="backgroundImage" alt="Background Picture">
 
-  <!--MAINQUOTE-->
-  <span class="quote">
-          Costumer Support
-  </span>
+    <!--MAINQUOTE-->
+    <span class="quote">
+      Costumer Support
+    </span>
+  </div>
+  <!-- FAQ Container-->
+  <div id="faqContainer">
+    <div class="question">
+      <p onclick="openAnswer('1')">Spørsmål1</p>
+    </div>
+    <div class="answer 1">
+      <p>Svar</p>
+    </div>
+  </div>
+  <!--Container Solution-->
+  <div id="kundeservice">
 
+  </div>
+  <!-- -->
+  <div id="appSite">
 
-</div>
-
-
-
-
-<div class=faq>
-    <h1 class=faq_titel>FAQ </h1>
+  </div>
+  <!-- <h1 id="faqTittel">FAQ </h1>
 
     <p class="faq_content"> Here we have some frequently asked questions</p>
 
     <button class="accordion" class="border1">Spørsmål</button>
     <div class="panel">
-    <p>svar</p>
+      <p>svar</p>
     </div>
 
     <button class="accordion" class="border1">Spørsmål</button>
     <div class="panel">
-    <p>svar</p>
+      <p>svar</p>
     </div>
 
     <button class="accordion" class="border1">Spørsmål</button>
     <div class="panel">
-    <p>svar</p>
+      <p>svar</p>
     </div>
 
     <button class="accordion" class="border1">Spørsmål</button>
     <div class="panel">
-    <p>svar</p>
+      <p>svar</p>
     </div>
 
     <button class="accordion" class="border2">Spørsmål</button>
     <div class="panel">
-    <p>svar</p>
+      <p>svar</p>
     </div>
-</div>
+  </div>
 
 
-<div class="flex-container">
-  <div class="flex-item">
-      <img class= empl_img src="assets/ansatt.jpg" alt="Ansattbilde">
+  <div class="flex-container">
+    <div class="flex-item">
+      <img class=empl_img src="assets/ansatt.jpg" alt="Ansattbilde">
       <h1 class="empl_titel">Carl Fredrik</h1>
       <h2 class="empl_role">Costumer support<h2>
-      <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
-  </div>
-  <div class="flex-item">
-    <img class= empl_img src="assets/ansatt.jpg" alt="Ansattbilde">
+          <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
+    </div>
+    <div class="flex-item">
+      <img class=empl_img src="assets/ansatt.jpg" alt="Ansattbilde">
       <h1 class="empl_titel">Carl Fredrik</h1>
       <h2 class="empl_role">Costumer support<h2>
-      <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
-  </div>
-  <div class="flex-item">
-    <img class= empl_img src="assets/ansatt.jpg" alt="Ansattbilde">
+          <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
+    </div>
+    <div class="flex-item">
+      <img class=empl_img src="assets/ansatt.jpg" alt="Ansattbilde">
       <h1 class="empl_titel">Carl Fredrik</h1>
       <h2 class="empl_role">Costumer support<h2>
-      <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
+          <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
+    </div>
   </div>
-</div>
 
-<div class="cost">
+  <div class="cost">
     <div class="cost_title2">
-    <h1>Costumer support</h1>
-    <p>If you didn't find an answer to what you were looking for, please contact ut on either email or phone</p>
-</div>
+      <h1>Costumer support</h1>
+      <p>If you didn't find an answer to what you were looking for, please contact ut on either email or phone</p>
+    </div>
     <ul class="cost_nav">
-        <li class="cost_item">
-          <h2 class="cost_title">Email</h2>
-    
-          <ul class="cost_ul">
-              <li>
-                  <p>Feel free to contact us on this email adress, and we will come back to as fast as we can
-                  </p>
-                  
-              </li>
-        
-            <li>
-              <a href="mailto:support@energy++.com">Support@energy++.com</a>
-            </li>            
-          </ul>
-        </li>
-        <li class="cost_item">
-            <h2 class="cost_title">Phone</h2>
-      
-            <ul class="cost_ul">
-                <li>
-                    <p>If you need a faster answere please contact us on this number
-                    </p>
-                    
-                </li>
-          
-              <li>
-                <p class="cost_tlf">+47 2222 5555</p>
-              </li>            
-            </ul>
+      <li class="cost_item">
+        <h2 class="cost_title">Email</h2>
+
+        <ul class="cost_ul">
+          <li>
+            <p>Feel free to contact us on this email adress, and we will come back to as fast as we can
+            </p>
+
           </li>
-      </ul>
-</div>
+
+          <li>
+            <a href="mailto:support@energy++.com">Support@energy++.com</a>
+          </li>
+        </ul>
+      </li>
+      <li class="cost_item">
+        <h2 class="cost_title">Phone</h2>
+
+        <ul class="cost_ul">
+          <li>
+            <p>If you need a faster answere please contact us on this number
+            </p>
+
+          </li>
+
+          <li>
+            <p class="cost_tlf">+47 2222 5555</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+ -->
 
 
 
+  <!-- FOOTER CONTAINER -->
+  <footer class="footer">
 
- <!-- FOOTER CONTAINER -->
- <footer class="footer">
-    
     <div class="footer__addr">
 
       <img class="footerlogo" src="assets/logo.png" alt="logo footer">
-          
+
       <h2>Contact</h2>
-      
-        <address>
-         Osloveien 23, Oslo, Norway<br>
-              
-          <a class="footer__btn" href="mailto:Support@energy++.com">Email Us</a>
-        </address>
-      </div>
-    
+
+      <address>
+        Osloveien 23, Oslo, Norway<br>
+
+        <a class="footer__btn" href="mailto:Support@energy++.com">Email Us</a>
+      </address>
+    </div>
+
     <ul class="footer__nav">
       <li class="nav__item">
         <h2 class="nav__title">Support</h2>
-  
+
         <ul class="nav__ul">
           <li>
             <a href="#">Contact us</a>
           </li>
-  
+
           <li>
             <a href="#">FAQ</a>
           </li>
-              
+
           <li>
             <a href="#">Kristian er teit</a>
           </li>
         </ul>
       </li>
-    
-      
+
+
       <li class="nav__item">
         <h2 class="nav__title">Legal</h2>
-        
+
         <ul class="nav__ul">
           <li>
             <a href="#">Privacy Policy</a>
           </li>
-          
+
           <li>
             <a href="#">Terms of Use</a>
           </li>
-          
+
           <li>
             <a href="#">Sitemap</a>
           </li>
         </ul>
       </li>
     </ul>
-    
+
     <div class="legal">
       <p>&copy; 2020 Energy++. All rights reserved.</p>
     </div>
   </footer>
 
-<script src="contact.js"></script>
-
-
+  <script src="contact.js"></script>
 </body>
+
 </html>

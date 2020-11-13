@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" href="assets/icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,20 @@
     <title>Energy++</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-<!--HEADER-->
+    <img id="toTop" onclick="moveToTop()" src="assets/scrollToTop.jpg">
+    <!--HEADER-->
     <header>
-            <!-- LOGO. Only visible in format where window > 900px -->
-            <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
-            <!-- Hamburger Menu (Only visible in format where window < 900px)-->
-            <div onclick="toggleMenu()" id="hamburgerMenu">
-                <div id="line0"></div>
-                <div class="hamMenu" id="line1"></div>
-                <div class="hamMenu" id="line2"></div>
-                <div class="hamMenu" id="line3"></div>
-            </div>
+        <!-- LOGO. Only visible in format where window > 900px -->
+        <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
+        <!-- Hamburger Menu (Only visible in format where window < 900px)-->
+        <div onclick="toggleMenu()" id="hamburgerMenu">
+            <div id="line0"></div>
+            <div class="hamMenu" id="line1"></div>
+            <div class="hamMenu" id="line2"></div>
+            <div class="hamMenu" id="line3"></div>
+        </div>
         <!--MENU-->
         <ul id="headerMenu">
             <li class="menuLi main" onclick="collapseHamMenu()"><a href="#mainSite"> Home </a></li>
@@ -36,242 +39,323 @@
         <span id="quote">
             Be the change you wish to see in the world
             <br><br>
-            <i id="underQuote">–  Mahatma Gandhi</i>
+            <i id="underQuote">– Mahatma Gandhi</i>
         </span>
 
     </div>
 
-<!--Challenge Container-->
+    <!--Challenge Container-->
     <div id="challengeSite">
         <div>
             <!--Horizontal menu 1-->
-        <ul class="siteMenu">
-            <li class="siteMenuLi" onclick="showChallengeSite1()"> <a> Intro </a> </li>
-            <li class="siteMenuLi" onclick="showChallengeSite2()"> <a> Description </a> </li>
-            <li class="siteMenuLi" onclick="showChallengeSite3()"> <a> Visibility in Society </a></li>
-        </ul>
-    <!-- Intro Container -->
+            <ul class="siteMenu">
+                <li class="siteMenuLi" onclick="showChallengeSite1()"> <a> Intro </a> </li>
+                <li class="siteMenuLi" onclick="showChallengeSite2()"> <a> Description </a> </li>
+                <li class="siteMenuLi" onclick="showChallengeSite3()"> <a> Visibility in Society </a></li>
+            </ul>
+            <!-- Intro Container -->
 
-            <div id="challengeSite1" style="display: block"> <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
+            <div id="challengeSite1" style="display: block">
+                <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
 
-            <span class="headline">Challenge Intro</span>
+                <span class="headline">Challenge Intro</span>
 
                 <p class="infoText">
-                    Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende InnovasjonInspirerendeMotiverende Innovasjon
+                    Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende
+                    MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende
+                    InnovasjonInspirerendeMotiverende Innovasjon
                 </p>
                 <!--Challenge intro image-->
                 <img id="challengeSiteTreePic" src="assets/background_tree.jpeg" alt="Dead Tree">
-        </div>
-
-  
-    <!--Challenge Container 2-->
-        <div id="challengeSite2" style="display: none">
-
-
-            <!--Text-box-->
-            <div id="challengeSite2Description">
-                <span class="headline">Description</span>
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero aliquet, accumsan sem nec, iaculis erat. Etiam eleifend mattis metus, a maximus nunc imperdiet non. Nunc sit amet pulvinar lorem, a pellentesque tortor. Mauris commodo tincidunt metus, in sollicitudin tortor posuere eget. Nullam dignissim, ligula id consequat auctor, leo velit rhoncus nisl, quis viverra eros elit at felis. In vitae diam interdum, cursus justo pellentesque, dapibus arcu. Cras convallis, nunc vel ullamcorper suscipit, orci nunc pellentesque nulla, in varius neque nisi nec massa. Duis at ex et felis convallis pulvinar quis ac purus. Pellentesque vestibulum tristique rhoncus. Proin laoreet sem sit amet ligula mollis facilisis at nec ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sed auctor augue. Fusce eros dui, auctor vitae maximus eu, cursus a orci. Nunc molestie, tellus eget bibendum sagittis, lectus sem facilisis nibh, ut placerat justo diam ac lacus. Maecenas ultricies auctor eros, quis semper odio varius eu. Vestibulum ac sagittis ante.
-            <br>
-                        Mauris tortor ex, hendrerit a elementum nec, pharetra quis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vehicula felis pretium elit varius mattis. Etiam ornare lectus nec ante condimentum aliquet. Donec condimentum nunc nec nisi eleifend sodales. Ut sagittis tempor metus. Aliquam venenatis vehicula purus. Sed est nulla, sodales vel ex ut, rutrum malesuada arcu. Mauris vel vulputate quam, et iaculis diam. Fusce dapibus nulla id quam consectetur, non auctor orci convallis.
-                    </p>
-
-                <!--Image down right challenge site 2-->
-                <img class="environmentImage" src="assets/climate_change.jpeg" alt="climate change">
-
             </div>
-        </div>
 
-        <!--Challenge Container 3-->
-        <div id="challengeSite3" style="display: none">
 
-            <!--Image 3-->
-            <img id="pollutedImgSite3" src="assets/polluted_city.jpeg" alt="Polluted City" >
+            <!--Challenge Container 2-->
+            <div id="challengeSite2" style="display: none">
 
-            <!--Text box-->
-            <div id="challengeSite3Description">
-                <h1 class="headline">Visibility in Society</h1>
+
+                <!--Text-box-->
+                <div id="challengeSite2Description">
+                    <span class="headline">Description</span>
                     <p class="paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim metus nec faucibus venenatis. Maecenas ligula sapien, eleifend a pretium ut, vestibulum sed velit. Maecenas mattis accumsan nunc, sit amet consectetur metus. Integer sed erat neque. Aliquam eleifend velit id dui varius, eget blandit mi lacinia. Donec id consectetur odio, nec vulputate mauris. Morbi id bibendum velit. Mauris hendrerit porta ligula, vitae auctor tortor maximus a. Ut tincidunt, ipsum sed ultricies viverra, neque eros dictum diam, et bibendum dolor nibh sed ipsum. Nam aliquet mauris quam, at fermentum odio viverra vitae. Cras fringilla augue id neque pretium porttitor.
-            <br>
-                        Curabitur aliquam sem turpis. Nulla sem nulla, varius porttitor lacus suscipit, pulvinar maximus lectus. Donec at augue orci. Proin non finibus orci. Donec dignissim massa ut convallis laoreet. Phasellus et risus at augue egestas imperdiet sed eu felis. Donec felis velit, pretium et tristique ut, dapibus vel ligula. Phasellus luctus, elit nec.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero aliquet, accumsan sem
+                        nec, iaculis erat. Etiam eleifend mattis metus, a maximus nunc imperdiet non. Nunc sit amet
+                        pulvinar lorem, a pellentesque tortor. Mauris commodo tincidunt metus, in sollicitudin tortor
+                        posuere eget. Nullam dignissim, ligula id consequat auctor, leo velit rhoncus nisl, quis viverra
+                        eros elit at felis. In vitae diam interdum, cursus justo pellentesque, dapibus arcu. Cras
+                        convallis, nunc vel ullamcorper suscipit, orci nunc pellentesque nulla, in varius neque nisi nec
+                        massa. Duis at ex et felis convallis pulvinar quis ac purus. Pellentesque vestibulum tristique
+                        rhoncus. Proin laoreet sem sit amet ligula mollis facilisis at nec ipsum. Vestibulum ante ipsum
+                        primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sed auctor augue.
+                        Fusce eros dui, auctor vitae maximus eu, cursus a orci. Nunc molestie, tellus eget bibendum
+                        sagittis, lectus sem facilisis nibh, ut placerat justo diam ac lacus. Maecenas ultricies auctor
+                        eros, quis semper odio varius eu. Vestibulum ac sagittis ante.
+                        <br>
+                        Mauris tortor ex, hendrerit a elementum nec, pharetra quis nisl. Pellentesque habitant morbi
+                        tristique senectus et netus et malesuada fames ac turpis egestas. Sed vehicula felis pretium
+                        elit varius mattis. Etiam ornare lectus nec ante condimentum aliquet. Donec condimentum nunc nec
+                        nisi eleifend sodales. Ut sagittis tempor metus. Aliquam venenatis vehicula purus. Sed est
+                        nulla, sodales vel ex ut, rutrum malesuada arcu. Mauris vel vulputate quam, et iaculis diam.
+                        Fusce dapibus nulla id quam consectetur, non auctor orci convallis.
                     </p>
+
+                    <!--Image down right challenge site 2-->
+                    <img class="environmentImage" src="assets/climate_change.jpeg" alt="climate change">
+
+                </div>
+            </div>
+
+            <!--Challenge Container 3-->
+            <div id="challengeSite3" style="display: none">
+
+                <!--Image 3-->
+                <img id="pollutedImgSite3" src="assets/polluted_city.jpeg" alt="Polluted City">
+
+                <!--Text box-->
+                <div id="challengeSite3Description">
+                    <h1 class="headline">Visibility in Society</h1>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim metus nec
+                        faucibus venenatis. Maecenas ligula sapien, eleifend a pretium ut, vestibulum sed velit.
+                        Maecenas mattis accumsan nunc, sit amet consectetur metus. Integer sed erat neque. Aliquam
+                        eleifend velit id dui varius, eget blandit mi lacinia. Donec id consectetur odio, nec vulputate
+                        mauris. Morbi id bibendum velit. Mauris hendrerit porta ligula, vitae auctor tortor maximus a.
+                        Ut tincidunt, ipsum sed ultricies viverra, neque eros dictum diam, et bibendum dolor nibh sed
+                        ipsum. Nam aliquet mauris quam, at fermentum odio viverra vitae. Cras fringilla augue id neque
+                        pretium porttitor.
+                        <br>
+                        Curabitur aliquam sem turpis. Nulla sem nulla, varius porttitor lacus suscipit, pulvinar maximus
+                        lectus. Donec at augue orci. Proin non finibus orci. Donec dignissim massa ut convallis laoreet.
+                        Phasellus et risus at augue egestas imperdiet sed eu felis. Donec felis velit, pretium et
+                        tristique ut, dapibus vel ligula. Phasellus luctus, elit nec.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-<!--Container Solution-->
-<div id="solutionSite">
-    <div>
-    <!--Horizontal menu 2-->
-    <ul class="siteMenu">
-        <li class="siteMenuLi" onclick="showSolutionSite1()"> <a> Intro </a> </li>
-        <li class="siteMenuLi" onclick="showSolutionSite2()"> <a> Description </a> </li>
-        <li class="siteMenuLi" onclick="showSolutionSite3()"> <a> Visibility in Society </a></li>
-    </ul>
-        <!-- Intro Container -->
-        <div id="solutionSite1" style="display: block"> <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
+    <!--Container Solution-->
+    <div id="solutionSite">
+        <div>
+            <!--Horizontal menu 2-->
+            <ul class="siteMenu">
+                <li class="siteMenuLi" onclick="showSolutionSite1()"> <a> Intro </a> </li>
+                <li class="siteMenuLi" onclick="showSolutionSite2()"> <a> Description </a> </li>
+                <li class="siteMenuLi" onclick="showSolutionSite3()"> <a> Visibility in Society </a></li>
+            </ul>
+            <!-- Intro Container -->
+            <div id="solutionSite1" style="display: block">
+                <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
 
-            <span class="headline">Solution Intro</span>
+                <span class="headline">Solution Intro</span>
 
-            <p class="infoText">
-                Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende InnovasjonInspirerendeMotiverende Innovasjon
-            </p>
-
-            <!--Image down right-->
-            <img class="solutionBulb" src="assets/ligtbulb.jpeg" alt="Light Bulb">
-        </div>
-
-        <!--CONTAINER SOLUTION SITE 2-->
-        <div id="solutionSite2" style="display: none">
-
-            <!--Text-box-->
-            <div id="solutionSite2Description">
-                <span class="headline">Description</span>
-                <p class="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero aliquet, accumsan sem nec, iaculis erat. Etiam eleifend mattis metus, a maximus nunc imperdiet non. Nunc sit amet pulvinar lorem, a pellentesque tortor. Mauris commodo tincidunt metus, in sollicitudin tortor posuere eget. Nullam dignissim, ligula id consequat auctor, leo velit rhoncus nisl, quis viverra eros elit at felis. In vitae diam interdum, cursus justo pellentesque, dapibus arcu. Cras convallis, nunc vel ullamcorper suscipit, orci nunc pellentesque nulla, in varius neque nisi nec massa. Duis at ex et felis convallis pulvinar quis ac purus. Pellentesque vestibulum tristique rhoncus. Proin laoreet sem sit amet ligula mollis facilisis at nec ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sed auctor augue. Fusce eros dui, auctor vitae maximus eu, cursus a orci. Nunc molestie, tellus eget bibendum sagittis, lectus sem facilisis nibh, ut placerat justo diam ac lacus. Maecenas ultricies auctor eros, quis semper odio varius eu. Vestibulum ac sagittis ante.
-                    <br>
-                    Mauris tortor ex, hendrerit a elementum nec, pharetra quis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vehicula felis pretium elit varius mattis. Etiam ornare lectus nec ante condimentum aliquet. Donec condimentum nunc nec nisi eleifend sodales. Ut sagittis tempor metus. Aliquam venenatis vehicula purus. Sed est nulla, sodales vel ex ut, rutrum malesuada arcu. Mauris vel vulputate quam, et iaculis diam. Fusce dapibus nulla id quam consectetur, non auctor orci convallis.
+                <p class="infoText">
+                    Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende
+                    MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende
+                    InnovasjonInspirerendeMotiverende Innovasjon
                 </p>
 
-                <!--Image down right challenge site 2-->
-                <img class="environmentImage" src="assets/climate_change.jpeg" alt="climate change">
-
+                <!--Image down right-->
+                <img class="solutionBulb" src="assets/ligtbulb.jpeg" alt="Light Bulb">
             </div>
-        </div>
 
-    <!--CONTAINER SOLUTION SITE 3-->
-    <div id="solutionSite3" style="display: none">
+            <!--CONTAINER SOLUTION SITE 2-->
+            <div id="solutionSite2" style="display: none">
 
-        <!--Text-box-->
-        <div id="solutionSite3Description">
-            <span class="headline">Visible in Society</span>
-            <p class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel pharetra sem, ac malesuada enim. Nullam non congue urna, at fermentum risus. Integer tristique enim ligula. Nullam laoreet vehicula viverra. Donec vel metus orci. Vivamus et tortor vulputate, vestibulum sapien tempor, condimentum lacus. Suspendisse porta pellentesque augue non pretium. Vivamus gravida augue risus, vitae laoreet tortor tempor id. Curabitur lacinia augue sit amet tellus faucibus imperdiet. Cras molestie ante non interdum venenatis. Suspendisse porta lobortis aliquet. Nunc malesuada orci non erat hendrerit, a finibus lectus gravida. Sed efficitur commodo sapien vel congue. Donec lacinia nisi tellus, eleifend viverra magna bibendum ac.</p>
+                <!--Text-box-->
+                <div id="solutionSite2Description">
+                    <span class="headline">Description</span>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero aliquet, accumsan sem
+                        nec, iaculis erat. Etiam eleifend mattis metus, a maximus nunc imperdiet non. Nunc sit amet
+                        pulvinar lorem, a pellentesque tortor. Mauris commodo tincidunt metus, in sollicitudin tortor
+                        posuere eget. Nullam dignissim, ligula id consequat auctor, leo velit rhoncus nisl, quis viverra
+                        eros elit at felis. In vitae diam interdum, cursus justo pellentesque, dapibus arcu. Cras
+                        convallis, nunc vel ullamcorper suscipit, orci nunc pellentesque nulla, in varius neque nisi nec
+                        massa. Duis at ex et felis convallis pulvinar quis ac purus. Pellentesque vestibulum tristique
+                        rhoncus. Proin laoreet sem sit amet ligula mollis facilisis at nec ipsum. Vestibulum ante ipsum
+                        primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sed auctor augue.
+                        Fusce eros dui, auctor vitae maximus eu, cursus a orci. Nunc molestie, tellus eget bibendum
+                        sagittis, lectus sem facilisis nibh, ut placerat justo diam ac lacus. Maecenas ultricies auctor
+                        eros, quis semper odio varius eu. Vestibulum ac sagittis ante.
+                        <br>
+                        Mauris tortor ex, hendrerit a elementum nec, pharetra quis nisl. Pellentesque habitant morbi
+                        tristique senectus et netus et malesuada fames ac turpis egestas. Sed vehicula felis pretium
+                        elit varius mattis. Etiam ornare lectus nec ante condimentum aliquet. Donec condimentum nunc nec
+                        nisi eleifend sodales. Ut sagittis tempor metus. Aliquam venenatis vehicula purus. Sed est
+                        nulla, sodales vel ex ut, rutrum malesuada arcu. Mauris vel vulputate quam, et iaculis diam.
+                        Fusce dapibus nulla id quam consectetur, non auctor orci convallis.
+                    </p>
 
-            <!--Image down right solution site 3-->
-            
+                    <!--Image down right challenge site 2-->
+                    <img class="environmentImage" src="assets/climate_change.jpeg" alt="climate change">
 
-        </div>
-    </div>
-</div>
-</div>
-<div id="app"></div><!-- This is to make sure the header moves above the site menu-->
+                </div>
+            </div>
+
+            <!--CONTAINER SOLUTION SITE 3-->
+            <div id="solutionSite3" style="display: none">
+
+                <!--Text-box-->
+                <div id="solutionSite3Description">
+                    <span class="headline">Visible in Society</span>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel pharetra sem, ac malesuada
+                        enim. Nullam non congue urna, at fermentum risus. Integer tristique enim ligula. Nullam laoreet
+                        vehicula viverra. Donec vel metus orci. Vivamus et tortor vulputate, vestibulum sapien tempor,
+                        condimentum lacus. Suspendisse porta pellentesque augue non pretium. Vivamus gravida augue
+                        risus, vitae laoreet tortor tempor id. Curabitur lacinia augue sit amet tellus faucibus
+                        imperdiet. Cras molestie ante non interdum venenatis. Suspendisse porta lobortis aliquet. Nunc
+                        malesuada orci non erat hendrerit, a finibus lectus gravida. Sed efficitur commodo sapien vel
+                        congue. Donec lacinia nisi tellus, eleifend viverra magna bibendum ac.</p>
+
+                    <!--Image down right solution site 3-->
 
 
-
-<!--CONTAINER APP-->
-<div id="appSite">
-    <div>
-        <!--Horizontal menu 3-->
-        <ul class="siteMenu">
-            <li class="siteMenuLi" onclick="showAppSite1()"> <a> Intro </a> </li>
-            <li class="siteMenuLi" onclick="showAppSite2()"> <a> Description </a> </li>
-            <li class="siteMenuLi" onclick="showAppSite3()"> <a> Visibility in Society </a></li>
-        </ul>
-    <!-- Intro Container -->
-    <div id="appSite1" style="display: block"> <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
-
-        <span class="headline">App Intro</span>
-
-        <p class="infoText">
-            Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende InnovasjonInspirerendeMotiverende Innovasjon
-        </p>
-
-        <!--Image down right-->
-        <img class="appImg" src="assets/appImg.jpeg" alt="App Site1">
-    </div>
-
-    <!--CONTAINER SOLUTION SITE 2-->
-    <div id="appSite2" style="display: none">
-
-        <!--Text-box-->
-        <div id="appSite2Description">
-            <span class="headline">Description</span>
-            <p class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero aliquet, accumsan sem nec, iaculis erat. Etiam eleifend mattis metus, a maximus nunc imperdiet non. Nunc sit amet pulvinar lorem, a pellentesque tortor. Mauris commodo tincidunt metus, in sollicitudin tortor posuere eget. Nullam dignissim, ligula id consequat auctor, leo velit rhoncus nisl, quis viverra eros elit at felis. In vitae diam interdum, cursus justo pellentesque, dapibus arcu. Cras convallis, nunc vel ullamcorper suscipit, orci nunc pellentesque nulla, in varius neque nisi nec massa. Duis at ex et felis convallis pulvinar quis ac purus. Pellentesque vestibulum tristique rhoncus. Proin laoreet sem sit amet ligula mollis facilisis at nec ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sed auctor augue. Fusce eros dui, auctor vitae maximus eu, cursus a orci. Nunc molestie, tellus eget bibendum sagittis, lectus sem facilisis nibh, ut placerat justo diam ac lacus. Maecenas ultricies auctor eros, quis semper odio varius eu. Vestibulum ac sagittis ante.
-                <br>
-                Mauris tortor ex, hendrerit a elementum nec, pharetra quis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vehicula felis pretium elit varius mattis. Etiam ornare lectus nec ante condimentum aliquet. Donec condimentum nunc nec nisi eleifend sodales. Ut sagittis tempor metus. Aliquam venenatis vehicula purus. Sed est nulla, sodales vel ex ut, rutrum malesuada arcu. Mauris vel vulputate quam, et iaculis diam. Fusce dapibus nulla id quam consectetur, non auctor orci convallis.
-            </p>
-        </div>
-        </div>
-
-        <!--CONTAINER SOLUTION SITE 3-->
-    <div id="appSite3" style="display: none">
-
-            <!--Text-box-->
-            <div id="appSite3Description">
-                <span class="headline">Our App</span>
-                <p class="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel pharetra sem, ac malesuada enim. Nullam non congue urna, at fermentum risus. Integer tristique enim ligula. Nullam laoreet vehicula viverra. Donec vel metus orci. Vivamus et tortor vulputate, vestibulum sapien tempor, condimentum lacus. Suspendisse porta pellentesque augue non pretium. Vivamus gravida augue risus, vitae laoreet tortor tempor id. Curabitur lacinia augue sit amet tellus faucibus imperdiet. Cras molestie ante non interdum venenatis. Suspendisse porta lobortis aliquet. Nunc malesuada orci non erat hendrerit, a finibus lectus gravida. Sed efficitur commodo sapien vel congue. Donec lacinia nisi tellus, eleifend viverra magna bibendum ac.</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div id="app"></div><!-- This is to make sure the header moves above the site menu-->
 
- <!-- FOOTER CONTAINER -->
-<footer class="footer">
-    
-    <div class="footer__addr">
 
-      <img class="footerlogo" src="assets/logo.png" alt="logo footer">
-          
-      <h2>Contact</h2>
-      
-        <address>
-         Osloveien 23, Oslo, Norway<br>
-              
-          <a class="footer__btn" href="mailto:Support@energy++.com">Email Us</a>
-        </address>
-      </div>
-    
-    <ul class="footer__nav">
-      <li class="nav__item">
-        <h2 class="nav__title">Support</h2>
-  
-        <ul class="nav__ul">
-          <li>
-            <a href="#">Contact us</a>
-          </li>
-  
-          <li>
-            <a href="#">FAQ</a>
-          </li>
-              
-          <li>
-            <a href="#">Kristian er teit</a>
-          </li>
-        </ul>
-      </li>
-    
-      
-      <li class="nav__item">
-        <h2 class="nav__title">Legal</h2>
-        
-        <ul class="nav__ul">
-          <li>
-            <a href="#">Privacy Policy</a>
-          </li>
-          
-          <li>
-            <a href="#">Terms of Use</a>
-          </li>
-          
-          <li>
-            <a href="#">Sitemap</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    
-    <div class="legal">
-      <p>&copy; 2020 Energy++. All rights reserved.</p>
+
+    <!--CONTAINER APP-->
+    <div id="appSite">
+        <div>
+            <!--Horizontal menu 3-->
+            <ul class="siteMenu">
+                <li class="siteMenuLi" onclick="showAppSite1()"> <a> Intro </a> </li>
+                <li class="siteMenuLi" onclick="showAppSite2()"> <a> Description </a> </li>
+                <li class="siteMenuLi" onclick="showAppSite3()"> <a> Visibility in Society </a></li>
+            </ul>
+            <!-- Intro Container -->
+            <div id="appSite1" style="display: block">
+                <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
+
+                <span class="headline">App Intro</span>
+
+                <p class="infoText">
+                    Inspirerende Motiverende Innovasjon InspirerendeMotiverende Innovasjon Inspirerende
+                    MotiverendeInnovasjonInspirerende MotiverendeInnovasjon Inspirerende Motiverende
+                    InnovasjonInspirerendeMotiverende Innovasjon
+                </p>
+
+                <!--Image down right-->
+                <img class="appImg" src="assets/appImg.jpeg" alt="App Site1">
+            </div>
+
+            <!--CONTAINER SOLUTION SITE 2-->
+            <div id="appSite2" style="display: none">
+
+                <!--Text-box-->
+                <div id="appSite2Description">
+                    <span class="headline">Description</span>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero aliquet, accumsan sem
+                        nec, iaculis erat. Etiam eleifend mattis metus, a maximus nunc imperdiet non. Nunc sit amet
+                        pulvinar lorem, a pellentesque tortor. Mauris commodo tincidunt metus, in sollicitudin tortor
+                        posuere eget. Nullam dignissim, ligula id consequat auctor, leo velit rhoncus nisl, quis viverra
+                        eros elit at felis. In vitae diam interdum, cursus justo pellentesque, dapibus arcu. Cras
+                        convallis, nunc vel ullamcorper suscipit, orci nunc pellentesque nulla, in varius neque nisi nec
+                        massa. Duis at ex et felis convallis pulvinar quis ac purus. Pellentesque vestibulum tristique
+                        rhoncus. Proin laoreet sem sit amet ligula mollis facilisis at nec ipsum. Vestibulum ante ipsum
+                        primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sed auctor augue.
+                        Fusce eros dui, auctor vitae maximus eu, cursus a orci. Nunc molestie, tellus eget bibendum
+                        sagittis, lectus sem facilisis nibh, ut placerat justo diam ac lacus. Maecenas ultricies auctor
+                        eros, quis semper odio varius eu. Vestibulum ac sagittis ante.
+                        <br>
+                        Mauris tortor ex, hendrerit a elementum nec, pharetra quis nisl. Pellentesque habitant morbi
+                        tristique senectus et netus et malesuada fames ac turpis egestas. Sed vehicula felis pretium
+                        elit varius mattis. Etiam ornare lectus nec ante condimentum aliquet. Donec condimentum nunc nec
+                        nisi eleifend sodales. Ut sagittis tempor metus. Aliquam venenatis vehicula purus. Sed est
+                        nulla, sodales vel ex ut, rutrum malesuada arcu. Mauris vel vulputate quam, et iaculis diam.
+                        Fusce dapibus nulla id quam consectetur, non auctor orci convallis.
+                    </p>
+                </div>
+            </div>
+
+            <!--CONTAINER SOLUTION SITE 3-->
+            <div id="appSite3" style="display: none">
+
+                <!--Text-box-->
+                <div id="appSite3Description">
+                    <span class="headline">Our App</span>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel pharetra sem, ac malesuada
+                        enim. Nullam non congue urna, at fermentum risus. Integer tristique enim ligula. Nullam laoreet
+                        vehicula viverra. Donec vel metus orci. Vivamus et tortor vulputate, vestibulum sapien tempor,
+                        condimentum lacus. Suspendisse porta pellentesque augue non pretium. Vivamus gravida augue
+                        risus, vitae laoreet tortor tempor id. Curabitur lacinia augue sit amet tellus faucibus
+                        imperdiet. Cras molestie ante non interdum venenatis. Suspendisse porta lobortis aliquet. Nunc
+                        malesuada orci non erat hendrerit, a finibus lectus gravida. Sed efficitur commodo sapien vel
+                        congue. Donec lacinia nisi tellus, eleifend viverra magna bibendum ac.</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
 
-<!--Placed at the bottom to load the body first-->
-<script src="index.js"></script>
+    <!-- FOOTER CONTAINER -->
+    <footer class="footer">
 
+        <div class="footer__addr">
+
+            <img class="footerlogo" src="assets/logo.png" alt="logo footer">
+
+            <h2>Contact</h2>
+
+            <address>
+                Osloveien 23, Oslo, Norway<br>
+
+                <a class="footer__btn" href="mailto:Support@energy++.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 href="contact.html#mainSite" class="nav__title">Support</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="contact.html#faq">Contact us</a>
+                    </li>
+
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Kristian er teit</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2020 Energy++. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--Placed at the bottom to load the body first-->
+    <script src="index.js"></script>
 </body>
+
 </html>

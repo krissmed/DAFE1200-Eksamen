@@ -1,29 +1,35 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     /*Cover whole site*/
     margin: 0;
     font-family: Helvetica, serif;
     overflow-x: hidden;
 }
+
 /* Custom Scrollbar*/
 /* width */
 ::-webkit-scrollbar {
     width: 12px;
-  }
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent; 
-  }
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #888;
-  }
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
+
 /*--------------------------------------------------------------------*/
 /*NavBar on each Site*/
 .siteMenu {
@@ -38,29 +44,34 @@ body {
     padding: 1.5vw;
     z-index: 1;
     line-height: 1px;
-}  
-    .siteMenuLi {
-        font-size: 1.5em;
-        letter-spacing: 1px;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        padding-bottom: 1vh;
-        text-transform: uppercase;
-        border-bottom: 3px solid green;
-        cursor: pointer;
-        user-select: none;
-    }
+}
 
-        .siteMenuLi a {
-            text-decoration: none;
-            color: green;
-            cursor: pointer;
-        }
-            .siteMenuLi:hover {
-                border-bottom: 3px solid lightgreen;
-                transition: color 0.2s, border 0.2s;
-            }
-@media (max-width: 700px){ /* Breakpoint for the horizontal menus. This activates when the window size is lower than 700px */
+.siteMenuLi {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vh;
+    text-transform: uppercase;
+    border-bottom: 3px solid green;
+    cursor: pointer;
+    user-select: none;
+}
+
+.siteMenuLi a {
+    text-decoration: none;
+    color: green;
+    cursor: pointer;
+}
+
+.siteMenuLi:hover {
+    border-bottom: 3px solid lightgreen;
+    transition: color 0.2s, border 0.2s;
+}
+
+@media (max-width: 700px) {
+
+    /* Breakpoint for the horizontal menus. This activates when the window size is lower than 700px */
     .siteMenu {
         list-style-type: none;
         display: flex;
@@ -73,41 +84,69 @@ body {
         padding: 2px;
         z-index: 1;
         line-height: 1px;
-    }  
-        .siteMenuLi {
-            margin-top: 17px;
-            font-size: 1.5em;
-            padding-left: 1vw;
-            padding-right: 1vw;
-            text-transform: uppercase;
-            border-bottom: 3px solid green;
-            cursor: pointer;
-        }
-        .siteMenuLi a {
-            text-decoration: none;
-            color: green;
-            cursor: pointer;
-            user-select: none;
-        }
-            .siteMenuLi:hover {
-                border-bottom: 3px solid lightgreen;
-                color: lightgreen;
-                transition: color 0.2s, border 0.2s;
-            }
+    }
+
+    .siteMenuLi {
+        margin-top: 17px;
+        font-size: 1.5em;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        text-transform: uppercase;
+        border-bottom: 3px solid green;
+        cursor: pointer;
+    }
+
+    .siteMenuLi a {
+        text-decoration: none;
+        color: green;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .siteMenuLi:hover {
+        border-bottom: 3px solid lightgreen;
+        color: lightgreen;
+        transition: color 0.2s, border 0.2s;
+    }
 }
+
 /*--------------------------------------------------------------*/
 /*MAIN SITE*/
 #mainSite {
     height: 100vh;
     width: 100vw;
 }
+
+/*------------------------------------------------------------------*/
+/* ToTop button */
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 50px;
+    border-radius: 4px;
+    opacity: 75%;
+    z-index: 99;
+}
+#toTop:hover{
+    opacity: 100%;
+}
+
 /*----------------------------------------------------------------------*/
 /*Nav*/
-@media (min-width: 900px){ /* This code only applies when window size is bigger than 900px */
+@media (min-width: 900px) {
+
+    /* This code only applies when window size is bigger than 900px */
     /* Hamburger nav (Only visible in format < 900px)*/
-    .hamMenu{
-        display:none;
+    .hamMenu {
+        display: none;
     }
+
     header {
         background-color: white;
         height: 10vh;
@@ -120,12 +159,13 @@ body {
         z-index: 2;
         user-select: none;
     }
-        /*Header Logo*/
-            #headerLogo {
-                height: 10vh;
-                width: auto;
-                margin-left: 0.5VW;
-            }
+
+    /*Header Logo*/
+    #headerLogo {
+        height: 10vh;
+        width: auto;
+        margin-left: 0.5VW;
+    }
 
     /*MENU*/
     #headerMenu {
@@ -138,56 +178,70 @@ body {
         align-items: center;
         margin-right: 5vw;
     }
-        .menuLi {
-            font-size: 2em;
-            text-transform: uppercase;
-        }
-            .menuLi a {
-                padding-bottom: 5px;
-                text-decoration: none;
-                color: green;
-            }
-                /*creates green line after/under the element and adds transition when hovered */
-                .menuLi a::after {
-                    content: '';
-                    display: block;
-                    width: 0;
-                    height: 3px;
-                    background: green;
-                    transition: width .5s;
-                }
-                    .menuLi a:hover::after {
-                        width: 100%;
-                    }
-                        /*Adds this active class in JS*/
-                        .active {
-                            border-bottom: 3px solid green;
-                        }
-                            /*Removes the border when the already active class is hovered. Prevents double underline*/
-                            .active:hover {
-                                border-bottom: none;
-                            }
+
+    .menuLi {
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+
+    .menuLi a {
+        padding-bottom: 5px;
+        text-decoration: none;
+        color: green;
+    }
+
+    /*creates green line after/under the element and adds transition when hovered */
+    .menuLi a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: green;
+        transition: width .5s;
+    }
+
+    .menuLi a:hover::after {
+        width: 100%;
+    }
+
+    /*Adds this active class in JS*/
+    .active {
+        border-bottom: 3px solid green;
+    }
+
+    /*Removes the border when the already active class is hovered. Prevents double underline*/
+    .active:hover {
+        border-bottom: none;
+    }
 }
 
-@media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
-    #hamburgerMeny{
+@media screen and (max-width: 900px) {
+
+    /* This code only applies when window size is smaller than 900px */
+    #hamburgerMeny {
         margin-top: 15px;
         margin-left: 15px;
     }
-    #line1, #line2, #line3{
-    transform-origin: top;
+
+    #line1,
+    #line2,
+    #line3 {
+        transform-origin: top;
     }
+
     #line0:hover {
         color: green;
         cursor: pointer;
     }
-    .hamMenu{
+
+    .hamMenu {
         width: 35px;
         height: 5px;
         background-color: black;
         margin: 6px 3px;
 
     }
+
     header {
         background-color: white;
         width: 100%;
@@ -199,383 +253,404 @@ body {
         z-index: 2;
         user-select: none;
     }
-        /*Header Logo*/
-            #headerLogo {
-                display: none;
-            }
+
+    /*Header Logo*/
+    #headerLogo {
+        display: none;
+    }
+
     /*MENU*/
     #headerMenu {
         display: none;
         list-style-type: none;
         flex-direction: column;
-        margin-right:50px;
-        margin-top:15px;
+        margin-right: 50px;
+        margin-top: 15px;
     }
-        .menuLi {
-            margin-top: 25px;
-            font-size: 2em;
-            padding-left: 0;
-            padding-right: 50px;
-            text-transform: uppercase;
-            border-bottom: 3px solid springgreen;
-        }
-            .menuLi a {
-                text-decoration: none;
-                color: green;
-            }
-                .menuLi:hover {
-                    border-bottom: 3px solid green;
-                    transform: scale(1.05);
-                    transition: transform 0.1s;
-                }
-                    .active {
-                        border-bottom: 3px solid green;
-                    }
+
+    .menuLi {
+        margin-top: 25px;
+        font-size: 2em;
+        padding-left: 0;
+        padding-right: 50px;
+        text-transform: uppercase;
+        border-bottom: 3px solid springgreen;
+    }
+
+    .menuLi a {
+        text-decoration: none;
+        color: green;
+    }
+
+    .menuLi:hover {
+        border-bottom: 3px solid green;
+        transform: scale(1.05);
+        transition: transform 0.1s;
+    }
+
+    .active {
+        border-bottom: 3px solid green;
+    }
 }
-@media screen and (orientation: portrait) and (max-width: 1000px){
+
+@media screen and (orientation: portrait) and (max-width: 1000px) {
     #backgroundWindmills {
         height: 100vh;
     }
 }
-@media screen and (max-height: 700px){
-    header{
+
+@media screen and (max-height: 700px) {
+    header {
         height: 70px;
     }
-    #headerLogo{
+
+    #headerLogo {
         height: 69px;
         width: auto;
     }
 }
+
 /*-------------------------------------------------------------------------------*/
-    /*Top image and quotes */
+/*Top image and quotes */
 
-    /*Background image*/
-    #backgroundWindmills {
-        height: 100vh;
-        width: auto;
-    }
-    
-    /*Quote*/
-    #quote {
-        height: auto;
-        width: 80vw;
-        border-bottom: 3px solid white;
-        border-top: 3px solid white;
-        padding: 1vw 0;
-        position: absolute;
-        text-align: center;
-        top: 40vw;
-        left: 10vw;
-        font-size: 2em;
-        font-weight: bolder;
-        font-family: "Bodoni 72", serif;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: white;
-    }
-        #underQuote {
-            font-size: .8em;
-            font-style: normal;
-            color: white;
-            text-transform: uppercase;
-            font-family: "Bodoni 72", serif;
-            letter-spacing: 1px;
-            border-top: 3px solid white;
-            padding-top: 1vw;
-        }
-    
-    /*--------------------------------------------------------------*/
-    /*CHALLENGE SITE*/
-    #challengeSite {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        background-color: #cdd1ce;
-    }
+/*Background image*/
+#backgroundWindmills {
+    height: 100vh;
+    width: auto;
+}
 
-    
-    #challengeSite1, #challengeSite2, #challengeSite3 {/* Can be redone as a class */
-        height: 100vh;
-        width: 100vw;
-        top: 12vh;
-        left: 5vw;
-        color: green;
-        position: relative;
-    }
+/*Quote*/
+#quote {
+    height: auto;
+    width: 80vw;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    padding: 1vw 0;
+    position: absolute;
+    text-align: center;
+    top: 40vw;
+    left: 10vw;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: "Bodoni 72", serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#underQuote {
+    font-size: .8em;
+    font-style: normal;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Bodoni 72", serif;
+    letter-spacing: 1px;
+    border-top: 3px solid white;
+    padding-top: 1vw;
+}
+
+/*--------------------------------------------------------------*/
+/*CHALLENGE SITE*/
+#challengeSite {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #cdd1ce;
+}
+
+
+#challengeSite1,
+#challengeSite2,
+#challengeSite3 {
+    /* Can be redone as a class */
+    height: 100vh;
+    width: 100vw;
+    top: 12vh;
+    left: 5vw;
+    color: green;
+    position: relative;
+}
+
 /*------------------------------------------------------------------------------*/
-        /*SITE 1*/
+/*SITE 1*/
 
-        /*Tree Image*/
-        #challengeSiteTreePic {
-            position: absolute;
-            right: 10vw;
-            top: 20vh;
-            height: auto;
-            width: 40vh;
-            float: right;
-            border-radius: 25px;
-            box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-            border: solid black 1px;
-        }
-    
-            /*Textbox*/
-                /*Headline*/
-                .headline {
-                    font-weight: bolder;
-                    font-size: 3vw;
-                    font-style: normal;
-                    text-align: center;
-                    text-transform: uppercase;
-                    width: 30vw;
+/*Tree Image*/
+#challengeSiteTreePic {
+    position: absolute;
+    right: 10vw;
+    top: 20vh;
+    height: auto;
+    width: 40vh;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+    border: solid black 1px;
+}
 
-                }
-                    /*InfoText*/
-                    .infoText {
-                        letter-spacing: 1px;
-                        line-height: 2.2vw;
-                        font-size: 1.3vw;
-                        width: 53vw;
-                        height: 30vh;
-                    }
-    
+/*Textbox*/
+/*Headline*/
+.headline {
+    font-weight: bolder;
+    font-size: 3vw;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    width: 30vw;
+
+}
+
+/*InfoText*/
+.infoText {
+    letter-spacing: 1px;
+    line-height: 2.2vw;
+    font-size: 1.3vw;
+    width: 53vw;
+    height: 30vh;
+}
+
 /*---------------------------------------------------------------------------------------------*/
-    /*SITE 2*/
-        /*Info-text*/
-        .challengeSite2Description {
-            position: relative;
-            display: inline-block;
-            top: 3vh;
-            left: 3vw;
-            height: 40vh;
-            width: 42vw;
-            padding: 2vw;
-            color: green;
-        }
-            /*Headline*/
-            .site2DescHeadline {
-                font-weight: bolder;
-                font-size: 3vw;
-            }
-                /*Paragraf*/
-                .paragraph {
-                    line-height: 1.5vw;
-                    letter-spacing: 1px;
-                    font-size: 1.2vw;
-                    position: relative;
-                    width: 45vw;
-                }
-    
-            /*Image Environment*/
-            .environmentImage {
-                position: absolute;
-                left: 65vw;
-                top: 16vh;
-                height: 50vh;
-                width: 20vw;
-                float: right;
-                border-radius: 25px;
-                box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-            }
-    
-    /*******************/
-    /*SITE 3*/
-    
-    /*Image polluted city*/
-    #pollutedImgSite3 {
-        position: relative;
-        right: 8vw;
-        top: 30vh;
-        height: 37vh;
-        width: 35vw;
-        float: right;
-        border-radius: 25px;
-        box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-    }
-    
-    /*--------------------------------------------------------------*/
-    /*SOLUTION SITE*/
-    #solutionSite {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        background-color: #b6bab7;
-    }
+/*SITE 2*/
+/*Info-text*/
+.challengeSite2Description {
+    position: relative;
+    display: inline-block;
+    top: 3vh;
+    left: 3vw;
+    height: 40vh;
+    width: 42vw;
+    padding: 2vw;
+    color: green;
+}
 
-        #solutionSite1, #solutionSite2, #solutionSite3 {
-            height: 100vh;
-            width: 100vw;
-            top: 12vh;
-            left: 5vw;
-            color: green;
-            position: relative;
-        }
-    
-        /*Image site 1*/
-        .solutionBulb {
-            position: relative;
-            right: 14vw;
-            top: 0;
-            height: auto;
-            width: 40vh;
-            float: right;
-            border-radius: 25px;
-            box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-            border: solid black 1px;
-        }
-    
-    /*--------------------------------------------------------------*/
-    /*APP SITE*/
-    #appSite {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        background-color: #cdd1ce;
-        ;
-    }
-    
-        #appSite1, #appSite2, #appSite3 {
-            height: 100vh;
-            width: 100vw;
-            top: 12vh;
-            left: 5vw;
-            color: green;
-            position: relative;
-        }
-    
-        /*Image*/
-        .appImg {
-            position: absolute;
-            right: 12vw;
-            top: 15vh;
-            height: 55vh;
-            width: auto;
-            float: right;
-            border-radius: 25px;
-            box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-        }
+/*Headline*/
+.site2DescHeadline {
+    font-weight: bolder;
+    font-size: 3vw;
+}
+
+/*Paragraf*/
+.paragraph {
+    line-height: 1.5vw;
+    letter-spacing: 1px;
+    font-size: 1.2vw;
+    position: relative;
+    width: 45vw;
+}
+
+/*Image Environment*/
+.environmentImage {
+    position: absolute;
+    left: 65vw;
+    top: 16vh;
+    height: 50vh;
+    width: 20vw;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+}
+
+/*******************/
+/*SITE 3*/
+
+/*Image polluted city*/
+#pollutedImgSite3 {
+    position: relative;
+    right: 8vw;
+    top: 30vh;
+    height: 37vh;
+    width: 35vw;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+}
+
+/*--------------------------------------------------------------*/
+/*SOLUTION SITE*/
+#solutionSite {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #b6bab7;
+}
+
+#solutionSite1,
+#solutionSite2,
+#solutionSite3 {
+    height: 100vh;
+    width: 100vw;
+    top: 12vh;
+    left: 5vw;
+    color: green;
+    position: relative;
+}
+
+/*Image site 1*/
+.solutionBulb {
+    position: relative;
+    right: 14vw;
+    top: 0;
+    height: auto;
+    width: 40vh;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+    border: solid black 1px;
+}
+
+/*--------------------------------------------------------------*/
+/*APP SITE*/
+#appSite {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #cdd1ce;
+}
+
+#appSite1,
+#appSite2,
+#appSite3 {
+    height: 100vh;
+    width: 100vw;
+    top: 12vh;
+    left: 5vw;
+    color: green;
+    position: relative;
+}
+
+/*Image*/
+.appImg {
+    position: absolute;
+    right: 12vw;
+    top: 15vh;
+    height: 55vh;
+    width: auto;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+}
 
 /*--------------------------------------------------------------*/
 
-        /*  FOOTER */
-        .footer {
-            display: flex;
-            flex-flow: row wrap;
-            padding: 30px 30px 20px 30px;
-            color: black;
-            background-color: #e6e6e6;
-            border-top: 1px solid #e5e5e5;
-            
-          }
-          
-          .footer > * {
-            flex:  1 100%;
-          }
-          
-          .footer__addr {
-            margin-right: 1.25em;
-            margin-bottom: 2em;
-          }
-          
-          .footerlogo {
-            width: 25%;
-            height: auto;
-          }
-          
-         
-          
-          .nav__title {
-            font-size: 2em;
-            font-weight: bold;
-          }
-          
-          .footer address {
-            font-style: normal;
-            color:#454545;
-          }
-          
-          .footer__btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 36px;
-            max-width: max-content;
-            background-color: rgba(33, 33, 33, 0.07);
-            border-radius: 100px;
-            color: #454545;
-            line-height: 0;
-            margin: 0.6em 0;
-            font-size: 1rem;
-            padding: 0 1.3em;
-          }
-          
-          .footer ul {
-            list-style: none;
-            padding-left: 0;
-          }
-          
-          .footer li {
-            line-height: 3em;
-          }
-          
-          .footer a {
-            text-decoration: none;
-          }
-          
-          .footer__nav {
-            display: flex;
-              flex-flow: row wrap;
-          }
-          
-          .footer__nav > * {
-            flex: 1 50%;
-            margin-right: 1.25em;
-          }
-          
-          .nav__ul a {
-            color: #454545;
-            font-size: 20px;
-          }
-          
-          .nav__ul--extra {
-            column-count: 2;
-            column-gap: 1.25em;
-          }
-          
-          .legal {
-            display: flex;
-            flex-wrap: wrap;
-            color: #454545;
-          }
-            
-          .legal__links {
-            display: flex;
-            align-items: center;
-          }
-        
-          
-          @media screen and (min-width: 24.375em) {
-            .legal .legal__links {
-              margin-left: auto;
-            }
-          }
-          
-          @media screen and (min-width: 40.375em) {
-            .footer__nav > * {
-              flex: 1;
-            }
-            
-            .nav__item--extra {
-              flex-grow: 2;
-            }
-            
-            .footer__addr {
-              flex: 1 0;
-            }
-            
-            .footer__nav {
-              flex: 2 0;
-            }
-          }
+/*  FOOTER */
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: black;
+    background-color: #e6e6e6;
+    border-top: 1px solid #e5e5e5;
+
+}
+
+.footer>* {
+    flex: 1 100%;
+}
+
+.footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footerlogo {
+    width: 25%;
+    height: auto;
+}
+
+
+
+.nav__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.footer address {
+    font-style: normal;
+    color: #454545;
+}
+
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgba(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #454545;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 3em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer__nav>* {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.nav__ul a {
+    color: #454545;
+    font-size: 20px;
+}
+
+.nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+}
+
+.legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #454545;
+}
+
+.legal__links {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 40.375em) {
+    .footer__nav>* {
+        flex: 1;
+    }
+
+    .nav__item--extra {
+        flex-grow: 2;
+    }
+
+    .footer__addr {
+        flex: 1 0;
+    }
+
+    .footer__nav {
+        flex: 2 0;
+    }
+}

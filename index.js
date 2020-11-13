@@ -2,7 +2,9 @@
 /*MAKING THE MENULINK ACTIVE DEPENDING ON WHERE ON SITE THE USER IS*/
 
 /*when the windown scrolls, the function starts*/
-window.onscroll = function() {selectActiveSite()};
+window.onscroll = function () {
+    selectActiveSite()
+};
 
 /*gathering all the elements*/
 let mainLink = document.getElementsByClassName("main")[0];
@@ -11,14 +13,14 @@ let solutionLink = document.getElementsByClassName("solution")[0];
 let appLink = document.getElementsByClassName("app")[0];
 
 /*Makes sure the HOME-link is active at first even when user is not scrolling*/
-    if (window.scrollY >= 0 ) {
+if (window.scrollY >= 0) {
 
-        mainLink.classList.add("active");
+    mainLink.classList.add("active");
 
-        challengeLink.classList.remove("active");
-        solutionLink.classList.remove("active");
-        appLink.classList.remove("active");
-    }
+    challengeLink.classList.remove("active");
+    solutionLink.classList.remove("active");
+    appLink.classList.remove("active");
+}
 
 function selectActiveSite() {
 
@@ -33,26 +35,21 @@ function selectActiveSite() {
         solutionLink.classList.remove("active");
         challengeLink.classList.remove("active");
         mainLink.classList.remove("active");
-    }
-
-        else if (window.scrollY > window.innerHeight * 1.9) {
+    } else if (window.scrollY > window.innerHeight * 1.9) {
 
         solutionLink.classList.add("active");
 
         mainLink.classList.remove("active");
         challengeLink.classList.remove("active");
         appLink.classList.remove("active");
-        }
+    } else if (window.scrollY > window.innerHeight * 0.9) {
 
-            else if (window.scrollY > window.innerHeight * 0.9) {
+        challengeLink.classList.add("active");
 
-                challengeLink.classList.add("active");
-
-                mainLink.classList.remove("active");
-                solutionLink.classList.remove("active");
-                appLink.classList.remove("active");
-            }
-    else if (window.scrollY > -1 ) {
+        mainLink.classList.remove("active");
+        solutionLink.classList.remove("active");
+        appLink.classList.remove("active");
+    } else if (window.scrollY > -1) {
 
         mainLink.classList.add("active");
 
@@ -73,30 +70,29 @@ var line2 = document.getElementById("line2");
 var line3 = document.getElementById("line3");
 
 // Function which toggles hamburgermenu on/off
-function toggleMenu(){
+function toggleMenu() {
 
-    if(headerMenu.style.display == "flex"){
+    if (headerMenu.style.display == "flex") {
         headerMenu.style.display = "";
-        
+
         line1.style.transform = "rotate(0deg)";
         line1.style.opacity = "1";
         line2.style.opacity = "1";
         line3.style.transform = "rotate(0deg)";
         line3.style.opacity = "1";
 
-        line0.innerHTML="";
+        line0.innerHTML = "";
+    } else if (headerMenu.style.display === "") {
+        headerMenu.style.display = "flex";
+
+        line1.style.opacity = "0";
+        line2.style.opacity = "0";
+        line3.style.opacity = "0";
+
+        line0.innerHTML = "<h2>EXIT</h2>";
     }
-        else if (headerMenu.style.display === ""){
-            headerMenu.style.display = "flex";
 
-            line1.style.opacity = "0";
-            line2.style.opacity = "0";
-            line3.style.opacity = "0";
-
-            line0.innerHTML="<h2>EXIT</h2>";
-        }
-
-        console.log("Toggle Hamburger Menu") // Troubleshoot
+    console.log("Toggle Hamburger Menu") // Troubleshoot
 }
 
 //Function that collapses hamburgermenu when an site is selected
@@ -109,7 +105,7 @@ function collapseHamMenu() {
     line3.style.transform = "rotate(0deg)";
     line3.style.opacity = "1";
 
-    line0.innerHTML="";
+    line0.innerHTML = "";
 }
 
 /*---------------------------------------------------------------------*/
@@ -121,33 +117,33 @@ var challengeSite2 = document.getElementById("challengeSite2");
 var challengeSite3 = document.getElementById("challengeSite3");
 
 /* To show challenge Site 1 Container*/
-function showChallengeSite1(){
-    if (challengeSite1.style.display === "none"){
+function showChallengeSite1() {
+    if (challengeSite1.style.display === "none") {
         challengeSite1.style.display = "block"; // Moving challengeSite1 container on screen
         challengeSite2.style.display = "none"; // Moving challengeSite1 container off screen
         challengeSite3.style.display = "none"; // Moving challengeSite1 container off screen
     }
 }
 
-    /* To show challenge Site 2 Container*/
-    function showChallengeSite2(){
+/* To show challenge Site 2 Container*/
+function showChallengeSite2() {
 
-        if (challengeSite2.style.display === "none"){
-            challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
-            challengeSite2.style.display = "block"; // Moving challengeSite2 container on screen
-            challengeSite3.style.display = "none"; // Moving challengeSite3 container off screen
+    if (challengeSite2.style.display === "none") {
+        challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
+        challengeSite2.style.display = "block"; // Moving challengeSite2 container on screen
+        challengeSite3.style.display = "none"; // Moving challengeSite3 container off screen
 
-        }
     }
+}
 
-        /* To show challenge Site 3 Container*/
-        function showChallengeSite3(){
-            if (challengeSite3.style.display === "none"){
-                challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
-                challengeSite2.style.display = "none"; // Moving challengeSite2 container off screen
-                challengeSite3.style.display = "block"; // Moving challengeSite3 container on screen
-            }
-        }
+/* To show challenge Site 3 Container*/
+function showChallengeSite3() {
+    if (challengeSite3.style.display === "none") {
+        challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
+        challengeSite2.style.display = "none"; // Moving challengeSite2 container off screen
+        challengeSite3.style.display = "block"; // Moving challengeSite3 container on screen
+    }
+}
 
 /*---------------------------------------------------------------------*/
 
@@ -158,9 +154,9 @@ var solutionSite2 = document.getElementById("solutionSite2");
 var solutionSite3 = document.getElementById("solutionSite3");
 
 /* To show solution Site 1 Container*/
-function showSolutionSite1(){
+function showSolutionSite1() {
     console.log("0");
-    if (solutionSite1.style.display === "none"){
+    if (solutionSite1.style.display === "none") {
         console.log("1");
         solutionSite1.style.display = "block"; // Makes challengeSite1 container visible
         solutionSite2.style.display = "none"; // Makes challengeSite1 container hidde
@@ -168,28 +164,28 @@ function showSolutionSite1(){
     }
 }
 
-    /* To show solution Site 2 Container*/
-    function showSolutionSite2(){
+/* To show solution Site 2 Container*/
+function showSolutionSite2() {
 
-        console.log("2");
-        if (solutionSite2.style.display === "none"){
-            console.log("3");
-            solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
-            solutionSite2.style.display = "block"; // Makes challengeSite2 container visible
-            solutionSite3.style.display = "none"; // Makes challengeSite3 container hidden
+    console.log("2");
+    if (solutionSite2.style.display === "none") {
+        console.log("3");
+        solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
+        solutionSite2.style.display = "block"; // Makes challengeSite2 container visible
+        solutionSite3.style.display = "none"; // Makes challengeSite3 container hidden
 
-        }
     }
-        /* To show solution Site 3 Container*/
-        function showSolutionSite3(){
-            console.log("4");
-            if (solutionSite3.style.display === "none"){
-                console.log("5");
-                solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
-                solutionSite2.style.display = "none"; // Makes challengeSite2 container hidden
-                solutionSite3.style.display = "block"; // Makes challengeSite3 container visible
-            }
-        }
+}
+/* To show solution Site 3 Container*/
+function showSolutionSite3() {
+    console.log("4");
+    if (solutionSite3.style.display === "none") {
+        console.log("5");
+        solutionSite1.style.display = "none"; // Makes challengeSite1 container hidden
+        solutionSite2.style.display = "none"; // Makes challengeSite2 container hidden
+        solutionSite3.style.display = "block"; // Makes challengeSite3 container visible
+    }
+}
 
 /*---------------------------------------------------------------------*/
 
@@ -200,9 +196,9 @@ var appSite2 = document.getElementById("appSite2");
 var appSite3 = document.getElementById("appSite3");
 
 /* To show solution Site 1 Container*/
-function showAppSite1(){
+function showAppSite1() {
     console.log("0");
-    if (appSite1.style.display === "none"){
+    if (appSite1.style.display === "none") {
         console.log("1");
         appSite1.style.display = "block"; // Makes appSite1 container visible
         appSite2.style.display = "none"; // Makes appSite1 container hidde
@@ -210,28 +206,30 @@ function showAppSite1(){
     }
 }
 
-    /* To show solution Site 2 Container*/
-    function showAppSite2(){
+/* To show solution Site 2 Container*/
+function showAppSite2() {
 
-        console.log("2");
-        if (appSite2.style.display === "none"){
-            console.log("3");
-            appSite1.style.display = "none"; // Makes appSite1 container hidden
-            appSite2.style.display = "block"; // Makes appSite2 container visible
-            appSite3.style.display = "none"; // Makes appSite3 container hidden
+    console.log("2");
+    if (appSite2.style.display === "none") {
+        console.log("3");
+        appSite1.style.display = "none"; // Makes appSite1 container hidden
+        appSite2.style.display = "block"; // Makes appSite2 container visible
+        appSite3.style.display = "none"; // Makes appSite3 container hidden
 
-        }
     }
+}
 
-        /* To show solution Site 3 Container*/
-        function showAppSite3(){
-            console.log("4");
-            if (appSite3.style.display === "none"){
-                console.log("5");
-                appSite1.style.display = "none"; // Makes appSite1 container hidden
-                appSite2.style.display = "none"; // Makes appSite2 container hidden
-                appSite3.style.display = "block"; // Makes appSite3 container visible
-            }
-        }
-
-
+/* To show solution Site 3 Container*/
+function showAppSite3() {
+    console.log("4");
+    if (appSite3.style.display === "none") {
+        console.log("5");
+        appSite1.style.display = "none"; // Makes appSite1 container hidden
+        appSite2.style.display = "none"; // Makes appSite2 container hidden
+        appSite3.style.display = "block"; // Makes appSite3 container visible
+    }
+}
+// To make it easier to move to the top of the page
+function moveToTop() {
+    window.scrollTo(0, 0);
+}
