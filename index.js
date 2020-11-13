@@ -22,10 +22,10 @@ if (window.scrollY >= 0) {
     appLink.classList.remove("active");
 }
 
+    //Function that chooses what Site is active based on where the user is scrolling on the site
 function selectActiveSite() {
 
-
-    /*if the window is scrolled down furter than 300vh (3times the screen height)*/
+    /*if the window is scrolled down furter than 290vh (2.9times the screen height)*/
     if (window.scrollY > window.innerHeight * 2.9) {
 
         /*active class added app*/
@@ -35,21 +35,31 @@ function selectActiveSite() {
         solutionLink.classList.remove("active");
         challengeLink.classList.remove("active");
         mainLink.classList.remove("active");
-    } else if (window.scrollY > window.innerHeight * 1.9) {
+
+    }
+    /*if the window is scrolled down furter than 190vh (1.9times the screen height)*/
+        else if (window.scrollY > window.innerHeight * 1.9) {
+
 
         solutionLink.classList.add("active");
 
         mainLink.classList.remove("active");
         challengeLink.classList.remove("active");
         appLink.classList.remove("active");
-    } else if (window.scrollY > window.innerHeight * 0.9) {
+
+        }
+    /*if the window is scrolled down furter than 90vh (0.9times the screen height)*/
+            else if (window.scrollY > window.innerHeight * 0.9) {
 
         challengeLink.classList.add("active");
 
-        mainLink.classList.remove("active");
-        solutionLink.classList.remove("active");
-        appLink.classList.remove("active");
-    } else if (window.scrollY > -1) {
+
+                mainLink.classList.remove("active");
+                solutionLink.classList.remove("active");
+                appLink.classList.remove("active");
+            }
+    /*if the window is scrolled down furter than -100vh (-1times the screen height) Just to be sure the clas is added at top*/
+    else if (window.scrollY > -1 ) {
 
         mainLink.classList.add("active");
 
@@ -62,7 +72,7 @@ function selectActiveSite() {
 
 /* Making the hamburger menu show/not show the menu */
 
-// Gather html elements
+// Gather HTML elements
 var headerMenu = document.getElementById("headerMenu");
 var line1 = document.getElementById("line1");
 var line2 = document.getElementById("line2");
@@ -71,7 +81,9 @@ var line3 = document.getElementById("line3");
 // Function which toggles hamburgermenu on/off
 function toggleMenu() {
 
-    if (headerMenu.style.display == "flex") {
+
+    //Makes the three stripes appear
+    if(headerMenu.style.display == "flex"){
         headerMenu.style.display = "";
 
         line1.style.transform = "rotate(0deg)";
@@ -86,38 +98,34 @@ function toggleMenu() {
         else if (headerMenu.style.display === ""){
             headerMenu.style.display = "flex";
 
+            //Moves the top line so that it creates an X with the bottom line
             line1.style.transformOrigin = "center";
             line1.style.transform = "rotate(-45deg)";
             line1.style.translate = "(-9px, 6px)";
-        line1.style.marginTop= "17px";
-        line1.style.position = "absolute";
+            line1.style.marginTop= "17px";
+            line1.style.position = "absolute";
 
-
+            //Makes the middle line disappear
             line2.style.opacity = "0";
 
+            //Rotates the bottom line
             line3.style.transformOrigin = "center";
             line3.style.transform = "rotate(45deg)";
             line3.style.translate = "(-8px, -8px)";
-
         }
-
-    console.log("Toggle Hamburger Menu") // Troubleshoot
 }
 
 //Function that collapses hamburgermenu when an site is selected
 function collapseHamMenu() {
-
-    console.log("0");
-
     headerMenu.style.display = "";
 
     line1.style.transform = "rotate(0deg)";
     line1.style.opacity = "1";
+    line1.style.marginTop= "";
+    line1.style.position = "";
     line2.style.opacity = "1";
     line3.style.transform = "rotate(0deg)";
     line3.style.opacity = "1";
-
-    line0.innerHTML = "";
 }
 
 /*---------------------------------------------------------------------*/

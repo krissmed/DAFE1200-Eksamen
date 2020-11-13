@@ -1,37 +1,32 @@
+/*Makes the whole page scroll smooth when links is clicked and navigating to elements*/
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    /*Cover whole site*/
-    margin: 0;
-    font-family: Helvetica, serif;
-    overflow-x: hidden;
+    margin: 0;    /*Cover whole site*/
+    font-family: Helvetica, serif;  /*Font type*/
+    overflow-x: hidden; /*Makes it impossible to scroll sideways*/
 }
 
-/* Custom Scrollbar*/
+/*---------------Custom Scrollbar------------------------------------*/
 /* width */
 ::-webkit-scrollbar {
     width: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
     background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-/*--------------------------------------------------------------------*/
-/*NavBar on each Site*/
+  }
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+          /* Handle on hover */
+          ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+/*---------------NavBar on each Site------------------------------------*/
 .siteMenu {
     list-style-type: none;
     display: flex;
@@ -44,34 +39,29 @@ body {
     padding: 1.5vw;
     z-index: 1;
     line-height: 1px;
-}
+}  
+    .siteMenuLi {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-bottom: 1vh;
+        text-transform: uppercase;
+        border-bottom: 3px solid green;
+        cursor: pointer;
+        user-select: none;
+    }
+        .siteMenuLi a {
+            text-decoration: none;
+            color: green;
+            cursor: pointer;
+        }
+            .siteMenuLi:hover {
+                border-bottom: 3px solid lightgreen;
+                transition: color 0.2s, border 0.2s;
+            }
+@media (max-width: 700px){ /* Breakpoint for the horizontal menus. This activates when the window size is lower than 700px */
 
-.siteMenuLi {
-    font-size: 1.5em;
-    letter-spacing: 1px;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-bottom: 1vh;
-    text-transform: uppercase;
-    border-bottom: 3px solid green;
-    cursor: pointer;
-    user-select: none;
-}
-
-.siteMenuLi a {
-    text-decoration: none;
-    color: green;
-    cursor: pointer;
-}
-
-.siteMenuLi:hover {
-    border-bottom: 3px solid lightgreen;
-    transition: color 0.2s, border 0.2s;
-}
-
-@media (max-width: 700px) {
-
-    /* Breakpoint for the horizontal menus. This activates when the window size is lower than 700px */
     .siteMenu {
         list-style-type: none;
         display: flex;
@@ -110,12 +100,12 @@ body {
     }
 }
 
-/*--------------------------------------------------------------*/
-/*MAIN SITE*/
+/*--------------------MAIN SITE------------------------------------------*/
 #mainSite {
     height: 100vh;
     width: 100vw;
 }
+
 
 /*------------------------------------------------------------------*/
 /* ToTop button */
@@ -142,6 +132,7 @@ body {
 @media (min-width: 900px) {
 
     /* This code only applies when window size is bigger than 900px */
+
     /* Hamburger nav (Only visible in format < 900px)*/
     .hamMenu {
         display: none;
@@ -195,7 +186,8 @@ body {
                     height: 3px;
                     background: green;
                     transition: width .5s;
-                }/*When the element above i hovered the width is adjusted to 100% of menuLi a*/
+                }
+                /*When the element above i hovered the width is adjusted to 100% of menuLi a*/
                     .menuLi a:hover::after {
                         width: 100%;
                     }
@@ -210,7 +202,6 @@ body {
                                 border-bottom: transparent;
                             }
 }
-
 @media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
     #hamburgerMeny{
         margin-top: 15px;
@@ -302,233 +293,200 @@ body {
     }
 }
 
-/*-------------------------------------------------------------------------------*/
-/*Top image and quotes */
+/*---------------------Top image and quotes----------------------------------------------*/
+    /*Background image*/
+    #backgroundWindmills {
+        height: 100vh;
+        width: auto;
+    }
+        /*Quote*/
+        #quote {
+            height: auto;
+            width: 80vw;
+            border-bottom: 3px solid white;
+            border-top: 3px solid white;
+            padding: 1vw 0;
+            position: absolute;
+            text-align: center;
+            top: 40vw;
+            left: 10vw;
+            font-size: 2em;
+            font-weight: bolder;
+            font-family: "Bodoni 72", serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: white;
+        }
+            /*the text under the quote*/
+            #underQuote {
+                font-size: .8em;
+                font-style: normal;
+                color: white;
+                text-transform: uppercase;
+                font-family: "Bodoni 72", serif;
+                letter-spacing: 1px;
+                border-top: 3px solid white;
+                padding-top: 1vw;
+            }
+/*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
+    #challengeSite {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        background-color: #cdd1ce;
+    }
+    /*The three sites within the Challenge site*/
+    #challengeSite1, #challengeSite2, #challengeSite3 {/* Can be redone as a class */
+        height: 100vh;
+        width: 100vw;
+        top: 12vh;
+        left: 5vw;
+        color: green;
+        position: relative;
+    }
 
-/*Background image*/
-#backgroundWindmills {
-    height: 100vh;
-    width: auto;
-}
-
-/*Quote*/
-#quote {
-    height: auto;
-    width: 80vw;
-    border-bottom: 3px solid white;
-    border-top: 3px solid white;
-    padding: 1vw 0;
-    position: absolute;
-    text-align: center;
-    top: 40vw;
-    left: 10vw;
-    font-size: 2em;
-    font-weight: bolder;
-    font-family: "Bodoni 72", serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: white;
-}
-
-#underQuote {
-    font-size: .8em;
-    font-style: normal;
-    color: white;
-    text-transform: uppercase;
-    font-family: "Bodoni 72", serif;
-    letter-spacing: 1px;
-    border-top: 3px solid white;
-    padding-top: 1vw;
-}
-
-/*--------------------------------------------------------------*/
-/*CHALLENGE SITE*/
-#challengeSite {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    background-color: #cdd1ce;
-}
-
-
-#challengeSite1,
-#challengeSite2,
-#challengeSite3 {
-    /* Can be redone as a class */
-    height: 100vh;
-    width: 100vw;
-    top: 12vh;
-    left: 5vw;
-    color: green;
-    position: relative;
-}
-
-/*------------------------------------------------------------------------------*/
-/*SITE 1*/
-
+/*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
 /*Tree Image*/
-#challengeSiteTreePic {
-    position: absolute;
-    right: 10vw;
-    top: 20vh;
-    height: auto;
-    width: 40vh;
-    float: right;
-    border-radius: 25px;
-    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
-    border: solid black 1px;
-}
+        #challengeSiteTreePic {
+            position: absolute;
+            right: 10vw;
+            top: 20vh;
+            height: auto;
+            width: 40vh;
+            float: right;
+            border-radius: 25px;
+            box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+            border: solid black 1px;
+        }
+            /*Text*/
+                /*Headline*/
+                .headline {
+                    font-weight: bolder;
+                    font-size: 3vw;
+                    font-style: normal;
+                    text-align: center;
+                    text-transform: uppercase;
+                    width: 30vw;
 
-/*Textbox*/
-/*Headline*/
-.headline {
-    font-weight: bolder;
-    font-size: 3vw;
-    font-style: normal;
-    text-align: center;
-    text-transform: uppercase;
-    width: 30vw;
+                }
+                    /*InfoText*/
+                    .infoText {
+                        letter-spacing: 1px;
+                        line-height: 2.2vw;
+                        font-size: 1.3vw;
+                        width: 53vw;
+                        height: 30vh;
+                    }
+/*----------SECOND CHALLENGE SITE---------------------------------------------------------*/
+    /*SITE 2*/
+        /*Info-text*/
+        .challengeSite2Description {
+            position: relative;
+            display: inline-block;
+            top: 3vh;
+            left: 3vw;
+            height: 40vh;
+            width: 42vw;
+            padding: 2vw;
+            color: green;
+        }
+            /*Headline*/
+            .site2DescHeadline {
+                font-weight: bolder;
+                font-size: 3vw;
+            }
+                /*Paragraf*/
+                .paragraph {
+                    line-height: 1.5vw;
+                    letter-spacing: 1px;
+                    font-size: 1.2vw;
+                    position: relative;
+                    width: 45vw;
+                }
+            /*Image Environment*/
+            .environmentImage {
+                position: absolute;
+                left: 65vw;
+                top: 16vh;
+                height: 50vh;
+                width: 20vw;
+                float: right;
+                border-radius: 25px;
+                box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+            }
 
-}
+/*----------THIRD CHALLENGE SITE---------------------------------------------------------*/
+    /*Image polluted city*/
+    #pollutedImgSite3 {
+        position: relative;
+        right: 8vw;
+        top: 30vh;
+        height: 37vh;
+        width: 35vw;
+        float: right;
+        border-radius: 25px;
+        box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+    }
 
-/*InfoText*/
-.infoText {
-    letter-spacing: 1px;
-    line-height: 2.2vw;
-    font-size: 1.3vw;
-    width: 53vw;
-    height: 30vh;
-}
+/*-----------SOLUTION SITE---------------------------------------------------------------------------------------------------------------*/
+    #solutionSite {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        background-color: #b6bab7;
+    }
+        #solutionSite1, #solutionSite2, #solutionSite3 {
+            height: 100vh;
+            width: 100vw;
+            top: 12vh;
+            left: 5vw;
+            color: green;
+            position: relative;
+        }
+        /*Image site 1*/
+        .solutionBulb {
+            position: relative;
+            right: 14vw;
+            top: 0;
+            height: auto;
+            width: 40vh;
+            float: right;
+            border-radius: 25px;
+            box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+            border: solid black 1px;
+        }
+/*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
+    #appSite {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        background-color: #cdd1ce;
+        ;
+    }
+        #appSite1, #appSite2, #appSite3 {
+            height: 100vh;
+            width: 100vw;
+            top: 12vh;
+            left: 5vw;
+            color: green;
+            position: relative;
+        }
+        /*Image*/
+        .appImg {
+            position: absolute;
+            right: 12vw;
+            top: 15vh;
+            height: 55vh;
+            width: auto;
+            float: right;
+            border-radius: 25px;
+            box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+        }
+/*-----------FOOTER---------------------------------------------------------------------------------------------------------------*/
 
-/*---------------------------------------------------------------------------------------------*/
-/*SITE 2*/
-/*Info-text*/
-.challengeSite2Description {
-    position: relative;
-    display: inline-block;
-    top: 3vh;
-    left: 3vw;
-    height: 40vh;
-    width: 42vw;
-    padding: 2vw;
-    color: green;
-}
-
-/*Headline*/
-.site2DescHeadline {
-    font-weight: bolder;
-    font-size: 3vw;
-}
-
-/*Paragraf*/
-.paragraph {
-    line-height: 1.5vw;
-    letter-spacing: 1px;
-    font-size: 1.2vw;
-    position: relative;
-    width: 45vw;
-}
-
-/*Image Environment*/
-.environmentImage {
-    position: absolute;
-    left: 65vw;
-    top: 16vh;
-    height: 50vh;
-    width: 20vw;
-    float: right;
-    border-radius: 25px;
-    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
-}
-
-/*******************/
-/*SITE 3*/
-
-/*Image polluted city*/
-#pollutedImgSite3 {
-    position: relative;
-    right: 8vw;
-    top: 30vh;
-    height: 37vh;
-    width: 35vw;
-    float: right;
-    border-radius: 25px;
-    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
-}
-
-/*--------------------------------------------------------------*/
-/*SOLUTION SITE*/
-#solutionSite {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    background-color: #b6bab7;
-}
-
-#solutionSite1,
-#solutionSite2,
-#solutionSite3 {
-    height: 100vh;
-    width: 100vw;
-    top: 12vh;
-    left: 5vw;
-    color: green;
-    position: relative;
-}
-
-/*Image site 1*/
-.solutionBulb {
-    position: relative;
-    right: 14vw;
-    top: 0;
-    height: auto;
-    width: 40vh;
-    float: right;
-    border-radius: 25px;
-    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
-    border: solid black 1px;
-}
-
-/*--------------------------------------------------------------*/
-/*APP SITE*/
-#appSite {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    background-color: #cdd1ce;
-}
-
-#appSite1,
-#appSite2,
-#appSite3 {
-    height: 100vh;
-    width: 100vw;
-    top: 12vh;
-    left: 5vw;
-    color: green;
-    position: relative;
-}
-
-/*Image*/
-.appImg {
-    position: absolute;
-    right: 12vw;
-    top: 15vh;
-    height: 55vh;
-    width: auto;
-    float: right;
-    border-radius: 25px;
-    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
-}
-
-  /*--------------------------------------------------------------*/
-
-        /*  FOOTER */
-
-        /*Styles the footer box */
         .footer {
             display: flex;
             flex-flow: row wrap;
@@ -538,6 +496,7 @@ body {
             border-top: 1px solid #e5e5e5;
             
           }
+
           
           /*Makes the content in the box flex*/
           .footer > * {
@@ -552,6 +511,7 @@ body {
           
           /*Chooses the size of the footer logo */
           .footerlogo {
+
             width: 25%;
             height: auto;
           }
@@ -571,6 +531,7 @@ body {
           
           /* Styles the Email button */
           .footer_btn {
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -631,6 +592,7 @@ body {
             flex-wrap: wrap;
             color: #454545;
           }    
+
           
           /* Makes the margin for the legal line auto, when the media screen reaches a minimum size*/
           @media screen and (min-width: 24.375em) {
