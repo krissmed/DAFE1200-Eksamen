@@ -67,7 +67,6 @@ function selectActiveSite() {
 
 // Gather html elements
 var headerMenu = document.getElementById("headerMenu");
-var line0 = document.getElementById("line0");
 var line1 = document.getElementById("line1");
 var line2 = document.getElementById("line2");
 var line3 = document.getElementById("line3");
@@ -83,17 +82,22 @@ function toggleMenu(){
         line2.style.opacity = "1";
         line3.style.transform = "rotate(0deg)";
         line3.style.opacity = "1";
-
-        line0.innerHTML="";
     }
         else if (headerMenu.style.display === ""){
             headerMenu.style.display = "flex";
 
-            line1.style.opacity = "0";
-            line2.style.opacity = "0";
-            line3.style.opacity = "0";
+            line1.style.transformOrigin = "center";
+            line1.style.transform = "rotate(-45deg)";
+            line1.style.translate = "(-9px, 6px)";
+        line1.style.marginTop= "";
 
-            line0.innerHTML="<h2>EXIT</h2>";
+
+            line2.style.opacity = "0";
+
+            line3.style.transformOrigin = "center";
+            line3.style.transform = "rotate(45deg)";
+            line3.style.translate = "(-8px, -8px)";
+
         }
 
         console.log("Toggle Hamburger Menu") // Troubleshoot
@@ -101,6 +105,9 @@ function toggleMenu(){
 
 //Function that collapses hamburgermenu when an site is selected
 function collapseHamMenu() {
+
+    console.log("0");
+
     headerMenu.style.display = "";
 
     line1.style.transform = "rotate(0deg)";
