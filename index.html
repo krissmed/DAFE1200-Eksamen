@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <img id="toTop" onclick="moveToTop()" src="assets/scrollToTop.jpg">
+    <img id="toTop" style="display: none " onclick="moveToTop()" src="assets/scrollToTop.jpg" alt="To top button">
     <!--HEADER-->
     <header>
             <!-- LOGO. Only visible in format where window > 900px -->
-            <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
+            <a href="index.html"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
             <!-- Hamburger Menu (Only visible in format where window < 900px)-->
             <div onclick="toggleMenu()" id="hamburgerMenu">
                 <div class="hamMenu" id="line1"></div>
@@ -40,7 +40,6 @@
             <br><br>
             <i id="underQuote">– Mahatma Gandhi</i>
         </span>
-
     </div>
 
     <!--Challenge Container-->
@@ -292,7 +291,6 @@
             </div>
         </div>
     </div>
-</div>
 
  <!-- FOOTER CONTAINER -->
  <footer class="footer">
@@ -353,6 +351,9 @@
     </div>
   </footer>
 
+
+    <!--Placed at bottom to load body first-->
+<script src="index.js"></script>
 </body>
 
 </html>
