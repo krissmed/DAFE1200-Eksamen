@@ -1,10 +1,9 @@
 <html>
+
 <head>
-  <link rel="icon" href="assets/icon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Energy++</title>
-  <link rel="stylesheet" href="index.css">
+
+  <link rel="stylesheet" href="contact.css">
+
 </head>
 
 <body>
@@ -14,15 +13,15 @@
     <!-- Hamburger Menu (Only visible in format where window < 900px)-->
     <div onclick="toggleMenu()" id="hamburgerMenu">
       <div id="line0"></div>
-      <div class="hamMenu" onclick="toggleMenu()" id="line1"></div>
-      <div class="hamMenu" onclick="toggleMenu()" id="line2"></div>
-      <div class="hamMenu" onclick="toggleMenu()" id="line3"></div>
+      <div class="hamMenu" id="line1"></div>
+      <div class="hamMenu" id="line2"></div>
+      <div class="hamMenu" id="line3"></div>
     </div>
     <!--MENU-->
     <ul id="headerMenu">
       <li class="menuLi main" onclick="collapseHamMenu()"><a href="#mainSite"> Home </a></li>
-      <li class="menuLi challenge" onclick="collapseHamMenu()"><a href="#faq"> FAQ </a></li>
-      <li class="menuLi solution" onclick="collapseHamMenu()"><a href="#customerSupport"> Customer Support </a></li>
+      <li class="menuLi challenge" onclick="collapseHamMenu()"><a href="#challengeSite"> FAQ </a></li>
+      <li class="menuLi solution" onclick="collapseHamMenu()"><a href="#solutionSite"> Kundeservice </a></li>
       <li class="menuLi app" onclick="collapseHamMenu()"><a href="#appSite"> App </a></li>
     </ul>
   </header>
@@ -30,56 +29,42 @@
   <div id="mainSite">
 
     <!--BACKGROUND PICTURE-->
-    <img src="assets/kundeservice.jpg" class="backgroundImage" alt="Background Picture">
+    <img src="assets/kundeservice.jpg" class="backgroundWindmills" alt="Background Picture">
 
     <!--MAINQUOTE-->
     <span class="quote">
       Costumer Support
     </span>
-  </div>
-  <!-- FAQ Container-->
-  <div id="faqContainer">
-    <div class="question">
-      <p onclick="openAnswer('1')">Spørsmål1</p>
-    </div>
-    <div class="answer 1">
-      <p>Svar</p>
-    </div>
-  </div>
-  <!--Container Solution-->
-  <div id="kundeservice">
 
   </div>
-  <!-- -->
-  <div id="appSite">
 
-  </div>
-  <!-- <h1 id="faqTittel">FAQ </h1>
+  <div class="faq">
+    <h1 class="faq_titel">FAQ </h1>
 
     <p class="faq_content"> Here we have some frequently asked questions</p>
 
     <button class="accordion" class="border1">Spørsmål</button>
-    <div class="panel">
+    <div id="svar1" class="panel">
       <p>svar</p>
     </div>
 
     <button class="accordion" class="border1">Spørsmål</button>
-    <div class="panel">
+    <div id="svar2" class="panel">
       <p>svar</p>
     </div>
 
     <button class="accordion" class="border1">Spørsmål</button>
-    <div class="panel">
+    <div id="svar3" class="panel">
       <p>svar</p>
     </div>
 
     <button class="accordion" class="border1">Spørsmål</button>
-    <div class="panel">
+    <div id="svar4"class="panel">
       <p>svar</p>
     </div>
 
     <button class="accordion" class="border2">Spørsmål</button>
-    <div class="panel">
+    <div id="svar5" class="panel">
       <p>svar</p>
     </div>
   </div>
@@ -144,40 +129,37 @@
       </li>
     </ul>
   </div>
- -->
+
 
 
 
   <!-- FOOTER CONTAINER -->
   <footer class="footer">
 
- <!-- FOOTER CONTAINER -->
- <footer class="footer">
-    
-    <!--Box where the adress, logo and mail button will be-->
-    <div class="footer_addr">
-      <!--Adding the logo-->
-      <img class="footerlogo" src="assets/logo.png" alt="logo footer">    
+    <div class="footer__addr">
+
+      <img class="footerlogo" src="assets/logo.png" alt="logo footer">
+
       <h2>Contact</h2>
-        <address>
-          Osloveien 23, Oslo, Norway<br>  
-          <!--Makes the mail us button-->   
-          <a class="footer_btn" href="mailto:Support@energy++.com">Email Us</a>
-        </address>
-      </div>
-    <!--Makes a bracket for the for the links for navigation-->
-    <ul class="footer_nav">
-      <li class="nav_item">
-        <!--Makes the titel over the bracket-->
-        <h2 class="nav_title">Support</h2>
-        <!--Creates the bracket-->
-        <ul class="nav_ul">
+
+      <address>
+        Osloveien 23, Oslo, Norway<br>
+
+        <a class="footer__btn" href="mailto:Support@energy++.com">Email Us</a>
+      </address>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Support</h2>
+
+        <ul class="nav__ul">
           <li>
-            <a href="contact.html">Contact us</a>
+            <a href="#">Contact us</a>
           </li>
 
           <li>
-            <a href="contact.html">FAQ</a>
+            <a href="#">FAQ</a>
           </li>
 
           <li>
@@ -185,32 +167,35 @@
           </li>
         </ul>
       </li>
-    
-      <!--Makes a bracket for the for the links for navigation-->
-      <li class="nav_item">
-        <!--Makes the titel over the bracket-->
-        <h2 class="nav_title">Legal</h2>
-        <!--Creates the bracket-->
-        <ul class="nav_ul">
+
+
+      <li class="nav__item">
+        <h2 class="nav__title">Legal</h2>
+
+        <ul class="nav__ul">
           <li>
             <a href="#">Privacy Policy</a>
           </li>
+
           <li>
             <a href="#">Terms of Use</a>
           </li>
+
           <li>
             <a href="#">Sitemap</a>
           </li>
         </ul>
       </li>
     </ul>
-    <!--Creates the copyright line for the bottom of the footer-->
+
     <div class="legal">
       <p>&copy; 2020 Energy++. All rights reserved.</p>
     </div>
   </footer>
 
   <script src="contact.js"></script>
+
+
 </body>
 
 </html>
