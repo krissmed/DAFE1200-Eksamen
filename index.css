@@ -155,17 +155,19 @@ body {
                     height: 3px;
                     background: green;
                     transition: width .5s;
-                }
+                }/*When the element above i hovered the width is adjusted to 100% of menuLi a*/
                     .menuLi a:hover::after {
                         width: 100%;
                     }
                         /*Adds this active class in JS*/
                         .active {
                             border-bottom: 3px solid green;
+                            transition-delay: .35s;
+                            transition-duration: .5s;
                         }
                             /*Removes the border when the already active class is hovered. Prevents double underline*/
                             .active:hover {
-                                border-bottom: none;
+                                border-bottom: transparent;
                             }
 }
 
@@ -175,7 +177,8 @@ body {
         margin-left: 15px;
     }
     #line1, #line2, #line3{
-    transform-origin: top;
+        transform-origin: top;
+        transition: 0.4s;
     }
     #line0:hover {
         color: green;
