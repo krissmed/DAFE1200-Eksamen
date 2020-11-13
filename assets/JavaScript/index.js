@@ -99,7 +99,6 @@ var line3 = document.getElementById("line3");
 // Function which toggles hamburgermenu on/off
 function toggleMenu() {
 
-
     //Makes the three stripes appear
     if(headerMenu.style.display == "flex"){
         headerMenu.style.display = "";
