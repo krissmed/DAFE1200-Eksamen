@@ -1,18 +1,21 @@
 /*--------------------------------------------------------------*/
 // To make it easier to move to the top of the page
 function moveToTop() {
+
     window.scrollTo(0, 0);
 }
 
 let toTopButton = document.getElementById("toTop");
 function scrollToTop() {
 //makes the scrollToTop button visible when user is scrolled 90px down and hides it when under 90px
+if(window.innerWidth < 900){
     if (window.scrollY <= 90) {
         toTopButton.style.display = "none";
     }
     else if (window.scrollY > 90) {
         toTopButton.style.display = "block";
     }
+}
 }
 
 /*-------------------------------------------------*/

@@ -27,6 +27,7 @@ body {
     background: #555;
 }
 /*---------------NavBar on each Site------------------------------------*/
+
 .siteMenu {
     list-style-type: none;
     display: flex;
@@ -101,10 +102,45 @@ body {
 }
 
 /*Nav*/
-@media (min-width: 900px) {
+@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */
 
-    /* This code only applies when window size is bigger than 900px */
-
+    #sideNav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+        z-index: 99;
+        color: black;
+        position: fixed;
+        left: -180px; /* Position them outside of the screen */
+        transition: 0.3s; /* Add transition on hover */
+        padding: 15px; /* 15px padding */
+        width: auto; /* Set a specific width */
+        text-decoration: none; /* Remove underline */
+        font-size: 20px; /* Increase font size */
+        border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    }
+    .sideNavElements{
+        margin-top: 2vh;
+        left: -200px; /* Position them outside of the screen */
+        height: 5vh;
+        align-items: center;
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+        text-decoration: none;
+        background-color: green;
+        border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    }
+    .sideNavElements:hover{
+        margin-top: 2vh;
+        height: 5vh;
+        left: 0px;
+        background-color: white;
+        border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    }
+    #sideNav:hover{
+        left: -15px; /* Position them outside of the screen */
+    }
     /* Hamburger nav (Only visible in format < 900px)*/
     .hamMenu {
         display: none;
@@ -176,6 +212,12 @@ body {
     }
 }
 @media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
+    #toTop{
+        display: none;
+    }
+    #sideNav{
+        display: none;
+    }
     #hamburgerMeny{
         margin-top: 15px;
         margin-left: 15px;
@@ -250,7 +292,10 @@ body {
 }
 
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 700px), (max-width: 900px) {
+    #sideNav{
+        display: none;
+    }
     header {
         height: 70px;
     }
