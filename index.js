@@ -79,6 +79,9 @@ function toggleMenu(){
         
         line1.style.transform = "rotate(0deg)";
         line1.style.opacity = "1";
+        line1.style.marginTop= "";
+        line1.style.position = "";
+
         line2.style.opacity = "1";
         line3.style.transform = "rotate(0deg)";
         line3.style.opacity = "1";
@@ -89,7 +92,8 @@ function toggleMenu(){
             line1.style.transformOrigin = "center";
             line1.style.transform = "rotate(-45deg)";
             line1.style.translate = "(-9px, 6px)";
-        line1.style.marginTop= "";
+        line1.style.marginTop= "17px";
+        line1.style.position = "absolute";
 
 
             line2.style.opacity = "0";
