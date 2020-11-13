@@ -13,15 +13,14 @@
     <img id="toTop" onclick="moveToTop()" src="assets/scrollToTop.jpg">
     <!--HEADER-->
     <header>
-        <!-- LOGO. Only visible in format where window > 900px -->
-        <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
-        <!-- Hamburger Menu (Only visible in format where window < 900px)-->
-        <div onclick="toggleMenu()" id="hamburgerMenu">
-            <div id="line0"></div>
-            <div class="hamMenu" id="line1"></div>
-            <div class="hamMenu" id="line2"></div>
-            <div class="hamMenu" id="line3"></div>
-        </div>
+            <!-- LOGO. Only visible in format where window > 900px -->
+            <a href="#mainSite"><img id="headerLogo" src="assets/logo.png" alt="logo header"></a>
+            <!-- Hamburger Menu (Only visible in format where window < 900px)-->
+            <div onclick="toggleMenu()" id="hamburgerMenu">
+                <div class="hamMenu" id="line1"></div>
+                <div class="hamMenu" id="line2"></div>
+                <div class="hamMenu" id="line3"></div>
+            </div>
         <!--MENU-->
         <ul id="headerMenu">
             <li class="menuLi main" onclick="collapseHamMenu()"><a href="#mainSite"> Home </a></li>
@@ -293,69 +292,67 @@
             </div>
         </div>
     </div>
+</div>
 
-    <!-- FOOTER CONTAINER -->
-    <footer class="footer">
-
-        <div class="footer__addr">
-
-            <img class="footerlogo" src="assets/logo.png" alt="logo footer">
-
-            <h2>Contact</h2>
-
-            <address>
-                Osloveien 23, Oslo, Norway<br>
-
-                <a class="footer__btn" href="mailto:Support@energy++.com">Email Us</a>
-            </address>
-        </div>
-
-        <ul class="footer__nav">
-            <li class="nav__item">
-                <h2 href="contact.html#mainSite" class="nav__title">Support</h2>
-
-                <ul class="nav__ul">
-                    <li>
-                        <a href="contact.html#faq">Contact us</a>
-                    </li>
-
-                    <li>
-                        <a href="">FAQ</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Kristian er teit</a>
-                    </li>
-                </ul>
-            </li>
-
-
-            <li class="nav__item">
-                <h2 class="nav__title">Legal</h2>
-
-                <ul class="nav__ul">
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Terms of Use</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Sitemap</a>
-                    </li>
-                </ul>
-            </li>
+ <!-- FOOTER CONTAINER -->
+ <footer class="footer">
+    
+    <!--Box where the adress, logo and mail button will be-->
+    <div class="footer_addr">
+      <!--Adding the logo-->
+      <img class="footerlogo" src="assets/logo.png" alt="logo footer">    
+      <h2>Contact</h2>
+        <address>
+          Osloveien 23, Oslo, Norway<br>  
+          <!--Makes the mail us button-->   
+          <a class="footer_btn" href="mailto:Support@energy++.com">Email Us</a>
+        </address>
+      </div>
+    <!--Makes a bracket for the for the links for navigation-->
+    <ul class="footer_nav">
+      <li class="nav_item">
+        <!--Makes the titel over the bracket-->
+        <h2 class="nav_title">Support</h2>
+        <!--Creates the bracket-->
+        <ul class="nav_ul">
+          <li>
+            <a href="contact.html">Contact us</a>
+          </li>
+  
+          <li>
+            <a href="contact.html">FAQ</a>
+          </li>
+              
+          <li>
+            <a href="#">Kristian er teit</a>
+          </li>
         </ul>
+      </li>
+    
+      <!--Makes a bracket for the for the links for navigation-->
+      <li class="nav_item">
+        <!--Makes the titel over the bracket-->
+        <h2 class="nav_title">Legal</h2>
+        <!--Creates the bracket-->
+        <ul class="nav_ul">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+          <li>
+            <a href="#">Sitemap</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!--Creates the copyright line for the bottom of the footer-->
+    <div class="legal">
+      <p>&copy; 2020 Energy++. All rights reserved.</p>
+    </div>
+  </footer>
 
-        <div class="legal">
-            <p>&copy; 2020 Energy++. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!--Placed at the bottom to load the body first-->
-    <script src="index.js"></script>
 </body>
 
 </html>
