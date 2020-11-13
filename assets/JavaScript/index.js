@@ -1,9 +1,27 @@
+/*--------------------------------------------------------------*/
+// To make it easier to move to the top of the page
+function moveToTop() {
+    window.scrollTo(0, 0);
+}
+
+let toTopButton = document.getElementById("toTop");
+function scrollToTop() {
+//makes the scrollToTop button visible when user is scrolled 90px down and hides it when under 90px
+    if (window.scrollY <= 90) {
+        toTopButton.style.display = "none";
+        }
+    else if (window.scrollY > 90) {
+            toTopButton.style.display = "block";
+        }
+}
+
 /*-------------------------------------------------*/
 /*MAKING THE MENULINK ACTIVE DEPENDING ON WHERE ON SITE THE USER IS*/
 
-/*when the windown scrolls, the function starts*/
+/*when the windown scrolls, the functions starts*/
 window.onscroll = function () {
-    selectActiveSite()
+    selectActiveSite();
+    scrollToTop();
 };
 
 /*gathering all the elements*/
@@ -248,7 +266,6 @@ function showAppSite3() {
         appSite3.style.display = "block"; // Makes appSite3 container visible
     }
 }
-// To make it easier to move to the top of the page
-function moveToTop() {
-    window.scrollTo(0, 0);
-}
+
+
+
