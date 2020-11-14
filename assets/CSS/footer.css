@@ -27,7 +27,6 @@
 
 /*Chooses the size of the footer logo */
 .footerlogo {
-
     width: 25%;
     height: auto;
 }
@@ -47,7 +46,6 @@
 
 /* Styles the Email button */
 .footer_btn {
-
     display: flex;
     align-items: center;
     justify-content: center;

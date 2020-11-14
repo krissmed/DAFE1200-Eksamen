@@ -37,26 +37,28 @@
     </ul>
 </header>
 
+<!--Side menu-->
 <div class="sideMenuSources">
     <ul class="sideMenuSourcesUl">
         <li class="sideMenuSourcesTitle">Sources:</li>
-            <li class="sideMenuSourcesLi">Information</li>
-            <li class="sideMenuSourcesLi">Images</li>
+            <li class="sideMenuSourcesLi information" onclick="showInfoPage()">- Information</li>
+            <li class="sideMenuSourcesLi images" onclick="showImgPage()">- Images</li>
     </ul>
 
     <ul class="sideMenuSourcesUl">
         <li class="sideMenuSourcesTitle">Documentation:</li>
-            <li class="sideMenuSourcesLi"c>Summary of meetings</li>
-            <li class="sideMenuSourcesLi">Groupmembers</li>
+            <li class="sideMenuSourcesLi summaryMeet" onclick="showSummaryPage()">- Summary of meetings</li>
+            <li class="sideMenuSourcesLi group" onclick="showGroupPage()">- Groupmembers</li>
     </ul>
 </div>
 
-<div class="sourcesMainContent">
-    <h1 class="sourcesHeadline">Sources</h1>
+<!--Sources information-->
+<div class="sourcesInfoContent" style="display: block">
+    <h1 class="sourcesHeadline">Sources Information</h1>
         <div class="sourcesInfo">
             <div class="sourcesInfoDiv">
                 <span class="sourcesInfoName">ARTIKKELNAVN</span>
-                    <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN INFO BRUKES</a>
+                    <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN INFO BRUKES??</a>
                     <a href="#" class="sourcesLink">LINK TIL ARTIKKEL</a>
                     <i class="sourcesAuthor">Forfatter av artikkelen</i>
                     <i class="sourcesDate">Dato hentet/lest</i>
@@ -82,27 +84,104 @@
                 <i class="sourcesDate">Dato hentet/lest</i>
             </div>
         </div>
-    <div class="sourcesInfo">
-        <div class="sourcesInfoDiv">
-            <span class="sourcesInfoName">ARTIKKELNAVN</span>
-            <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN INFO BRUKES</a>
-            <a href="#" class="sourcesLink">LINK TIL ARTIKKEL</a>
-            <i class="sourcesAuthor">Forfatter av artikkelen</i>
-            <i class="sourcesDate">Dato hentet/lest</i>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">ARTIKKELNAVN</span>
+                <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN INFO BRUKES</a>
+                <a href="#" class="sourcesLink">LINK TIL ARTIKKEL</a>
+                <i class="sourcesAuthor">Forfatter av artikkelen</i>
+                <i class="sourcesDate">Dato hentet/lest</i>
+            </div>
         </div>
-    </div>
-    <div class="sourcesInfo">
-        <div class="sourcesInfoDiv">
-            <span class="sourcesInfoName">ARTIKKELNAVN</span>
-            <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN INFO BRUKES</a>
-            <a href="#" class="sourcesLink">LINK TIL ARTIKKEL</a>
-            <i class="sourcesAuthor">Forfatter av artikkelen</i>
-            <i class="sourcesDate">Dato hentet/lest</i>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">ARTIKKELNAVN</span>
+                <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN INFO BRUKES</a>
+                <a href="#" class="sourcesLink">LINK TIL ARTIKKEL</a>
+                <i class="sourcesAuthor">Forfatter av artikkelen</i>
+                <i class="sourcesDate">Dato hentet/lest</i>
+            </div>
         </div>
-    </div>
 </div>
 
+<!--Sources Images-->
+<div class="sourceImageContent" style="display: none">
+    <h1 class="sourcesHeadline">Images</h1>
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">BILDEBESKRIVELSE</span>
+                <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN BILDET BRUKES??</a>
+                <a href="#" class="sourcesLink">LINK TIL BILDET</a>
+                <i class="sourcesAuthor">Artist eller opphav</i>
+                <i class="sourcesDate">Dato lastet ned</i>
+                <span class="imgPreview"><b>IMAGE:</b> <br> <img class="sourceImg" src="#" alt="Image"> </span>
+            </div>
+        </div>
 
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">BILDEBESKRIVELSE</span>
+                <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN BILDET BRUKES??</a>
+                <a href="#" class="sourcesLink">LINK TIL BILDET</a>
+                <i class="sourcesAuthor">Artist eller opphav</i>
+                <i class="sourcesDate">Dato lastet ned</i>
+                <span class="imgPreview"><b>IMAGE:</b> <br> <img class="sourceImg" src="#" alt="Image"> </span>
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">BILDEBESKRIVELSE</span>
+                <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN BILDET BRUKES??</a>
+                <a href="#" class="sourcesLink">LINK TIL BILDET</a>
+                <i class="sourcesAuthor">Artist eller opphav</i>
+                <i class="sourcesDate">Dato lastet ned</i>
+                <span class="imgPreview"><b>IMAGE:</b> <br> <img class="sourceImg" src="#" alt="Image"> </span>
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">BILDEBESKRIVELSE</span>
+                <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN BILDET BRUKES??</a>
+                <a href="#" class="sourcesLink">LINK TIL BILDET</a>
+                <i class="sourcesAuthor">Artist eller opphav</i>
+                <i class="sourcesDate">Dato lastet ned</i>
+                <span class="imgPreview"><b>IMAGE:</b> <br> <img class="sourceImg" src="#" alt="Image"> </span>
+            </div>
+        </div>
+
+
+</div>
+
+<!--Sources meeting logs-->
+<div class="sourceMeetingsContent" style="display: none">
+    <h1 class="sourcesHeadline">Summary of group-meetings</h1>
+        <h2 class="sourcesSubtitle">Download the documents here:</h2>
+        <ol class="listMeetGroup">
+            <li> LINK TIL Å LASTE NED WORD DOKUMENT</li>
+            <li> LINK TIL Å LASTE NED WORD DOKUMENT</li>
+            <li> LINK TIL Å LASTE NED WORD DOKUMENT</li>
+            <li> LINK TIL Å LASTE NED WORD DOKUMENT</li>
+            <li> LINK TIL Å LASTE NED WORD DOKUMENT</li>
+        </ol>
+</div>
+
+<!--Group Members-->
+<div class="sourceGroupContent" style="display: none">
+    <h1 class="sourcesHeadline">Group-members</h1>
+            <ul class="listMeetGroup">
+                <li><b> Kristian Smedsrød </b></li>
+                <li class="studentNumber">xxxxx</li>
+                <li><b> Ole Jørgen Knoph </b></li>
+                <li class="studentNumber">s354371</li>
+                <li><b> Vetle Endrerud </b></li>
+                <li class="studentNumber">xxxxx</li>
+            </ul>
+
+</div>
 
 
 <!------------------- FOOTER CONTAINER --------------------------->
@@ -169,9 +248,9 @@
 </footer>
 
 <!--Placed at bottom to load body first-->
-<!--Script for index-->
-<script src="assets/JavaScript/index.js"></script>
 <!--Script for header-->
 <script src="assets/JavaScript/header.js"></script>
+<!--Script for source-page -->
+<script src="assets/JavaScript/sources.js"></script>
 </body>
 </html>
