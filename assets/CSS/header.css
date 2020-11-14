@@ -114,7 +114,7 @@ body {
         left: -220px; 
         transition: 0.3s; 
         padding: 15px; 
-        width: auto; 
+        width: 240px; 
         text-decoration: none; 
         font-size: 2em; 
         border-radius: 0 5px 5px 0; 
@@ -122,7 +122,12 @@ body {
     #sideNav a{
         text-decoration: none;
     }
+    #sideNav img{
+        position: relative;
+    }
     .sideNavElements{
+        display: flex;
+        justify-content: space-between;
         margin-top: 2vh;
         left: -200px; 
         height: 5vh;
@@ -139,14 +144,14 @@ body {
         height: 5vh;
         left: 0px;
         background-color: white;
-        border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        border-radius: 0 5px 5px 0;
     }
     #sideNav:hover{
-        left: -15px; /* Position them outside of the screen */
+        left: -15px;
     }
         .sideNavElements{
             margin-top: 2vh;
-            left: -200px; /* Position them outside of the screen */
+            left: -200px;
             height: 5vh;
             align-items: center;
             text-align: center;
@@ -155,7 +160,7 @@ body {
             text-decoration: none;
             color: white;
             background-color: green;
-            border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+            border-radius: 0 5px 5px 0;
         }
             .sideNavElements:hover{
                 margin-top: 2vh;
@@ -163,10 +168,10 @@ body {
                 left: 0px;
                 background-color: white;
                 color: green;
-                border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+                border-radius: 0 5px 5px 0;
             }
                 #sideNav:hover{
-                    left: -15px; /* Position them outside of the screen */
+                    left: -15px;
                 }
                     /*This class gets added to sideNavElements in JS*/
                     .sideNavActive {
