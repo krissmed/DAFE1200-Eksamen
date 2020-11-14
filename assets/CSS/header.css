@@ -26,7 +26,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-/*---------------NavBar on each Site------------------------------------*/
+/*-----------------------------NavBar on each Site------------------------------------*/
 
 .siteMenu {
     list-style-type: none;
@@ -101,7 +101,7 @@ body {
     }
 }
 
-/*Nav*/
+/*---------------------------------------------------Nav--------------------------------------------------------------------------*/
 @media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */
 
     #sideNav{
@@ -111,17 +111,20 @@ body {
         z-index: 99;
         color: black;
         position: fixed;
-        left: -180px; /* Position them outside of the screen */
-        transition: 0.3s; /* Add transition on hover */
-        padding: 15px; /* 15px padding */
-        width: auto; /* Set a specific width */
-        text-decoration: none; /* Remove underline */
-        font-size: 20px; /* Increase font size */
-        border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        left: -220px; 
+        transition: 0.3s; 
+        padding: 15px; 
+        width: auto; 
+        text-decoration: none; 
+        font-size: 2em; 
+        border-radius: 0 5px 5px 0; 
+    }
+    #sideNav a{
+        text-decoration: none;
     }
     .sideNavElements{
         margin-top: 2vh;
-        left: -200px; /* Position them outside of the screen */
+        left: -200px; 
         height: 5vh;
         align-items: center;
         text-align: center;
@@ -129,7 +132,7 @@ body {
         padding-left: 50px;
         text-decoration: none;
         background-color: green;
-        border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        border-radius: 0 5px 5px 0; 
     }
     .sideNavElements:hover{
         margin-top: 2vh;
@@ -326,5 +329,4 @@ body {
 #toTop:hover{
     opacity: 100%;
 }
-
 /*----------------------------------------------------------------------*/
