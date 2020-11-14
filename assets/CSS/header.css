@@ -119,28 +119,35 @@ body {
         font-size: 20px; /* Increase font size */
         border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
     }
-    .sideNavElements{
-        margin-top: 2vh;
-        left: -200px; /* Position them outside of the screen */
-        height: 5vh;
-        align-items: center;
-        text-align: center;
-        padding-right: 50px;
-        padding-left: 50px;
-        text-decoration: none;
-        background-color: green;
-        border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-    }
-    .sideNavElements:hover{
-        margin-top: 2vh;
-        height: 5vh;
-        left: 0px;
-        background-color: white;
-        border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-    }
-    #sideNav:hover{
-        left: -15px; /* Position them outside of the screen */
-    }
+        .sideNavElements{
+            margin-top: 2vh;
+            left: -200px; /* Position them outside of the screen */
+            height: 5vh;
+            align-items: center;
+            text-align: center;
+            padding-right: 50px;
+            padding-left: 50px;
+            text-decoration: none;
+            color: white;
+            background-color: green;
+            border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        }
+            .sideNavElements:hover{
+                margin-top: 2vh;
+                height: 5vh;
+                left: 0px;
+                background-color: white;
+                color: green;
+                border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+            }
+                #sideNav:hover{
+                    left: -15px; /* Position them outside of the screen */
+                }
+                    /*This class gets added to sideNavElements in JS*/
+                    .sideNavActive {
+                        background-color: white;
+                        color: green;
+                    }
     /* Hamburger nav (Only visible in format < 900px)*/
     .hamMenu {
         display: none;
