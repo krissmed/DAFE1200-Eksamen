@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/CSS/index.css">
     <!-- Stylesheet for the footer -->
     <link rel="stylesheet" href="assets/CSS/footer.css">
+    <!--Adding an icon libary-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <img id="toTop" style="display: none " onclick="moveToTop()" src="assets/Images/scrollToTop.jpg" alt="To top button">
@@ -24,7 +26,7 @@
 <!--HEADER-->
 <header>
     <!-- LOGO. Only visible in format where window > 900px -->
-    <a href="index.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
+    <a href="index.html"><img id="headerLogo" src="assets/Images/logo.png" alt="Nav Logo"></a>
     <!-- Hamburger Menu (Only visible in format where window < 900px)-->
     <div onclick="toggleMenu()" id="hamburgerMenu">
         <div class="hamMenu" id="line1"></div>
@@ -42,7 +44,7 @@
 <br><br>
 Solution
 
-<!------------------- FOOTER CONTAINER --------------------------->
+<!-------------------FOOTER CONTAINER--------------------------->
 <footer class="footer">
 
     <!--Box where the adress, logo and mail button will be-->
@@ -86,7 +88,21 @@ Solution
                 </li>
             </ul>
         </li>
-    </ul>
+        <li class="nav_item">
+
+            <h2 class="nav_title">Social Media</h2>
+           <ul class="nav_ul">
+             <li>
+               <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+           </ul>
+         </li>  
+         </ul>
+
+
     <!--Creates the copyright line for the bottom of the footer-->
     <div class="legal">
         <p>&copy; 2020 Energy++. All rights reserved.</p>

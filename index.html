@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/CSS/index.css">
     <!-- Stylesheet for the footer -->
     <link rel="stylesheet" href="assets/CSS/footer.css">
+    <!--Adding an icon libary-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -38,10 +40,23 @@
     </header>
     <!------------------------SIDENAV--------------------------->
     <div id="sideNav">
-        <a href="#mainSite"class="sideNavElements 1">Home</a>
-        <a href="#challengeSite" class="sideNavElements 2">Challenge</a>
-        <a href="#solutionSite" class="sideNavElements 3">Solution</a>
-        <a href="#appSite" class="sideNavElements 4">App</a>
+        <div class="sideNavElements 1">
+            <a href="#mainSite">Home</a>
+            <img id="sideNavImg1" src="assets/Images/SidemenuIcon.svg">
+        </div>
+        <div class="sideNavElements 2">
+            <a href="#challengeSite">Challenge</a>
+            <img src="assets/Images/SidemenuIcon.svg">
+        </div>
+        <div class="sideNavElements 3">
+            <a href="#solutionSite">Solution</a>
+            <img src="assets/Images/SidemenuIcon.svg">
+        </div>
+        <div class="sideNavElements 4">
+            <a href="#appSite">App</a>
+            <img src="assets/Images/SidemenuIcon.svg">
+        </div>
+
     </div>
     <!--CONTAINER MAINSITE-->
     <div id="mainSite">
@@ -365,7 +380,24 @@
           </li>
         </ul>
       </li>
-    </ul>
+    
+      <li class="nav_item">
+
+        <h2 class="nav_title">Social Media</h2>
+       <ul class="nav_ul">
+         <li>
+           <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+       </ul>
+     </li>  
+     </ul>
+
+
+
+
     <!--Creates the copyright line for the bottom of the footer-->
     <div class="legal">
       <p>&copy; 2020 Energy++. All rights reserved.</p>

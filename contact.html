@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="assets/CSS/contact.css">
   <!--Stylesheet for the footer-->
   <link rel="stylesheet" href="assets/CSS/footer.css">
+  <!--Adding an icon libary-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -32,6 +34,12 @@
       <li class="menuLi app" onclick="collapseHamMenu()"><a href="app.html"> App </a></li>
     </ul>
   </header>
+    <!------------------------SIDENAV--------------------------->
+    <div id="sideNav">
+      <a href="#mainSite"class="sideNavElements 1">Home</a>
+      <a href="#faq" class="sideNavElements 2">FAQ</a>
+      <a href="#customerSupport" class="sideNavElements 3">Customer Support</a>
+  </div>
 
   <div id="mainSite">
 
@@ -140,28 +148,23 @@
 
 
 
-  <!------------------- FOOTER CONTAINER --------------------------->
-  <footer class="footer">
+    <h2>Contact</h2>
 
-    <!--Box where the adress, logo and mail button will be-->
-    <div class="footer_addr">
-      <!--Adding the logo-->
-      <img class="footerlogo" src="assets/Images/logo.png" alt="logo footer">
-      <h2>Contact</h2>
-      <address>
-        Osloveien 23, Oslo, Norway<br>
-        <!--Makes the mail us button-->
-        <a class="footer_btn" href="mailto:Support@energy++.com">Email Us</a>
-      </address>
-    </div>
-    <!--Makes a bracket for the for the links for navigation-->
-    <ul class="footer_nav">
+    <address>
+      Osloveien 23, Oslo, Norway<br>
+      <!--Makes the mail us button-->
+      <a class="footer_btn" href="mailto:Support@energy++.com">Email Us</a>
+    </address>
+  </div>
+  <!--Makes a bracket for the for the links for navigation-->
+  <ul class="footer_nav">
       <li class="nav_item">
         <!--Makes the titel over the bracket-->
         <h2 class="nav_title">Support</h2>
         <!--Creates the bracket-->
         <ul class="nav_ul">
           <li>
+
             <a href="contact.html#costDiv">Contact us</a>
           </li>
           <li>
@@ -184,12 +187,27 @@
           </li>
         </ul>
       </li>
-    </ul>
-    <!--Creates the copyright line for the bottom of the footer-->
-    <div class="legal">
-      <p>&copy; 2020 Energy++. All rights reserved.</p>
-    </div>
-  </footer>
+  
+
+    <li class="nav_item">
+
+      <h2 class="nav_title">Social Media</h2>
+     <ul class="nav_ul">
+       <li>
+         <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+     </ul>
+   </li>  
+   </ul>
+  <!--Creates the copyright line for the bottom of the footer-->
+  <div class="legal">
+    <p>&copy; 2020 Energy++. All rights reserved.</p>
+  </div>
+  
+</footer>
 
 
 <!--Placed at bottom to load body first-->
