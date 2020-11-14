@@ -1,8 +1,7 @@
-/*--------------------MAIN SITE------------------------------------------*/
-#mainSite {
+/*--------------------Welcome Page------------------------------------------*/
+#welcomePage {
     height: 100vh;
     width: 100vw;
-    z-index: 1;
     margin-bottom: 10vh;
 }
 /* Video on the top of the website*/
