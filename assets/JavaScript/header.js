@@ -96,16 +96,16 @@ function selectActiveSite() {
 /* Making the hamburger menu show/not show the menu */
 
 // Gather HTML elements
-var headerMenu = document.getElementById("headerMenu");
-var line1 = document.getElementById("line1");
-var line2 = document.getElementById("line2");
-var line3 = document.getElementById("line3");
+let headerMenu = document.getElementById("headerMenu");
+let line1 = document.getElementById("line1");
+let line2 = document.getElementById("line2");
+let line3 = document.getElementById("line3");
 
 // Function which toggles hamburgermenu on/off
 function toggleMenu() {
 
     //Makes the three stripes appear
-    if(headerMenu.style.display == "flex"){
+    if(headerMenu.style.display === "flex"){
         headerMenu.style.display = "";
 
         line1.style.transform = "rotate(0deg)";
