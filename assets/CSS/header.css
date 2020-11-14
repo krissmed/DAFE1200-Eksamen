@@ -345,7 +345,6 @@ body {
     }
 }
 
-
 @media screen and (max-height: 700px), (max-width: 900px) {
     #sideNav{
         display: none;

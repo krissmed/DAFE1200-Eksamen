@@ -1,25 +1,7 @@
-/*--------------------------------------------------------------*/
-/*MAIN SITE*/
-#mainSite {
-  height: 100vh;
-  width: 100vw;
-}
-
-#mainSite {
-  height: 100vh;
-  width: 100vw;
-}
-
-  /*Background image*/
-  .backgroundWindmills {
-    height: 100vh;
-    width: 100vw;
-
-}
 
 /*-----------------------------------------------*/
 /*FAQ*/
-  /*the links href ot this element. prevents headline in faq comes under header*/
+/*Faq div*/
 #faqDiv {
   padding-bottom: 10vh;
 }
@@ -27,17 +9,19 @@
   height: auto;
   width: 100vw;
 }
+
+/*the titel on the faq page*/
 .faq_titel {
 text-align: center;
 color: green;
 }
-
+/*content on the faq page*/
 .faq_content {
 text-align: center;
 color: green;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
+/* Buttons on the faq panels */
 .accordion {
   background-color: white;
   color: #444;
@@ -48,12 +32,12 @@ color: green;
   margin: 0 10%;
 }
 
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* changes the color of the panel when hovering over */
   .active1, .accordion:hover {
     background-color: #ccc;
   }
 
-/* Style the accordion panel. Note: hidden by default */
+/* answer bar */
 .panel {
   text-align: center;
   padding: 0 18px;
@@ -63,8 +47,9 @@ color: green;
   width: 40%;
 }
 
+/* changes from + sign to -*/
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795'; 
   font-size: 13px;
   color: #777;
   float: right;
@@ -72,19 +57,19 @@ color: green;
 }
 
 .active1:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796"; 
 }
 /*------------------------------------------*/
-/*the links href ot this element. prevents headline in costumer suppert comes under header*/
-#costDiv {
-  padding-bottom: 10vh;
-}
+/*Employee cards*/
+
+/*Name tag for the employee*/
 .empl_titel {
   font-size: 2.3em;
   margin-top: -2vh;
   margin-left: 2vh;
 
 }
+/*Role of the employee*/
 .empl_role {
   font-size: 1em;
   color: grey;
@@ -92,23 +77,26 @@ color: green;
   margin-top: -2vh;
 
 }
+/*text under the employee role*/
 .empl_text {
   font-size: 1em;
   margin-left: 2vh;
 }
-
+/*Image of the employee*/
 .empl_img {
   height: 35vh;
   width: 45vh;
   margin: 20px
 }
 
+/*the flex containers that creates the cards*/
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   margin: 5vh 1vh;
 }
 
+/* styling the containers */
 .flex-container > div {
   background-color:white;
   box-shadow: 0 4px 8px 0 green;
@@ -120,17 +108,16 @@ color: green;
 
 }
 
-/* Responsive layout - makes a one column-layout instead of two-column layout */
+/* makes it the cards have a max width of 800px, before they flex*/
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
   }
 }
 
-
-
-
 /*-------------------------------------------*/
+/* costumer support part of the page */
+/*creates the costumer support "card"*/
 .cost {
   display: flex;
   flex-flow: row wrap;
@@ -144,28 +131,21 @@ color: green;
     flex: 1 100%
 }
 
+/* Titles in the card*/
+.cost_title {
+  font-size: 2em;
+  font-weight: bold;
+}
 .cost_title2{
     text-align: center;
 }
 
-
+/*Styles the Ul tags*/
 .cost_ul {
   list-style: none;
   padding-left: 0;
 }
 
-.cost_li {
-  line-height: 3em;
-
-}
-.cost_title {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.cost_item--extra {
-  flex-grow: 2;
-}
 .cost_ul a {
   color: #454545;
   font-size: 20px;
@@ -175,29 +155,30 @@ color: green;
   column-count: 2;
   column-gap: 1.25em;
 }
-.cost ul {
-  list-style: none;
-  padding-left: 0;
-}
 
-.cost li {
+/*styles the li tags*/
+.cost_li {
   line-height: 3em;
+
 }
 
+/*Styles the links*/
 .cost a {
   text-decoration: none;
 }
 
+/*navigation menu on the footer*/
 .cost_nav {
   display: flex;
     flex-flow: row wrap;
     text-align: center;
 }
-
 .cost_nav > * {
   flex: 1 50%;
   margin-right: 1.25em;
 }
+
+/*Makes the footer flex*/
 @media screen and (min-width: 40.375em) {
   .cost_nav > * {
     flex: 1;
@@ -211,9 +192,9 @@ color: green;
   .cost_nav {
     flex: 2 0;
   }
-}
+/*styles the telefon number*/
 .cost_tlf{
     font-size: 20px;
 }
-
+}
 
