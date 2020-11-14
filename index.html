@@ -8,12 +8,12 @@
 
     <title>Energy++</title>
 
-    <!--Stylesheet for the header/Menu-->
+    <!-- Stylesheet for the header/Menu -->
     <link rel="stylesheet" href="assets/CSS/header.css">
-    <!--Stylesheet for the content-->
-    <link rel="stylesheet" href="assets/CSS/index.css"
-    <!--Stylesheet for the footer-->
-    <link rel="stylesheet" href="assets/CSS/footer.css"
+    <!-- Stylesheet for the content -->
+    <link rel="stylesheet" href="assets/CSS/index.css">
+    <!-- Stylesheet for the footer -->
+    <link rel="stylesheet" href="assets/CSS/footer.css">
 </head>
 
 <body>
@@ -36,7 +36,13 @@
             <li class="menuLi app" onclick="collapseHamMenu()"><a href="app.html"> App </a></li>
         </ul>
     </header>
-
+    <!------------------------SIDENAV--------------------------->
+    <div id="sideNav">
+        <a href="#mainSite"class="sideNavElements 1">Home</a>
+        <a href="#challengeSite" class="sideNavElements 2">Challenge</a>
+        <a href="#solutionSite" class="sideNavElements 3">Solution</a>
+        <a href="#appSite" class="sideNavElements 4">App</a>
+    </div>
     <!--CONTAINER MAINSITE-->
     <div id="mainSite">
         <!--BACKGROUND PICTURE-->
@@ -72,6 +78,7 @@
                 </p>
                 <!--Challenge intro image-->
                 <img id="challengeSiteTreePic" src="assets/Images/background_tree.jpeg" alt="Dead Tree">
+                <a class="readMore">Read more on this...</a>
             </div>
 
 
@@ -106,6 +113,7 @@
 
                     <!--Image down right challenge site 2-->
                     <img class="environmentImage" src="assets/Images/climate_change.jpeg" alt="climate change">
+                    <a class="readMore">Read more on this...</a>
 
                 </div>
             </div>
@@ -114,7 +122,7 @@
             <div id="challengeSite3" style="display: none">
 
                 <!--Image 3-->
-                <img id="pollutedImgSite3" src="assets/Images/polluted_city.jpeg" alt="Polluted City">
+                <img id="pollutedImgSite3" src="assets/Images/polluted_city.jpeg" alt="Polluted City"> <!-- Dette bildet må flyttes i koden til under teksten -->
 
                 <!--Text box-->
                 <div id="challengeSite3Description">
@@ -135,6 +143,8 @@
                         tristique ut, dapibus vel ligula. Phasellus luctus, elit nec.
                     </p>
                 </div>
+                <a class="readMore">Read more on this...</a>
+
             </div>
         </div>
     </div>
@@ -161,6 +171,8 @@
 
                 <!--Image down right-->
                 <img class="solutionBulb" src="assets/Images/ligtbulb.jpeg" alt="Light Bulb">
+                <a class="readMore">Read more on this...</a>
+
             </div>
 
             <!--CONTAINER SOLUTION SITE 2-->
@@ -193,6 +205,7 @@
 
                     <!--Image down right challenge site 2-->
                     <img class="environmentImage" src="assets/Images/climate_change.jpeg" alt="climate change">
+                    <a class="readMore">Read more on this...</a>
 
                 </div>
             </div>
@@ -214,6 +227,8 @@
                         congue. Donec lacinia nisi tellus, eleifend viverra magna bibendum ac.</p>
 
                     <!--Image down right solution site 3-->
+                    
+                    <a class="readMore">Read more on this...</a>
 
 
                 </div>
@@ -247,6 +262,8 @@
 
                 <!--Image down right-->
                 <img class="appImg" src="assets/Images/appImg.jpeg" alt="App Site1">
+                <a class="readMore">Read more on this...</a>
+
             </div>
 
             <!--CONTAINER SOLUTION SITE 2-->
@@ -277,6 +294,7 @@
                         Fusce dapibus nulla id quam consectetur, non auctor orci convallis.
                     </p>
                 </div>
+                <a class="readMore">Read more on this...</a>
             </div>
 
             <!--CONTAINER SOLUTION SITE 3-->
@@ -295,6 +313,8 @@
                         malesuada orci non erat hendrerit, a finibus lectus gravida. Sed efficitur commodo sapien vel
                         congue. Donec lacinia nisi tellus, eleifend viverra magna bibendum ac.</p>
                 </div>
+                <a class="readMore">Read more on this...</a>
+
             </div>
         </div>
     </div>
@@ -325,7 +345,7 @@
           </li>
   
           <li>
-            <a href="contact.html">FAQ</a>
+            <a href="contact.html#faq">FAQ</a>
           </li>
         </ul>
       </li>

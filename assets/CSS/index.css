@@ -63,7 +63,13 @@
         color: green;
         position: relative;
     }
-
+.readMore{
+    font-size: 2em;
+}
+.readMore:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
 /*Tree Image*/
         #challengeSiteTreePic {
