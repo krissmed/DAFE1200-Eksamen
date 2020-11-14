@@ -1,3 +1,4 @@
+document.getElementById("mainVideo").playbackRate = 0.1;
 /* Gather HTML elements from index.html */
 
 var challengeSite1 = document.getElementById("challengeSite1");

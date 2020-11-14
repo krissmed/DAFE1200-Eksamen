@@ -10,13 +10,6 @@
     width: 210vh;
     height: auto;
 }
-
-
-
-@media screen and (orientation: portrait) and (max-width: 1000px) {
-   
-}
-
 /*---------------------Top image and quotes----------------------------------------------*/
 
         /*Quote*/
@@ -58,7 +51,7 @@
         background-color: #cdd1ce;
     }
     /*The three sites within the Challenge site*/
-    #challengeSite1, #challengeSite2, #challengeSite3 {/* Can be redone as a class */
+    #challengeSite1, #challengeSite2, #challengeSite3 { /* Can be redone as a class */
         height: 100vh;
         width: 100vw;
         top: 12vh;
@@ -88,7 +81,7 @@
             border: solid black 1px;
         }
             /*Text*/
-                /*Headline*/
+                /*  Headline*/
                 .headline {
                     font-weight: bolder;
                     font-size: 3vw;
