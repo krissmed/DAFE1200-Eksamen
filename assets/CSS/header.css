@@ -144,6 +144,35 @@ body {
     #sideNav:hover{
         left: -15px; /* Position them outside of the screen */
     }
+        .sideNavElements{
+            margin-top: 2vh;
+            left: -200px; /* Position them outside of the screen */
+            height: 5vh;
+            align-items: center;
+            text-align: center;
+            padding-right: 50px;
+            padding-left: 50px;
+            text-decoration: none;
+            color: white;
+            background-color: green;
+            border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        }
+            .sideNavElements:hover{
+                margin-top: 2vh;
+                height: 5vh;
+                left: 0px;
+                background-color: white;
+                color: green;
+                border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+            }
+                #sideNav:hover{
+                    left: -15px; /* Position them outside of the screen */
+                }
+                    /*This class gets added to sideNavElements in JS*/
+                    .sideNavActive {
+                        background-color: white;
+                        color: green;
+                    }
     /* Hamburger nav (Only visible in format < 900px)*/
     .hamMenu {
         display: none;
@@ -189,30 +218,30 @@ body {
         text-decoration: none;
         color: green;
     }
-    /*creates green line after/under the element and adds transition when hovered */
-    .menuLi a::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 3px;
-        background: green;
-        transition: width .5s;
-    }
-    /*When the element above i hovered the width is adjusted to 100% of menuLi a*/
-    .menuLi a:hover::after {
-        width: 100%;
-    }
-    /*Adds this active class in JS*/
-    .active {
+        /*creates green line after/under the element and adds transition when hovered */
+        .menuLi a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: green;
+            transition: width .5s;
+        }
+            /*When the element above i hovered the width is adjusted to 100% of menuLi a*/
+            .menuLi a:hover::after {
+                width: 100%;
+            }
+    /*Finds class that contains active*/
+    li[class*="active"] {
         border-bottom: 3px solid green;
-        transition-delay: .35s;
-        transition-duration: .005s;
+        transition-delay: .5s;
+        transition-duration: .05s;
         transition: ease;
     }
-    /*Removes the border when the already active class is hovered. Prevents double underline*/
-    .active:hover {
-        border-bottom: none;
-    }
+        /*Removes the border when the already active class is hovered. Prevents double underline*/
+        li[class*="active"]:hover {
+            border-bottom: none;
+        }
 }
 @media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
     #toTop{

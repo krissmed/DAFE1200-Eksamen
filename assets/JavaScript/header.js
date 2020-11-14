@@ -19,28 +19,30 @@ if(window.innerWidth < 900){
 }
 
 /*-------------------------------------------------*/
-/*MAKING THE MENULINK ACTIVE DEPENDING ON WHERE ON SITE THE USER IS*/
+/*MAKING THE SIDE-NAV ACTIVE DEPENDING ON WHERE ON SITE THE USER IS*/
 
 /*when the windown scrolls, the functions starts*/
 window.onscroll = function () {
-    selectActiveSite();
+    selectActiveSite()
     scrollToTop();
 };
 
+                        /*DENNE MÅ ENDRES TIL Å GJELDE PÅ SIDE MENY*/
+
 /*gathering all the elements*/
-let mainLink = document.getElementsByClassName("main")[0];
-let challengeLink = document.getElementsByClassName("challenge")[0];
-let solutionLink = document.getElementsByClassName("solution")[0];
-let appLink = document.getElementsByClassName("app")[0];
+let sideNav1 = document.getElementsByClassName("sideNavElements 1")[0];
+let sideNav2 = document.getElementsByClassName("sideNavElements 2")[0];
+let sideNav3 = document.getElementsByClassName("sideNavElements 3")[0];
+let sideNav4 = document.getElementsByClassName("sideNavElements 4")[0];
 
 /*Makes sure the HOME-link is active at first even when user is not scrolling*/
 if (window.scrollY >= 0) {
 
-    mainLink.classList.add("active");
+    sideNav1.classList.add("sideNavActive");
 
-    challengeLink.classList.remove("active");
-    solutionLink.classList.remove("active");
-    appLink.classList.remove("active");
+    sideNav2.classList.remove("sideNavActive");
+    sideNav3.classList.remove("sideNavActive");
+    sideNav4.classList.remove("sideNavActive");
 }
 
 //Function that chooses what Site is active based on where the user is scrolling on the site
@@ -50,43 +52,43 @@ function selectActiveSite() {
     if (window.scrollY > window.innerHeight * 2.9) {
 
         /*active class added app*/
-        appLink.classList.add("active");
+        sideNav4.classList.add("sideNavActive");
 
         /*active class removed from the others so its only 1 link active*/
-        solutionLink.classList.remove("active");
-        challengeLink.classList.remove("active");
-        mainLink.classList.remove("active");
+        sideNav3.classList.remove("sideNavActive");
+        sideNav2.classList.remove("sideNavActive");
+        sideNav1.classList.remove("sideNavActive");
 
     }
     /*if the window is scrolled down furter than 190vh (1.9times the screen height)*/
     else if (window.scrollY > window.innerHeight * 1.9) {
 
 
-        solutionLink.classList.add("active");
+        sideNav3.classList.add("sideNavActive");
 
-        mainLink.classList.remove("active");
-        challengeLink.classList.remove("active");
-        appLink.classList.remove("active");
+        sideNav1.classList.remove("sideNavActive");
+        sideNav2.classList.remove("sideNavActive");
+        sideNav4.classList.remove("sideNavActive");
 
     }
     /*if the window is scrolled down furter than 90vh (0.9times the screen height)*/
     else if (window.scrollY > window.innerHeight * 0.9) {
 
-        challengeLink.classList.add("active");
+        sideNav2.classList.add("sideNavActive");
 
 
-        mainLink.classList.remove("active");
-        solutionLink.classList.remove("active");
-        appLink.classList.remove("active");
+        sideNav1.classList.remove("sideNavActive");
+        sideNav3.classList.remove("sideNavActive");
+        sideNav4.classList.remove("sideNavActive");
     }
     /*if the window is scrolled down furter than -100vh (-1times the screen height) Just to be sure the clas is added at top*/
     else if (window.scrollY > -1 ) {
 
-        mainLink.classList.add("active");
+        sideNav1.classList.add("sideNavActive");
 
-        challengeLink.classList.remove("active");
-        solutionLink.classList.remove("active");
-        appLink.classList.remove("active");
+        sideNav2.classList.remove("sideNavActive");
+        sideNav3.classList.remove("sideNavActive");
+        sideNav4.classList.remove("sideNavActive");
     }
 }
 /*-------------------------------------------------------------------------*/
