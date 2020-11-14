@@ -124,6 +124,7 @@ body {
     }
     #sideNav img{
         position: relative;
+        right: 1px;
     }
     .sideNavElements{
         display: flex;
@@ -178,11 +179,7 @@ body {
                         background-color: white;
                         color: green;
                     }
-.sideNavImg {
-    position: relative;
-    right: 2px;
-}
-/*
+
     /* Hamburger nav (Only visible in format < 900px)*/
     .hamMenu {
         display: none;
@@ -319,6 +316,10 @@ body {
         text-transform: uppercase;
         border-bottom: 3px solid springgreen;
     }
+        /*selects only the last <li> element*/
+        .menuLi:last-child{
+            margin-bottom: 20px;
+        }
 
     .menuLi a {
         text-decoration: none;
