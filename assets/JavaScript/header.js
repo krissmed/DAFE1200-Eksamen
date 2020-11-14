@@ -27,68 +27,70 @@ window.onscroll = function () {
     scrollToTop();
 };
 
-/*gathering all the elements*/
+                        /*DENNE MÅ ENDRES TIL Å GJELDE PÅ SIDE MENY*/
+
+/*gathering all the elements
 let mainLink = document.getElementsByClassName("main")[0];
 let challengeLink = document.getElementsByClassName("challenge")[0];
 let solutionLink = document.getElementsByClassName("solution")[0];
 let appLink = document.getElementsByClassName("app")[0];
 
-/*Makes sure the HOME-link is active at first even when user is not scrolling*/
+/*Makes sure the HOME-link is active at first even when user is not scrolling
 if (window.scrollY >= 0) {
 
-    mainLink.classList.add("active");
+    mainLink.classList.add("activeSideMenu");
 
-    challengeLink.classList.remove("active");
-    solutionLink.classList.remove("active");
-    appLink.classList.remove("active");
+    challengeLink.classList.remove("activeSideMenu");
+    solutionLink.classList.remove("activeSideMenu");
+    appLink.classList.remove("activeSideMenu");
 }
 
 //Function that chooses what Site is active based on where the user is scrolling on the site
 function selectActiveSite() {
 
-    /*if the window is scrolled down furter than 290vh (2.9times the screen height)*/
+    /*if the window is scrolled down furter than 290vh (2.9times the screen height)
     if (window.scrollY > window.innerHeight * 2.9) {
 
-        /*active class added app*/
-        appLink.classList.add("active");
+        /*active class added app
+        appLink.classList.add("activeSideMenu");
 
-        /*active class removed from the others so its only 1 link active*/
-        solutionLink.classList.remove("active");
-        challengeLink.classList.remove("active");
-        mainLink.classList.remove("active");
+        /*active class removed from the others so its only 1 link active
+        solutionLink.classList.remove("activeSideMenu");
+        challengeLink.classList.remove("activeSideMenu");
+        mainLink.classList.remove("activeSideMenu");
 
     }
-    /*if the window is scrolled down furter than 190vh (1.9times the screen height)*/
+    /*if the window is scrolled down furter than 190vh (1.9times the screen height)
     else if (window.scrollY > window.innerHeight * 1.9) {
 
 
-        solutionLink.classList.add("active");
+        solutionLink.classList.add("activeSideMenu");
 
-        mainLink.classList.remove("active");
-        challengeLink.classList.remove("active");
-        appLink.classList.remove("active");
+        mainLink.classList.remove("activeSideMenu");
+        challengeLink.classList.remove("activeSideMenu");
+        appLink.classList.remove("activeSideMenu");
 
     }
-    /*if the window is scrolled down furter than 90vh (0.9times the screen height)*/
+    /*if the window is scrolled down furter than 90vh (0.9times the screen height)
     else if (window.scrollY > window.innerHeight * 0.9) {
 
-        challengeLink.classList.add("active");
+        challengeLink.classList.add("activeSideMenu");
 
 
-        mainLink.classList.remove("active");
-        solutionLink.classList.remove("active");
-        appLink.classList.remove("active");
+        mainLink.classList.remove("activeSideMenu");
+        solutionLink.classList.remove("activeSideMenu");
+        appLink.classList.remove("activeSideMenu");
     }
-    /*if the window is scrolled down furter than -100vh (-1times the screen height) Just to be sure the clas is added at top*/
+    /*if the window is scrolled down furter than -100vh (-1times the screen height) Just to be sure the clas is added at top
     else if (window.scrollY > -1 ) {
 
-        mainLink.classList.add("active");
+        mainLink.classList.add("activeSideMenu");
 
-        challengeLink.classList.remove("active");
-        solutionLink.classList.remove("active");
-        appLink.classList.remove("active");
+        challengeLink.classList.remove("activeSideMenu");
+        solutionLink.classList.remove("activeSideMenu");
+        appLink.classList.remove("activeSideMenu");
     }
-}
+}*/
 /*-------------------------------------------------------------------------*/
 
 /* Making the hamburger menu show/not show the menu */
