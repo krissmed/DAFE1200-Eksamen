@@ -320,8 +320,8 @@ body {
     padding: 15px;
     width: 50px;
     border-radius: 4px;
-    opacity: 75%;
-    z-index: 99;
+    opacity: 65%;
+    z-index: 3;
 }
 #toTop:hover{
     opacity: 100%;
