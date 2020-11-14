@@ -173,6 +173,11 @@ body {
                         background-color: white;
                         color: green;
                     }
+.sideNavImg {
+    position: relative;
+    right: 2px;
+}
+/*
     /* Hamburger nav (Only visible in format < 900px)*/
     .hamMenu {
         display: none;
@@ -275,6 +280,7 @@ body {
     header {
         background-color: white;
         width: 100%;
+        height: auto;
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -292,6 +298,8 @@ body {
     /*MENU*/
     #headerMenu {
         display: none;
+        background-color: inherit;
+        width: 100%;
         list-style-type: none;
         flex-direction: column;
         margin-right: 50px;
@@ -318,8 +326,16 @@ body {
         transition: transform 0.1s;
     }
 
-    .active {
+    /*Finds class that contains active*/
+    li[class*="active"] {
         border-bottom: 3px solid green;
+        transition-delay: .5s;
+        transition-duration: .05s;
+        transition: ease;
+    }
+    /*Removes the border when the already active class is hovered. Prevents double underline*/
+    li[class*="active"]:hover {
+        border-bottom: none;
     }
 }
 
