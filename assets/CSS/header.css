@@ -108,13 +108,13 @@ body {
         display: flex;
         flex-direction: column;
         margin-top: 20vh;
-        z-index: 99;
         color: black;
         position: fixed;
-        left: -220px; 
-        transition: 0.3s; 
+        left: -210px; 
+        transition: 0.4s; 
         padding: 15px; 
-        width: 240px; 
+        z-index: 99;
+        width: auto; 
         text-decoration: none; 
         font-size: 2em; 
         border-radius: 0 5px 5px 0; 
@@ -124,17 +124,14 @@ body {
     }
     #sideNav img{
         position: relative;
-        right: 1px;
     }
     .sideNavElements{
         display: flex;
         justify-content: space-between;
         margin-top: 2vh;
-        left: -200px; 
         height: 5vh;
         align-items: center;
         text-align: center;
-        padding-right: 50px;
         padding-left: 50px;
         text-decoration: none;
         background-color: green;
@@ -156,7 +153,6 @@ body {
             height: 5vh;
             align-items: center;
             text-align: center;
-            padding-right: 50px;
             padding-left: 50px;
             text-decoration: none;
             color: white;
@@ -187,14 +183,13 @@ body {
 
     header {
         background-color: white;
-        height: 10vh;
         width: 100%;
         position: fixed;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         box-shadow: 1px 1px 7px 2px green;
-        z-index: 2;
+        z-index: 99;
         user-select: none;
     }
 
