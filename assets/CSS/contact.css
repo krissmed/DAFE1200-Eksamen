@@ -19,7 +19,14 @@
 
 /*-----------------------------------------------*/
 /*FAQ*/
-
+  /*the links href ot this element. prevents headline in faq comes under header*/
+#faqDiv {
+  padding-bottom: 10vh;
+}
+#faq {
+  height: auto;
+  width: 100vw;
+}
 .faq_titel {
 text-align: center;
 color: green;
@@ -38,18 +45,13 @@ color: green;
   padding: 18px;
   width: 80%;
   text-align: center;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin: 0 10%;
 }
 
-
-
-
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active1, .accordion:hover {
-  background-color: #ccc;
-}
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active1, .accordion:hover {
+    background-color: #ccc;
+  }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
@@ -73,7 +75,10 @@ color: green;
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 /*------------------------------------------*/
-
+/*the links href ot this element. prevents headline in costumer suppert comes under header*/
+#costDiv {
+  padding-bottom: 10vh;
+}
 .empl_titel {
   font-size: 2.3em;
   margin-top: -2vh;
@@ -94,24 +99,20 @@ color: green;
 
 .empl_img {
   height: 35vh;
-  width: auto;
+  width: 45vh;
   margin: 20px
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 1vh;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  margin-right: 1vh;
-
+  margin: 5vh 1vh;
 }
 
 .flex-container > div {
   background-color:white;
   box-shadow: 0 4px 8px 0 green;
-  width: 58vh;
+  width: 50vh;
   height: auto;
   margin-left: 20px;
   margin-right: 10px;
