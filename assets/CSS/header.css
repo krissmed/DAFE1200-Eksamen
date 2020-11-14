@@ -186,30 +186,30 @@ body {
         text-decoration: none;
         color: green;
     }
-    /*creates green line after/under the element and adds transition when hovered */
-    .menuLi a::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 3px;
-        background: green;
-        transition: width .5s;
-    }
-    /*When the element above i hovered the width is adjusted to 100% of menuLi a*/
-    .menuLi a:hover::after {
-        width: 100%;
-    }
-    /*Adds this active class in JS*/
-    .active {
+        /*creates green line after/under the element and adds transition when hovered */
+        .menuLi a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: green;
+            transition: width .5s;
+        }
+            /*When the element above i hovered the width is adjusted to 100% of menuLi a*/
+            .menuLi a:hover::after {
+                width: 100%;
+            }
+    /*Finds class that contains active*/
+    li[class*="active"] {
         border-bottom: 3px solid green;
-        transition-delay: .35s;
-        transition-duration: .005s;
+        transition-delay: .5s;
+        transition-duration: .05s;
         transition: ease;
     }
-    /*Removes the border when the already active class is hovered. Prevents double underline*/
-    .active:hover {
-        border-bottom: none;
-    }
+        /*Removes the border when the already active class is hovered. Prevents double underline*/
+        li[class*="active"]:hover {
+            border-bottom: none;
+        }
 }
 @media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
     #toTop{
