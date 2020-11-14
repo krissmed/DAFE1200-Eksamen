@@ -1,0 +1,127 @@
+.sideMenuSources {
+    height: 115vh;
+    width: 20vw;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    box-shadow: 1px 1px 7px 2px green;
+    color: green;
+}
+    .sideMenuSourcesUl {
+        padding: 2vw;
+        list-style-type: none;
+        line-height: 30px;
+    }
+        .sideMenuSourcesLi {
+            text-decoration: none;
+            font-size: 1.8vw;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .sideMenuSourcesLi:hover {
+            border-bottom: 1px solid green;
+        }
+            .sideMenuSourcesTitle {
+                font-weight: bold;
+                border-bottom: 2px solid green;
+                font-size: 2.2vw;
+            }
+
+
+
+.sourcesInfoContent, .sourceImageContent{
+    height: 100vh;
+    width: 80vw;
+    position: relative;
+    left: 20vw;
+    top: 10vh;
+    display: grid;
+    overflow: scroll;
+    margin-bottom: 13vh;
+}
+    .sourcesHeadline {
+        padding: 9px 35px;
+    }
+    .sourcesSubtitle {
+        position: relative;
+        left: 75px;
+    }
+        .sourcesInfo {
+            width: 100%;
+            height: auto;
+            padding: 4vh;
+            margin-bottom: 8em;
+        }
+        /*Selects the last element*/
+        .sourcesInfo:last-child {
+            margin-bottom: 40px;
+        }
+            .sourcesInfoDiv {
+                background-color: lightgrey;
+                border: 1px solid black;
+                height: 9rem;
+                width: 70vw;
+                padding: 10px;
+                display: block;
+                position: absolute;
+
+            }
+                .sourcesInfoName {
+                    font-weight: bold;
+                    border-bottom: 1px solid black;
+                    width: 65vw;
+                    height: 5vh;
+                    position: absolute;
+                    top: 3vh;
+                    left: 2vw;
+                }
+                    .sourcesLinkText {
+                        position: absolute;
+                        top: 10vh;
+                        left: 3vw;
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                        .sourcesLink {
+                            position: absolute;
+                            top: 15vh;
+                            left: 3vw;
+                            text-decoration: none;
+                            color: inherit;
+                        }
+                            .sourcesAuthor {
+                                position: absolute;
+                                top: 18vh;
+                                right: 40vw;
+                            }
+                                .sourcesDate {
+                                    position: absolute;
+                                    top: 18vh;
+                                    right: 8vw;
+                                }
+.imgPreview {
+    position: absolute;
+    right: 1vw;
+    top: 2vh;
+}
+    .sourceImg {
+        border: 1px solid;
+        height: 120px;
+        width: 70px;
+    }
+
+.sourceMeetingsContent, .sourceGroupContent {
+    height: 100vh;
+    width: 80vw;
+    position: relative;
+    left: 20vw;
+    top: 10vh;
+    }
+    .listMeetGroup {
+            line-height: 40px;
+        }
+
+.studentNumber {
+    position: relative;
+    left: 40px;
+}
