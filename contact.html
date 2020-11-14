@@ -1,5 +1,4 @@
-<html>
-
+<html lang="no">
 <head>
 
   <link rel="icon" href="assets/Images/icon.ico">
@@ -29,12 +28,18 @@
     </div>
     <!--MENU-->
     <ul id="headerMenu">
-      <li class="menuLi main" onclick="collapseHamMenu()"><a href="index.html.html"> Home </a></li>
+      <li class="menuLi main" onclick="collapseHamMenu()"><a href="index.html"> Home </a></li>
       <li class="menuLi challenge" onclick="collapseHamMenu()"><a href="challenge.html"> Challenge </a></li>
       <li class="menuLi solution" onclick="collapseHamMenu()"><a href="solution.html"> Solution </a></li>
       <li class="menuLi app" onclick="collapseHamMenu()"><a href="app.html"> App </a></li>
     </ul>
   </header>
+    <!------------------------SIDENAV--------------------------->
+    <div id="sideNav">
+      <a href="#mainSite"class="sideNavElements 1">Home</a>
+      <a href="#faq" class="sideNavElements 2">FAQ</a>
+      <a href="#customerSupport" class="sideNavElements 3">Customer Support</a>
+  </div>
 
   <div id="mainSite">
 
@@ -48,38 +53,39 @@
     </span>
 
   </div>
-
+  <div id="faqDiv"></div>
   <div id="faq">
     <h1 class="faq_titel">FAQ </h1>
 
     <p class="faq_content"> Here we have some frequently asked questions</p>
 
-    <button class="accordion" class="border1">Spørsmål</button>
+    <button class="accordion border1">Spørsmål</button>
     <div id="svar1" class="panel">
       <p>svar</p>
     </div>
 
-    <button class="accordion" class="border1">Spørsmål</button>
+    <button class="accordion border1">Spørsmål</button>
     <div id="svar2" class="panel">
       <p>svar</p>
     </div>
 
-    <button class="accordion" class="border1">Spørsmål</button>
+    <button class="accordion border1">Spørsmål</button>
     <div id="svar3" class="panel">
       <p>svar</p>
     </div>
 
-    <button class="accordion" class="border1">Spørsmål</button>
-    <div id="svar4"class="panel">
+    <button class="accordion border1">Spørsmål</button>
+    <div id="svar4" class="panel">
       <p>svar</p>
     </div>
 
-    <button class="accordion" class="border2">Spørsmål</button>
+    <button class="accordion border2">Spørsmål</button>
     <div id="svar5" class="panel">
       <p>svar</p>
     </div>
   </div>
 
+<div id="costDiv"></div>
   <div class="cost">
     <div class="cost_title2">
       <h1>Costumer support</h1>
@@ -121,19 +127,19 @@
       <div class="flex-item">
         <img class=empl_img src="assets/Images/ansatt.jpg" alt="Ansattbilde">
         <h1 class="empl_titel">Carl Fredrik</h1>
-        <h2 class="empl_role">Costumer support<h2>
+        <h2 class="empl_role">Costumer support</h2>
             <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
       </div>
       <div class="flex-item">
         <img class=empl_img src="assets/Images/ansatt.jpg" alt="Ansattbilde">
         <h1 class="empl_titel">Carl Fredrik</h1>
-        <h2 class="empl_role">Costumer support<h2>
+        <h2 class="empl_role">Costumer support</h2>
             <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
       </div>
       <div class="flex-item">
         <img class=empl_img src="assets/Images/ansatt.jpg" alt="Ansattbilde">
         <h1 class="empl_titel">Carl Fredrik</h1>
-        <h2 class="empl_role">Costumer support<h2>
+        <h2 class="empl_role">Costumer support</h2>
             <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
       </div>
     </div>  
@@ -158,25 +164,25 @@
         <!--Creates the bracket-->
         <ul class="nav_ul">
           <li>
-            <a href="contact.html">Contact us</a>
-         </li>
 
-          <li>
-            <a href="contact.html#faq">FAQ</a>
+            <a href="contact.html#costDiv">Contact us</a>
           </li>
-       </ul>
-      </li>
+          <li>
+            <a href="contact.html#faqDiv">FAQ</a>
+          </li>
+        </ul>
 
-     <!--Makes a bracket for the for the links for navigation-->
+
+        <!--Makes a bracket for the for the links for navigation-->
       <li class="nav_item">
         <!--Makes the titel over the bracket-->
         <h2 class="nav_title">Legal</h2>
         <!--Creates the bracket-->
         <ul class="nav_ul">
           <li>
-           <a href="sources.html">Sources</a>
-         </li>
-         <li>
+            <a href="sources.html">Sources</a>
+          </li>
+          <li>
             <a href="meeting.html">Meeting logs</a>
           </li>
         </ul>
@@ -185,7 +191,7 @@
 
     <li class="nav_item">
 
-      <h2 class="nav_title">Social Media</h2>
+      <h2 class="nav_title">Social</h2>
      <ul class="nav_ul">
        <li>
          <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>

@@ -26,7 +26,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-/*---------------NavBar on each Site------------------------------------*/
+/*-----------------------------NavBar on each Site------------------------------------*/
 
 .siteMenu {
     list-style-type: none;
@@ -101,7 +101,7 @@ body {
     }
 }
 
-/*Nav*/
+/*---------------------------------------------------Nav--------------------------------------------------------------------------*/
 @media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */
 
     #sideNav{
@@ -111,17 +111,48 @@ body {
         z-index: 99;
         color: black;
         position: fixed;
-        left: -180px; /* Position them outside of the screen */
-        transition: 0.3s; /* Add transition on hover */
-        padding: 15px; /* 15px padding */
-        width: auto; /* Set a specific width */
-        text-decoration: none; /* Remove underline */
-        font-size: 20px; /* Increase font size */
-        border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        left: -220px; 
+        transition: 0.3s; 
+        padding: 15px; 
+        width: 240px; 
+        text-decoration: none; 
+        font-size: 2em; 
+        border-radius: 0 5px 5px 0; 
+    }
+    #sideNav a{
+        text-decoration: none;
+    }
+    #sideNav img{
+        position: relative;
+        right: 1px;
+    }
+    .sideNavElements{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2vh;
+        left: -200px; 
+        height: 5vh;
+        align-items: center;
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+        text-decoration: none;
+        background-color: green;
+        border-radius: 0 5px 5px 0; 
+    }
+    .sideNavElements:hover{
+        margin-top: 2vh;
+        height: 5vh;
+        left: 0px;
+        background-color: white;
+        border-radius: 0 5px 5px 0;
+    }
+    #sideNav:hover{
+        left: -15px;
     }
         .sideNavElements{
             margin-top: 2vh;
-            left: -200px; /* Position them outside of the screen */
+            left: -200px;
             height: 5vh;
             align-items: center;
             text-align: center;
@@ -130,7 +161,7 @@ body {
             text-decoration: none;
             color: white;
             background-color: green;
-            border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+            border-radius: 0 5px 5px 0;
         }
             .sideNavElements:hover{
                 margin-top: 2vh;
@@ -138,16 +169,17 @@ body {
                 left: 0px;
                 background-color: white;
                 color: green;
-                border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+                border-radius: 0 5px 5px 0;
             }
                 #sideNav:hover{
-                    left: -15px; /* Position them outside of the screen */
+                    left: -15px;
                 }
                     /*This class gets added to sideNavElements in JS*/
                     .sideNavActive {
                         background-color: white;
                         color: green;
                     }
+
     /* Hamburger nav (Only visible in format < 900px)*/
     .hamMenu {
         display: none;
@@ -250,6 +282,7 @@ body {
     header {
         background-color: white;
         width: 100%;
+        height: auto;
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -267,6 +300,8 @@ body {
     /*MENU*/
     #headerMenu {
         display: none;
+        background-color: inherit;
+        width: 100%;
         list-style-type: none;
         flex-direction: column;
         margin-right: 50px;
@@ -281,6 +316,10 @@ body {
         text-transform: uppercase;
         border-bottom: 3px solid springgreen;
     }
+        /*selects only the last <li> element*/
+        .menuLi:last-child{
+            margin-bottom: 20px;
+        }
 
     .menuLi a {
         text-decoration: none;
@@ -293,8 +332,16 @@ body {
         transition: transform 0.1s;
     }
 
-    .active {
+    /*Finds class that contains active*/
+    li[class*="active"] {
         border-bottom: 3px solid green;
+        transition-delay: .5s;
+        transition-duration: .05s;
+        transition: ease;
+    }
+    /*Removes the border when the already active class is hovered. Prevents double underline*/
+    li[class*="active"]:hover {
+        border-bottom: none;
     }
 }
 
@@ -333,5 +380,4 @@ body {
 #toTop:hover{
     opacity: 100%;
 }
-
 /*----------------------------------------------------------------------*/

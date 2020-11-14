@@ -32,18 +32,31 @@
             </div>
         <!--MENU-->
         <ul id="headerMenu">
-            <li class="menuLi main active" onclick="collapseHamMenu()"><a href="index.html"> Home </a></li>
-            <li class="menuLi challenge" onclick="collapseHamMenu()"><a href="challenge.html"> Challenge </a></li>
-            <li class="menuLi solution" onclick="collapseHamMenu()"><a href="solution.html"> Solution </a></li>
-            <li class="menuLi app" onclick="collapseHamMenu()"><a href="app.html"> App </a></li>
+            <li class="menuLi active" onclick="collapseHamMenu()"><a href="index.html"> Home </a></li>
+            <li class="menuLi" onclick="collapseHamMenu()"><a href="challenge.html"> Challenge </a></li>
+            <li class="menuLi" onclick="collapseHamMenu()"><a href="solution.html"> Solution </a></li>
+            <li class="menuLi" onclick="collapseHamMenu()"><a href="app.html"> App </a></li>
         </ul>
     </header>
     <!------------------------SIDENAV--------------------------->
     <div id="sideNav">
-        <a href="#mainSite"class="sideNavElements 1">Home</a>
-        <a href="#challengeSite" class="sideNavElements 2">Challenge</a>
-        <a href="#solutionSite" class="sideNavElements 3">Solution</a>
-        <a href="#appSite" class="sideNavElements 4">App</a>
+        <div class="sideNavElements 1">
+            <a href="#mainSite">Home</a>
+            <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+        </div>
+        <div class="sideNavElements 2">
+            <a href="#challengeSite">Challenge</a>
+            <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+        </div>
+        <div class="sideNavElements 3">
+            <a href="#solutionSite">Solution</a>
+            <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+        </div>
+        <div class="sideNavElements 4">
+            <a href="#appSite">App</a>
+            <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+        </div>
+
     </div>
     <!--CONTAINER MAINSITE-->
     <div id="mainSite">
@@ -349,11 +362,10 @@
                 <!--Creates the bracket-->
                 <ul class="nav_ul">
                 <li>
-                    <a href="contact.html">Contact us</a>
+                    <a href="contact.html#costDiv">Contact us</a>
                 </li>
-  
                 <li>
-                    <a href="contact.html#faq">FAQ</a>
+                    <a href="contact.html#faqDiv">FAQ</a>
                 </li>
         </ul>
  
@@ -361,7 +373,7 @@
       <!--Makes a bracket for the for the links for navigation-->
       <li class="nav_item">
         <!--Makes the titel over the bracket-->
-        <h2 class="nav_title">Legal</h2>
+        <h2 class="nav_title">Our work</h2>
         <!--Creates the bracket-->
         <ul class="nav_ul">
           <li>
@@ -375,7 +387,7 @@
     
       <li class="nav_item">
 
-        <h2 class="nav_title">Social Media</h2>
+        <h2 class="nav_title">Social</h2>
        <ul class="nav_ul">
          <li>
            <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>

@@ -91,6 +91,7 @@
 .nav_ul a {
     color: #454545;
     font-size: 20px;
+    cursor: pointer;
 }
 
 /* Adds extra space between each column*/
