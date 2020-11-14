@@ -4,23 +4,20 @@
     <link rel="icon" href="assets/Images/icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Solution</title>
-    <!-- Stylesheet for the header/Menu -->
+
+    <title>Sources</title>
+
+    <!--Stylesheet for the header/Menu-->
     <link rel="stylesheet" href="assets/CSS/header.css">
-    <!-- Stylesheet for the content -->
-    <link rel="stylesheet" href="assets/CSS/index.css">
-    <!-- Stylesheet for the footer -->
+    <!--Stylesheet for the content-->
+    <link rel="stylesheet" href="assets/CSS/sources.css">
+    <!-- Stylesheet for the footer-->
     <link rel="stylesheet" href="assets/CSS/footer.css">
+    <!--Adding an icon libary-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <img id="toTop" style="display: none " onclick="moveToTop()" src="assets/Images/scrollToTop.jpg" alt="To top button">
-<!----------------------------SIDENAV-------------------------------->
-<div id="sideNav">
-    <a class="sideNavElement">PLACEHOLDER</a>
-    <a class="sideNavElement">PLACEHOLDER</a>
-    <a class="sideNavElement">PLACEHOLDER</a>
-    <a class="sideNavElement">PLACEHOLDER</a>
-</div>
 <!--HEADER-->
 <header>
     <!-- LOGO. Only visible in format where window > 900px -->
@@ -35,15 +32,27 @@
     <ul id="headerMenu">
         <li class="menuLi main" onclick="collapseHamMenu()"><a href="index.html"> Home </a></li>
         <li class="menuLi challenge" onclick="collapseHamMenu()"><a href="challenge.html"> Challenge </a></li>
-        <li class="menuLi solution active" onclick="collapseHamMenu()"><a href="solution.html"> Solution </a></li>
+        <li class="menuLi solution" onclick="collapseHamMenu()"><a href="solution.html"> Solution </a></li>
         <li class="menuLi app" onclick="collapseHamMenu()"><a href="app.html"> App </a></li>
     </ul>
 </header>
 
 <div class="sideMenuSources">
+    <ul>
+        <li class="sideMenuSourcesTitle">Sources:</li>
+            <li>Information</li>
+            <li>Images</li>
+    </ul>
 
-
+    <ul>
+        <li class="sideMenuSourcesTitle">Documentation:</li>
+            <li>Summary of meetings</li>
+            <li>Groupmembers</li>
+    </ul>
 </div>
+
+
+
 
 <!------------------- FOOTER CONTAINER --------------------------->
 <footer class="footer">
@@ -78,7 +87,7 @@
             <!--Makes a bracket for the for the links for navigation-->
         <li class="nav_item">
             <!--Makes the titel over the bracket-->
-            <h2 class="nav_title">Legal</h2>
+            <h2 class="nav_title">Our work</h2>
             <!--Creates the bracket-->
             <ul class="nav_ul">
                 <li>
@@ -86,6 +95,18 @@
                 </li>
                 <li>
                     <a href="meeting.html">Meeting logs</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav_item">
+
+            <h2 class="nav_title">Social</h2>
+            <ul class="nav_ul">
+                <li>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </li>
             </ul>
         </li>
