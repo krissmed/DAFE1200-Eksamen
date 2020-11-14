@@ -7,8 +7,10 @@
     color: black;
     background-color: #e6e6e6;
     border-top: 1px solid #e5e5e5;
-    z-index: 2;
+    z-index: 1;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
 
 
