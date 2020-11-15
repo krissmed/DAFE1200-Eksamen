@@ -27,7 +27,6 @@ window.onscroll = function () {
     scrollToTop();
 };
 
-                        /*DENNE MÅ ENDRES TIL Å GJELDE PÅ SIDE MENY*/
 
 /*gathering all the elements*/
 let sideNav1 = document.getElementsByClassName("sideNavElements 1")[0];

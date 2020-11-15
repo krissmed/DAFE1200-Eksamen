@@ -9,20 +9,20 @@ let challengeSite3 = document.getElementById("challengeSite3")[0];
 /* To show challenge Site 1 Container*/
 function showChallengeSite1() {
     if (challengeSite1.style.display === "none") {
-        challengeSite1.style.display = "block"; // Moving challengeSite1 container on screen
-        challengeSite2.style.display = "none"; // Moving challengeSite1 container off screen
-        challengeSite3.style.display = "none"; // Moving challengeSite1 container off screen
-    }
+            console.log("0");
+            challengeSite1.style.display = "block"; // Moving challengeSite1 container on screen
+            challengeSite2.style.display = "none"; // Moving challengeSite1 container off screen
+            challengeSite3.style.display = "none"; // Moving challengeSite1 container off screen
+        }
 }
 
 /* To show challenge Site 2 Container*/
 function showChallengeSite2() {
-
     if (challengeSite2.style.display === "none") {
-        challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
-        challengeSite2.style.display = "block"; // Moving challengeSite2 container on screen
-        challengeSite3.style.display = "none"; // Moving challengeSite3 container off screen
-
+        console.log("1");
+            challengeSite1.style.display = "none"; // Moving challengeSite1 container off screen
+            challengeSite2.style.display = "block"; // Moving challengeSite2 container on screen
+            challengeSite3.style.display = "none"; // Moving challengeSite3 container off screen
     }
 }
 
@@ -39,9 +39,9 @@ function showChallengeSite3() {
 
 /* Gather HTML elements from index.html */
 
-let solutionSite1 = document.getElementById("solutionSite1");
-let solutionSite2 = document.getElementById("solutionSite2");
-let solutionSite3 = document.getElementById("solutionSite3");
+let solutionSite1 = document.getElementById("solutionSite1")[0];
+let solutionSite2 = document.getElementById("solutionSite2")[0];
+let solutionSite3 = document.getElementById("solutionSite3")[0];
 
 /* To show solution Site 1 Container*/
 function showSolutionSite1() {

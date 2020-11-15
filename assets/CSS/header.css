@@ -124,7 +124,8 @@ body {
     #headerLogo {
         height: 10vh;
         width: auto;
-        margin-left: 0.5VW;
+        margin-left: 0.5vw;
+        margin-right: 10vw;
     }
 
     /*MENU*/
