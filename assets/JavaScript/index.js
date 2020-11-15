@@ -1,9 +1,9 @@
-document.getElementById("mainVideo").playbackRate = 0.1;
-/* Gather HTML elements from index.html */
+/*document.getElementById("mainVideo").playbackRate = 0.1;*/
 
-var challengeSite1 = document.getElementById("challengeSite1");
-var challengeSite2 = document.getElementById("challengeSite2");
-var challengeSite3 = document.getElementById("challengeSite3");
+/* Gather HTML elements from index.html */
+let challengeSite1 = document.getElementById("challengeSite1")[0];
+let challengeSite2 = document.getElementById("challengeSite2")[0];
+let challengeSite3 = document.getElementById("challengeSite3")[0];
 
 /* To show challenge Site 1 Container*/
 function showChallengeSite1() {
@@ -38,9 +38,9 @@ function showChallengeSite3() {
 
 /* Gather HTML elements from index.html */
 
-var solutionSite1 = document.getElementById("solutionSite1");
-var solutionSite2 = document.getElementById("solutionSite2");
-var solutionSite3 = document.getElementById("solutionSite3");
+let solutionSite1 = document.getElementById("solutionSite1");
+let solutionSite2 = document.getElementById("solutionSite2");
+let solutionSite3 = document.getElementById("solutionSite3");
 
 /* To show solution Site 1 Container*/
 function showSolutionSite1() {
@@ -80,9 +80,9 @@ function showSolutionSite3() {
 
 /* Gather HTML elements from index.html */
 
-var appSite1 = document.getElementById("appSite1");
-var appSite2 = document.getElementById("appSite2");
-var appSite3 = document.getElementById("appSite3");
+let appSite1 = document.getElementById("appSite1");
+let appSite2 = document.getElementById("appSite2");
+let appSite3 = document.getElementById("appSite3");
 
 /* To show solution Site 1 Container*/
 function showAppSite1() {

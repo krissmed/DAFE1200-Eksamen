@@ -40,4 +40,5 @@ function showGroupPage() {
     infoPage.style.display = "none";
 }
 
-
+// speak "Hello World" in the browser default language
+window.speechSynthesis.speak(new SpeechSynthesisUtterance('Hello World'));
