@@ -177,7 +177,8 @@ color: green;
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 5vh 1vh;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 /* styling the containers */
@@ -186,19 +187,22 @@ color: green;
   box-shadow: 0 4px 8px 0 green;
   width: 50vh;
   height: auto;
-  margin-left: 20px;
-  margin-right: 10px;
+  margin-right: 5vh;
   text-align: left;
-
+  margin-bottom: 4vh;
+  align-self: center;
 }
 
-/* makes it the cards have a max width of 800px, before they flex*/
-@media (max-width: 800px) {
+
+@media (max-width: 1300px) {
   .flex-container {
     flex-direction: column;
   }
-}
 
+  .flex-container > div {
+  align-self: center;
+}
+}
 /*-------------------------------------------*/
 /* costumer support part of the page */
 /*creates the costumer support "card"*/

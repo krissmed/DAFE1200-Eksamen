@@ -102,7 +102,84 @@ body {
 }
 
 /*---------------------------------------------------Nav--------------------------------------------------------------------------*/
-@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */  
+@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */
+
+    #sideNav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+        z-index: 99;
+        color: black;
+        position: fixed;
+        left: -220px; 
+        transition: 0.3s; 
+        padding: 15px; 
+        width: 240px; 
+        text-decoration: none; 
+        font-size: 2em; 
+        border-radius: 0 5px 5px 0; 
+    }
+    #sideNav a{
+        text-decoration: none;
+    }
+    #sideNav img{
+        position: relative;
+        right: 1px;
+    }
+    .sideNavElements{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2vh;
+        left: -200px; 
+        height: 5vh;
+        align-items: center;
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+        text-decoration: none;
+        background-color: green;
+        border-radius: 0 5px 5px 0; 
+    }
+    .sideNavElements:hover{
+        margin-top: 2vh;
+        height: 5vh;
+        left: 0px;
+        background-color: white;
+        border-radius: 0 5px 5px 0;
+    }
+    #sideNav:hover{
+        left: -15px;
+    }
+        .sideNavElements{
+            margin-top: 2vh;
+            left: -200px;
+            height: 5vh;
+            align-items: center;
+            text-align: center;
+            padding-right: 50px;
+            padding-left: 50px;
+            text-decoration: none;
+            color: white;
+            background-color: green;
+            border-radius: 0 5px 5px 0;
+        }
+            .sideNavElements:hover{
+                margin-top: 2vh;
+                height: 5vh;
+                left: 0px;
+                background-color: white;
+                color: green;
+                border-radius: 0 5px 5px 0;
+            }
+                #sideNav:hover{
+                    left: -15px;
+                }
+                    /*This class gets added to sideNavElements in JS*/
+                    .sideNavActive {
+                        background-color: white;
+                        color: green;
+                    }
+
     /* Hamburger nav (Only visible in format < 900px)*/
     .hamMenu {
         display: none;
@@ -110,13 +187,14 @@ body {
 
     header {
         background-color: white;
+        height: 10vh;
         width: 100%;
         position: fixed;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         box-shadow: 1px 1px 7px 2px green;
-        z-index: 99;
+        z-index: 2;
         user-select: none;
     }
 
@@ -124,8 +202,7 @@ body {
     #headerLogo {
         height: 10vh;
         width: auto;
-        margin-left: 0.5vw;
-        margin-right: 10vw;
+        margin-left: 0.5VW;
     }
 
     /*MENU*/
@@ -175,6 +252,9 @@ body {
 }
 @media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
     #toTop{
+        display: none;
+    }
+    #sideNav{
         display: none;
     }
     #hamburgerMeny{
@@ -266,6 +346,9 @@ body {
 }
 
 @media screen and (max-height: 700px), (max-width: 900px) {
+    #sideNav{
+        display: none;
+    }
     header {
         height: 70px;
     }
@@ -275,8 +358,6 @@ body {
         width: auto;
     }
 }
-
-
 /*------------------------------------------------------------------*/
 /* ToTop button */
 #toTop {
@@ -296,4 +377,4 @@ body {
 #toTop:hover{
     opacity: 100%;
 }
-/*----------------------------------------------------------------------*/
+/*------------------------------
