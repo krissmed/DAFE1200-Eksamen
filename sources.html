@@ -37,19 +37,25 @@
     </ul>
 </header>
 
-<!--Side menu-->
-<div class="sideMenuSources">
-    <ul class="sideMenuSourcesUl">
-        <li class="sideMenuSourcesTitle">Sources:</li>
-            <li class="sideMenuSourcesLi information" onclick="showInfoPage()">- Information</li>
-            <li class="sideMenuSourcesLi images" onclick="showImgPage()">- Images</li>
-    </ul>
+<!------------------------SIDENAV--------------------------->
+<div id="sideNav">
+    <div class="sideNavElements 1">
+        <a href="#" onclick="showInfoPage()">Information Sources</a>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </div>
+    <div class="sideNavElements 2">
+        <a href="#" onclick="showImgPage()">Images</a>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </div>
+    <div class="sideNavElements 3">
+        <a href="#" onclick="showSummaryPage()">Group Meeting Logs</a>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </div>
+    <div class="sideNavElements 4">
+        <a href="#" onclick="showGroupPage()">Groupmembers</a>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </div>
 
-    <ul class="sideMenuSourcesUl">
-        <li class="sideMenuSourcesTitle">Documentation:</li>
-            <li class="sideMenuSourcesLi summaryMeet" onclick="showSummaryPage()">- Summary of meetings</li>
-            <li class="sideMenuSourcesLi group" onclick="showGroupPage()">- Groupmembers</li>
-    </ul>
 </div>
 
 <!--Sources information-->
@@ -251,6 +257,6 @@
 <!--Script for header-->
 <script src="assets/JavaScript/header.js"></script>
 <!--Script for source-page -->
-<script src="assets/JavaScript/sources.js"></script>
+<script src="assets/JavaScript/sourceSiteNav.js"></script>
 </body>
 </html>
