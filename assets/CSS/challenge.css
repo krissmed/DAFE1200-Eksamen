@@ -1,0 +1,118 @@
+/*--------------------------------SIDE NAV --------------------------------------------------*/
+@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */
+
+    #sideNav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+        color: black;
+        position: fixed;
+        left: -210px; 
+        transition: 0.4s; 
+        padding: 15px; 
+        z-index: 99;
+        width: auto; 
+        text-decoration: none; 
+        font-size: 2em; 
+        border-radius: 0 5px 5px 0; 
+    }
+    #sideNav a{
+        text-decoration: none;
+    }
+    #sideNav img{
+        position: relative;
+    }
+    .sideNavElements{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2vh;
+        height: 5vh;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        text-decoration: none;
+        background-color: green;
+        border-radius: 0 5px 5px 0; 
+    }
+    .sideNavElements:hover{
+        margin-top: 2vh;
+        height: 5vh;
+        left: 0px;
+        background-color: white;
+        border-radius: 0 5px 5px 0;
+    }
+    #sideNav:hover{
+        left: -15px;
+    }
+        .sideNavElements{
+            margin-top: 2vh;
+            left: -200px;
+            height: 5vh;
+            align-items: center;
+            text-align: center;
+            padding-left: 50px;
+            text-decoration: none;
+            color: white;
+            background-color: green;
+            border-radius: 0 5px 5px 0;
+        }
+            .sideNavElements:hover{
+                margin-top: 2vh;
+                height: 5vh;
+                left: 0px;
+                background-color: white;
+                color: green;
+                border-radius: 0 5px 5px 0;
+            }
+                #sideNav:hover{
+                    left: -15px;
+                }
+                    /*This class gets added to sideNavElements in JS*/
+                    .sideNavActive {
+                        background-color: white;
+                        color: green;
+                    }
+}
+@media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
+    #sideNav{
+        display: none;
+    }
+}
+@media screen and (max-height: 700px), (max-width: 900px) {
+    #sideNav{
+        display: none;
+    }
+}
+/*--------------------Welcome Page------------------------------------------*/
+#welcomePage {
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 10vh;
+}
+
+/*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #cdd1ce;
+}
+
+/*-----------SOLUTION SITE---------------------------------------------------------------------------------------------------------------*/
+#page2 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #b6bab7;
+}
+
+/*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
+#page3 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #cdd1ce;
+}
