@@ -16,12 +16,6 @@
         font-size: 2em; 
         border-radius: 0 5px 5px 0; 
     }
-    #sideNav a{
-        text-decoration: none;
-    }
-    #sideNav img{
-        position: relative;
-    }
     .sideNavElements{
         display: flex;
         justify-content: space-between;
@@ -72,7 +66,7 @@
 }
 
 /*--------------------Welcome Page------------------------------------------*/
-#welcomePage {
+#welcomeSlide {
     height: 100vh;
     width: 100vw;
     margin-bottom: 10vh;
