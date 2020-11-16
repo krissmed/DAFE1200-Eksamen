@@ -166,8 +166,8 @@
                     /*InfoText*/
                     .infoText {
                         letter-spacing: 1px;
-                        line-height: 2.2vw;
-                        font-size: 1.3vw;
+                        line-height: 1.3em;
+                        font-size: 2em;
                         width: 53vw;
                         height: 30vh;
                     }
