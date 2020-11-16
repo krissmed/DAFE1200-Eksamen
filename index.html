@@ -19,24 +19,24 @@
 </head>
 
 <body>
-    <img id="toTop" style="display: none " onclick="moveToTop()" src="assets/Images/scrollToTop.jpg"
-        alt="To top button">
+
+    <img id="toTop" style="display: none " onclick="moveToTop()" onkeypress="moveToTop()" src="assets/Images/scrollToTop.jpg" alt="To top button">
     <!--HEADER-->
     <header>
-        <!-- LOGO. Only visible in format where window > 900px -->
-        <a href="index.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
-        <!-- Hamburger Menu (Only visible in format where window < 900px)-->
-        <div onclick="toggleMenu()" id="hamburgerMenu">
-            <div class="hamMenu" id="line1"></div>
-            <div class="hamMenu" id="line2"></div>
-            <div class="hamMenu" id="line3"></div>
-        </div>
+            <!-- LOGO. Only visible in format where window > 900px -->
+            <a href="index.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
+            <!-- Hamburger Menu (Only visible in format where window < 900px)-->
+            <div onclick="toggleMenu()" onkeypress="toggleMenu()" id="hamburgerMenu">
+                <div class="hamMenu" id="line1"></div>
+                <div class="hamMenu" id="line2"></div>
+                <div class="hamMenu" id="line3"></div>
+            </div>
         <!--MENU-->
         <ul id="headerMenu">
             <li class="menuLi active" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="index.html"> Home </a></li>
-            <li class="menuLi" onclick="collapseHamMenu()"><a href="challenge.html"> Challenge </a></li>
-            <li class="menuLi" onclick="collapseHamMenu()"><a href="solution.html"> Solution </a></li>
-            <li class="menuLi" onclick="collapseHamMenu()"><a href="app.html"> App </a></li>
+            <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="challenge.html"> Challenge </a></li>
+            <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="solution.html"> Solution </a></li>
+            <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="app.html"> App </a></li>
         </ul>
     </header>
     <!------------------------SIDENAV--------------------------->
