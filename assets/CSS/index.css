@@ -178,7 +178,7 @@
     display: flex;
     z-index: 10;
     flex-direction: row;
-    background-color: #5cdb95;
+    background-color: #8ee4af;
 }
 
 /*The three sites within the Challenge site*/
@@ -301,7 +301,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #8ee4af;
+    background-color: #5cdb95;
 }
 
 #solutionSite1,
@@ -334,7 +334,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #5cdb95;
+    background-color: #8ee4af;
     ;
 }
 
