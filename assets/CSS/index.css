@@ -194,14 +194,23 @@
     position: relative;
 }
 
-.readMore {
+.readMorebtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 13vw;
+    background-color: #05386B;
+    border-radius: 100vw;
+    color: white;
+    line-height: 0;
+    margin: 0.6em 0;
     font-size: 2em;
+    padding: 0 1.3em;
+    text-decoration: none;
 }
 
-.readMore:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
+
 
 /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
 /*Tree Image*/
