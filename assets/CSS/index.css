@@ -179,7 +179,7 @@
     display: flex;
     z-index: 10;
     flex-direction: row;
-    background-color: #5cdb95;
+    background-color: #8ee4af;
 }
 
 /*The three sites within the Challenge site*/
@@ -195,14 +195,23 @@
     position: relative;
 }
 
-.readMore {
+.readMorebtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 13vw;
+    background-color: #05386B;
+    border-radius: 100vw;
+    color: white;
+    line-height: 0;
+    margin: 0.6em 0;
     font-size: 2em;
+    padding: 0 1.3em;
+    text-decoration: none;
 }
 
-.readMore:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
+
 
 /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
 /*Tree Image*/
@@ -301,7 +310,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #8ee4af;
+    background-color: #5cdb95;
 }
 
 #solutionSite1,
@@ -334,7 +343,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #5cdb95;
+    background-color: #8ee4af;
     ;
 }
 
