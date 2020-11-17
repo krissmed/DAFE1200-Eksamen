@@ -1,6 +1,6 @@
 /*--------------------------------SIDE NAV --------------------------------------------------*/
 /*InfoText*/
-.infoText { /* This has to be over the other.infoText in @media in order for the container to scale*/
+.infoText { /* This has to be over the other.infoText in @media in order for the container to scale on phone */
     letter-spacing: 1px;
     line-height: 1.5em;
     font-size: 2em;
@@ -80,7 +80,7 @@
     #challengeSite {
         border: solid black 1px;
         height: auto;
-        width: 100vw;
+        width: 80vw;
         display: flex;
         z-index: 10;
         flex-direction: row;
@@ -111,7 +111,7 @@
         font-style: normal;
         text-align: center;
         text-transform: uppercase;
-        width: 100vw;
+        width: 80vw;
 
     }
 
