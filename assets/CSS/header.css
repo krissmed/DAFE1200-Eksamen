@@ -4,9 +4,12 @@ html {
 }
 
 body {
-    margin: 0;    /*Cover whole site*/
-    font-family: Helvetica, serif;  /*Font type*/
-    overflow-x: hidden; /*Makes it impossible to scroll sideways*/
+    margin: 0;
+    /*Cover whole site*/
+    font-family: Helvetica, serif;
+    /*Font type*/
+    overflow-x: hidden;
+    /*Makes it impossible to scroll sideways*/
 }
 
 /*---------------Custom Scrollbar------------------------------------*/
@@ -14,95 +17,26 @@ body {
 ::-webkit-scrollbar {
     width: 12px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: transparent;
 }
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-/*-----------------------------NavBar on each Site------------------------------------*/
-
-.siteMenu {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 4vw;
-    top: 12vh;
-    height: 4vh;
-    width: auto;
-    padding: 1.5vw;
-    z-index: 1;
-    line-height: 1px;
-}
-.siteMenuLi {
-    font-size: 1.5em;
-    letter-spacing: 1px;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-bottom: 1vh;
-    text-transform: uppercase;
-    border-bottom: 3px solid green;
-    cursor: pointer;
-    user-select: none;
-}
-.siteMenuLi a {
-    text-decoration: none;
-    color: green;
-    cursor: pointer;
-}
-.siteMenuLi:hover {
-    border-bottom: 3px solid lightgreen;
-    transition: color 0.2s, border 0.2s;
-}
-@media (max-width: 700px){ /* Breakpoint for the horizontal menus. This activates when the window size is lower than 700px */
-
-    .siteMenu {
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: 0;
-        top: 12vh;
-        width: auto;
-        height: 100px;
-        padding: 2px;
-        z-index: 1;
-        line-height: 1px;
-    }
-
-    .siteMenuLi {
-        margin-top: 17px;
-        font-size: 1.5em;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        text-transform: uppercase;
-        border-bottom: 3px solid green;
-        cursor: pointer;
-    }
-
-    .siteMenuLi a {
-        text-decoration: none;
-        color: green;
-        cursor: pointer;
-        user-select: none;
-    }
-
-    .siteMenuLi:hover {
-        border-bottom: 3px solid lightgreen;
-        color: lightgreen;
-        transition: color 0.2s, border 0.2s;
-    }
-}
 
 /*---------------------------------------------------Nav--------------------------------------------------------------------------*/
-@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */  
+@media (min-width: 900px) {
+
+    /* This code only applies when window size is bigger than 900px */
     /* Hamburger nav (Only visible in format < 900px)*/
     .hamMenu {
         display: none;
@@ -138,28 +72,33 @@ body {
         align-items: center;
         margin-right: 5vw;
     }
+
     .menuLi {
         font-size: 2em;
         text-transform: uppercase;
     }
+
     .menuLi a {
         padding-bottom: 5px;
         text-decoration: none;
         color: green;
     }
-        /*creates green line after/under the element and adds transition when hovered */
-        .menuLi a::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 3px;
-            background: green;
-            transition: width .5s;
-        }
-            /*When the element above i hovered the width is adjusted to 100% of menuLi a*/
-            .menuLi a:hover::after {
-                width: 100%;
-            }
+
+    /*creates green line after/under the element and adds transition when hovered */
+    .menuLi a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: green;
+        transition: width .5s;
+    }
+
+    /*When the element above i hovered the width is adjusted to 100% of menuLi a*/
+    .menuLi a:hover::after {
+        width: 100%;
+    }
+
     /*Finds class that contains active*/
     li[class*="active"] {
         border-bottom: 3px solid green;
@@ -167,20 +106,28 @@ body {
         transition-duration: .05s;
         transition: ease;
     }
-        /*Removes the border when the already active class is hovered. Prevents double underline*/
-        li[class*="active"]:hover {
-            border-bottom: none;
-        }
+
+    /*Removes the border when the already active class is hovered. Prevents double underline*/
+    li[class*="active"]:hover {
+        border-bottom: none;
+    }
 }
-@media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
-    #toTop{
+
+@media screen and (max-width: 900px) {
+
+    /* This code only applies when window size is smaller than 900px */
+    #toTop {
         display: none;
     }
-    #hamburgerMeny{
+
+    #hamburgerMeny {
         margin-top: 15px;
         margin-left: 15px;
     }
-    #line1, #line2, #line3{
+
+    #line1,
+    #line2,
+    #line3 {
         transform-origin: top;
         transition: 0.4s;
     }
@@ -235,10 +182,11 @@ body {
         text-transform: uppercase;
         border-bottom: 3px solid springgreen;
     }
-        /*selects only the last <li> element*/
-        .menuLi:last-child{
-            margin-bottom: 20px;
-        }
+
+    /*selects only the last <li> element*/
+    .menuLi:last-child {
+        margin-bottom: 20px;
+    }
 
     .menuLi a {
         text-decoration: none;
@@ -258,6 +206,7 @@ body {
         transition-duration: .05s;
         transition: ease;
     }
+
     /*Removes the border when the already active class is hovered. Prevents double underline*/
     li[class*="active"]:hover {
         border-bottom: none;
@@ -274,7 +223,8 @@ body {
         width: auto;
     }
 }
-@media screen and (max-height: 700px) and (min-width: 900px){
+
+@media screen and (max-height: 700px) and (min-width: 900px) {
     header {
         height: 70px;
     }
@@ -302,7 +252,9 @@ body {
     opacity: 65%;
     z-index: 3;
 }
-#toTop:hover{
+
+#toTop:hover {
     opacity: 100%;
 }
+
 /*----------------------------------------------------------------------*/
