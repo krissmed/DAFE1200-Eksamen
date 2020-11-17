@@ -3,14 +3,15 @@
 .footer {
     display: flex;
     flex-flow: row wrap;
-    padding: 30px 30px 20px 30px;
+    padding-left: 5vw;
+    padding-top: 5vh;
     color: black;
     background-color: #edf5e1;
     border-top: 1px solid #e5e5e5;
     z-index: 1;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 95vw;
 }
 
 

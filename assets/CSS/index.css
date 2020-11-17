@@ -75,6 +75,9 @@
     #sideNav {
         display: none;
     }
+    #toTop{
+        display: none;
+    }
 
     /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
     #challengeSite {
@@ -191,9 +194,7 @@
 }
 
 /*The three sites within the Challenge site*/
-#challengeSite1,
-#challengeSite2,
-#challengeSite3 {
+#challengeSite1{
     /* Can be redone as a class */
     height: 100vh;
     width: 100vw;
