@@ -274,7 +274,7 @@ body {
         width: auto;
     }
 }
-@media screen and (max-height: 700px){
+@media screen and (max-height: 700px) and (min-width: 900px){
     header {
         height: 70px;
     }
