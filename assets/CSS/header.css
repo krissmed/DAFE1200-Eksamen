@@ -26,16 +26,90 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+/*-----------------------------NavBar on each Site------------------------------------*/
+
+.siteMenu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 4vw;
+    top: 12vh;
+    height: 4vh;
+    width: auto;
+    padding: 1.5vw;
+    z-index: 1;
+    line-height: 1px;
+}
+.siteMenuLi {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vh;
+    text-transform: uppercase;
+    border-bottom: 3px solid green;
+    cursor: pointer;
+    user-select: none;
+}
+.siteMenuLi a {
+    text-decoration: none;
+    color: green;
+    cursor: pointer;
+}
+.siteMenuLi:hover {
+    border-bottom: 3px solid lightgreen;
+    transition: color 0.2s, border 0.2s;
+}
+@media (max-width: 700px){ /* Breakpoint for the horizontal menus. This activates when the window size is lower than 700px */
+
+    .siteMenu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 0;
+        top: 12vh;
+        width: auto;
+        height: 100px;
+        padding: 2px;
+        z-index: 1;
+        line-height: 1px;
+    }
+
+    .siteMenuLi {
+        margin-top: 17px;
+        font-size: 1.5em;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        text-transform: uppercase;
+        border-bottom: 3px solid green;
+        cursor: pointer;
+    }
+
+    .siteMenuLi a {
+        text-decoration: none;
+        color: green;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .siteMenuLi:hover {
+        border-bottom: 3px solid lightgreen;
+        color: lightgreen;
+        transition: color 0.2s, border 0.2s;
+    }
+}
 
 /*---------------------------------------------------Nav--------------------------------------------------------------------------*/
-@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */
+@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */  
     /* Hamburger nav (Only visible in format < 900px)*/
     .hamMenu {
         display: none;
     }
 
     header {
-        background-color: #edf5E1;
+        background-color: white;
         width: 100%;
         position: fixed;
         display: flex;
@@ -50,8 +124,7 @@ body {
     #headerLogo {
         height: 10vh;
         width: auto;
-        margin-left: 0.5;
-        margin-right: 10vw;
+        margin-left: 0.5VW;
     }
 
     /*MENU*/
@@ -72,7 +145,7 @@ body {
     .menuLi a {
         padding-bottom: 5px;
         text-decoration: none;
-        color: #05386B;
+        color: green;
     }
         /*creates green line after/under the element and adds transition when hovered */
         .menuLi a::after {
@@ -80,7 +153,7 @@ body {
             display: block;
             width: 0;
             height: 3px;
-            background: #05386B;
+            background: green;
             transition: width .5s;
         }
             /*When the element above i hovered the width is adjusted to 100% of menuLi a*/
@@ -89,7 +162,7 @@ body {
             }
     /*Finds class that contains active*/
     li[class*="active"] {
-        border-bottom: 3px solid #05386B;
+        border-bottom: 3px solid green;
         transition-delay: .5s;
         transition-duration: .05s;
         transition: ease;
@@ -126,10 +199,11 @@ body {
     }
 
     header {
-        background-color: #edf5E1;
+        background-color: white;
         width: 100%;
         height: auto;
         position: fixed;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
         box-shadow: 1px 1px 7px 2px green;
@@ -190,9 +264,9 @@ body {
     }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 700px) and (max-width: 900px) {
     header {
-        height: 70px;
+        height: auto;
     }
 
     #headerLogo {
@@ -200,9 +274,9 @@ body {
         width: auto;
     }
 }
-@media screen and (max-height: 700px) and (max-width: 900px) {
+@media screen and (max-height: 700px){
     header {
-        height: auto;
+        height: 70px;
     }
 
     #headerLogo {
