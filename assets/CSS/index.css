@@ -75,7 +75,7 @@
         display: flex;
         z-index: 10;
         flex-direction: row;
-        background-color: #cdd1ce;
+        background-color: #5cdb95;
     }
 
     /*Tree Image*/
@@ -128,7 +128,8 @@
 #welcomeSlide {
     height: 100vh;
     width: 100vw;
-    margin-bottom: 10vh;
+    margin-bottom: 0px;
+    background-color: #5cdb95;
 }
 
 /* Video on the top of the website*/
@@ -143,8 +144,8 @@
 #quote {
     height: auto;
     width: 80vw;
-    border-bottom: 3px solid black;
-    border-top: 3px solid black;
+    border-bottom: 3px solid  #05386B;
+    border-top: 3px solid  #05386B;
     padding: 1vw 0;
     position: absolute;
     text-align: center;
@@ -155,30 +156,29 @@
     font-family: "Bodoni 72", serif;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: black;
+    color: #05386B;
 }
 
 /*the text under the quote*/
 #underQuote {
     font-size: .8em;
     font-style: normal;
-    color: black;
+    color:  #05386B;
     text-transform: uppercase;
     font-family: "Bodoni 72", serif;
     letter-spacing: 1px;
-    border-top: 3px solid black;
+    border-top: 3px solid  #05386B;
     padding-top: 1vw;
 }
 
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
 #challengeSite {
-    border: solid black 1px;
     height: 100vh;
     width: 100vw;
     display: flex;
     z-index: 10;
     flex-direction: row;
-    background-color: #cdd1ce;
+    background-color: #5cdb95;
 }
 
 /*The three sites within the Challenge site*/
@@ -190,7 +190,7 @@
     width: 100vw;
     top: 12vh;
     left: 5vw;
-    color: green;
+    color:  #05386B;
     position: relative;
 }
 
@@ -221,7 +221,7 @@
 /*Text*/
 /*  Headline*/
 .headline {
-    border: solid black 1px;
+    
     font-weight: bolder;
     font-size: 3em;
     font-style: normal;
@@ -233,7 +233,7 @@
 
 /*InfoText*/
 .infoText {
-    border: solid black 1px;
+    
     letter-spacing: 1px;
     line-height: 1.3em;
     font-size: 2em;
@@ -252,7 +252,7 @@
     height: 40vh;
     width: 42vw;
     padding: 2vw;
-    color: green;
+    color:  #05386B;
 }
 
 /*Headline*/
@@ -301,7 +301,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #b6bab7;
+    background-color: #8ee4af;
 }
 
 #solutionSite1,
@@ -311,7 +311,7 @@
     width: 100vw;
     top: 12vh;
     left: 5vw;
-    color: green;
+    color:  #05386B;
     position: relative;
 }
 
@@ -334,7 +334,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #cdd1ce;
+    background-color: #5cdb95;
     ;
 }
 
@@ -345,7 +345,7 @@
     width: 100vw;
     top: 12vh;
     left: 5vw;
-    color: green;
+    color:  #05386B;
     position: relative;
 }
 

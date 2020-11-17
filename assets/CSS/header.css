@@ -35,7 +35,7 @@ body {
     }
 
     header {
-        background-color: white;
+        background-color: #edf5E1;
         width: 100%;
         position: fixed;
         display: flex;
@@ -72,7 +72,7 @@ body {
     .menuLi a {
         padding-bottom: 5px;
         text-decoration: none;
-        color: green;
+        color: #05386B;
     }
         /*creates green line after/under the element and adds transition when hovered */
         .menuLi a::after {
@@ -80,7 +80,7 @@ body {
             display: block;
             width: 0;
             height: 3px;
-            background: green;
+            background: #05386B;
             transition: width .5s;
         }
             /*When the element above i hovered the width is adjusted to 100% of menuLi a*/
@@ -89,7 +89,7 @@ body {
             }
     /*Finds class that contains active*/
     li[class*="active"] {
-        border-bottom: 3px solid green;
+        border-bottom: 3px solid #05386B;
         transition-delay: .5s;
         transition-duration: .05s;
         transition: ease;
@@ -126,7 +126,7 @@ body {
     }
 
     header {
-        background-color: white;
+        background-color: #edf5E1;
         width: 100%;
         height: auto;
         position: fixed;
