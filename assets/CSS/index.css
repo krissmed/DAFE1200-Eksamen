@@ -200,7 +200,7 @@
     align-items: center;
     justify-content: center;
     height: 7vh;
-    width: 13vw;
+    width: 159px;
     background-color: #05386B;
     border-radius: 100vw;
     color: white;
@@ -213,6 +213,7 @@
 }
 
 .readMorebtn:hover {
+    transition: box-shadow 0.2  s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -369,5 +370,4 @@
     height: 55vh;
     width: auto;
     float: right;
-    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
 }
