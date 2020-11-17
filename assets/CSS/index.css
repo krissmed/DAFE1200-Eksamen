@@ -1,6 +1,6 @@
 /*--------------------------------SIDE NAV --------------------------------------------------*/
 /*InfoText*/
-.infoText { /* This has to be over the other.infoText in @media in order for the container to scale on phone */
+.paragraph { /* This has to be over the other.infoText in @media in order for the container to scale on phone */
     letter-spacing: 1px;
     line-height: 1.5em;
     font-size:1.5em;
@@ -91,7 +91,7 @@
     }
 
     /*Tree Image*/
-    #challengeSiteTreePic {
+    #challengeImg {
         display: none;
         border: solid black 1px;
         position: absolute;
@@ -119,7 +119,7 @@
     }
 
     /*InfoText*/
-    .infoText {
+    .paragraph {
         border: solid black 1px;
         letter-spacing: 1px;
         line-height: 1.3em;
@@ -129,8 +129,7 @@
     }
 }
 
-@media screen and (max-height: 700px),
-(max-width: 900px) {
+@media screen and (max-height: 700px), (max-width: 900px) {
     #sideNav {
         display: none;
     }
@@ -142,12 +141,6 @@
     width: 100vw;
     margin-bottom: 0px;
     background-color: #5cdb95;
-}
-
-/* Video on the top of the website*/
-.mainvideo {
-    width: 210vh;
-    height: auto;
 }
 
 /*---------------------Top image and quotes----------------------------------------------*/
@@ -228,7 +221,7 @@
 
 /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
 /*Tree Image*/
-#challengeSiteTreePic {
+#challengeImg {
     border: solid black 1px;
     position: absolute;
     right: 10vw;
@@ -253,62 +246,6 @@
 
 }
 
-
-
-/*----------SECOND CHALLENGE SITE---------------------------------------------------------*/
-/*SITE 2*/
-/*Info-text*/
-.challengeSite2Description {
-    position: relative;
-    display: inline-block;
-    top: 3vh;
-    left: 3vw;
-    height: 40vh;
-    width: 42vw;
-    padding: 2vw;
-    color: #05386B;
-}
-
-/*Headline*/
-.site2DescHeadline {
-    font-weight: bolder;
-    font-size: 3vw;
-}
-
-/*Paragraf*/
-.paragraph {
-    line-height: 1.5vw;
-    letter-spacing: 1px;
-    font-size: 1.2vw;
-    position: relative;
-    width: 45vw;
-}
-
-/*Image Environment*/
-.environmentImage {
-    position: absolute;
-    left: 65vw;
-    top: 16vh;
-    height: 50vh;
-    width: 20vw;
-    float: right;
-    border-radius: 25px;
-    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
-}
-
-/*----------THIRD CHALLENGE SITE---------------------------------------------------------*/
-/*Image polluted city*/
-#pollutedImgSite3 {
-    position: relative;
-    right: 8vw;
-    top: 30vh;
-    height: 37vh;
-    width: 35vw;
-    float: right;
-    border-radius: 25px;
-    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
-}
-
 /*-----------SOLUTION SITE---------------------------------------------------------------------------------------------------------------*/
 #solutionSite {
     height: 100vh;
@@ -318,9 +255,7 @@
     background-color: #5cdb95;
 }
 
-#solutionSite1,
-#solutionSite2,
-#solutionSite3 {
+#solutionSite1 {
     height: 100vh;
     width: 100vw;
     top: 12vh;
@@ -352,9 +287,7 @@
     ;
 }
 
-#appSite1,
-#appSite2,
-#appSite3 {
+#appSiteContainer {
     height: 80vh;
     width: 100vw;
     top: 12vh;
@@ -364,7 +297,7 @@
 }
 
 /*Image*/
-.appImg {
+#appImg {
     position: absolute;
     right: 12vw;
     top: 15vh;
