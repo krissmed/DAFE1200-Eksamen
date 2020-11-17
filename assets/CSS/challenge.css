@@ -90,10 +90,11 @@
 #welcomePage {
     height: 100vh;
     width: 100vw;
-    margin-bottom: 10vh;
+    color: #05386B;
+    background-color: #8ee4af;
 }
     .welcomeQuote {
-        background-color: lightgrey;
+        background-color: #5cdb95;
         width: 100%;
         text-align: center;
         text-transform: uppercase;
@@ -115,13 +116,13 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
+    color: #05386B;
 }
 
     .contentContainer {
         height: 80vh;
         width: 60vw;
         margin: 10vh 45px 0;
-        color: green;
     }
         .pageHeadline {
             font-weight: bolder;
@@ -138,15 +139,21 @@
         }
 /*-----------SITE1---------------------------------------------------------------------------------------------------------------*/
 #page1 {
-    background-color: #cdd1ce;
+    background-color: #5cdb95;
 }
+    .climateGraphImg {
+        height: 400px;
+        width: 340px;
+        position: relative;
+        top: 28vh;
+    }
 
 /*-----------SITE1---------------------------------------------------------------------------------------------------------------*/
 #page2 {
-    background-color: #b6bab7;
+    background-color: #8ee4af;
 }
 
 /*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
 #page3 {
-    background-color: #cdd1ce;
+    background-color: #5cdb95;
 }
