@@ -1,5 +1,12 @@
 /*--------------------------------SIDE NAV --------------------------------------------------*/
-
+/*InfoText*/
+.infoText { /* This has to be over the other.infoText in @media in order for the container to scale on phone */
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    font-size:1.5em;
+    width: 70vw;
+    height: auto;
+}
 @media (min-width: 900px) {
     /* This code only applies when window size is bigger than 900px */
 
@@ -68,11 +75,15 @@
     #sideNav {
         display: none;
     }
+    #toTop{
+        display: none;
+    }
+
     /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
     #challengeSite {
         border: solid black 1px;
-        height: 100vh;
-        width: 100vw;
+        height: auto;
+        width: 80vw;
         display: flex;
         z-index: 10;
         flex-direction: row;
@@ -103,7 +114,7 @@
         font-style: normal;
         text-align: center;
         text-transform: uppercase;
-        width: 100vw;
+        width: 80vw;
 
     }
 
@@ -112,7 +123,7 @@
         border: solid black 1px;
         letter-spacing: 1px;
         line-height: 1.3em;
-        font-size: 2em;
+        font-size: 1.5em;
         width: 90vw;
         height: auto;
     }
@@ -145,8 +156,8 @@
 #quote {
     height: auto;
     width: 80vw;
-    border-bottom: 3px solid  #05386B;
-    border-top: 3px solid  #05386B;
+    border-bottom: 3px solid #05386B;
+    border-top: 3px solid #05386B;
     padding: 1vw 0;
     position: absolute;
     text-align: center;
@@ -164,11 +175,11 @@
 #underQuote {
     font-size: .8em;
     font-style: normal;
-    color:  #05386B;
+    color: #05386B;
     text-transform: uppercase;
     font-family: "Bodoni 72", serif;
     letter-spacing: 1px;
-    border-top: 3px solid  #05386B;
+    border-top: 3px solid #05386B;
     padding-top: 1vw;
 }
 
@@ -183,15 +194,13 @@
 }
 
 /*The three sites within the Challenge site*/
-#challengeSite1,
-#challengeSite2,
-#challengeSite3 {
+#challengeSite1{
     /* Can be redone as a class */
     height: 100vh;
     width: 100vw;
     top: 12vh;
     left: 5vw;
-    color:  #05386B;
+    color: #05386B;
     position: relative;
 }
 
@@ -200,7 +209,7 @@
     align-items: center;
     justify-content: center;
     height: 7vh;
-    width: 13vw;
+    width: 159px;
     background-color: #05386B;
     border-radius: 100vw;
     color: white;
@@ -213,7 +222,8 @@
 }
 
 .readMorebtn:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: box-shadow 0.2 s;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
@@ -234,9 +244,8 @@
 /*Text*/
 /*  Headline*/
 .headline {
-    
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 2.7em;
     font-style: normal;
     text-align: center;
     text-transform: uppercase;
@@ -244,14 +253,7 @@
 
 }
 
-/*InfoText*/
-.infoText {
-    letter-spacing: 1px;
-    line-height: 1.5em;
-    font-size: 2em;
-    width: 70vw;
-    height: auto;
-}
+
 
 /*----------SECOND CHALLENGE SITE---------------------------------------------------------*/
 /*SITE 2*/
@@ -264,7 +266,7 @@
     height: 40vh;
     width: 42vw;
     padding: 2vw;
-    color:  #05386B;
+    color: #05386B;
 }
 
 /*Headline*/
@@ -323,7 +325,7 @@
     width: 100vw;
     top: 12vh;
     left: 5vw;
-    color:  #05386B;
+    color: #05386B;
     position: relative;
 }
 
@@ -357,7 +359,7 @@
     width: 100vw;
     top: 12vh;
     left: 5vw;
-    color:  #05386B;
+    color: #05386B;
     position: relative;
 }
 
@@ -369,5 +371,4 @@
     height: 55vh;
     width: auto;
     float: right;
-    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
 }
