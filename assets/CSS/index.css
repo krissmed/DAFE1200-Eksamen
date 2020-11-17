@@ -1,135 +1,9 @@
-/*--------------------------------SIDE NAV --------------------------------------------------*/
-@media (min-width: 900px) {
-    /* This code only applies when window size is bigger than 900px */
-
-    #sideNav {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20vh;
-        color: black;
-        position: fixed;
-        left: -210px;
-        transition: 0.4s;
-        padding: 15px;
-        z-index: 99;
-        width: auto;
-        text-decoration: none;
-        font-size: 2em;
-        border-radius: 0 5px 5px 0;
-    }
-
-    .sideNavElements {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 2vh;
-        height: 5vh;
-        align-items: center;
-        text-align: center;
-        padding-left: 50px;
-        text-decoration: none;
-        background-color: green;
-        border-radius: 0 5px 5px 0;
-    }
-
-    .sideNavElements:hover {
-        margin-top: 2vh;
-        height: 5vh;
-        left: 0px;
-        background-color: white;
-        border-radius: 0 5px 5px 0;
-    }
-
-    #sideNav:hover {
-        left: -15px;
-    }
-
-    .sideNavElements {
-        margin-top: 2vh;
-        left: -200px;
-        height: 5vh;
-        padding-left: 50px;
-        text-decoration: none;
-        color: white;
-        background-color: green;
-        border-radius: 0 5px 5px 0;
-    }
-
-    /*This class gets added to sideNavElements in JS*/
-    .sideNavActive {
-        background-color: white;
-        color: green;
-    }
-}
-
-@media screen and (max-width: 900px) {
-
-    /* This code only applies when window size is smaller than 900px */
-    #sideNav {
-        display: none;
-    }
-    /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
-    #challengeSite {
-        border: solid black 1px;
-        height: auto;
-        width: auto;
-        display: flex;
-        z-index: 10;
-        flex-direction: row;
-        background-color: #5cdb95;
-    }
-
-    /*Tree Image*/
-    #challengeSiteTreePic {
-        display: none;
-        border: solid black 1px;
-        position: absolute;
-        right: 10vw;
-        top: 20vh;
-        height: auto;
-        width: 20vw;
-        float: right;
-        border-radius: 25px;
-        box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
-        border: solid black 1px;
-    }
-
-    /*Text*/
-    /*  Headline*/
-    .headline {
-        border: solid black 1px;
-        font-weight: bolder;
-        font-size: 3em;
-        font-style: normal;
-        text-align: center;
-        text-transform: uppercase;
-        width: 100vw;
-
-    }
-
-    /*InfoText*/
-    .infoText {
-        border: solid black 1px;
-        letter-spacing: 1px;
-        line-height: 1.3em;
-        font-size: 2em;
-        width: 95vw;
-        height: auto;
-    }
-}
-
-@media screen and (max-height: 700px),
-(max-width: 900px) {
-    #sideNav {
-        display: none;
-    }
-}
-
 /*--------------------Welcome Page------------------------------------------*/
 #welcomeSlide {
     height: 100vh;
     width: 100vw;
     margin-bottom: 0px;
-    background-color: #5cdb95;
+    background-color: #8ee4af;
 }
 
 /* Video on the top of the website*/
@@ -231,15 +105,7 @@
 
 }
 
-/*InfoText*/
-.infoText {
-    
-    letter-spacing: 1px;
-    line-height: 1.3em;
-    font-size: 2em;
-    width: 60vw;
-    height: auto;
-}
+
 
 /*----------SECOND CHALLENGE SITE---------------------------------------------------------*/
 /*SITE 2*/
@@ -352,11 +218,135 @@
 /*Image*/
 .appImg {
     position: absolute;
+    border-radius: 50px; /* To make edges rounded */
     right: 12vw;
     top: 15vh;
     height: 55vh;
     width: auto;
     float: right;
-    border-radius: 25px;
     box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
 }
+@media (min-width: 900px) {
+    /* This code only applies when window size is bigger than 900px */
+
+    #sideNav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+        color: black;
+        position: fixed;
+        left: -210px;
+        transition: 0.4s;
+        padding: 15px;
+        z-index: 99;
+        width: auto;
+        text-decoration: none;
+        font-size: 2em;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .sideNavElements {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2vh;
+        height: 5vh;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        text-decoration: none;
+        background-color: green;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .sideNavElements:hover {
+        margin-top: 2vh;
+        height: 5vh;
+        left: 0px;
+        background-color: white;
+        border-radius: 0 5px 5px 0;
+    }
+
+    #sideNav:hover {
+        left: -15px;
+    }
+
+    .sideNavElements {
+        margin-top: 2vh;
+        left: -200px;
+        height: 5vh;
+        padding-left: 50px;
+        text-decoration: none;
+        color: white;
+        background-color: green;
+        border-radius: 0 5px 5px 0;
+    }
+
+    /*This class gets added to sideNavElements in JS*/
+    .sideNavActive {
+        background-color: white;
+        color: green;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    /* This code only applies when window size is smaller than 900px */
+    #sideNav {
+        display: none;
+    }
+    /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
+    #challengeSite {
+        border: solid black 1px;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        z-index: 10;
+        flex-direction: row;
+        background-color: #5cdb95;
+    }
+
+    /*Tree Image*/
+    #challengeSiteTreePic {
+        display: none;
+        border: solid black 1px;
+        position: absolute;
+        right: 10vw;
+        top: 10vh;
+        height: auto;
+        width: 20vw;
+        float: right;
+        border-radius: 25px;
+        box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+        border: solid black 1px;
+    }
+
+    /*Text*/
+    /*  Headline*/
+    .headline {
+        border: solid black 1px;
+        font-weight: bolder;
+        font-size: 3em;
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100vw;
+
+    }
+
+    /*InfoText*/
+    .infoText {
+        border: solid black 1px;
+        letter-spacing: 1px;
+        line-height: 1.3em;
+        font-size: 2em;
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-height: 700px),
+(max-width: 900px) {
+    #sideNav {
+        display: none;
+    }
+}   
