@@ -6,7 +6,8 @@
     top: 10vh;
     display: grid;
     overflow: scroll;
-    margin-bottom: 13vh;
+    margin-bottom: 10vh;
+    
 }
     .sourcesHeadline {
         padding: 9px 35px;
@@ -86,7 +87,7 @@
     background-color: lightgrey;
     position: relative;
     top: 10vh;
-    margin-bottom: 13vh;
+    margin-bottom: 10vh;
     }
     .listMeetGroup {
             line-height: 40px;
