@@ -1,39 +1,56 @@
-.sourcesInfoContent, .sourceImageContent{
-    height: 100vh;
-    width: 100vw;
-    background-color: lightgrey;
+/*The first two sites*/
+#InfoContent, #ImageContent{
+    background-color: #5cdb95;
+    color: #05386B;
+    border: 1px solid #376E6F;
     position: relative;
+    display: flex;
+    flex-direction: column;
     top: 10vh;
-    display: grid;
-    overflow: scroll;
-    margin-bottom: 10vh;
-    
 }
+/*Sources Information div*/
+#InfoContent {
+    height: 160vh;
+    width: 100vw;
+    word-break: break-all;
+}
+/*Sources Images div*/
+#ImageContent {
+    height: 145vh;
+    width: 100vw;
+}
+    /*Headline on pages*/
     .sourcesHeadline {
         padding: 9px 35px;
     }
+    /*Undertitle on some pages*/
     .sourcesSubtitle {
         position: relative;
-        left: 75px;
+        word-break: break-word;
+        left: 7vw;
+        margin-right: 10vw;
+        display: flex;
     }
+        /*The shapes with info inside*/
         .sourcesInfo {
             width: 100%;
             height: auto;
             padding: 4vh;
+            position: relative;
             margin-bottom: 8em;
-            margin-left: 15vh;
+            margin-left: 4vw;
         }
         /*Selects the last element*/
         .sourcesInfo:last-child {
             margin-bottom: 40px;
         }
             .sourcesInfoDiv {
-                background-color: white;
+                background-color: #8ee4af;
                 border: 1px solid black;
-                height: 9rem;
+                min-height: 9rem;
+                height: auto;
                 width: 70vw;
-                padding: 10px;
-                display: block;
+                padding: 1vw;
                 position: absolute;
 
             }
@@ -81,105 +98,69 @@
         width: 70px;
     }
 
-.sourceMeetingsContent, .sourceGroupContent {
-    height: 100vh;
+#meetingsContent, #sourceGroupContent {
+    min-height: 100vh;
     width: 100vw;
-    background-color: lightgrey;
+    background-color: #5cdb95;
+    color: #05386B;
+    border: 1px solid #376E6F;
+    position: relative;
+}
+#meetingsContent {
     position: relative;
     top: 10vh;
-    margin-bottom: 10vh;
-    }
+}
     .listMeetGroup {
-            line-height: 40px;
+            line-height: 10vh;
+            margin-left: 12vw;
         }
+    .listMeetGroup1 {
+        position: relative;
+        top: 10vh;
+        line-height: 10vh;
+        margin-left: 12vw;
+    }
             .studentNumber {
                 position: relative;
                 left: 40px;
             }
 
-/*--------------------------------SIDE NAV --------------------------------------------------*/
-@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */
+.sourcesHeadline1 {
+    position: relative;
+    top: 10vh;
+    padding: 9px 35px;
+}
+/*-------------------------NAV on site----------------------------------------------------------------*/
+.sourceMenu {
+    position: relative;
+    left: 6vw;
+    z-index: 3;
+}
+.sourceMenu1 {
+    position: relative;
+    left: 6vw;
+    top: 10vh;
+    z-index: 3;
+}
+    .sourceMenuUl {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 70vw;
+        color: #25274D;
+    }
+        .sourceMenuLi {
+            border-bottom: 2px solid green;
+            padding: 10px 5vw;
+            word-break: break-word;
+        }
+            .sourceMenuLi a{
+                text-decoration: none;
+                color: inherit;
+            }
+                .sourceMenuLi:hover {
+                    border-bottom: 2px solid #05386B;
+                    font-weight: bold;
+                }
 
-    #sideNav{
-        display: flex;
-        flex-direction: column;
-        margin-top: 20vh;
-        color: black;
-        position: fixed;
-        left: -353px;
-        transition: 0.4s;
-        padding: 15px;
-        z-index: 99;
-        width: auto;
-        text-decoration: none;
-        font-size: 2em;
-        border-radius: 0 5px 5px 0;
-    }
-    #sideNav a{
-        text-decoration: none;
-    }
-    #sideNav img{
-        position: relative;
-    }
-    .sideNavElements{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 2vh;
-        height: 5vh;
-        align-items: center;
-        text-align: center;
-        padding-left: 50px;
-        text-decoration: none;
-        background-color: green;
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-    }
-    .sideNavElements:hover{
-        margin-top: 2vh;
-        height: 5vh;
-        left: 0px;
-        background-color: white;
-        border-radius: 0 5px 5px 0;
-    }
-    #sideNav:hover{
-        left: -15px;
-    }
-    .sideNavElements{
-        margin-top: 2vh;
-        left: -200px;
-        height: 5vh;
-        align-items: center;
-        text-align: center;
-        padding-left: 50px;
-        text-decoration: none;
-        color: white;
-        background-color: green;
-        border-radius: 0 5px 5px 0;
-    }
-    .sideNavElements:hover{
-        margin-top: 2vh;
-        height: 5vh;
-        left: 0px;
-        background-color: white;
-        color: green;
-        border-radius: 0 5px 5px 0;
-    }
-    #sideNav:hover{
-        left: -15px;
-    }
-    /*This class gets added to sideNavElements in JS*/
-    .sideNavActive {
-        background-color: white;
-        color: green;
-    }
-}
-@media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
-    #sideNav{
-        display: none;
-    }
-}
-@media screen and (max-height: 700px), (max-width: 900px) {
-    #sideNav{
-        display: none;
-    }
-}

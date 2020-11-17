@@ -100,6 +100,8 @@
         text-transform: uppercase;
         font-size: 2em;
         font-family: "Bodoni 72", serif;
+        letter-spacing: 1px;
+        line-height: 40px;
         position: relative;
         top: 43vh;
         margin: auto 0;
