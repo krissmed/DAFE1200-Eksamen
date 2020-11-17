@@ -1,39 +1,8 @@
-.sideMenuSources {
-    height: 115vh;
-    width: 20vw;
-    position: absolute;
-    top: 10vh;
-    left: 0;
-    box-shadow: 1px 1px 7px 2px green;
-    color: green;
-}
-    .sideMenuSourcesUl {
-        padding: 2vw;
-        list-style-type: none;
-        line-height: 30px;
-    }
-        .sideMenuSourcesLi {
-            text-decoration: none;
-            font-size: 1.8vw;
-            margin-left: 20px;
-            cursor: pointer;
-        }
-        .sideMenuSourcesLi:hover {
-            border-bottom: 1px solid green;
-        }
-            .sideMenuSourcesTitle {
-                font-weight: bold;
-                border-bottom: 2px solid green;
-                font-size: 2.2vw;
-            }
-
-
-
 .sourcesInfoContent, .sourceImageContent{
     height: 100vh;
-    width: 80vw;
+    width: 100vw;
+    background-color: lightgrey;
     position: relative;
-    left: 20vw;
     top: 10vh;
     display: grid;
     overflow: scroll;
@@ -51,13 +20,14 @@
             height: auto;
             padding: 4vh;
             margin-bottom: 8em;
+            margin-left: 15vh;
         }
         /*Selects the last element*/
         .sourcesInfo:last-child {
             margin-bottom: 40px;
         }
             .sourcesInfoDiv {
-                background-color: lightgrey;
+                background-color: white;
                 border: 1px solid black;
                 height: 9rem;
                 width: 70vw;
@@ -112,16 +82,103 @@
 
 .sourceMeetingsContent, .sourceGroupContent {
     height: 100vh;
-    width: 80vw;
+    width: 100vw;
+    background-color: lightgrey;
     position: relative;
-    left: 20vw;
     top: 10vh;
+    margin-bottom: 13vh;
     }
     .listMeetGroup {
             line-height: 40px;
         }
+            .studentNumber {
+                position: relative;
+                left: 40px;
+            }
 
-.studentNumber {
-    position: relative;
-    left: 40px;
+/*--------------------------------SIDE NAV --------------------------------------------------*/
+@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */
+
+    #sideNav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+        color: black;
+        position: fixed;
+        left: -353px;
+        transition: 0.4s;
+        padding: 15px;
+        z-index: 99;
+        width: auto;
+        text-decoration: none;
+        font-size: 2em;
+        border-radius: 0 5px 5px 0;
+    }
+    #sideNav a{
+        text-decoration: none;
+    }
+    #sideNav img{
+        position: relative;
+    }
+    .sideNavElements{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2vh;
+        height: 5vh;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        text-decoration: none;
+        background-color: green;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    .sideNavElements:hover{
+        margin-top: 2vh;
+        height: 5vh;
+        left: 0px;
+        background-color: white;
+        border-radius: 0 5px 5px 0;
+    }
+    #sideNav:hover{
+        left: -15px;
+    }
+    .sideNavElements{
+        margin-top: 2vh;
+        left: -200px;
+        height: 5vh;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        text-decoration: none;
+        color: white;
+        background-color: green;
+        border-radius: 0 5px 5px 0;
+    }
+    .sideNavElements:hover{
+        margin-top: 2vh;
+        height: 5vh;
+        left: 0px;
+        background-color: white;
+        color: green;
+        border-radius: 0 5px 5px 0;
+    }
+    #sideNav:hover{
+        left: -15px;
+    }
+    /*This class gets added to sideNavElements in JS*/
+    .sideNavActive {
+        background-color: white;
+        color: green;
+    }
+}
+@media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
+    #sideNav{
+        display: none;
+    }
+}
+@media screen and (max-height: 700px), (max-width: 900px) {
+    #sideNav{
+        display: none;
+    }
 }

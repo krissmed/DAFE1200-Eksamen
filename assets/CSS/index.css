@@ -1,28 +1,24 @@
 /*--------------------------------SIDE NAV --------------------------------------------------*/
-@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */
+@media (min-width: 900px) {
+    /* This code only applies when window size is bigger than 900px */
 
-    #sideNav{
+    #sideNav {
         display: flex;
         flex-direction: column;
         margin-top: 20vh;
         color: black;
         position: fixed;
-        left: -210px; 
-        transition: 0.4s; 
-        padding: 15px; 
+        left: -210px;
+        transition: 0.4s;
+        padding: 15px;
         z-index: 99;
-        width: auto; 
-        text-decoration: none; 
-        font-size: 2em; 
-        border-radius: 0 5px 5px 0; 
-    }
-    #sideNav a{
+        width: auto;
         text-decoration: none;
+        font-size: 2em;
+        border-radius: 0 5px 5px 0;
     }
-    #sideNav img{
-        position: relative;
-    }
-    .sideNavElements{
+
+    .sideNavElements {
         display: flex;
         justify-content: space-between;
         margin-top: 2vh;
@@ -32,262 +28,335 @@
         padding-left: 50px;
         text-decoration: none;
         background-color: green;
-        border-radius: 0 5px 5px 0; 
+        border-radius: 0 5px 5px 0;
     }
-    .sideNavElements:hover{
+
+    .sideNavElements:hover {
         margin-top: 2vh;
         height: 5vh;
         left: 0px;
         background-color: white;
         border-radius: 0 5px 5px 0;
     }
-    #sideNav:hover{
+
+    #sideNav:hover {
         left: -15px;
     }
-        .sideNavElements{
-            margin-top: 2vh;
-            left: -200px;
-            height: 5vh;
-            align-items: center;
-            text-align: center;
-            padding-left: 50px;
-            text-decoration: none;
-            color: white;
-            background-color: green;
-            border-radius: 0 5px 5px 0;
-        }
-            .sideNavElements:hover{
-                margin-top: 2vh;
-                height: 5vh;
-                left: 0px;
-                background-color: white;
-                color: green;
-                border-radius: 0 5px 5px 0;
-            }
-                #sideNav:hover{
-                    left: -15px;
-                }
-                    /*This class gets added to sideNavElements in JS*/
-                    .sideNavActive {
-                        background-color: white;
-                        color: green;
-                    }
-}
-@media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
-    #sideNav{
-        display: none;
+
+    .sideNavElements {
+        margin-top: 2vh;
+        left: -200px;
+        height: 5vh;
+        padding-left: 50px;
+        text-decoration: none;
+        color: white;
+        background-color: green;
+        border-radius: 0 5px 5px 0;
+    }
+
+    /*This class gets added to sideNavElements in JS*/
+    .sideNavActive {
+        background-color: white;
+        color: green;
     }
 }
-@media screen and (max-height: 700px), (max-width: 900px) {
-    #sideNav{
+
+@media screen and (max-width: 900px) {
+
+    /* This code only applies when window size is smaller than 900px */
+    #sideNav {
+        display: none;
+    }
+    /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
+    #challengeSite {
+        border: solid black 1px;
+        height: auto;
+        width: auto;
+        display: flex;
+        z-index: 10;
+        flex-direction: row;
+        background-color: #5cdb95;
+    }
+
+    /*Tree Image*/
+    #challengeSiteTreePic {
+        display: none;
+        border: solid black 1px;
+        position: absolute;
+        right: 10vw;
+        top: 20vh;
+        height: auto;
+        width: 20vw;
+        float: right;
+        border-radius: 25px;
+        box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+        border: solid black 1px;
+    }
+
+    /*Text*/
+    /*  Headline*/
+    .headline {
+        border: solid black 1px;
+        font-weight: bolder;
+        font-size: 3em;
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100vw;
+
+    }
+
+    /*InfoText*/
+    .infoText {
+        border: solid black 1px;
+        letter-spacing: 1px;
+        line-height: 1.3em;
+        font-size: 2em;
+        width: 95vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-height: 700px),
+(max-width: 900px) {
+    #sideNav {
         display: none;
     }
 }
 
 /*--------------------Welcome Page------------------------------------------*/
-#welcomePage {
+#welcomeSlide {
     height: 100vh;
     width: 100vw;
-    margin-bottom: 10vh;
+    margin-bottom: 0px;
+    background-color: #5cdb95;
 }
+
 /* Video on the top of the website*/
 .mainvideo {
     width: 210vh;
     height: auto;
 }
+
 /*---------------------Top image and quotes----------------------------------------------*/
 
-        /*Quote*/
-        #quote {
-            height: auto;
-            width: 80vw;
-            border-bottom: 3px solid black;
-            border-top: 3px solid black;
-            padding: 1vw 0;
-            position: absolute;
-            text-align: center;
-            top: 20vw;
-            left: 10vw;
-            font-size: 2em;
-            font-weight: bolder;
-            font-family: "Bodoni 72", serif;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: black;
-        }
-            /*the text under the quote*/
-            #underQuote {
-                font-size: .8em;
-                font-style: normal;
-                color: black;
-                text-transform: uppercase;
-                font-family: "Bodoni 72", serif;
-                letter-spacing: 1px;
-                border-top: 3px solid black;
-                padding-top: 1vw;
-            }
+/*Quote*/
+#quote {
+    height: auto;
+    width: 80vw;
+    border-bottom: 3px solid  #05386B;
+    border-top: 3px solid  #05386B;
+    padding: 1vw 0;
+    position: absolute;
+    text-align: center;
+    top: 20vw;
+    left: 10vw;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: "Bodoni 72", serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #05386B;
+}
+
+/*the text under the quote*/
+#underQuote {
+    font-size: .8em;
+    font-style: normal;
+    color:  #05386B;
+    text-transform: uppercase;
+    font-family: "Bodoni 72", serif;
+    letter-spacing: 1px;
+    border-top: 3px solid  #05386B;
+    padding-top: 1vw;
+}
+
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
-    #challengeSite {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        z-index: 10;
-        flex-direction: row;
-        background-color: #cdd1ce;
-    }
-    /*The three sites within the Challenge site*/
-    #challengeSite1, #challengeSite2, #challengeSite3 { /* Can be redone as a class */
-        height: 100vh;
-        width: 100vw;
-        top: 12vh;
-        left: 5vw;
-        z-index: 10;
-        color: green;
-        position: relative;
-    }
-.readMore{
+#challengeSite {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    z-index: 10;
+    flex-direction: row;
+    background-color: #5cdb95;
+}
+
+/*The three sites within the Challenge site*/
+#challengeSite1,
+#challengeSite2,
+#challengeSite3 {
+    /* Can be redone as a class */
+    height: 100vh;
+    width: 100vw;
+    top: 12vh;
+    left: 5vw;
+    color:  #05386B;
+    position: relative;
+}
+
+.readMore {
     font-size: 2em;
 }
-.readMore:hover{
+
+.readMore:hover {
     text-decoration: underline;
     cursor: pointer;
 }
+
 /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
 /*Tree Image*/
-        #challengeSiteTreePic {
-            position: absolute;
-            right: 10vw;
-            top: 20vh;
-            height: auto;
-            width: 40vh;
-            float: right;
-            border-radius: 25px;
-            box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-            border: solid black 1px;
-        }
-            /*Text*/
-                /*  Headline*/
-                .headline {
-                    font-weight: bolder;
-                    font-size: 3vw;
-                    font-style: normal;
-                    text-align: center;
-                    text-transform: uppercase;
-                    width: 30vw;
+#challengeSiteTreePic {
+    border: solid black 1px;
+    position: absolute;
+    right: 10vw;
+    top: 20vh;
+    height: auto;
+    width: 20vw;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+    border: solid black 1px;
+}
 
-                }
-                    /*InfoText*/
-                    .infoText {
-                        letter-spacing: 1px;
-                        line-height: 2.2vw;
-                        font-size: 1.3vw;
-                        width: 53vw;
-                        height: 30vh;
-                    }
+/*Text*/
+/*  Headline*/
+.headline {
+    
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    width: 30vw;
+
+}
+
+/*InfoText*/
+.infoText {
+    
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    font-size: 2em;
+    width: 60vw;
+    height: auto;
+}
+
 /*----------SECOND CHALLENGE SITE---------------------------------------------------------*/
-    /*SITE 2*/
-        /*Info-text*/
-        .challengeSite2Description {
-            position: relative;
-            display: inline-block;
-            top: 3vh;
-            left: 3vw;
-            height: 40vh;
-            width: 42vw;
-            padding: 2vw;
-            color: green;
-        }
-            /*Headline*/
-            .site2DescHeadline {
-                font-weight: bolder;
-                font-size: 3vw;
-            }
-                /*Paragraf*/
-                .paragraph {
-                    line-height: 1.5vw;
-                    letter-spacing: 1px;
-                    font-size: 1.2vw;
-                    position: relative;
-                    width: 45vw;
-                }
-            /*Image Environment*/
-            .environmentImage {
-                position: absolute;
-                left: 65vw;
-                top: 16vh;
-                height: 50vh;
-                width: 20vw;
-                float: right;
-                border-radius: 25px;
-                box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-            }
+/*SITE 2*/
+/*Info-text*/
+.challengeSite2Description {
+    position: relative;
+    display: inline-block;
+    top: 3vh;
+    left: 3vw;
+    height: 40vh;
+    width: 42vw;
+    padding: 2vw;
+    color:  #05386B;
+}
+
+/*Headline*/
+.site2DescHeadline {
+    font-weight: bolder;
+    font-size: 3vw;
+}
+
+/*Paragraf*/
+.paragraph {
+    line-height: 1.5vw;
+    letter-spacing: 1px;
+    font-size: 1.2vw;
+    position: relative;
+    width: 45vw;
+}
+
+/*Image Environment*/
+.environmentImage {
+    position: absolute;
+    left: 65vw;
+    top: 16vh;
+    height: 50vh;
+    width: 20vw;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+}
 
 /*----------THIRD CHALLENGE SITE---------------------------------------------------------*/
-    /*Image polluted city*/
-    #pollutedImgSite3 {
-        position: relative;
-        right: 8vw;
-        top: 30vh;
-        height: 37vh;
-        width: 35vw;
-        float: right;
-        border-radius: 25px;
-        box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-    }
+/*Image polluted city*/
+#pollutedImgSite3 {
+    position: relative;
+    right: 8vw;
+    top: 30vh;
+    height: 37vh;
+    width: 35vw;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+}
 
 /*-----------SOLUTION SITE---------------------------------------------------------------------------------------------------------------*/
-    #solutionSite {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        background-color: #b6bab7;
-    }
-        #solutionSite1, #solutionSite2, #solutionSite3 {
-            height: 100vh;
-            width: 100vw;
-            top: 12vh;
-            left: 5vw;
-            color: green;
-            position: relative;
-        }
-        /*Image site 1*/
-        .solutionBulb {
-            position: relative;
-            right: 14vw;
-            top: 0;
-            height: auto;
-            width: 40vh;
-            float: right;
-            border-radius: 25px;
-            box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-            border: solid black 1px;
-        }
+#solutionSite {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #8ee4af;
+}
+
+#solutionSite1,
+#solutionSite2,
+#solutionSite3 {
+    height: 100vh;
+    width: 100vw;
+    top: 12vh;
+    left: 5vw;
+    color:  #05386B;
+    position: relative;
+}
+
+/*Image site 1*/
+.solutionBulb {
+    position: relative;
+    right: 14vw;
+    top: 0;
+    height: auto;
+    width: 40vh;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+    border: solid black 1px;
+}
+
 /*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
-    #appSite {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        background-color: #cdd1ce;
-        ;
-    }
-        #appSite1, #appSite2, #appSite3 {
-            height: 80vh;
-            width: 100vw;
-            top: 12vh;
-            left: 5vw;
-            color: green;
-            position: relative;
-        }
-        /*Image*/
-        .appImg {
-            position: absolute;
-            right: 12vw;
-            top: 15vh;
-            height: 55vh;
-            width: auto;
-            float: right;
-            border-radius: 25px;
-            box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
-        }
+#appSite {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #5cdb95;
+    ;
+}
+
+#appSite1,
+#appSite2,
+#appSite3 {
+    height: 80vh;
+    width: 100vw;
+    top: 12vh;
+    left: 5vw;
+    color:  #05386B;
+    position: relative;
+}
+
+/*Image*/
+.appImg {
+    position: absolute;
+    right: 12vw;
+    top: 15vh;
+    height: 55vh;
+    width: auto;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18, 0.75);
+}

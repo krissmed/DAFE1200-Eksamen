@@ -37,19 +37,24 @@
     </ul>
 </header>
 
-<!--Side menu-->
-<div class="sideMenuSources">
-    <ul class="sideMenuSourcesUl">
-        <li class="sideMenuSourcesTitle">Sources:</li>
-            <li class="sideMenuSourcesLi information" onclick="showInfoPage()">- Information</li>
-            <li class="sideMenuSourcesLi images" onclick="showImgPage()">- Images</li>
-    </ul>
-
-    <ul class="sideMenuSourcesUl">
-        <li class="sideMenuSourcesTitle">Documentation:</li>
-            <li class="sideMenuSourcesLi summaryMeet" onclick="showSummaryPage()">- Summary of meetings</li>
-            <li class="sideMenuSourcesLi group" onclick="showGroupPage()">- Groupmembers</li>
-    </ul>
+<!------------------------SIDENAV--------------------------->
+<div id="sideNav">
+    <a href="#" onclick="showInfoPage()" class="sideNavElements 1">
+        <p>Information Sources</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#" onclick="showImgPage()" class="sideNavElements 2">
+        <p>Images</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#" onclick="showSummaryPage()" class="sideNavElements 3">
+        <p>Group Meeting Logs</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a onclick="showGroupPage()" href="#" class="sideNavElements 4">
+        <p>Groupmembers</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
 </div>
 
 <!--Sources information-->
@@ -174,7 +179,7 @@
     <h1 class="sourcesHeadline">Group-members</h1>
             <ul class="listMeetGroup">
                 <li><b> Kristian Smedsrød </b></li>
-                <li class="studentNumber">xxxxx</li>
+                <li class="studentNumber">s354374</li>
                 <li><b> Ole Jørgen Knoph </b></li>
                 <li class="studentNumber">s354371</li>
                 <li><b> Vetle Endrerud </b></li>
@@ -251,6 +256,6 @@
 <!--Script for header-->
 <script src="assets/JavaScript/header.js"></script>
 <!--Script for source-page -->
-<script src="assets/JavaScript/sources.js"></script>
+<script src="assets/JavaScript/sourceSiteNav.js"></script>
 </body>
 </html>
