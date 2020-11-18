@@ -88,6 +88,8 @@
     height: 100vh;
     width: 100vw;
     margin-bottom: 10vh;
+    color: #05386B;
+    background-color: #8ee4af;
 }
 
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
@@ -96,7 +98,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #cdd1ce;
+    background-color: #5cdb95;
 }
 
 /*-----------SOLUTION SITE---------------------------------------------------------------------------------------------------------------*/
@@ -105,7 +107,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #b6bab7;
+    background-color: #8ee4af;
 }
 
 /*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
@@ -114,5 +116,5 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #cdd1ce;
+    background-color: #5cdb95;
 }
