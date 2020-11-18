@@ -111,7 +111,7 @@
 }
 
 @media screen and (max-height: 700px), (max-width: 900px) { /* Removes the sidenav when the windows becomes small enough */
-    #sideNav {
+    #sideNav, #challengeImg, #solutionImg, #appImg {
         display: none;
     }
 }
@@ -144,7 +144,6 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #05386B;
-    z-index: 2;
 }
 
 /*the text under the quote*/
@@ -245,12 +244,12 @@
     height: auto;
     width: 100vw;
     top: 12vh;
-    left: 5vw;
+    /*left: 5vw;*/
     color: #05386B;
     position: relative;
 }
 
-/*Image site 1*/
+/*Image site 2*/
 #solutionImg {
     position: absolute;
     right: 15vw;
