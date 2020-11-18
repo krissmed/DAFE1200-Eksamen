@@ -148,5 +148,3 @@ function collapseHamMenu() {
     line3.style.transform = "rotate(0deg)";
     line3.style.opacity = "1";
 }
-
-/*---------------------SIDENAV--------------------------------------*/

@@ -35,7 +35,6 @@
         text-align: center;
         padding-left: 50px;
         text-decoration: none;
-        background-color: green;
         border-radius: 0 5px 5px 0;
     }
 
@@ -57,15 +56,15 @@
         height: 5vh;
         padding-left: 50px;
         text-decoration: none;
-        color: white;
-        background-color: green;
+        color: black;
+        background-color: #05386B;
         border-radius: 0 5px 5px 0;
     }
 
     /*This class gets added to sideNavElements in JS*/
     .sideNavActive {
-        background-color: white;
-        color: green;
+        background-color: green;
+        color: black    ;
     }
 
 @media screen and (max-width: 900px) { /* This code only applies when window size is smaller than 900px */
@@ -97,6 +96,13 @@
         width: 20vw;
         float: right;
         border-radius: 25px;
+    }
+    #solutionImg{
+        display: none;
+    }
+
+    #appImg{
+        display: none;
     }
 
     /*Written Content*/
@@ -293,7 +299,6 @@
     height: auto;
     width: 15vw;
     float: right;
-    border-radius: 25px;
 }
 @media screen and (max-height: 500px) {
     #welcomeSlide, #challengeSite, #solutionSite, #appSite{

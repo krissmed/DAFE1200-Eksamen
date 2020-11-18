@@ -1,4 +1,5 @@
 <html lang="no">
+
 <head>
 
   <link rel="icon" href="assets/Images/icon.ico">
@@ -20,8 +21,8 @@
     <!-- LOGO. Only visible in format where window > 900px -->
     <a href="index.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
     <!-- Hamburger Menu (Only visible in format where window < 900px)-->
-    <div onclick="toggleMenu()" id="hamburgerMenu">
-      <div id="line0"></div>
+    <!-- Hamburger Menu (Only visible in format where window < 900px)-->
+    <div onclick="toggleMenu()" onkeypress="toggleMenu()" id="hamburgerMenu">
       <div class="hamMenu" id="line1"></div>
       <div class="hamMenu" id="line2"></div>
       <div class="hamMenu" id="line3"></div>
@@ -34,21 +35,21 @@
       <li class="menuLi app" onclick="collapseHamMenu()"><a href="app.html"> App </a></li>
     </ul>
   </header>
-    <!------------------------SIDENAV--------------------------->
-    <div id="sideNav">
-      <a href="#mainSite" class="sideNavElements 1">
-          <p>Hjem</p>
-          <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
-      </a>
-      <a href="#challengeSite" class="sideNavElements 2">
-          <p>FAQ</p>
-          <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
-      </a>
-      <a href="#solutionSite" class="sideNavElements 3">
-          <p>Customer Support</p>
-          <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
-      </a>
-    </div>
+  <!------------------------SIDENAV--------------------------->
+  <div id="sideNav">
+    <a href="#mainSite" class="sideNavElements 1">
+      <p>Hjem</p>
+      <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#challengeSite" class="sideNavElements 2">
+      <p>FAQ</p>
+      <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#solutionSite" class="sideNavElements 3">
+      <p>Customer Support</p>
+      <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+  </div>
 
   <div id="mainSite">
 
@@ -77,8 +78,8 @@
       <p>svar</p>
     </div>
 
-    <button class="accordion border1">Spørsmål</button>
-    <div id="svar4" class="panel">
+    <h1>Spørsmål</h1>
+    <div id="svar4">
       <p>svar</p>
     </div>
 
@@ -88,7 +89,7 @@
     </div>
   </div>
 
-<div id="costDiv"></div>
+  <div id="costDiv"></div>
   <div class="cost">
     <div class="cost_title2">
       <h1>Costumer support</h1>
@@ -131,21 +132,21 @@
         <img class=empl_img src="assets/Images/ansatt.jpg" alt="Ansattbilde">
         <h1 class="empl_titel">Carl Fredrik</h1>
         <h2 class="empl_role">Costumer support</h2>
-            <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
+        <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
       </div>
       <div class="flex-item">
         <img class=empl_img src="assets/Images/ansatt.jpg" alt="Ansattbilde">
         <h1 class="empl_titel">Carl Fredrik</h1>
         <h2 class="empl_role">Costumer support</h2>
-            <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
+        <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
       </div>
       <div class="flex-item">
         <img class=empl_img src="assets/Images/ansatt.jpg" alt="Ansattbilde">
         <h1 class="empl_titel">Carl Fredrik</h1>
         <h2 class="empl_role">Costumer support</h2>
-            <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
+        <P class="empl_text">Hei! jeg vil gjerne hjelpe deg</P>
       </div>
-    </div>  
+    </div>
   </div>
 
   <!-- FOOTER CONTAINER -->
@@ -201,9 +202,10 @@
         <ul class="nav_ul">
           <li>
             <a href="https://facebook.com"><img src="assets/images/facebook.png" class=sosialimg alt="facebook"></a>
-                        <a href="https://instagram.com"><img src="assets/images/instagram.png" class=sosialimg alt="instagram"></a>
-                        <a href="https://twitter.com"><img src="assets/images/twitter.png" class=sosialimg alt=twitter></a>
-                        <a href="https://github.com/krissmed/DAFE1200-Eksamen/"><img src="assets/images/github.png" class=sosialimg alt="github"></a>
+            <a href="https://instagram.com"><img src="assets/images/instagram.png" class=sosialimg alt="instagram"></a>
+            <a href="https://twitter.com"><img src="assets/images/twitter.png" class=sosialimg alt=twitter></a>
+            <a href="https://github.com/krissmed/DAFE1200-Eksamen/"><img src="assets/images/github.png" class=sosialimg
+                alt="github"></a>
           </li>
         </ul>
       </li>
@@ -216,14 +218,13 @@
     </div>
   </footer>
 
-<!--Placed at bottom to load body first-->
-    <!--Script for contactSite-->
-    <script src="assets/JavaScript/contact.js"></script>
-    <!--Script for header-->
-    <script src="assets/JavaScript/header.js"></script>
+  <!--Placed at bottom to load body first-->
+  <!--Script for contactSite-->
+  <script src="assets/JavaScript/contact.js"></script>
+  <!--Script for header-->
+  <script src="assets/JavaScript/header.js"></script>
   <!--Script for siteNav-->
   <script src="assets/JavaScript/indexSiteNav.js"></script>
 </body>
 
 </html>
-
