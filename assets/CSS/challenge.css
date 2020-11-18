@@ -148,7 +148,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 7vh;
+    height: 50px;
     width: 159px;
     background-color: #05386B;
     border-radius: 100vw;
@@ -254,7 +254,13 @@
 
 /*When the browser width is 650px or lower*/
 @media (max-height: 650px) {
+    .welcomeQuote {
+        top: 5vh;
+    }
+    #page1{
+        height: 120vh;
+    }
     #page2 {
-        height: 160vh;
+        height: 180vh;
     }
 }
