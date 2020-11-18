@@ -117,13 +117,9 @@
     .listMeetGroup1 {
         position: relative;
         top: 10vh;
-        line-height: 10vh;
+        line-height: 8vh;
         margin-left: 12vw;
     }
-            .studentNumber {
-                position: relative;
-                left: 40px;
-            }
 
 .sourcesHeadline1 {
     position: relative;
@@ -195,7 +191,7 @@
     }
 /*Sources Images div*/
 #ImageContent {
-        height: 150vh;
+        height: 185vh;
         width: 100vw;
     }
 
