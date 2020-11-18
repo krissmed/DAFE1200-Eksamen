@@ -97,7 +97,6 @@
 
     /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
     #challengeSite {
-        border: solid black 1px;
         min-height: 100vh;
         width: 100vw;
         display: flex;
@@ -109,7 +108,6 @@
     /*Written Content*/
     /* Headline */
     .headline {
-        border: solid black 1px;
         font-weight: bolder;
         font-size: 3em;
         font-style: normal;
@@ -121,7 +119,6 @@
 
     /*Text*/
     .paragraph {
-        border: solid black 1px;
         letter-spacing: 1px;
         line-height: 1.3em;
         font-size: 1.5em;
@@ -266,7 +263,7 @@
     height: auto;
     width: 100vw;
     top: 12vh;
-    /*left: 5vw;*/
+    left: 5vw;
     color: #05386B;
     position: relative;
 }
