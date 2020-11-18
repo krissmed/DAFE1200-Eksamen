@@ -217,12 +217,11 @@
 /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
 /*Tree Image*/
 #challengeImg {
-    border: solid black 1px;
     position: absolute;
-    right: 10vw;
-    top: 20vh;
+    right: 5vw;
+    top: 0vh;
     height: auto;
-    width: 20vw;
+    width: 15vw;
     float: right;
     border-radius: 25px;
 }
@@ -257,12 +256,12 @@
 }
 
 /*Image site 1*/
-.solutionBulb {
-    position: relative;
-    right: 14vw;
-    top: 0;
+#solutionImg {
+    position: absolute;
+    right: 11vw;
+    top: 0vh;
     height: auto;
-    width: 40vh;
+    width: 15vw;
     float: right;
     border-radius: 25px;
 }
@@ -289,11 +288,12 @@
 /*Image*/
 #appImg {
     position: absolute;
-    right: 12vw;
-    top: 15vh;
-    height: 55vh;
-    width: auto;
+    right: 11vw;
+    top: 0vh;
+    height: auto;
+    width: 15vw;
     float: right;
+    border-radius: 25px;
 }
 @media screen and (max-height: 500px) {
     #welcomeSlide, #challengeSite, #solutionSite, #appSite{
