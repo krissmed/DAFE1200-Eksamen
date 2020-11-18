@@ -89,6 +89,7 @@
 #faqDiv {
   padding-top: 10vh;
   background-color: #5cdb95;
+  color: #05386B;
 }
 #faq {
   height: 100vh;
@@ -102,7 +103,6 @@
 }
 #faqHeadline {
   text-align: center;
-  color: green;
   font-size: 3em;
   }
 #faqSubHeadline{
