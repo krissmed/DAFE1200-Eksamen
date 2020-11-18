@@ -157,6 +157,7 @@ display: none;
         display: none;
     }
     #frontImgAlt{
+        display: block;
         margin-top: 15vh;
         width: auto;
         height: 75vh;
