@@ -188,7 +188,7 @@
     height: 350px;
     width: 230px;
     position: absolute;
-    left: 75vw;
+    left: 70vw;
     top: 250vh;
 }
 /*-----------SITE3---------------------------------------------------------------------------------------------------------------*/
@@ -249,5 +249,12 @@
 
     .welcomeQuote {
         top: 10vh;
+    }
+}
+
+/*When the browser width is 650px or lower*/
+@media (max-height: 650px) {
+    #page2 {
+        height: 160vh;
     }
 }
