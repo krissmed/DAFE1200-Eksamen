@@ -194,7 +194,9 @@
         height: 185vh;
         width: 100vw;
     }
-
+#InfoContent, #ImageContent {
+        top: 5vh;
+    }
 
 }
 
