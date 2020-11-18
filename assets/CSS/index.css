@@ -14,7 +14,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 20vh;
-        color: black;
+        color: #05386B;
         position: fixed;
         left: -210px;
         transition: 0.4s;
@@ -56,15 +56,13 @@
         height: 5vh;
         padding-left: 50px;
         text-decoration: none;
-        color: black;
-        background-color: #05386B;
+        background-color: mediumseagreen;
         border-radius: 0 5px 5px 0;
     }
 
     /*This class gets added to sideNavElements in JS*/
     .sideNavActive {
-        background-color: green;
-        color: black    ;
+        background-color:springgreen;
     }
 
 @media screen and (max-width: 900px) { /* This code only applies when window size is smaller than 900px */
@@ -164,6 +162,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #05386B;
+    z-index: 2;
 }
 
 /*the text under the quote*/
@@ -177,6 +176,13 @@
     border-top: 3px solid #05386B;
     padding-top: 1vw;
 }
+/*logo on mainSite*/
+    .mainLogo {
+        position: relative;
+        top: 65vh;
+        left: 42vw;
+    }
+
 
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
 #challengeSite {
