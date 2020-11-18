@@ -105,26 +105,6 @@
         background-color: #5cdb95;
     }
 
-    /*Tree Image*/
-    #challengeImg {
-        display: none;
-        border: solid black 1px;
-        position: absolute;
-        right: 10vw;
-        top: 10vh;
-        height: auto;
-        width: 20vw;
-        float: right;
-        border-radius: 25px;
-    }
-
-    #solutionImg {
-        display: none;
-    }
-
-    #appImg {
-        display: none;
-    }
 
     /*Written Content*/
     /* Headline */
@@ -245,6 +225,8 @@
     padding: 0 1.3em;
     text-decoration: none;
     cursor: pointer;
+    position: absolute;
+    top: 61vh;
     transition: box-shadow 0.2s;
 }
 
@@ -254,11 +236,10 @@
 }
 
 /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
-/*Tree Image*/
 #challengeImg {
     position: absolute;
-    right: 5vw;
-    top: 0vh;
+    right: 15vw;
+    top: 45vh;
     height: auto;
     width: 15vw;
     float: right;
@@ -296,8 +277,8 @@
 /*Image site 1*/
 #solutionImg {
     position: absolute;
-    right: 11vw;
-    top: 0vh;
+    right: 15vw;
+    top: 45vh;
     height: auto;
     width: 15vw;
     float: right;
@@ -326,8 +307,8 @@
 /*Image*/
 #appImg {
     position: absolute;
-    right: 11vw;
-    top: 0vh;
+    right: 15vw;
+    top: 45vh;
     height: auto;
     width: 15vw;
     float: right;
