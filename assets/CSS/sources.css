@@ -89,8 +89,10 @@
                                 }
 .imgPreview {
     position: absolute;
-    right: 1vw;
+    right: 52px;
     top: 2vh;
+    width: 20px;
+    height: auto;
 }
     .sourceImg {
         border: 1px solid;
