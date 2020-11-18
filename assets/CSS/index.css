@@ -58,7 +58,7 @@
         height: 5vh;
         padding-left: 50px;
         text-decoration: none;
-        background-color: mediumseagreen;
+        background-color: green;
         border-radius: 0 5px 5px 0;
     }
 
@@ -73,15 +73,14 @@
     height: 5vh;
     padding-left: 50px;
     text-decoration: none;
-    color: black;
-    background-color: #05386B;
+    color: #05386B;
+    background-color: green;
     border-radius: 0 5px 5px 0;
 }
 
 /*This class gets added to sideNavElements in JS*/
 .sideNavActive {
-    background-color: green;
-    color: black;
+    background-color: white;
 }
 
 @media screen and (max-width: 900px) {
