@@ -156,66 +156,7 @@ color: green;
 .active1:after {
   content: "\2796"; 
 }
-/*------------------------------------------*/
-/*Employee cards*/
 
-/*Name tag for the employee*/
-.empName {
-  font-size: 2.3em;
-  margin-top: -2vh;
-  margin-left: 2vh;
-
-}
-/*Role of the employee*/
-.empl_role {
-  font-size: 1em;
-  color: grey;
-  margin-left: 2vh;
-  margin-top: -2vh;
-
-}
-/*text under the employee role*/
-.empl_text {
-  font-size: 1em;
-  margin-left: 2vh;
-}
-/*Image of the employee*/
-.empImg {
-  height: auto;
-  width: 45vh;
-  margin: 20px
-}
-
-/*the flex containers that creates the cards*/
-.empContainer {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 8%;
-  margin-right: 8%;
-}
-
-/* styling the containers */
-.empContainer > div {
-  background-color:white;
-  box-shadow: 0 4px 8px 0 green;
-  width: 50vh;
-  height: auto;
-  margin-right: 5vh;
-  text-align: left;
-  margin-bottom: 4vh;
-  align-self: center;
-}
-
-
-@media (max-width: 1300px) {
-  .empContainer {
-    flex-direction: column;
-  }
-
-  .empContainer > div {
-  align-self: center;
-}
-}
 /*-------------------------------------------*/
 /* costumer support part of the page */
 /*creates the costumer support "card"*/
