@@ -52,6 +52,20 @@
 #sideNav:hover {
     left: -15px;
 }
+    .sideNavElements {
+        margin-top: 2vh;
+        left: -200px;
+        height: 5vh;
+        padding-left: 50px;
+        text-decoration: none;
+        background-color: mediumseagreen;
+        border-radius: 0 5px 5px 0;
+    }
+
+    /*This class gets added to sideNavElements in JS*/
+    .sideNavActive {
+        background-color:springgreen;
+    }
 
 .sideNavElements {
     margin-top: 2vh;
@@ -174,6 +188,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #05386B;
+    z-index: 2;
 }
 
 /*the text under the quote*/
@@ -187,6 +202,13 @@
     border-top: 3px solid #05386B;
     padding-top: 1vw;
 }
+/*logo on mainSite*/
+    .mainLogo {
+        position: relative;
+        top: 65vh;
+        left: 42vw;
+    }
+
 
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
 #challengeSite {
