@@ -1,55 +1,57 @@
 /*--------------------------------SIDE NAV --------------------------------------------------*/
 /*InfoText*/
-.paragraph { /* This has to be over the other.infoText in @media in order for the container to scale on phone */
+.paragraph {
+    /* This has to be over the other.infoText in @media in order for the container to scale on phone */
     letter-spacing: 1px;
     line-height: 1.5em;
-    font-size:1.5em;
+    font-size: 1.5em;
     width: 70vw;
     height: auto;
     padding: 0px;
 }
- /* This code only applies when window size is bigger than 900px */
 
-    #sideNav {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20vh;
-        color: #05386B;
-        position: fixed;
-        left: -210px;
-        transition: 0.4s;
-        padding: 15px;
-        z-index: 99;
-        width: auto;
-        text-decoration: none;
-        font-size: 2em;
-        border-radius: 0 5px 5px 0;
-    }
+/* This code only applies when window size is bigger than 900px */
 
-    .sideNavElements {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 2vh;
-        height: 5vh;
-        align-items: center;
-        text-align: center;
-        padding-left: 50px;
-        text-decoration: none;
-        border-radius: 0 5px 5px 0;
-    }
+#sideNav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    color: black;
+    position: fixed;
+    left: -210px;
+    transition: 0.4s;
+    padding: 15px;
+    z-index: 99;
+    width: auto;
+    text-decoration: none;
+    font-size: 2em;
+    border-radius: 0 5px 5px 0;
+}
 
-    .sideNavElements:hover {
-        margin-top: 2vh;
-        height: 5vh;
-        left: 0px;
-        background-color: white;
-        border-radius: 0 5px 5px 0;
-    }
-    /* Moves the menu into view when you hover over it */
-    #sideNav:hover {
-        left: -15px;
-    }
+.sideNavElements {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    height: 5vh;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    text-decoration: none;
+    border-radius: 0 5px 5px 0;
+}
 
+.sideNavElements:hover {
+    margin-top: 2vh;
+    height: 5vh;
+    left: 0px;
+    background-color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Moves the menu into view when you hover over it */
+#sideNav:hover {
+    left: -15px;
+}
     .sideNavElements {
         margin-top: 2vh;
         left: -200px;
@@ -65,11 +67,31 @@
         background-color:springgreen;
     }
 
-@media screen and (max-width: 900px) { /* This code only applies when window size is smaller than 900px */
+.sideNavElements {
+    margin-top: 2vh;
+    left: -200px;
+    height: 5vh;
+    padding-left: 50px;
+    text-decoration: none;
+    color: black;
+    background-color: #05386B;
+    border-radius: 0 5px 5px 0;
+}
+
+/*This class gets added to sideNavElements in JS*/
+.sideNavActive {
+    background-color: green;
+    color: black;
+}
+
+@media screen and (max-width: 900px) {
+
+    /* This code only applies when window size is smaller than 900px */
     #sideNav {
         display: none;
     }
-    #toTop{
+
+    #toTop {
         display: none;
     }
 
@@ -82,7 +104,6 @@
         flex-direction: row;
         background-color: #5cdb95;
     }
-
 
 
     /*Written Content*/
@@ -109,6 +130,7 @@
         height: auto;
     }
 }
+
 
 @media screen and (max-height: 700px), (max-width: 900px) { /* Removes the sidenav when the windows becomes small enough */
     #sideNav, #challengeImg, #solutionImg, #appImg {
@@ -175,7 +197,7 @@
 }
 
 /*The three sites within the Challenge site*/
-#challengeSite1{
+#challengeSite1 {
     /* Can be redone as a class */
     height: 100vh;
     width: 95vw;
@@ -202,6 +224,7 @@
     cursor: pointer;
     position: absolute;
     top: 61vh;
+    transition: box-shadow 0.2s;
 }
 
 .readMorebtn:hover {
@@ -235,7 +258,6 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-
     flex-direction: row;
     background-color: #5cdb95;
 }
@@ -288,8 +310,13 @@
     width: 15vw;
     float: right;
 }
+
 @media screen and (max-height: 500px) {
-    #welcomeSlide, #challengeSite, #solutionSite, #appSite{
+
+    #welcomeSlide,
+    #challengeSite,
+    #solutionSite,
+    #appSite {
         position: relative;
         height: 550px;
     }
