@@ -92,9 +92,9 @@
   color: #05386B;
 }
 #faq {
-  height: 100vh;
+  height: auto;
   width: 100vw;
-  padding: 2vh 10vw 0 10vw;
+  padding: 2vh 10vw 3vw 10vw;
 }
 #faq p{
   border: solid black 1px;
@@ -161,12 +161,12 @@ color: green;
 /* costumer support part of the page */
 /*creates the costumer support "card"*/
 .cost {
+  color: #05386B;
   display: flex;
   flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
-  color: green;
-  background-color: white;
-  border-top: 1px solid #e5e5e5;
+  background-color: #8EE4AF;
+  width: 100vw;
 }
 
 .cost > * {
@@ -175,22 +175,25 @@ color: green;
 
 /* Titles in the card*/
 .cost_title {
+  list-style: none;
   font-size: 2em;
   font-weight: bold;
 }
 .cost_title2{
+    list-style: none;
     text-align: center;
 }
 
 /*Styles the Ul tags*/
-.cost_ul {
+.cost ul {
   list-style: none;
   padding-left: 0;
 }
 
-.cost_ul a {
+.cost ul a {
   color: #454545;
   font-size: 20px;
+  color: #05386B;
 }
 
 .cost_ul--extra {
@@ -201,7 +204,7 @@ color: green;
 /*styles the li tags*/
 .cost_li {
   line-height: 3em;
-
+  
 }
 
 /*Styles the links*/
