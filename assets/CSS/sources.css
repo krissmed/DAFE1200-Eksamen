@@ -133,38 +133,72 @@
 /*-------------------------NAV on site----------------------------------------------------------------*/
 .sourceMenu {
     position: relative;
-    left: 6vw;
-    z-index: 3;
+    left: 2px;
+    right: 2px;
+    z-index: 1;
 }
+
+/*custom made to fit last page */
 .sourceMenu1 {
     position: relative;
-    left: 6vw;
+    left: 2px;
+    right: 2px;
     top: 10vh;
-    z-index: 3;
+    z-index: 1;
 }
     .sourceMenuUl {
         list-style-type: none;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+        width: 100vw;
         height: auto;
-        width: 75vw;
         color: #25274D;
+        border-bottom: 2px solid green;
     }
         .sourceMenuLi {
-            border-bottom: 2px solid green;
-            padding: 10px 5vw;
-            word-break: break-word;
+            padding: 5px;
         }
             .sourceMenuLi a{
                 text-decoration: none;
                 color: inherit;
             }
                 .sourceMenuLi:hover {
-                    transform: scale(1.05);
+                    transform: scale(1.1);
                 }
-                    .activeSitenav {
-                        border-bottom: 1px solid #05386B;
+                    .siteNavDisplayed {
                         font-weight: bold;
+                        font-size: larger;
                     }
+@media (max-width: 700px) {
+    .sourceMenuUl {
+        flex-direction: column;
+        border-bottom: none;
+        font-size: 1.6em;
+    }
+        .sourceMenuLi a{
+            width: 70vh;
+            border-bottom: 1px solid green;
+            padding: 5px;
+        }
+        .sourceMenuLi {
+            padding: 3vh 0;
+        }
+            .sourceMenuLi:hover {
+                transform: scale(1.01);
+            }
+/*Sources Information div*/
+#InfoContent {
+        height: 200vh;
+        width: 100vw;
+        word-break: break-word;
+    }
+/*Sources Images div*/
+#ImageContent {
+        height: 150vh;
+        width: 100vw;
+    }
 
+
+}
 
