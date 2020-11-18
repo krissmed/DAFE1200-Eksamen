@@ -147,7 +147,7 @@
         display: flex;
         flex-direction: row;
         height: auto;
-        width: 70vw;
+        width: 75vw;
         color: #25274D;
     }
         .sourceMenuLi {
@@ -160,7 +160,11 @@
                 color: inherit;
             }
                 .sourceMenuLi:hover {
-                    border-bottom: 2px solid #05386B;
-                    font-weight: bold;
+                    transform: scale(1.05);
                 }
+                    .activeSitenav {
+                        border-bottom: 1px solid #05386B;
+                        font-weight: bold;
+                    }
+
 

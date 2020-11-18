@@ -40,7 +40,6 @@ function selectActiveSite() {
     /*if the window is scrolled down furter than 190vh (1.9times the screen height)*/
     else if (window.scrollY > window.innerHeight * 1.9) {
 
-
         sideNav3.classList.add("sideNavActive");
 
         sideNav1.classList.remove("sideNavActive");
@@ -52,7 +51,6 @@ function selectActiveSite() {
     else if (window.scrollY > window.innerHeight * 0.9) {
 
         sideNav2.classList.add("sideNavActive");
-
 
         sideNav1.classList.remove("sideNavActive");
         sideNav3.classList.remove("sideNavActive");
