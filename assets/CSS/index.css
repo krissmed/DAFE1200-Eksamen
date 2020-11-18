@@ -6,6 +6,7 @@
     font-size:1.5em;
     width: 70vw;
     height: auto;
+    padding: 0px;
 }
  /* This code only applies when window size is bigger than 900px */
 
@@ -118,6 +119,7 @@
         line-height: 1.3em;
         font-size: 1.5em;
         width: 90vw;
+        padding: 0;
         height: auto;
     }
 }
@@ -127,11 +129,7 @@
         display: none;
     }
 }
-@media screen and (max-height: 500px){
-    #challengeSite, #solutionSite, #appSite{
-        height: 700px;
-    }
-}
+
 
 /*--------------------Welcome Page------------------------------------------*/
 #welcomeSlide {
@@ -296,4 +294,10 @@
     height: 55vh;
     width: auto;
     float: right;
+}
+@media screen and (max-height: 500px) {
+    #welcomeSlide, #challengeSite, #solutionSite, #appSite{
+        position: relative;
+        height: 550px;
+    }
 }
