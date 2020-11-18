@@ -91,6 +91,8 @@
     position: absolute;
     right: 1vw;
     top: 2vh;
+    width: 20px;
+    height: auto;
 }
     .sourceImg {
         border: 1px solid;
