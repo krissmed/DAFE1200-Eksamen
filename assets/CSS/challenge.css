@@ -132,30 +132,122 @@
             font-style: normal;
             text-align: center;
             text-transform: uppercase;
+            position: relative;
+            left: 3vw;
         }
         .contentPage {
             letter-spacing: 1px;
             line-height: 1.7em;
             font-size: 1.5em;
             height: auto;
+            position: relative;
+            left: 3vw;
         }
+
+.readMorebtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 159px;
+    background-color: #05386B;
+    border-radius: 100vw;
+    color: white;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 2em;
+    padding: 0 1.3em;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    left: 10vw;
+    top: 20vh;
+}
+    .readMorebtn:hover {
+        transition: box-shadow 0.2s;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
 /*-----------SITE1---------------------------------------------------------------------------------------------------------------*/
 #page1 {
     background-color: #5cdb95;
 }
-    .climateGraphImg {
-        height: 400px;
-        width: 340px;
-        position: relative;
-        top: 28vh;
-    }
-
-/*-----------SITE1---------------------------------------------------------------------------------------------------------------*/
+    .challengeImage {
+    height: 350px;
+    width: 230px;
+    position: absolute;
+    left: 70vw;
+    top: 150vh;
+}
+/*-----------SITE2---------------------------------------------------------------------------------------------------------------*/
 #page2 {
     background-color: #8ee4af;
+    height: 130vh;
 }
-
-/*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
+    .challengeImage2 {
+    height: 350px;
+    width: 230px;
+    position: absolute;
+    left: 75vw;
+    top: 250vh;
+}
+/*-----------SITE3---------------------------------------------------------------------------------------------------------------*/
 #page3 {
     background-color: #5cdb95;
+}
+    .challengeImage3 {
+        height: 350px;
+        width: 230px;
+        position: absolute;
+        left: 70vw;
+        top: 380vh;
+    }
+
+/*When the beowser-width is under 900px*/
+@media (max-width: 900px) {
+    /*Makes the images not displayed*/
+    .challengeImage {
+        display: none;
+    }
+        .challengeImage2 {
+            display: none;
+        }
+            .challengeImage3 {
+                display: none;
+            }
+
+/*Makes the text take all of the width*/
+        .contentContainer {
+            width: 100%;
+            margin-right: 10vw;
+        }
+
+}
+
+/*When the browser width is 650px or lower*/
+@media (max-width: 650px) {
+    .contentContainer {
+        font-size: 75%;
+    }
+
+    #welcomePage {
+        height: 70vh;
+        font-size: 80%;
+    }
+        .welcomeQuote {
+            top: 20vh;
+            line-height: 35px;
+        }
+
+}
+
+/*When the browser width is 650px or lower*/
+@media (max-width: 375px) {
+    .contentContainer {
+        font-size: 65%;
+    }
+
+    .welcomeQuote {
+        top: 10vh;
+    }
 }
