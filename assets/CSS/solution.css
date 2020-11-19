@@ -87,7 +87,6 @@
 #welcomePage {
     height: 100vh;
     width: 100vw;
-    margin-bottom: 10vh;
     color: #05386B;
     background-color: #8ee4af;
 }
@@ -121,12 +120,11 @@
         }
         .contentImg {
             position: absolute;
-            right: 11vw;
-            top: 0vh;
+            right: 8vw;
+            top: 120vh;
             height: auto;
             width: 15vw;
             float: right;
-            border-radius: 25px;
         }
 
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
@@ -136,6 +134,15 @@
     display: flex;
     flex-direction: row;
     background-color: #5cdb95;
+}
+
+.contentImg1 {
+    position: absolute;
+    right: 8vw;
+    top: 120vh;
+    height: auto;
+    width: 15vw;
+    float: right;
 }
 
 /*-----------SOLUTION SITE---------------------------------------------------------------------------------------------------------------*/
