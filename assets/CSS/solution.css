@@ -171,3 +171,11 @@
     flex-direction: row;
     background-color: #5cdb95;
 }
+.contentImg3 {
+    position: absolute;
+    right: 8vw;
+    top: 320vh;
+    height: auto;
+    width: 15vw;
+    float: right;
+}
