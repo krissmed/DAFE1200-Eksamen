@@ -1,7 +1,7 @@
 /*The first two sites*/
 #InfoContent, #ImageContent{
     background-color: #5cdb95;
-    color: #05386B;
+    color: #053361;
     border: 1px solid #376E6F;
     position: relative;
     display: flex;
@@ -104,7 +104,7 @@
     min-height: 100vh;
     width: 100vw;
     background-color: #5cdb95;
-    color: #05386B;
+    color: #053361;
     border: 1px solid #376E6F;
     position: relative;
 }

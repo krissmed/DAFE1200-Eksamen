@@ -89,7 +89,7 @@
 #faqDiv {
   padding-top: 10vh;
   background-color: #5cdb95;
-  color: #05386B;
+  color: #053361;
 }
 #faq {
   height: auto;
@@ -161,7 +161,7 @@ color: green;
 /* costumer support part of the page */
 /*creates the costumer support "card"*/
 .cost {
-  color: #05386B;
+  color: #053361;
   display: flex;
   flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
@@ -193,7 +193,7 @@ color: green;
 .cost ul a {
   color: #454545;
   font-size: 20px;
-  color: #05386B;
+  color: #053361;
 }
 
 .cost_ul--extra {

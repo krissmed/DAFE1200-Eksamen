@@ -11,6 +11,7 @@
     position: relative;
     bottom: 0;
     width: 95vw;
+    background-color: #edf5e1;
 }
 
 .footer a:hover{

@@ -43,7 +43,7 @@ body {
     }
 
     header {
-        background-color: white;
+        background-color: #edf5e1;
         width: 100%;
         position: fixed;
         top: 0;
@@ -82,7 +82,7 @@ body {
     .menuLi a {
         padding-bottom: 5px;
         text-decoration: none;
-        color: green;
+        color: #053361;
     }
 
     /*creates green line after/under the element and adds transition when hovered */
@@ -91,7 +91,7 @@ body {
         display: block;
         width: 0;
         height: 3px;
-        background: green;
+        background: #053361;
         transition: width .5s;
     }
 
@@ -102,7 +102,7 @@ body {
 
     /*Finds class that contains active*/
     li[class*="active"] {
-        border-bottom: 3px solid green;
+        border-bottom: 3px solid #053361;
         transition: ease;
     }
 

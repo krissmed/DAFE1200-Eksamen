@@ -90,7 +90,7 @@
 #welcomePage {
     height: 100vh;
     width: 100vw;
-    color: #05386B;
+    color: #053361;
     background-color: #8ee4af;
 }
     .welcomeQuote {
@@ -118,7 +118,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    color: #05386B;
+    color: #053361;
 }
 
     .contentContainer {
@@ -150,7 +150,7 @@
     justify-content: center;
     height: 50px;
     width: 159px;
-    background-color: #05386B;
+    background-color: #053361;
     border-radius: 100vw;
     color: white;
     line-height: 0;
