@@ -154,6 +154,15 @@
     background-color: #8ee4af;
 }
 
+.contentImg2 {
+    position: absolute;
+    right: 8vw;
+    top: 220vh;
+    height: auto;
+    width: 15vw;
+    float: right;
+}
+
 /*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
 #page3 {
     height: 100vh;
