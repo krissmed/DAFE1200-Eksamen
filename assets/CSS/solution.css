@@ -90,6 +90,24 @@
     color: #053361;
     background-color: #8ee4af;
 }
+.welcomeQuote {
+    background-color: #5cdb95;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: "Bodoni 72", serif;
+    letter-spacing: 1px;
+    line-height: 40px;
+    position: relative;
+    top: 43vh;
+    margin: auto 0;
+}
+.quote {
+    word-break: break-word;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
 
 /*-----------ALL THE SITES---------------------------------------------------------------------------------------------------------------*/
 #page1, #page2, #page3{
@@ -155,12 +173,11 @@
 }
 
 .contentImg2 {
+    height: 350px;
+    width: 230px;
     position: absolute;
-    right: 8vw;
-    top: 220vh;
-    height: auto;
-    width: 15vw;
-    float: right;
+    left: 70vw;
+    top: 250vh;
 }
 
 /*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
@@ -172,10 +189,9 @@
     background-color: #5cdb95;
 }
 .contentImg3 {
+    height: 350px;
+    width: 230px;
     position: absolute;
-    right: 8vw;
-    top: 320vh;
-    height: auto;
-    width: 15vw;
-    float: right;
+    left: 70vw;
+    top: 350vh;
 }
