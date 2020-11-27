@@ -90,10 +90,6 @@
         display: none;
     }
 
-    #toTop {
-        display: none;
-    }
-
     /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
     #challengeSite {
         min-height: 100vh;
@@ -207,7 +203,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 60px;
     width: 159px;
     background-color: #053361;
     border-radius: 100vw;
