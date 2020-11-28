@@ -112,6 +112,12 @@
     flex-wrap: wrap;
     color: #454545;
 }
+/* Sosial media images*/
+.sosialimg {
+    width: 3vw;
+    height: auto;
+    margin-right: 1vh;
+}
 
 
 /* Makes the margin for the legal line auto, when the media screen reaches a minimum size*/
@@ -143,8 +149,3 @@
     }
 }
 
-.sosialimg {
-    width: 3vw;
-    height: auto;
-    margin-right: 1vh;
-}
