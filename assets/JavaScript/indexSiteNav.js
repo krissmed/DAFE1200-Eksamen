@@ -28,7 +28,7 @@ if (window.scrollY >= 0) {
 //Function that chooses what Site is active based on where the user is scrolling on the site*/
 function selectActiveSite() {
     /*if the window is scrolled down furter than 390vh (2.9times the screen height)*/
-    if (window.scrollY > window.innerHeight * 3.6) {
+    if (window.scrollY > window.innerHeight * 3.9) {
 
         /*active class added app*/
         sideNav5.classList.add("sideNavActive");
