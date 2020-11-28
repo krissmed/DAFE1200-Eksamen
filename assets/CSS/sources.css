@@ -1,22 +1,24 @@
 /*The first two sites*/
+
+body > div {
+    height: auto;
+
+}
 #InfoContent, #ImageContent{
     background-color: #5cdb95;
     color: #053361;
     border: 1px solid #376E6F;
     position: relative;
-    display: flex;
-    flex-direction: column;
     top: 10vh;
 }
 /*Sources Information div*/
 #InfoContent {
-    height: 160vh;
     width: 100vw;
     word-break: break-all;
 }
 /*Sources Images div*/
 #ImageContent {
-    height: 145vh;
+    height: auto;
     width: 100vw;
 }
     /*Headline on pages*/
@@ -33,63 +35,51 @@
     }
         /*The shapes with info inside*/
         .sourcesInfo {
-            width: 100%;
-            height: auto;
+            width: 75vw;
+            align-self: center;
+            height: 15vh;
             padding: 4vh;
-            position: relative;
-            margin-bottom: 8em;
+            margin-bottom: 8vh;
             margin-left: 4vw;
+            background-color: lightgrey;
+            border: 1px solid black;
+            display: flex;
         }
         /*Selects the last element*/
         .sourcesInfo:last-child {
             margin-bottom: 40px;
         }
-            .sourcesInfoDiv {
-                background-color: #8ee4af;
-                border: 1px solid black;
-                min-height: 9rem;
-                height: auto;
-                width: 70vw;
-                padding: 1vw;
-                position: absolute;
-
-            }
                 .sourcesInfoName {
                     font-weight: bold;
                     border-bottom: 1px solid black;
-                    width: 65vw;
-                    height: 5vh;
                     position: absolute;
-                    top: 3vh;
-                    left: 2vw;
+
                 }
                     .sourcesLinkText {
-                        position: absolute;
+                        position: relative;
                         top: 10vh;
-                        left: 3vw;
+                        height: 3vh;
                         text-decoration: none;
                         color: inherit;
                     }
                         .sourcesLink {
-                            position: absolute;
-                            top: 15vh;
-                            left: 3vw;
+                            position: relative;
+                            left: 15vw;
                             text-decoration: none;
                             color: inherit;
                         }
                             .sourcesAuthor {
-                                position: absolute;
-                                top: 18vh;
-                                right: 40vw;
+                                position: relative;
+                                top: 10vh;
                             }
                                 .sourcesDate {
-                                    position: absolute;
-                                    top: 18vh;
-                                    right: 8vw;
+                                    position: relative;
+                                    top: 10vh;
+                                    padding-left: 5vw;
                                 }
 .imgPreview {
-    position: absolute;
-    right: 52px;
+    position: relative;
+    left: 65vw;
     top: 2vh;
     width: 20px;
     height: auto;
@@ -97,11 +87,11 @@
     .sourceImg {
         border: 1px solid;
         height: 120px;
-        width: 70px;
+        width: 120px;
     }
 
 #meetingsContent, #sourceGroupContent {
-    min-height: 100vh;
+    height: auto;
     width: 100vw;
     background-color: #5cdb95;
     color: #053361;
@@ -117,8 +107,8 @@
             margin-left: 12vw;
         }
     .listMeetGroup1 {
-        position: relative;
-        top: 10vh;
+        height: 40vh;
+        margin-top: 10vh;
         line-height: 8vh;
         margin-left: 12vw;
     }

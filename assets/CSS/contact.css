@@ -118,45 +118,6 @@ text-align: center;
 color: green;
 }
 
-/* Buttons on the faq panels */
-.accordion {
-  background-color: white;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 80%;
-  text-align: center;
-  margin: 0 10%;
-}
-
-  /* changes the color of the panel when hovering over */
-  .active1, .accordion:hover {
-    background-color: #ccc;
-  }
-
-/* answer bar */
-.panel {
-  text-align: center;
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-  width: 40%;
-}
-
-/* changes from + sign to -*/
-.accordion:after {
-  content: '\02795'; 
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-
-.active1:after {
-  content: "\2796"; 
-}
-
 /*-------------------------------------------*/
 /* costumer support part of the page */
 /*creates the costumer support "card"*/

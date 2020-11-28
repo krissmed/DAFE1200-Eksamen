@@ -105,6 +105,7 @@
         position: relative;
         top: 43vh;
         margin: auto 0;
+        padding: 5px 0;
     }
         .quote {
             word-break: break-word;
@@ -113,7 +114,7 @@
         }
 
 /*-----------ALL THE SITES---------------------------------------------------------------------------------------------------------------*/
-#page1, #page2, #page3{
+#page1, #page2, #page3, #page4{
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -182,7 +183,6 @@
 /*-----------SITE2---------------------------------------------------------------------------------------------------------------*/
 #page2 {
     background-color: #8ee4af;
-    height: 130vh;
 }
     .challengeImage2 {
     height: 350px;
@@ -200,8 +200,19 @@
         width: 230px;
         position: absolute;
         left: 70vw;
-        top: 380vh;
+        top: 450vh;
     }
+/*-----------SITE3---------------------------------------------------------------------------------------------------------------*/
+#page4 {
+    background-color: #8ee4af;
+}
+.challengeImage4 {
+    height: 350px;
+    width: 230px;
+    position: absolute;
+    left: 70vw;
+    top: 350vh;
+}
 
 /*When the beowser-width is under 900px*/
 @media (max-width: 900px) {
