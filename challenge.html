@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="assets/CSS/footer.css">
 </head>
 <body>
-    <img id="toTop" style="display: none " onclick="moveToTop()" src="assets/Images/scrollToTop.jpg"
-        alt="To top button">
     <!------------------- HEADER ----------------------------------------------->
     <header>
         <!-- LOGO. Only visible in format where window > 900px -->
@@ -28,10 +26,10 @@
         </div>
         <!--MENU-->
         <ul id="headerMenu">
-            <li class="menuLi main" onclick="collapseHamMenu()"><a href="index.html"> Home </a></li>
-            <li class="menuLi challenge active" onclick="collapseHamMenu()"><a href="challenge.html"> Challenge </a></li>
-            <li class="menuLi solution" onclick="collapseHamMenu()"><a href="solution.html"> Solution </a></li>
-            <li class="menuLi app" onclick="collapseHamMenu()"><a href="app.html"> App </a></li>
+            <li class="menuLi main" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="index.html"> Home </a></li>
+            <li class="menuLi challenge active" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="challenge.html"> Challenge </a></li>
+            <li class="menuLi solution" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="solution.html"> Solution </a></li>
+            <li class="menuLi app" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="app.html"> App </a></li>
         </ul>
     </header>
     <!------------------------SIDENAV--------------------------->
