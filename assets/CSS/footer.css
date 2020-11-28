@@ -23,7 +23,7 @@
 }
 
 /*Styles the adress bar */
-.footer_addr {
+.footeraddr {
     margin-right: 1.25em;
     margin-bottom: 2em;
 }
@@ -36,7 +36,7 @@
 
 
 /*Chooses the size of the font on the titel over the brackets */
-.nav_title {
+.navtitle {
     font-size: 2em;
     font-weight: bold;
     color: black;
@@ -49,7 +49,7 @@
 }
 
 /* Styles the Email button */
-.footer_btn {
+.footerbtn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,26 +82,26 @@
 }
 
 /* Makes the brackets in the footer flex*/
-.footer_nav {
+.footernav {
     display: flex;
     flex-flow: row wrap;
 }
 
 /* Makes the brackets in the footer flex*/
-.footer_nav > * {
+.footernav > * {
     flex: 1 50%;
     margin-right: 1.25em;
 }
 
 /* styles all the links for the class*/
-.nav_ul a {
+.navul a {
     color: #454545;
     font-size: 20px;
     cursor: pointer;
 }
 
 /* Adds extra space between each column*/
-.nav_ul--extra {
+.navul--extra {
     column-count: 2;
     column-gap: 1.25em;
 }
@@ -123,7 +123,7 @@
 
 /* Makes the links in the footer flex when til reaches a choosen size */
 @media screen and (min-width: 40.375em) {
-    .footer_nav > * {
+    .footernav > * {
         flex: 1;
     }
 
@@ -133,12 +133,12 @@
     }
 
     /* chooses flex grow and flex shrink for the address bar*/
-    .footer_addr {
+    .footeraddr {
         flex: 1 0;
     }
 
     /* chooses flex grow and flex shrink for navigation menu in the footer*/
-    .footer_nav {
+    .footernav {
         flex: 2 0;
     }
 }
