@@ -109,6 +109,10 @@
   text-align: center;
   font-size: 2em;
 }
+#faq h1 {
+  margin-right: 10vw;
+  
+}
 
 /*the titel on the faq page*/
 .faq_titel 
@@ -128,6 +132,7 @@ color: green;
   padding: 30px 30px 20px 30px;
   background-color: #8EE4AF;
   width: 100vw;
+  
 }
 
 .cost > * {
@@ -143,12 +148,17 @@ color: green;
 .cost_title2{
     list-style: none;
     text-align: center;
+    margin-right: 10vw;
+  margin-left: 10vw;
 }
 
 /*Styles the Ul tags*/
 .cost ul {
   list-style: none;
   padding-left: 0;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  
 }
 
 .cost ul a {
@@ -178,6 +188,8 @@ color: green;
   display: flex;
     flex-flow: row wrap;
     text-align: center;
+    
+    
 }
 .cost_nav > * {
   flex: 1 50%;
