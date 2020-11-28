@@ -7,18 +7,15 @@
     font-size: 1.5em;
     width: 70vw;
     height: auto;
-    padding: 0px;
+    padding: 0;
 }
-
-/* This code only applies when window size is bigger than 900px */
-
 #sideNav {
     display: flex;
     flex-direction: column;
     margin-top: 20vh;
     color: black;
     position: fixed;
-    left: -210px;
+    left: -210px;/*Places it off screen*/
     transition: 0.4s;
     padding: 15px;
     z-index: 99;
@@ -27,7 +24,6 @@
     font-size: 2em;
     border-radius: 0 5px 5px 0;
 }
-
 .sideNavElements {
     display: flex;
     justify-content: space-between;
@@ -38,13 +34,14 @@
     padding-left: 50px;
     text-decoration: none;
     border-radius: 0 5px 5px 0;
+    color: #053361;
+    background-color: green;
 }
-
 .sideNavElements:hover {
     margin-top: 2vh;
     height: 5vh;
-    left: 0px;
-    background-color: white;
+    left: 0;
+    background-color: rgb(233,244,221);
     border-radius: 0 5px 5px 0;
 }
 
@@ -52,36 +49,13 @@
 #sideNav:hover {
     left: -15px;
 }
-    .sideNavElements {
-        margin-top: 2vh;
-        left: -200px;
-        height: 5vh;
-        padding-left: 50px;
-        text-decoration: none;
-        background-color: green;
-        border-radius: 0 5px 5px 0;
-    }
-
-    /*This class gets added to sideNavElements in JS*/
-    .sideNavActive {
-        background-color:springgreen;
-    }
-
-.sideNavElements {
-    margin-top: 2vh;
-    left: -200px;
-    height: 5vh;
-    padding-left: 50px;
-    text-decoration: none;
-    color: #053361;
-    background-color: green;
-    border-radius: 0 5px 5px 0;
-}
 
 /*This class gets added to sideNavElements in JS*/
 .sideNavActive {
-    background-color: white;
+    background-color: rgb(233,244,221);
 }
+
+
 
 @media screen and (max-width: 900px) {
 
@@ -90,7 +64,7 @@
         display: none;
     }
 
-    /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
+    /*----------1st SITE along with the <p> elements---------------------------------------------------------*/
     #challengeSite {
         min-height: 100vh;
         width: 100vw;
@@ -125,7 +99,7 @@
 
 
 @media screen and (max-height: 700px), (max-width: 900px) { /* Removes the sidenav when the windows becomes small enough */
-    #sideNav, #challengeImg, #solutionImg, #appImg {
+    #sideNav, #challengeImg, #solutionImg, #appImg { /*Removes the icons on the pages*/
         display: none;
     }
 }
@@ -135,7 +109,7 @@
 #welcomeSlide {
     height: 100vh;
     width: 100vw;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     background-color: #5cdb95;
 }
 
@@ -190,7 +164,6 @@
 
 /*The three sites within the Challenge site*/
 #challengeSite1 {
-    /* Can be redone as a class */
     height: 100vh;
     width: 95vw;
     top: 12vh;
@@ -199,6 +172,7 @@
     position: relative;
 }
 
+/*--------------------READ MORE BUTTON----------------------*/
 .readMorebtn {
     display: flex;
     align-items: center;
@@ -219,10 +193,10 @@
     transition: box-shadow 0.2s;
 }
 
-.readMorebtn:hover {
-    transition: box-shadow 0.2s;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
+    .readMorebtn:hover {
+        transition: box-shadow 0.2s;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
 
 /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
 #challengeImg {
@@ -235,15 +209,15 @@
     border-radius: 25px;
 }
 
-/*Text*/
-/*  Headline*/
-.headline {
-    font-weight: bolder;
-    font-size: 2.7em;
-    font-style: normal;
-    text-transform: uppercase;
-    width: 94vw;
-}
+    /*Text*/
+    /*Headline*/
+    .headline {
+        font-weight: bolder;
+        font-size: 2.7em;
+        font-style: normal;
+        text-transform: uppercase;
+        width: 94vw;
+    }
 
 /*-----------SOLUTION SITE---------------------------------------------------------------------------------------------------------------*/
 #solutionSite {
