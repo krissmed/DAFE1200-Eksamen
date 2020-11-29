@@ -131,10 +131,6 @@ body {
         transition: 0.4s;
     }
 
-    #line0:hover {
-        color: green;
-        cursor: pointer;
-    }
 
     .hamMenu {
         width: 35px;
@@ -237,24 +233,11 @@ body {
 
 
 /*------------------------------------------------------------------*/
-/* ToTop button */
-#toTop {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    border: none;
-    outline: none;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    width: 50px;
-    border-radius: 4px;
-    opacity: 65%;
-    z-index: 3;
-}
-
-#toTop:hover {
-    opacity: 100%;
+@media screen and (max-width: 400px){
+    .menuLi:hover {
+        border-bottom: 3px solid lightgreen;
+        transform: none;
+    }
 }
 
 /*----------------------------------------------------------------------*/

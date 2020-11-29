@@ -204,6 +204,9 @@
             .challengeImage3 {
                 display: none;
             }
+                .challengeImage4 {
+                    display: none;
+                }
 
 /*Makes the text take all of the width*/
         .contentContainer {
@@ -220,7 +223,7 @@
     }
 
     #welcomePage {
-        height: 70vh;
+        height: 100vh;
         font-size: 80%;
     }
         .welcomeQuote {
