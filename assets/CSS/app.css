@@ -78,13 +78,17 @@
     padding: 0;
 }
 
-.appFrontPageImg {
+.appImg {
     position: absolute;
     right: 8vw;
     top: 20vh;
     height: auto;
     width: 15vw;
     float: right;
+}
+.appImg:hover{
+    transform: scale(2);
+    margin-right: 40vw;
 }
 
 
@@ -231,6 +235,14 @@
         position: absolute;
         z-index: 1;
     }
+    #frontImg {
+        padding-right: 1px;
+        margin-top: 20vh;
+        width: auto;
+        height: 80vh;
+        margin-left: 35%;
+        position: absolute;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -240,14 +252,7 @@
         display: none;
     }
 
-    #frontImg {
-        padding-right: 1px;
-        margin-top: 20vh;
-        width: auto;
-        height: 80vh;
-        margin-left: auto;
-        position: absolute;
-    }
+
 }
 
 @media screen and (max-width: 500px) {
