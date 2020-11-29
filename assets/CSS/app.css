@@ -11,7 +11,7 @@
     margin-top: 15vh;
     width: auto;
     height: 75vh;
-    margin-left: 25%;
+    margin-left: 10vw;
     position: absolute;
 }
 
@@ -49,6 +49,7 @@
     flex-direction: row;
     background-color: #8ee4af;
 }
+
 
 .slideContainer {
     height: 80vh;
@@ -252,7 +253,6 @@
         display: none;
     }
 
-
 }
 
 @media screen and (max-width: 500px) {
@@ -269,10 +269,23 @@
         position: absolute;
     }
 }
-
-@media screen and (max-height: 700px),
-(max-width: 900px) {
-    #sideNav {
-        display: none;
+@media (max-width: 800px) {
+    #page1,
+    #page2,
+    #page3,
+    #page4 {
+        position: relative;
+        height: 100vh;
+    }
+    
+    .appImg{
+     margin-top: 0px; 
+    position: relative;
+    transform: scale(2);
+    margin-right: 40vw;
+    width: 27vw;
+    }
+    .paragraph{
+        width: 90%;
     }
 }
