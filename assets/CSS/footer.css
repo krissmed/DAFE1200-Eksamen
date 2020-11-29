@@ -134,7 +134,7 @@
     }
 
     /* Makes the item grow relative to the rest of the flexible items in the same container*/
-    .nav_item--extra {
+    .navitem--extra {
         flex-grow: 2;
     }
 
