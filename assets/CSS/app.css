@@ -271,19 +271,28 @@
 }
 @media (max-width: 800px) {
     #page1,
-    #page2,
     #page3,
-    #page4 {
+    #page4,
+    #page5,
+    #page6,
+    #page7,
+    #page8 {
         position: relative;
-        height: 100vh;
+        height: 150vh;
+    }
+    #page2{
+        height: 170vh;
     }
     
+    #page3{
+        height: 250vh;
+    }
     .appImg{
      margin-top: 0px; 
     position: relative;
     transform: scale(2);
     margin-right: 40vw;
-    width: 27vw;
+    width: 20vw;
     }
     .paragraph{
         width: 90%;
