@@ -256,3 +256,13 @@
         height: 180vh;
     }
 }
+@media screen and (max-height: 500px) {
+
+    #welcomePage,
+    #page1,
+    #page2,
+    #page3,
+    #page4 {
+        position: relative;
+        height: 800px;
+    }
