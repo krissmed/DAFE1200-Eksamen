@@ -21,7 +21,7 @@
     <!-- LOGO. Only visible in format where window > 900px -->
     <a href="index.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
     <!-- Hamburger Menu (Only visible in format where window < 900px)-->
-    <div onclick="toggleMenu()" id="hamburgerMenu" onkeypress="toggleMenu()()">
+    <div onclick="toggleMenu()" id="hamburgerMenu" onkeypress="toggleMenu()">
         <div class="hamMenu" id="line1"></div>
         <div class="hamMenu" id="line2"></div>
         <div class="hamMenu" id="line3"></div>
@@ -49,7 +49,7 @@
             <li class="sourceMenuLi Group"> <a href="#sourceGroupContent"> Group Member </a></li>
         </ul>
     </div>
-        <div class="sourcesInfo">
+        <div class="sourcesInfo" id="1">
                 <span class="sourcesInfoName"><b>1. Innovation and Climate Change.</b></span>
                     <a href="challenge.html#page1" class="sourcesLinkText">Link to the page </a>
             <a href="https://www.bbvaopenmind.com/en/articles/innovation-and-climate-change/" class="sourcesLink">https://www.bbvaopenmind.com/en/articles/innovation-and-climate-change/</a>
@@ -57,7 +57,7 @@
                     <i class="sourcesDate">November 2nd 2020</i>
           </div>
 
-          <div class="sourcesInfo">
+          <div class="sourcesInfo" id="2">
               <span class="sourcesInfoName"><b>2. Predictions of Future Global Climate </b></span>
                   <a href="challenge.html#page2" class="sourcesLinkText">Link to the page </a>
                   <a href="https://scied.ucar.edu/learning-zone/impacts-climate-change/predictions-future-global-climate" class="sourcesLink">https://scied.ucar.edu/learning-zone/impacts-climate-change/predictions-future-global-climate</a>
@@ -65,7 +65,7 @@
                   <i class="sourcesDate">November 2nd 2020</i>
           </div>
 
-          <div class="sourcesInfo">
+          <div class="sourcesInfo" id="3">
                   <span class="sourcesInfoName"><b>3. The Effects of Climate Change </b></span>
                   <a href="challenge.html#page2" class="sourcesLinkText">Link to the page </a>
                   <a href="https://climate.nasa.gov/effects/" class="sourcesLink">https://climate.nasa.gov/effects/</a>
@@ -73,7 +73,7 @@
                   <i class="sourcesDate">November 3rd 2020</i>
           </div>
 
-          <div class="sourcesInfo">
+          <div class="sourcesInfo" id="4">
               <span class="sourcesInfoName"><b>4. Why Should We Worry About Sea Level Change? </b></span>
                   <a href="challenge.html#page2" class="sourcesLinkText">Link to the page </a>
                   <a href="https://kids.frontiersin.org/article/10.3389/frym.2017.00041" class="sourcesLink">https://kids.frontiersin.org/article/10.3389/frym.2017.00041</a>
@@ -81,7 +81,7 @@
                   <i class="sourcesDate">November 3rd 2020</i>
           </div>
 
-            <div class="sourcesInfo">
+            <div class="sourcesInfo" id="5">
                     <span class="sourcesInfoName"><b>5. Reducing Carbon Dioxide Emissions <br>from Electricity Sector Using Smart Electric<br> Grid Applications </b></span>
                     <a href="challenge.html#page3" class="sourcesLinkText">Link to the page </a>
                     <a href="https://www.hindawi.com/journals/je/2013/845051/" class="sourcesLink">https://www.hindawi.com/journals/je/2013/845051/</a>
@@ -89,21 +89,29 @@
                     <i class="sourcesDate">November 7th 2020</i>
             </div>
 
-            <div class="sourcesInfo">
-                    <span class="sourcesInfoName">How much carbon dioxide is produced<br> per kilowatthour of U.S. electricity generation?</span>
+            <div class="sourcesInfo" id="6">
+                    <span class="sourcesInfoName">6. How much carbon dioxide is produced<br> per kilowatthour of U.S. electricity generation?</span>
                     <a href="challenge.html#page3" class="sourcesLinkText">Link to the page </a>
                     <a href="https://www.eia.gov/tools/faqs/faq.php?id=74&t=11" class="sourcesLink">https://www.eia.gov/tools/faqs/faq.php?id=74&t=11</a>
                     <i class="sourcesAuthor">Unknown. U.S. Energy Information Administration (February 20th 2020)</i>
                     <i class="sourcesDate">November 7th 2020</i>
             </div>
 
-    <div class="sourcesInfo">
-        <span class="sourcesInfoName">30 of the Most Impactful Climate Change Quotes</span>
-        <a href="sources.html" class="sourcesLinkText">Link to the page </a>
-        <a href="https://curious.earth/blog/climate-change-quotes/" class="sourcesLink">https://curious.earth/blog/climate-change-quotes/</a>
-        <i class="sourcesAuthor">Davies, Paul (February 20th 2020)</i>
-        <i class="sourcesDate">November 10th 2020</i>
-    </div>
+            <div class="sourcesInfo"  id="7">
+                <span class="sourcesInfoName">7. Climate - Cambridge Dictionary</span>
+                <a href="index.html#challengeSite" class="sourcesLinkText">Link to the page </a>
+                <a href="https://dictionary.cambridge.org/dictionary/english/climate" class="sourcesLink">https://dictionary.cambridge.org/dictionary/english/climate</a>
+                <i class="sourcesAuthor">Cambridge Dictionary</i>
+                <i class="sourcesDate">November 2nd 2020</i>
+            </div>
+
+            <div class="sourcesInfo">
+                <span class="sourcesInfoName">30 of the Most Impactful Climate Change Quotes</span>
+                <a href="sources.html" class="sourcesLinkText">Link to the page </a>
+                <a href="https://curious.earth/blog/climate-change-quotes/" class="sourcesLink">https://curious.earth/blog/climate-change-quotes/</a>
+                <i class="sourcesAuthor">Davies, Paul (February 20th 2020)</i>
+                <i class="sourcesDate">November 10th 2020</i>
+            </div>
 
   </div>
 
@@ -111,6 +119,7 @@
 <div id="sourceImageContent"></div>
 <div id="ImageContent">
     <h1 class="sourcesHeadline">Images</h1>
+
     <div class="sourceMenu">
         <ul class="sourceMenuUl">
             <li class="sourceMenuLi Content"> <a href="#sourcesInfoContent"> Content </a> </li>
@@ -119,50 +128,186 @@
             <li class="sourceMenuLi Group"> <a href="#sourceGroupContent"> Group Member </a></li>
         </ul>
     </div>
+
         <div class="sourcesInfo">
             <div class="sourcesInfoDiv">
-                <span class="sourcesInfoName">Wireframe for appdemo</span>
-                <a href="app.html" class="sourcesLinkText">Link to the page</a>
-                <a href="https://www.pngkit.com/bigpic/u2q8q8e6t4r5a9u2/" class="sourcesLink">https://www.pngkit.com/bigpic/u2q8q8e6t4r5a9u2/</a>
-                <i class="sourcesAuthor">Unknown</i>
-                <i class="sourcesDate">14.11.2020</i>
-                <span class="imgPreview"><b>IMAGE:</b> <br> <img class="sourceImg" src="assets\Images\app demo\Elements\appWireframe.png" alt="Image"> </span>
+                <span class="sourcesInfoName">Windmill</span>
+                <a href="solution.html#page2" class="sourcesLinkText">Link to the page</a>
+                <a href="https://www.flaticon.com/free-icon/windmill_182315?term=windmill&page=1&position=43&related_item_id=182315" class="sourcesLink">https://www.flaticon.com/free-icon/windmill_182315?term=windmill&page=1&position=43&related_item_id=182315</a>
+                <i class="sourcesAuthor">Najdenovski, Zlatko</i>
+                <i class="sourcesDate">10.11.2020</i>
+                <img class="sourceImg" src="assets/Images/windmill.svg" alt="Image">
             </div>
         </div>
 
         <div class="sourcesInfo">
             <div class="sourcesInfoDiv">
-                <span class="sourcesInfoName">BILDEBESKRIVELSE</span>
-                <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN BILDET BRUKES??</a>
-                <a href="#" class="sourcesLink">LINK TIL BILDET</a>
-                <i class="sourcesAuthor">Artist eller opphav</i>
-                <i class="sourcesDate">Dato lastet ned</i>
-                <span class="imgPreview"><b>IMAGE:</b> <br> <img class="sourceImg" src="#" alt="Image"> </span>
+                <span class="sourcesInfoName">Polar Bear</span>
+                <a href="index.html#challengeSite" class="sourcesLinkText">Link to the page</a>
+                <a href="https://www.flaticon.com/free-icon/polar-bear_3095216?related_item_id=3095231&term=polarbear" class="sourcesLink">https://www.flaticon.com/free-icon/polar-bear_3095216?related_item_id=3095231&term=polarbear</a>
+                <i class="sourcesAuthor">Artist: dDara</i>
+                <i class="sourcesDate">10.11.2020</i>
+                <img class="sourceImg" src="assets/Images/polar-bear.svg" alt="Image">
             </div>
         </div>
 
         <div class="sourcesInfo">
             <div class="sourcesInfoDiv">
-                <span class="sourcesInfoName">BILDEBESKRIVELSE</span>
-                <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN BILDET BRUKES??</a>
-                <a href="#" class="sourcesLink">LINK TIL BILDET</a>
-                <i class="sourcesAuthor">Artist eller opphav</i>
-                <i class="sourcesDate">Dato lastet ned</i>
-                <span class="imgPreview"><b>IMAGE:</b> <br> <img class="sourceImg" src="#" alt="Image"> </span>
+                <span class="sourcesInfoName">Thinking</span>
+                <a href="index.html#solutionSite" class="sourcesLinkText">Link to the page</a>
+                <a href="https://www.flaticon.com/free-icon/thinking_1491165?term=thinking&page=1&position=7&related_item_id=1491165" class="sourcesLink">https://www.flaticon.com/free-icon/thinking_1491165?term=thinking&page=1&position=7&related_item_id=1491165</a>
+                <i class="sourcesAuthor">SmashIcons</i>
+                <i class="sourcesDate">10.11.2020</i>
+                <img class="sourceImg" src="assets/Images/thinking.svg" alt="Image">
             </div>
         </div>
 
         <div class="sourcesInfo">
             <div class="sourcesInfoDiv">
-                <span class="sourcesInfoName">BILDEBESKRIVELSE</span>
-                <a href="#" class="sourcesLinkText">LINK TIL HVOR PÅ NETTSIDEN BILDET BRUKES??</a>
-                <a href="#" class="sourcesLink">LINK TIL BILDET</a>
-                <i class="sourcesAuthor">Artist eller opphav</i>
-                <i class="sourcesDate">Dato lastet ned</i>
-                <span class="imgPreview"><b>IMAGE:</b> <br> <img class="sourceImg" src="#" alt="Image"> </span>
+                <span class="sourcesInfoName">App</span>
+                <a href="index.html#app" class="sourcesLinkText">Link to the page</a>
+                <a href="https://www.flaticon.com/free-icon/thinking_1491165?term=thinking&page=1&position=7&related_item_id=1491165" class="sourcesLink">https://www.flaticon.com/free-icon/thinking_1491165?term=thinking&page=1&position=7&related_item_id=1491165</a>
+                <i class="sourcesAuthor">SmashIcons</i>
+                <i class="sourcesDate">10.11.2020</i>
+                <img class="sourceImg" src="assets/Images/app.svg" alt="Image">
             </div>
         </div>
 
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">Factory</span>
+                <a href="challenge.html#page1" class="sourcesLinkText">Link to the page</a>
+                <a href="https://www.flaticon.com/free-icon/factory_3095182" class="sourcesLink">https://www.flaticon.com/free-icon/factory_3095182</a>
+                <i class="sourcesAuthor">dDara</i>
+                <i class="sourcesDate">10.11.2020</i>
+                <img class="sourceImg" src="assets/Images/factory.svg" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">Sea Level</span>
+                <a href="challenge.html#page2" class="sourcesLinkText">Link to the page</a>
+                <a href="https://www.flaticon.com/free-icon/sea-level_3095218?term=climate%20change&page=1&position=38" class="sourcesLink">https://www.flaticon.com/free-icon/sea-level_3095218?term=climate%20change&page=1&position=38</a>
+                <i class="sourcesAuthor">dDara</i>
+                <i class="sourcesDate">10.11.2020</i>
+                <img class="sourceImg" src="assets/Images/sea-level.svg" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">Tower</span>
+                <a href="challenge.html#page3" class="sourcesLinkText">Link to the page</a>
+                <a href="https://www.flaticon.com/free-icon/electricity-tower_2084085?term=tower&page=1&position=29&related_item_id=2084085" class="sourcesLink">https://www.flaticon.com/free-icon/electricity-tower_2084085?term=tower&page=1&position=29&related_item_id=2084085</a>
+                <i class="sourcesAuthor">Eucalyp</i>
+                <i class="sourcesDate">10.11.2020</i>
+                <img class="sourceImg" src="assets/Images/tower.svg" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">Planet Earth</span>
+                <a href="challenge.html#page4" class="sourcesLinkText">Link to the page</a>
+                <a href="https://www.flaticon.com/free-icon/planet-earth_1598238?related_item_id=1598431&term=planet%20earth" class="sourcesLink">https://www.flaticon.com/free-icon/planet-earth_1598238?related_item_id=1598431&term=planet%20earth</a>
+                <i class="sourcesAuthor">Freepik</i>
+                <i class="sourcesDate">10.11.2020</i>
+                <img class="sourceImg" src="assets/Images/planet-earth.svg" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">Group</span>
+                <a href="solution.html#page1" class="sourcesLinkText">Link to the page</a>
+                <a href="https://www.flaticon.com/free-icon/group_554724?term=group&page=1&position=5&related_item_id=554724" class="sourcesLink">https://www.flaticon.com/free-icon/group_554724?term=group&page=1&position=5&related_item_id=554724</a>
+                <i class="sourcesAuthor">Freepik</i>
+                <i class="sourcesDate">10.11.2020</i>
+                <img class="sourceImg" src="assets/Images/group.svg" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">Smartphone</span>
+                <a href="solution.html#page3" class="sourcesLinkText">Link to the page</a>
+                <a href="https://www.flaticon.com/free-icon/smartphone_254638?term=smartphone&page=1&position=3&related_item_id=254638" class="sourcesLink">https://www.flaticon.com/free-icon/smartphone_254638?term=smartphone&page=1&position=3&related_item_id=254638</a>
+                <i class="sourcesAuthor">Roundicons</i>
+                <i class="sourcesDate">10.11.2020</i>
+                <img class="sourceImg" src="assets/Images/smartphone.svg" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">Facebook</span>
+                <a href="https://www.flaticon.com/free-icon/facebook_1051309" class="sourcesLink">https://www.flaticon.com/free-icon/facebook_1051309</a>
+                <i class="sourcesAuthor">Freepik</i>
+                <i class="sourcesDate">2.11.2020</i>
+                <img class="sourceImg" src="assets/images/facebook.svg" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">Instagram</span>
+                <a href="https://www.flaticon.com/free-icon/instagram_733614" class="sourcesLink">https://www.flaticon.com/free-icon/instagram_733614</a>
+                <i class="sourcesAuthor">Pixel Perfect</i>
+                <i class="sourcesDate">2.11.2020</i>
+                <img class="sourceImg" src="assets/images/instagram.svg" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">Twitter</span>
+                <a href="https://www.flaticon.com/free-icon/twitter_7336354" class="sourcesLink">https://www.flaticon.com/free-icon/twitter_733635</a>
+                <i class="sourcesAuthor">Pixel Perfect</i>
+                <i class="sourcesDate">2.11.2020</i>
+                <img class="sourceImg" src="assets/images/twitter.svg" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">GitHub</span>
+                <a href="https://www.flaticon.com/free-icon/github_2111425?term=github&page=1&position=2" class="sourcesLink">https://www.flaticon.com/free-icon/github_2111425?term=github&page=1&position=2</a>
+                <i class="sourcesAuthor">Pixel Perfect</i>
+                <i class="sourcesDate">2.11.2020</i>
+                <img class="sourceImg" src="assets/images/github.svg" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">SideMenu</span>
+                <a href="https://www.flaticon.com/free-icon/menu_2089793?term=menu&page=1&position=9&related_item_id=2089793" class="sourcesLink">https://www.flaticon.com/free-icon/menu_2089793?term=menu&page=1&position=9&related_item_id=2089793</a>
+                <i class="sourcesAuthor">Those icons</i>
+                <i class="sourcesDate">2.11.2020</i>
+                <img class="sourceImg" src="assets/Images/SidemenuIcon.svg" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">Energy++ Logo</span>
+                <a href="https://www.freelogodesign.org" class="sourcesLink">https://www.freelogodesign.org</a>
+                <i class="sourcesAuthor">Smedsrød, Kristian</i>
+                <i class="sourcesDate">30.10.2020</i>
+                <img class="sourceImg" src="assets/images/logo.png" alt="Image">
+            </div>
+        </div>
+
+        <div class="sourcesInfo">
+            <div class="sourcesInfoDiv">
+                <span class="sourcesInfoName">Diagrams for app-demo</span>
+                <a href="www.draw.io" class="sourcesLink">www.draw.io</a>
+                <i class="sourcesAuthor">Smedsrød, Kristian</i>
+                <i class="sourcesDate">30.10.2020</i>
+                <img class="sourceImg" src="assets/app%20demo/app%20mockup/Untitled%20Diagram%20(1).png" alt="Image">
+            </div>
+        </div>
 
 </div>
 
@@ -180,11 +325,11 @@
     </div>
         <h2 class="sourcesSubtitle">Download the documents here:</h2>
         <ol class="listMeetGroup">
-            <li> <a download="assets/Docs/#"> LINK TIL Å LASTE NED WORD DOKUMENT </a> </li>
-            <li> <a download="assets/Docs/#"> LINK TIL Å LASTE NED WORD DOKUMENT </a> </li>
-            <li> <a download="assets/Docs/#"> LINK TIL Å LASTE NED WORD DOKUMENT </a> </li>
-            <li> <a download="assets/Docs/#"> LINK TIL Å LASTE NED WORD DOKUMENT </a> </li>
-            <li> <a download="assets/Docs/#"> LINK TIL Å LASTE NED WORD DOKUMENT </a> </li>
+            <li> <a href="assets/Docs/Meeting1.pdf"> First meeting - 27.10 2020 </a> </li>
+            <li> <a href="assets/Docs/Meeting2.pdf"> Second meeting - 09.11 2020 </a> </li>
+            <li> <a href="assets/Docs/Meeting3.pdf"> Third meeting - 18.11 2020 </a> </li>
+            <li> <a href="assets/Docs/Meeting4.pdf"> Fourth meeting - 27.11 2020 </a> </li>
+            <li></li>
         </ol>
 </div>
 
@@ -196,7 +341,7 @@
             <li class="sourceMenuLi Content"> <a href="#sourcesInfoContent"> Content </a> </li>
             <li class="sourceMenuLi Images"> <a href="#sourceImageContent"> Images </a></li>
             <li class="sourceMenuLi Meeting"> <a href="#sourceMeetingsContent"> Meeting Logs </a></li>
-            <li class="sourceMenuLi Group3"> <a href="#sourceGroupContent"> Group Member </a></li>
+            <li class="sourceMenuLi Group3"> <a href="#sourceGroupContent"> Group Members </a></li>
         </ul>
     </div>
             <ul class="listMeetGroup1">
@@ -269,7 +414,7 @@
                     <a href="https://instagram.com"><img src="assets/images/instagram.svg" class=sosialimg
                             alt="instagram"></a>
                     <a href="https://twitter.com"><img src="assets/images/twitter.svg" class=sosialimg
-                            alt=twitter></a>
+                            alt="twitter"></a>
                     <a href="https://github.com/krissmed/DAFE1200-Eksamen/"><img src="assets/images/github.svg"
                             class=sosialimg alt="github"></a>
                 </li>

@@ -21,7 +21,7 @@ let groupPage3 = document.getElementsByClassName("Group3")[0];
     /*the function*/
     function pageMenuActive() {
             /*if the window is scrolled down further than 3.9 of the height of the browser (390vh)*/
-            if (window.scrollY > window.innerHeight * 3.90) {
+            if (window.scrollY > window.innerHeight * 8.6) {
                     /*adds the .activeSitenav class to the group-siteNav*/
                 groupPage3.classList.add("siteNavDisplayed");
 
@@ -31,7 +31,7 @@ let groupPage3 = document.getElementsByClassName("Group3")[0];
                 imgPage1.classList.remove("siteNavDisplayed");
             }
             /*if the window is scrolled down further than 2.9 of the height of the browser (290vh)*/
-            else if (window.scrollY > window.innerHeight * 2.90) {
+            else if (window.scrollY > window.innerHeight * 7.9) {
                 meetingPage2.classList.add("siteNavDisplayed");
 
                 contentPage.classList.remove("siteNavDisplayed");
