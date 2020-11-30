@@ -113,6 +113,11 @@ body > div {
         margin-left: 12vw;
     }
 
+    .listMeetGroup a{
+        text-decoration: none;
+        color: #053361;
+    }
+
 .sourcesHeadline1 {
     position: relative;
     top: 10vh;
