@@ -179,8 +179,8 @@
 /*Image in the box*/
 .contentImg1 {
     position: absolute;
-    right: 8vw;
-    top: 120vh;
+    left: 70vw;
+    top: 150vh;
     height: auto;
     width: 15vw;
     float: right;
