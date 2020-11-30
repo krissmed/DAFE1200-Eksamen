@@ -51,8 +51,7 @@ body > div {
         }
                 .sourcesInfoName {
                     font-weight: bold;
-                    border-bottom: 1px solid black;
-                    position: absolute;
+                    position: relative;
 
                 }
                     .sourcesLinkText {
@@ -64,9 +63,10 @@ body > div {
                     }
                         .sourcesLink {
                             position: relative;
-                            left: 15vw;
+                            left: 2vw;
                             text-decoration: none;
                             color: inherit;
+                            word-break: break-all;
                         }
                             .sourcesAuthor {
                                 position: relative;
@@ -77,17 +77,12 @@ body > div {
                                     top: 10vh;
                                     padding-left: 5vw;
                                 }
-.imgPreview {
-    position: relative;
-    left: 65vw;
-    top: 2vh;
-    width: 20px;
-    height: auto;
-}
+
     .sourceImg {
-        border: 1px solid;
         height: 120px;
         width: 120px;
+        position: absolute;
+        right: 18vw;
     }
 
 #meetingsContent, #sourceGroupContent {
