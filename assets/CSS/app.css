@@ -33,7 +33,7 @@
 }
 
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
-#page1 {
+#FrontPage {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -42,7 +42,7 @@
 }
 
 /*-----------Front page app demo---------------------------------------------------------------------------------------------------------------*/
-#page2 {
+#Rooms {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -90,7 +90,7 @@
 
 
 /*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
-#page3 {
+#automation {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -98,7 +98,7 @@
     background-color: #5cdb95;
 }
 
-#page4 {
+#provider {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -106,7 +106,7 @@
     background-color: #8ee4af;
 }
 
-#page5 {
+#points {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -114,28 +114,6 @@
     background-color: #5cdb95;
 }
 
-#page6 {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    background-color: #8ee4af;
-}
-
-#page7 {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    background-color: #5cdb95;
-}
-#page8 {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    background-color: #8ee4af;
-}
 
 /*--------------------------------SIDE NAV --------------------------------------------------*/
 @media (min-width: 900px) {
@@ -243,46 +221,35 @@
 }
 
 @media screen and (max-width: 900px) {
-
     /* This code only applies when window size is smaller than 900px */
     #sideNav {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 500px) {
-    #frontImg {
-        display: none;
-    }
 
-    #frontImgAlt {
-        display: block;
-        margin-top: 15vh;
-        width: auto;
-        height: 75vh;
-        margin-left: 25%;
-        position: absolute;
-    }
 }
 @media (max-width: 800px) {
-    #page1,
-    #page3,
-    #page4,
-    #page5,
-    #page6,
-    #page7,
-    #page8 {
-        position: relative;
-        height: 150vh;
+    #FrontPage,
+    #automation,
+    #points{
+        height: 1000px;
     }
-    #page2{
-        height: 170vh;
+    #Rooms{
+        height: 1250px;
     }
     
-    #page3{
-        height: 250vh;
+    #automation{
+        height: 160vh;
     }
+    #provider{
+        height: 1550px;
+    }
+    #points{
+        height: 1210px;
+    }
+
     .appImg{
      margin-top: 0px; 
     position: relative;
