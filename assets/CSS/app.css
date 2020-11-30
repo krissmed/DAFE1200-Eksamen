@@ -87,10 +87,6 @@
     width: 15vw;
     float: right;
 }
-.appImg:hover{
-    transform: scale(2);
-    margin-right: 40vw;
-}
 
 
 /*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
@@ -297,4 +293,7 @@
     .paragraph{
         width: 90%;
     }
+}
+@media (max-height: ***){
+    
 }
