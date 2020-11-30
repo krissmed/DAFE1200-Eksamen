@@ -79,8 +79,8 @@ body > div {
                                 }
 
     .sourceImg {
-        height: 120px;
-        width: 120px;
+        height: 12vh;
+        width: 8vw;
         position: absolute;
         right: 18vw;
     }
@@ -177,18 +177,20 @@ body > div {
             }
 /*Sources Information div*/
 #InfoContent {
-        height: 200vh;
+        height: 300vh;
         width: 100vw;
         word-break: break-word;
     }
 /*Sources Images div*/
 #ImageContent {
-        height: 185vh;
+        height: 580vh;
         width: 100vw;
     }
 #InfoContent, #ImageContent {
-        top: 5vh;
+        top: 4vh;
     }
-
+    #meetingsContent{
+        top: 0;
+    }
 }
 
