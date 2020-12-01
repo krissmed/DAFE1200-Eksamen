@@ -152,7 +152,6 @@ body {
         transition: 0.4s;
     }
 
-
     .hamMenu {
         width: 35px;
         height: 5px;
@@ -275,7 +274,6 @@ body {
         width: auto;
     }
 }
-
 
 /*------------------------------------------------------------------*/
 @media screen and (max-width: 475px){
