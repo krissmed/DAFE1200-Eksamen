@@ -110,6 +110,23 @@ body {
     li[class*="active"]:hover {
         border-bottom: none;
     }
+
+/*Buttons to change language*/
+    .langSwitch{
+        position: fixed;
+        top: 12vh;
+        height: 50px;
+        width: 50px;
+        right: 30px;
+        z-index: 100;
+    }
+        .lang{
+            padding: 10px;
+            cursor: pointer;
+        }
+            .lang:hover{
+                transform: scale(1.1);
+            }
 }
 
 @media screen and (max-width: 900px) {

@@ -30,27 +30,36 @@
         <!--MENU-->
         <ul id="headerMenu"><!--Runs function in javascript when clicked-->
             <li class="menuLi active" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="index.html">
-                    Home </a></li>
+                    <span class="eng"> Home </span> <span class="no" style="display: none"> Hjem </span>
+            </a></li>
             <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="challenge.html">
-                    Challenge </a></li>
+                <span class="eng"> Challenge </span>  <span class="no" style="display: none"> Utfordring </span>
+            </a></li>
             <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="solution.html">
-                    Solution </a></li>
-            <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="app.html"> App </a>
-            </li>
+                <span class="eng"> Solution </span> <span class="no" style="display: none"> Løsning </span>
+            </a></li>
+            <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="app.html">
+                App
+            </a></li>
         </ul>
+        
+        <div class="langSwitch">
+            <img class="lang norsk" alt="Norway" src="assets/Images/norway.svg" onclick="switchNor()" onkeypress="switchNor()"
+            > <img class="lang english" alt="USA" src="assets/Images/united-states.svg" onclick="switchEng()" onkeypress="switchEng()">
+        </div>
     </header>
     <!------------------------SIDENAV--------------------------->
     <div id="sideNav">
         <a href="#welcomeSlide" class="sideNavElements 1">
-            <p>Home</p>
+            <p class="eng">Home</p> <p class="no" style="display: none">Hjem</p>
             <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
         </a>
         <a href="#challengeSite" class="sideNavElements 2">
-            <p>Challenge</p>
+            <p class="eng">Challenge</p> <p class="no" style="display: none">Utfordring</p>
             <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
         </a>
         <a href="#solutionSite" class="sideNavElements 3">
-            <p>Solution</p>
+            <p class="eng">Solution</p> <p class="no" style="display: none">Løsning</p>
             <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
         </a>
         <a href="#appSite" class="sideNavElements 4">
@@ -64,7 +73,8 @@
 
         <!--MAINQUOTE-->
         <span id="quote">
-            Going green has never been this easy!
+            <span class="eng" style="display: inline">Going green has never been this easy!</span>
+                <span class="no" style="display: none">Det har aldri vært så lett å bli grønn!</span>
             <br><br>
             <i id="underQuote">ENERGY++</i>
         </span>
@@ -77,16 +87,24 @@
             <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
             <!-- Intro Container -->
             <div id="challengeSite1">
-                <span class="headline">The Challenge</span>
+                <span class="headline"><span class="eng">The Challenge</span> <span class="no" style="display: none">Utfordringen</span></span>
                 <p class="paragraph">
-                    The climate is defined as the general weather conditions usually found in a particular place.
-                    <sup><a href="sources.html#6">[7]</a></sup>
-                    The climate affects each and every one of us, and its change can be catastrophic for humanity.
-                    This is one of the biggest challenges of our time.
+                    <span class="eng">
+                        The climate is defined as the general weather conditions usually found in a particular place
+                        <sup><a href="sources.html#6">[7]</a></sup>.<br>
+                        The climate affects each and every one of us, and its change can be catastrophic for humanity.
+                        This is one of the biggest challenges of our time.
+                    </span>
+                    <span class="no"  style="display: none">
+                        Klimaet er definert som de generelle værforholdene som vanligvis finnes på et bestemt sted
+                        <sup><a href="sources.html#6">[7]</a></sup>.<br>
+                         Klimaet påvirker hver og en av oss, og endringene kan være katastrofale for menneskeheten.
+                         Dette er en av vår tids største utfordringer.
+                    </span>
                 </p>
                 <!--Challenge intro image and button-->
                 <img id="challengeImg" src="assets/Images/polar-bear.svg" alt="polar Bear">
-                <a href="challenge.html" class="readMorebtn">Read more</a>
+                <a href="challenge.html" class="readMorebtn"><span class="eng">Read more</span><span class="no" style="display: none">Les mer</span></a>
             </div>
         </div>
     </div>
@@ -96,14 +114,22 @@
         <div>
             <!-- Intro Container -->
             <div id="solutionSite1">
-                <span class="headline">The Solution</span>
+                <span class="headline"><span class="eng">The Solution</span> <span class="no" style="display: none">Løsningen</span> </span>
                 <p class="paragraph">
-                    Change is the essence of life. Therefore, we must be able to change our ways to more eco-friendly ways.
+                    <span class="eng">
+                        Change is the essence of life. Therefore, we must be able to change our ways to more eco-friendly ways.
                      We must support the planet, and help to battle the environmental changes. But most importantly to secure a planet for the upcoming generations.
+
+                    </span>
+                    <span class="no"  style="display: none">
+                        Endring er en del av livet.<br>
+                        Derfor må vi kunne endre våre levemåter til mer miljøvennlige måter.
+                        Vi må støtte planeten, og være med på å bekjempe miljøendringene. Men viktigst av alt å sikre en planet for de kommende generasjonene.
+                    </span>
                 </p>
                 <!--Image down right-->
                 <img id="solutionImg" src="assets/Images/thinking.svg" alt="Solution icon">
-                <a href="solution.html" class="readMorebtn">Read more</a>
+                <a href="solution.html" class="readMorebtn"><span class="eng">Read more</span><span class="no" style="display: none">Les mer</span></a>
             </div>
         </div>
     </div>
@@ -116,16 +142,26 @@
             <div id="appSiteContainer">
                 <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
 
-                <span class="headline">App Intro</span>
+                <span class="headline"><span class="eng">The App</span> <span class="no" style="display: none">App'en</span></span>
 
                 <p class="paragraph">
-                    Energy++ is a revolutionary new app. When you've installed the energy++ module in your fuse box, data about your power usage will be collected which you can see on your phone. You can also see other functions like tips, automation ideas and earn points. You can use these points at our partners to get gifts and goods like giftcards.
+                    <span class="eng">
+                        Energy++ is a revolutionary new app.<br>
+                        When you've installed the energy++ module in your fuse box, data about your power usage will be collected which you can see on your phone.
+                        You can also see other functions like tips, automation ideas and earn points.
+                        You can use these points at our partners to get gifts and goods like giftcards.
+                    </span>
+                    <span class="no"  style="display: none">
+                        Energy ++ er en revolusjonerende ny app. <br>
+                        Når du har installert energy ++ -modulen i sikringsboksen din, blir data om strømforbruket ditt samlet, som du deretter kan se på telefonen din.
+                        Du kan også se andre funksjoner som tips, automatiseringsideer og tjene opp poeng.
+                        Du kan bruke disse poengene hos våre partnere for å få gaver og varer som gavekort.
+                    </span>
                 </p>
 
                 <!--Image down right-->
                 <img id="appImg" src="assets/Images/app.svg" alt="App Site1">
-                <a href="app.html" class="readMorebtn">Read more</a>
-
+                <a href="app.html" class="readMorebtn"><span class="eng">Read more</span><span class="no" style="display: none">Les mer</span></a>
             </div>
         </div>
     </div>
@@ -141,23 +177,25 @@
             <h2>Address</h2>
 
             <address>
-                Osloveien 23, Oslo, Norway<br>
+                <span class="eng"> Osloveien 23, Oslo, Norway</span>
+                <span class="no" style="display: none"> Osloveien 23, Oslo, Norge</span>
+                <br>
                 <!--Makes the mail us button-->
-                <a class="footerbtn" href="mailto:Support@energy++.com">Email Us</a>
+                <a class="footerbtn" href="mailto:Support@energy++.com"> <span class="eng">Email Us</span> <span class="no" style="display: none">Email Oss</span> </a>
             </address>
         </div>
         <!--Makes a bracket for the for the links for navigation-->
         <ul class="footernav">
             <li class="navitem">
                 <!--Makes the titel over the bracket-->
-                <h2 class="navtitle">Support</h2>
+                <h2 class="navtitle"> <span class="eng">Support</span> <span class="no" style="display: none">Brukerstøtte</span> </h2>
                 <!--Creates the bracket-->
                 <ul class="navul">
                     <li>
                         <a href="contact.html#faqDiv">FAQ</a>
                     </li>
                     <li>
-                        <a href="contact.html#costDiv">Contact us</a>
+                        <a href="contact.html#costDiv"><span class="eng">Contact Us</span> <span class="no" style="display: none">Kontakt Oss</span></a>
                     </li>
 
                 </ul>
@@ -166,24 +204,24 @@
                 <!--Makes a bracket for the for the links for navigation-->
             <li class="navitem">
                 <!--Makes the titel over the bracket-->
-                <h2 class="navtitle">Our work</h2>
+                <h2 class="navtitle"><span class="eng">Our Work</span> <span class="no" style="display: none">Vårt Arbeid</span></h2>
                 <!--Creates the bracket-->
                 <ul class="navul">
                     <li>
-                        <a href="sources.html">Sources</a>
+                        <a href="sources.html"><span class="eng">Sources</span> <span class="no" style="display: none">Kilder</span></a>
                     </li>
                     <li>
-                        <a href="sources.html#sourceMeetingsContent">Meeting logs</a>
+                        <a href="sources.html#sourceMeetingsContent"><span class="eng">Meeting Logs</span> <span class="no" style="display: none">Møtereferater</span></a>
                     </li>
                     <li>
-                        <a href="sources.html#sourceGroupContent">Group Members</a>
+                        <a href="sources.html#sourceGroupContent"><span class="eng">Group Members</span> <span class="no" style="display: none">Gruppe Medlemmer</span></a>
                     </li>
                 </ul>
             </li>
 
             <li class="navitem">
 
-                <h2 class="navtitle">Social</h2>
+                <h2 class="navtitle"><span class="eng">Social</span> <span class="no" style="display: none">Sosiale Medier</span></h2>
                 <ul class="navul">
                     <li>
                         <a href="https://facebook.com"><img src="assets/images/facebook.svg" class=sosialimg
@@ -202,7 +240,7 @@
 
         <!--Creates the copyright line for the bottom of the footer-->
         <div class="legal">
-            <p>&copy; 2020 Energy++. All rights reserved.</p>
+            <p>&copy; 2020 Energy++. <span class="eng">All Rights Reserved</span> <span class="no" style="display: none">Alle Rettigheter Forbeholdes</span></p>
         </div>
     </footer>
 
