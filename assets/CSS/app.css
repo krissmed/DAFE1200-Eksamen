@@ -55,8 +55,6 @@
     left: 5vw;
     color: #053361;
     position: relative;
-    border: solid 1px black;
-
 }
 
 .headline {
@@ -66,8 +64,6 @@
     text-align: center;
     text-transform: uppercase;
     width: 80vw;
-    border: solid 1px black;
-
 }
 
 .paragraph {
@@ -78,8 +74,6 @@
     width: 70vw;
     height: auto;
     padding: 0;
-    border: solid 1px black;
-
 }
 
 .appImg {
@@ -89,8 +83,6 @@
     height: auto;
     width: 15vw;
     float: right;
-    border: solid 1px black;
-
 }
 
 
@@ -121,142 +113,147 @@
 
 
 /*--------------------------------SIDE NAV --------------------------------------------------*/
-    /* This code only applies when window size is bigger than 900px */
-    #sideNav {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20vh;
-        color: black;
-        position: fixed;
-        left: -450px;
-        transition: 0.4s;
-        padding: 15px;
-        z-index: 99;
-        width: auto;
-        text-decoration: none;
-        font-size: 2em;
-        border-radius: 0 5px 5px 0;
-    }
+/* This code only applies when window size is bigger than 900px */
+#sideNav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    color: black;
+    position: fixed;
+    left: -450px;
+    transition: 0.4s;
+    padding: 15px;
+    z-index: 99;
+    width: auto;
+    text-decoration: none;
+    font-size: 2em;
+    border-radius: 0 5px 5px 0;
+}
 
-    #sideNav a {
-        color: #053361;
-        text-decoration: none;
-    }
+#sideNav a {
+    color: #053361;
+    text-decoration: none;
+}
 
-    #sideNav img {
-        position: relative;
-    }
+#sideNav img {
+    position: relative;
+}
 
-    .sideNavElements {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 2vh;
-        height: 5vh;
-        align-items: center;
-        text-align: center;
-        padding-left: 50px;
-        text-decoration: none;
-        color: #053361;
-        background-color: rgb(233,244,221);
-        border-radius: 0 5px 5px 0;
-    }
+.sideNavElements {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    height: 5vh;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    text-decoration: none;
+    color: #053361;
+    background-color: rgb(233, 244, 221);
+    border-radius: 0 5px 5px 0;
+}
 
-    .sideNavElements:hover {
-        margin-top: 2vh;
-        height: 5vh;
-        left: 0;
-        background-color: white;
-        border-radius: 0 5px 5px 0;
-    }
+.sideNavElements:hover {
+    margin-top: 2vh;
+    height: 5vh;
+    left: 0;
+    background-color: white;
+    border-radius: 0 5px 5px 0;
+}
 
-    #sideNav:hover {
-        left: -15px;
-    }
+#sideNav:hover {
+    left: -15px;
+}
 
-    .sideNavElements {
-        margin-top: 2vh;
-        left: -200px;
-        height: 5vh;
-        align-items: center;
-        text-align: center;
-        padding-left: 50px;
-        text-decoration: none;
-        color: white;
-        background-color: rgb(233,244,221);
-        border-radius: 0 5px 5px 0;
-    }
+.sideNavElements {
+    margin-top: 2vh;
+    left: -200px;
+    height: 5vh;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(233, 244, 221);
+    border-radius: 0 5px 5px 0;
+}
 
-    .sideNavElements:hover {
-        margin-top: 2vh;
-        height: 5vh;
-        left: 0;
-        background-color:  rgb(233,244,221);
-        color: #00E000;
-        border-radius: 0 5px 5px 0;
-    }
+.sideNavElements:hover {
+    margin-top: 2vh;
+    height: 5vh;
+    left: 0;
+    background-color: rgb(233, 244, 221);
+    color: #00E000;
+    border-radius: 0 5px 5px 0;
+}
 
-    #sideNav:hover {
-        left: -15px;
-    }
+/*This class gets added to sideNavElements in JS*/
+.sideNavActive {
+    background-color: green;
+    color: #00E000;
+}
 
-    /*This class gets added to sideNavElements in JS*/
-    .sideNavActive {
-        background-color:  green;
-        color: #00E000;
-    }
+#moveDown {
+    height: 0px;
+}
 
-    #moveDown {
-        height: 0px;
-    }
+#appSlogan {
+    font-size: 2.5em;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+}
 
-    #appSlogan {
-        font-size: 2.5em;
-        text-align: center;
-        position: absolute;
-        z-index: 1;
-        border: solid 1px black;
-    }
-    #frontImg {
-        margin-top: 20vh;
-        height: 80vh;
-        position: absolute;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+#frontImg {
+    margin-top: 20vh;
+    height: 80vh;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media screen and (max-width: 900px) {
+
     /* This code only applies when window size is smaller than 900px */
     #sideNav {
         display: none;
     }
-    #FrontPage{
+
+    #FrontPage {
         height: 1100px;
     }
-    #Rooms{
+
+    #Rooms {
         height: 1350px;
     }
-    #automation{
+
+    #automation {
         height: 1350px;
     }
-    #provider{
+
+    #provider {
         height: 1800px;
     }
-    #points{
+
+    #points {
         height: 1310px;
     }
+
     #frontImg {
         display: none;
     }
-    .appImg{
-    position: initial;
-    margin-top: 0vh; 
-    margin-right: 40vw;
-    width: 40vw;
-    z-index: 0;
-    top: 0px;
+
+    .appImg {
+        position: initial;
+        margin-top: 0vh;
+        margin-right: 40vw;
+        width: 40vw;
+        z-index: 0;
+        top: 0px;
     }
-    #appSlogan{
+
+    #appSlogan {
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -264,20 +261,23 @@
         width: 100%;
         font-size: 3em;
     }
-    .paragraph{
+
+    .paragraph {
         width: 90%;
         z-index: 0;
     }
-
 }
-@media (max-height: 1000px){
-    #sideNav{
+
+@media (max-height: 1000px) {
+    #sideNav {
         display: none;
     }
+
     #frontImg {
         display: none;
     }
-    #appSlogan{
+
+    #appSlogan {
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -285,20 +285,42 @@
         width: 100%;
         font-size: 3em;
     }
+    #FrontPage {
+        height: 800px;
+    }
+
+    #Rooms {
+        height: 900px;
+    }
+
+    #automation {
+        height: 1000px;
+    }
+
+    #provider {
+        height: 1000px;
+    }
+
+    #points {
+        height: 800px;
+    }
 }
-@media(min-width: 1500px){
-    .paragraph{
+
+@media(min-width: 1500px) {
+    .paragraph {
         font-size: 2em;
         line-height: 1.8em;
     }
-    .headline{
+
+    .headline {
         font-size: 4.5em;
     }
+
     #frontImg {
         margin-top: 20vh;
         height: 80vh;
         position: absolute;
         left: 30vw;
     }
-    
+
 }
