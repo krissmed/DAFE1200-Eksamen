@@ -215,7 +215,7 @@
     background-color: #5cdb95;
 }
 /*Image in the box*/
-#contentImg3 {
+.contentImg3 {
     height: 350px;
     width: 230px;
     position: absolute;
