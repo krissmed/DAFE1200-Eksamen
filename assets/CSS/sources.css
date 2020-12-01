@@ -209,4 +209,9 @@ body > div {
         top: 0;
     }
 }
+@media (max-width: 400px) {
+.sourcesInfoName {
+    font-size: 80%;
+    word-break: break-all;
+}
 
