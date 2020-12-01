@@ -84,6 +84,7 @@
         text-transform: uppercase;
         width: 80vw;
     }
+    }
 
     /*Text*/
     .paragraph {
@@ -94,7 +95,6 @@
         padding: 0;
         height: auto;
     }
-}
 
 @media screen and (max-height: 700px), (max-width: 900px) { /* Removes the sidenav when the windows becomes small enough */
     #sideNav, .contentImg, #mainLogo { /*Removes the icons on the pages*/
@@ -146,7 +146,7 @@
 
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
 #challengeSite {
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -182,7 +182,7 @@
     text-decoration: none;
     cursor: pointer;
     position: absolute;
-    top: 74vh;
+    top: 79vh;
     transition: box-shadow 0.2s;
 }
 
@@ -214,7 +214,7 @@
 
 /*-----------SOLUTION SITE---------------------------------------------------------------------------------------------------------------*/
 #solutionSite {
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -243,7 +243,7 @@
 
 /*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
 #appSite {
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -288,3 +288,4 @@
         font-size: 4.5em;
     }
 }
+
