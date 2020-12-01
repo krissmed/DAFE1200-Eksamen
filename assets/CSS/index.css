@@ -55,8 +55,6 @@
     background-color: rgb(233,244,221);
 }
 
-
-
 @media screen and (max-width: 900px) {
 
     /* This code only applies when window size is smaller than 900px */
