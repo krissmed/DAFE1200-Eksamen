@@ -78,7 +78,7 @@
 
 .appImg {
     position: absolute;
-    right: 8vw;
+    right: 10vw;
     top: 13vh;
     height: auto;
     width: 15vw;
@@ -287,23 +287,23 @@
     }
 
     #FrontPage {
-        height: 800px;
+        height: 1000px;
     }
 
     #Rooms {
-        height: 900px;
+        height: 1200px;
     }
 
     #automation {
-        height: 1000px;
+        height: 1300px;
     }
 
     #provider {
-        height: 1000px;
+        height: 1400px;
     }
 
     #points {
-        height: 800px;
+        height: 1200px;
     }
 
 }

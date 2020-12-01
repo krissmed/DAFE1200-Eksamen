@@ -107,8 +107,7 @@
     height: auto;
 }
 .contentImg {
-    position: absolute;
-    right: 15vw;
+    right: 0vw;
     top: 45vh;
     height: auto;
     width: 15vw;
@@ -127,8 +126,12 @@
 }
     .contentContainer {
         height: 80vh;
-        width: 60vw;
-        margin: 10vh 45px 0;
+        width: 100vw;
+        top: 12vh;
+        left: 5vw;
+        color: #053361;
+        position: relative;
+        border: solid black 1px;
     }
         .pageHeadline {
             font-weight: bolder;
@@ -224,7 +227,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #5cdb95;
+    background-color: #8ee4af;
 }
 /*Image in the box*/
 #contentImg3 {
