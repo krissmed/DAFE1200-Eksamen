@@ -90,6 +90,7 @@
             margin-left: 10vw;
             margin-right: 10vw;
         }
+        
 
 /*-----------ALL THE SITES---------------------------------------------------------------------------------------------------------------*/
 #page1, #page2, #page3, #page4{
@@ -99,21 +100,11 @@
     flex-direction: row;
     color: #053361;
 }
-
     .contentContainer {
         height: 80vh;
         width: 60vw;
         margin: 10vh 45px 0;
     }
-        .pageHeadline {
-            font-weight: bolder;
-            font-size: 3em;
-            font-style: normal;
-            text-align: center;
-            text-transform: uppercase;
-            position: relative;
-            left: 3vw;
-        }
     /*Text*/
     .paragraph {
         letter-spacing: 1px;
@@ -147,18 +138,20 @@
         transition: box-shadow 0.2s;
         box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     }
+.contentImg {
+        right: 15vw;
+        top: 45vh;
+        height: auto;
+        width: 15vw;
+        float: right;
+        border-radius: 25px;
+    }
 
 /*-----------SITE1---------------------------------------------------------------------------------------------------------------*/
 #page1 {
     background-color: #5cdb95;
 }
-    .challengeImage {
-    height: 350px;
-    width: 230px;
-    position: absolute;
-    left: 70vw;
-    top: 150vh;
-}
+
 /*-----------SITE2---------------------------------------------------------------------------------------------------------------*/
 #page2 {
     background-color: #8ee4af;
@@ -174,40 +167,18 @@
 #page3 {
     background-color: #5cdb95;
 }
-    .challengeImage3 {
-        height: 350px;
-        width: 230px;
-        position: absolute;
-        left: 70vw;
-        top: 450vh;
-    }
+
 /*-----------SITE3---------------------------------------------------------------------------------------------------------------*/
 #page4 {
     background-color: #8ee4af;
-}
-.challengeImage4 {
-    height: 350px;
-    width: 230px;
-    position: absolute;
-    left: 70vw;
-    top: 350vh;
 }
 
 /*When the browser-width is under 900px*/
 @media (max-width: 900px) {
     /*Makes the images not displayed*/
-    .challengeImage {
+    .contentImg{
         display: none;
     }
-        .challengeImage2 {
-            display: none;
-        }
-            .challengeImage3 {
-                display: none;
-            }
-                .challengeImage4 {
-                    display: none;
-                }
 
 /*Makes the text take all of the width*/
         .contentContainer {
@@ -275,5 +246,42 @@
     }
     .headline{
         font-size: 4.5em;
+    }
+}
+@media screen and (max-width: 900px) {
+
+    /* This code only applies when window size is smaller than 900px */
+    #sideNav {
+        display: none;
+    }
+
+    /*----------1st SITE along with the <p> elements---------------------------------------------------------*/
+    #challengeSite {
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        background-color: #5cdb95;
+    }
+
+    /*Written Content*/
+    /* Headline */
+    .headline {
+        font-weight: bolder;
+        font-size: 3em;
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+        width: 80vw;
+    }
+
+    /*Text*/
+    .paragraph {
+        letter-spacing: 1px;
+        line-height: 1.3em;
+        font-size: 1.5em;
+        width: 90vw;
+        padding: 0;
+        height: auto;
     }
 }
