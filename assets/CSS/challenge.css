@@ -109,11 +109,11 @@
     /*Text*/
     .paragraph {
         letter-spacing: 1px;
-        line-height: 1.3em;
+        line-height: 1.5em;
         font-size: 1.5em;
-        width: 90vw;
-        padding: 0;
+        width: 70vw;
         height: auto;
+        padding: 0;
     }
     /* Headline */
     .headline {
@@ -148,14 +148,35 @@
         transition: box-shadow 0.2s;
         box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     }
-.contentImg {
-        right: 15vw;
-        top: 45vh;
-        height: auto;
-        width: 15vw;
-        float: right;
-        border-radius: 25px;
+img[class^="contentImg"]{
+    position: absolute;
+    right: 10vw;
+    height: auto;
+    width: 15vw;
+    float: right;
+    border-radius: 25px;
     }
+    .contentImg1{
+        top: 145vh;
+    }
+        .contentImg2{
+            top: 245vh;
+        }
+            .contentImg3{
+                top: 345vh;
+            }
+                .contentImg4{
+                     top: 445vh;
+                 }
+.headline {
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    word-break: break-word;
+    width: 80vw;
+}
 
 /*-----------SITE1---------------------------------------------------------------------------------------------------------------*/
 #page1 {
@@ -166,13 +187,7 @@
 #page2 {
     background-color: #8ee4af;
 }
-    .challengeImage2 {
-    height: 350px;
-    width: 230px;
-    position: absolute;
-    left: 70vw;
-    top: 250vh;
-}
+
 /*-----------SITE3---------------------------------------------------------------------------------------------------------------*/
 #page3 {
     background-color: #5cdb95;
@@ -186,7 +201,7 @@
 /*When the browser-width is under 900px*/
 @media (max-width: 900px) {
     /*Makes the images not displayed*/
-    .contentImg{
+    img[class^="contentImg"]{
         display: none;
     }
 
@@ -196,7 +211,31 @@
             margin-right: 10vw;
         }
 
-}
+        /* This code only applies when window size is smaller than 900px */
+        #sideNav {
+            display: none;
+        }
+
+        /*----------1st SITE along with the <p> elements---------------------------------------------------------*/
+        #challengeSite {
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            background-color: #5cdb95;
+        }
+
+        /*Text*/
+        .paragraph {
+            letter-spacing: 1px;
+            line-height: 1.3em;
+            font-size: 1.5em;
+            width: 90vw;
+            padding: 0;
+            height: auto;
+        }
+    }
+
 
 /*When the browser width is 650px or lower*/
 @media (max-width: 650px) {
@@ -253,45 +292,9 @@
     .paragraph{
         font-size: 2em;
         line-height: 1.8em;
+        width: 70vw;
     }
     .headline{
         font-size: 4.5em;
-    }
-}
-@media screen and (max-width: 900px) {
-
-    /* This code only applies when window size is smaller than 900px */
-    #sideNav {
-        display: none;
-    }
-
-    /*----------1st SITE along with the <p> elements---------------------------------------------------------*/
-    #challengeSite {
-        min-height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        background-color: #5cdb95;
-    }
-
-    /*Written Content*/
-    /* Headline */
-    .headline {
-        font-weight: bolder;
-        font-size: 3em;
-        font-style: normal;
-        text-align: center;
-        text-transform: uppercase;
-        width: 80vw;
-    }
-
-    /*Text*/
-    .paragraph {
-        letter-spacing: 1px;
-        line-height: 1.3em;
-        font-size: 1.5em;
-        width: 90vw;
-        padding: 0;
-        height: auto;
     }
 }
