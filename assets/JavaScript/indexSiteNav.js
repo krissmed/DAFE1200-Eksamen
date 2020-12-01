@@ -6,7 +6,6 @@ window.onscroll = function () {
     selectActiveSite()
 };
 
-
 /*gathering all the elements*/
 let sideNav1 = document.getElementsByClassName("sideNavElements 1")[0];
 let sideNav2 = document.getElementsByClassName("sideNavElements 2")[0];

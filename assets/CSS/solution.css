@@ -147,6 +147,12 @@
                 box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
             }
 
+@media screen and (max-height: 700px), (max-width: 900px) { /* Removes the sidenav when the windows becomes small enough */
+    #contentImg1, #contentImg2, #contentImg3 { /*Removes the icons on the pages*/
+         display: none;
+    }
+}
+
 /*-----------Page1 (box with content)---------------------------------------------------------------------------------------------------------------*/
 #page1 {
     height: 100vh;
@@ -156,7 +162,7 @@
     background-color: #5cdb95;
 }
 /*Image in the box*/
-.contentImg1 {
+#contentImg1 {
     position: absolute;
     left: 70vw;
     top: 150vh;
@@ -174,7 +180,7 @@
     background-color: #8ee4af;
 }
 /*Image in the box*/
-.contentImg2 {
+#contentImg2 {
     height: 350px;
     width: 230px;
     position: absolute;
@@ -191,7 +197,7 @@
     background-color: #5cdb95;
 }
 /*Image in the box*/
-.contentImg3 {
+#contentImg3 {
     height: 350px;
     width: 230px;
     position: absolute;
