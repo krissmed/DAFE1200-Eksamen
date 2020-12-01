@@ -234,40 +234,34 @@
         display: none;
     }
     #FrontPage{
-        height: 1200px;
+        height: 1000px;
     }
     #Rooms{
-        height: 1450px;
+        height: 1250px;
     }
     #automation{
-        height: 1400px;
+        height: 1200px;
     }
     #provider{
-        height: 1750px;
+        height: 1550px;
     }
     #points{
-        height: 1410px;
+        height: 1210px;
     }
 
     .appImg{
     position: initial;
     margin-top: 0vh; 
     margin-right: 40vw;
-    width: 40vw;
+    width: 20vw;
     z-index: 0;
+    top: 0px;
     margin-bottom: 40px;
     }
     .paragraph{
         width: 90%;
         z-index: 0;
-    }
-    #FrontPage {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        background-color: #5cdb95;
-}
+    
 @media (max-height: 650px){
     #FrontPage, #automation, #points, #Rooms, #provider{
         height: 600px; 
@@ -276,11 +270,12 @@
         margin-top: 25px;
     }
 }
+}
 @media (max-height: 700px){
     #sideNav{
         display: none;
     }
 }
 @media screen and (max-width: 900px) {
-    
+
 }
