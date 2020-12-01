@@ -36,105 +36,113 @@
 </header>
 <!------------------------SIDENAV--------------------------->
 <div id="sideNav">
-    <a href="#mainSite" class="sideNavElements 1">
-        <p>PLACEHOLDER</p>
+    <a href="#welcomePage" class="sideNavElements 1">
+        <p>Hjem</p>
         <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
     </a>
-    <a href="#challengeSite" class="sideNavElements 2">
-        <p>PLACEHOLDER</p>
+    <a href="#FrontPage" class="sideNavElements 2">
+        <p>Forside</p>
         <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
     </a>
-    <a href="#solutionSite" class="sideNavElements 3">
-        <p>PLACEHOLDER</p>
+    <a href="#Rooms" class="sideNavElements 3">
+        <p>Rom</p>
         <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
     </a>
-    <a href="#appSite" class="sideNavElements 4">
-        <p>PLACEHOLDER</p>
+    <a href="#automation" class="sideNavElements 4">
+        <p>Brukerskapte Automatiseringer</p>
         <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
     </a>
-
+    <a href="#provider" class="sideNavElements 4">
+        <p>Bytt Strømleverandør</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#points" class="sideNavElements 4">
+        <p>Poengsystem</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
 </div>
-<!--CONTAINER MAINSITE-->
+
+<!------------------------------------CONTAINER MAINSITE----------------------------------->
 <div id="welcomePage">
     <div id="moveDown"></div> <!-- To move elements below the header -->
-    <h1 id="appSlogan">Your power usage, organised in one easy-to-use app!</h1>
+    <h1 id="appSlogan">Strømforbruket ditt, organisert i én brukervennlig app!</h1>
     <img id="frontImg" src="assets/Images/834aaa1be22d75a363e1c26f821a8730.png" alt="">
 </div>
 
-<!-- Front page Slide -->
+<!--------------------------------------------------------------- Front page Slide --------------------------------------------------->
 <div id="FrontPage">
     <div class="slideContainer">
-        <span class="headline">Front page</span>
+        <span class="headline">Forside</span>
         <p class="paragraph">
-            As you open your app, you are greeted by a summary of your energy usage in a room-by-room basis. At a
-            quick glance you know exactly what room is using the most electricity. When you click on that room you
-            can look into further details.
+            Når du åpner appen din, blir du møtt av et sammendrag av energiforbruket ditt rom for rom. Ved et
+            raskt overblikk vet du nøyaktig hvilket rom som bruker mest strøm. Når du klikker på det rommet
+            kan du se på nærmere detaljer.
         </p>
         <img class="appImg" id="appImg1" src="assets/Images/FrontPage.png" alt="">
     </div>
 </div>
-<!--Room details Slide-->
+<!-------------------------------------------------Room details Slide---------------------------------------------------->
 <div id="Rooms">
     <div class="slideContainer">
         <span class="headline">Rooms</span>
         <p class="paragraph">
-            You can also get a detailed view of your power electricity usage on a room by room basis. The app will
-            automatically detect what type applience is connected to the socket and assume which room it is. Here
-            you can see the energy usage compared to last week and the usage of each applience. The app will
-            automatically detect what is using the most electricity and give you community made automations for
-            lowering your electricity waste. You can find more automation that can easily be integrated in the
-            automation section of the app.
+            Du kan også få en detaljert oversikt over strømforbruket ditt rom for rom. Appen vil
+            automatisk oppdage hvilke type apparat som er koblet til kontakten og finner hvilket rom det er. Her
+            du kan se energiforbruket sammenlignet med forrige uke og bruken av hvert apparat. Appen vil
+            automatisk oppdage hva som bruker mest strøm og gi deg automatiserte funksjoner for å
+            senke strømavfallet ditt. Du kan finne flere automatisering som enkelt kan integreres i
+            automatiseringsdelen av appen.
         </p>
         <img class="appImg" id="appImg1" src="assets/Images/Room.png" alt="">
     </div>
 </div>
-<!--Automation Slide-->
+<!-------------------------------------------------Automation Slide------------------------------------------------->
 <div id="automation">
     <div class="slideContainer">
         <span class="headline">Community made automation</span>
         <p class="paragraph">
-            Here you can choose from a range of pre-programmed automation that can be integrated into your home with
-            one click. All you need to do is authorize that Energy++ can access your different smart home
-            appliences, and the app will automatically give you suggestion for lowering your power consumption.
-            These are made by the Energy++ community and by manufacturers. Each automation has a title, description
-            and rating. You can also filter and sort to find the automation that suits you the best.
+            Her kan du velge mellom en rekke forhåndsprogrammerte automatiseringer som kan integreres i hjemmet ditt med
+            ett tastetrykk. Alt du trenger å gjøre er å godkjenne at Energy++ kan få tilgang til dine forskjellige smart-hjem
+            apparater, og appen gir deg automatisk forslag til å senke strømforbruket.
+            Disse er laget av Energy++ -samfunnet og av produsenter. Hver automatisering har en tittel, beskrivelse
+            og vurdering. Du kan også filtrere og sortere for å finne den automatiseringen som passer deg best.
         </p>
         <img class="appImg" id="appImg1" src="assets/Images/automation.png" alt="">
     </div>
 </div>
-<!-- Provider Slide -->
+<!------------------------------------------------- Provider Slide --------------------------------------------->
 <div id="provider">
     <div class="slideContainer">
-        <span class="headline">Easily switch electricity provider</span>
+        <span class="headline">Bytt strømleverandør enkelt!</span>
         <p class="paragraph">
-            Energy++ also give you the opportunity to easily choose susatainable energy provider. Based on our
-            algorithm which takes into account total climate gas emisions, destroyed forestry, carbon capture and
-            storage, etc. we rate all electricity provider on a scale of sustainable (green globe), neutral (yellow
-            globe) and non-sustainable (red globe). This gives you an easy-to-understand indication of how
-            sustainable each electricity provider is. We also understand that sustainablility is not everything when
-            it comes to electricity provider. Therefore we've made a rating system based on our user experience with
-            the provider and can use that, in addition to our sustainablility index to make a good decision when it
-            comes to your electricity provider.
+            Energy++ gir deg også muligheten til å enkelt velge klimavennlige energileverandør. Basert på vår
+            algoritme som tar hensyn til det totale klimagassutslippet, ødelagt skogbruk, karbonfangst og
+            lagring. Vi rangerer alle strømleverandør på en skala fra bærekraftig (grønn klode), nøytral (gul)
+            kloden) og ikke-bærekraftig (rød kloden). Dette gir deg en indikasjon på hvor
+            bærekraftig hver strømleverandør er. Vi forstår også at bærekraft ikke er alt når
+            det kommer til strømleverandør. Derfor har vi laget et rangeringssystem basert på vår brukeropplevelse med
+            leverandøren og kan bruke det, i tillegg til vår holdbarhetsindeks for å ta en god beslutning når det
+            kommer til strømleverandøren din.
         </p>
         <img class="appImg" id="appImg1" src="assets/Images/Provider.png" alt="">
     </div>
 </div>
-<!-- Points Slide -->
+<!--------------------------------------------------- Points Slide --------------------------------------------->
 <div id="points">
     <div class="slideContainer">
-        <span class="headline">Energy++ points</span>
+        <span class="headline">Energy++ poengsystem</span>
         <p class="paragraph">
-            We in Energy++ also reward people who take sustainable decisions. Therefore we also have a point system
-            which gives you befits such as giftcard to spas, cinemas, online stores, etc. These points are earned
-            through using the app, but the less electricity and the more susatainable your electricity is, the more points you get.
-            In addition to that, if you're helping out other Energy++ user, by leaving a rating, making
-            automations or growing the community by refering your friend, you will earn even more points.
+            Vi i Energy++ belønner også folk som tar bærekraftige beslutninger. Derfor har vi et eget poengsystem
+            som gir deg passende gaver som gavekort til spa, kinoer, nettbutikker etc. Disse poengene er opptjent
+            gjennom å bruke appen. Jo mindre strøm og jo mer holdbar strøm, desto flere poeng får du.
+            Hvis du i tillegg hjelper andre Energy++ -brukere, ved å gi en vurdering, lage
+            automatisering eller å utvide samfunnet ved å rekruttere vennen din, vil du tjene enda flere poeng.
         </p>
         <img class="appImg" id="appImg1" src="assets/Images/Points.png" alt="">
     </div>
 </div>
 
-<!-- FOOTER CONTAINER -->
+<!-------------------------------------------------------------- FOOTER CONTAINER -------------------------------------------------------->
 <footer class="footer">
 
     <!--Box where the adress, logo and mail button will be-->
@@ -213,8 +221,6 @@
 
 
 <!--Placed at bottom to load body first-->
-<!--Script for Text formatting-->
-<script src="assets/JavaScript/index.js"></script>
 <!--Script for header-->
 <script src="assets/JavaScript/header.js"></script>
 <!--Script for siteNav-->
