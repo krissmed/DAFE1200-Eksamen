@@ -55,8 +55,6 @@
     background-color: rgb(233,244,221);
 }
 
-
-
 @media screen and (max-width: 900px) {
 
     /* This code only applies when window size is smaller than 900px */
@@ -72,7 +70,6 @@
         flex-direction: row;
         background-color: #5cdb95;
     }
-
 
     /*Written Content*/
     /* Headline */
@@ -97,13 +94,11 @@
     }
 }
 
-
 @media screen and (max-height: 700px), (max-width: 900px) { /* Removes the sidenav when the windows becomes small enough */
     #sideNav, #challengeImg, #solutionImg, #appImg, #mainLogo { /*Removes the icons on the pages*/
         display: none;
     }
 }
-
 
 /*--------------------Welcome Page------------------------------------------*/
 #welcomeSlide {
@@ -114,7 +109,6 @@
 }
 
 /*---------------------  Quotes----------------------------------------------*/
-
 /*Quote*/
 #quote {
     height: auto;
@@ -146,6 +140,7 @@
     border-top: 3px solid #053361;
     padding-top: 1vw;
 }
+
 /*logo on mainSite*/
     #mainLogo {
         position: relative;
@@ -156,7 +151,6 @@
         min-width: 200px;
         
     }
-
 
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
 #challengeSite {
