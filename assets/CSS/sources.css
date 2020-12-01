@@ -1,5 +1,7 @@
 /*The first two sites*/
-
+body{
+    background-color:  #5cdb95;
+}
 body > div {
     height: auto;
 
@@ -117,6 +119,20 @@ body > div {
     position: relative;
     top: 10vh;
     padding: 9px 35px;
+}
+
+@media (max-width:700px){
+    .sourcesInfo{
+        height: 25vh;
+    }
+    #InfoContent{
+        margin-bottom: 100vh;
+        border-bottom: none;
+    }
+    #ImageContent{
+        margin-bottom: 170vh;
+        border-bottom: none;
+    }
 }
 /*-------------------------NAV on site----------------------------------------------------------------*/
 .sourceMenu {
