@@ -138,7 +138,7 @@ body {
 
 /* This code only applies when window size is smaller than 900px */
 @media screen and (max-width: 900px) {
-
+    /*The menu itself*/
     #hamburgerMeny {
         margin-top: 15px;
         margin-left: 15px;
@@ -146,6 +146,7 @@ body {
         background-color: #edf5e1;
     }
 
+    /*Animasjon*/
     #line1,
     #line2,
     #line3 {
@@ -153,6 +154,7 @@ body {
         transition: 0.4s;
     }
 
+    /*Menu container*/
     .hamMenu {
         width: 35px;
         height: 5px;
@@ -161,6 +163,7 @@ body {
 
     }
 
+    /*Headline in the menu*/
     .headlineHamMeny{
         display: inline-block;
         z-index: 100;
@@ -172,8 +175,9 @@ body {
         left: 35vw;
     }
 
+    /*Header container*/
     header {
-        background-color: white;
+        background-color: #edf5e1;
         width: 100%;
         height: auto;
         position: fixed;
