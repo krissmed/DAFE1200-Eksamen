@@ -88,7 +88,7 @@
 .appImg {
     position: absolute;
     right: 8vw;
-    top: 26vh;
+    top: 13vh;
     height: auto;
     width: 15vw;
     float: right;
@@ -234,7 +234,7 @@
         display: none;
     }
     #FrontPage{
-        height: 950px;
+        height: 110pa0px;
     }
     #Rooms{
         height: 1350px;
@@ -256,7 +256,6 @@
     width: 40vw;
     z-index: 0;
     top: 0px;
-    margin-bottom: 40px;
     }
     .paragraph{
         width: 90%;
@@ -271,5 +270,14 @@
 @media (max-height: 700px){
     #sideNav{
         display: none;
+    }
+}
+@media(min-width: 1500px){
+    .paragraph{
+        font-size: 2em;
+        line-height: 1.8em;
+    }
+    .headline{
+        font-size: 4.5em;
     }
 }
