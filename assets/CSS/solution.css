@@ -70,8 +70,7 @@
     color: #053361;
     background-color: #8ee4af;
 }
-.welcomeQuote {
-    
+.welcomeQuote {  
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -107,6 +106,16 @@
     padding: 0;
     height: auto;
 }
+.contentImg {
+    position: absolute;
+    right: 15vw;
+    top: 45vh;
+    height: auto;
+    width: 15vw;
+    float: right;
+    border-radius: 25px;
+}
+
 
 /*-----------ALL THE SITES---------------------------------------------------------------------------------------------------------------*/
 #page1, #page2, #page3{
@@ -133,14 +142,6 @@
             line-height: 1.7em;
             font-size: 1.5em;
             height: auto;
-        }
-        .contentImg {
-            position: absolute;
-            right: 8vw;
-            top: 120vh;
-            height: auto;
-            width: 15vw;
-            float: right;
         }
             .readMorebtn {
                 display: flex;
@@ -215,14 +216,6 @@
     display: flex;
     flex-direction: row;
     background-color: #8ee4af;
-}
-/*Image in the box*/
-#contentImg2 {
-    height: 350px;
-    width: 230px;
-    position: absolute;
-    left: 70vw;
-    top: 250vh;
 }
 
 /*-----------Page3 (box with content)---------------------------------------------------------------------------------------------------------------*/
