@@ -1,5 +1,6 @@
 /*-----------FOOTER---------------------------------------------------------------------------------------------------------------*/
 
+/*Creates the footer container*/
 .footer {
     display: flex;
     flex-flow: row wrap;
@@ -13,7 +14,7 @@
     width: 95vw;
     background-color: #edf5e1;
 }
-
+/*Properties when hovered over*/
 .footer a:hover{
     text-decoration: underline;
 }

@@ -27,6 +27,7 @@
   font-size: 2em;
   border-radius: 0 5px 5px 0;
 }
+/*Properties for the sidenav elements*/
 .sideNavElements {
   display: flex;
   justify-content: space-between;
@@ -40,6 +41,7 @@
   color: #053361;
   background-color:  #edf5e1;
 }
+/*Properties when hovered over*/
 .sideNavElements:hover {
   margin-top: 2vh;
   height: 5vh;
@@ -55,46 +57,50 @@
   left: -15px;
 }
 
-/*This class gets added to sideNavElements in JS*/
+/*(This class gets added to sideNavElements in JS) Properties when active*/
 .sideNavActive {
   background-color:#053361;
   color: white;
 }
 
+/* This code only applies when window width is smaller than 900px */
+/*It sets the properties to better adjust to smaller screens*/
 @media screen and (max-width: 900px) {
 
-  /* This code only applies when window size is smaller than 900px */
   #sideNav {
       display: none;
   }
 }
 /*-----------------------------------------------*/
 /*FAQ*/
-/*Faq div*/
+/*Makes the faqDiv container*/
 #faqDiv {
   padding-top: 10vh;
   background-color: #5cdb95;
   color: #053361;
 }
+/*Container for content*/
 #faq {
   height: auto;
   width: 100vw;
   padding: 2vh 10vw 3vw 10vw;
 }
+  /*Syles the text*/
   #faq p{
     width: 60vw;
     font-size: 1.5em;
   }
+    /*Styles the sub headliners*/
     #faq h1 {
       margin-right: 10vw;
     
     }
-
+/*Styles the headline*/
 #faqHeadline {
   text-align: center;
   font-size: 3em;
   }
-
+/*Styles the subheadline*/
 #faqSubHeadline{
   text-align: center;
   font-size: 2em;
@@ -102,7 +108,7 @@
 
 /*-------------------------------------------*/
 /* costumer support part of the page */
-/*creates the costumer support "card"*/
+/*creates the costumer support container*/
 .cost {
   color: #053361;
   display: flex;
@@ -116,12 +122,13 @@
     flex: 1 100%
   }
 
-/* Titles in the card*/
+/* Styles the headline*/
 .costTitle {
   list-style: none;
   font-size: 2em;
   font-weight: bold;
 }
+/* Styles the headline*/
 .costTitle2{
     list-style: none;
     text-align: center;
@@ -137,7 +144,7 @@
   margin-left: 10vw;
   
 }
-
+  /*Links within the <ul>-tag*/
   .cost ul a {
    color: #454545;
    font-size: 20px;
@@ -178,8 +185,8 @@
     margin-right: 1.25em;
     }
 
-/*Makes the footer flex*/
-@media screen and (min-width: 40.375em) {
+/* This code only applies when window size is smaller than 900px */
+@media screen and (min-width: 900px) {
   .costNav > * {
     flex: 1;
   }
@@ -192,6 +199,7 @@
     flex: 2 0;
   }
 }
+/* This code only applies when window size is bigger than 1500px */
 @media(min-width: 1500px){
   .paragraph{
       font-size: 2em;

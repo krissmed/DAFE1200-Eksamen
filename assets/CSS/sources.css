@@ -1,11 +1,16 @@
-/*The first two sites*/
+/*------------------------------BODY---------------------------------------*/
+/*Sets the background color*/
 body{
     background-color:  #5cdb95;
 }
+/*Height for divs within the <body>-tag*/
 body > div {
     height: auto;
 
 }
+
+/*------------------------------Content---------------------------------------*/
+/*Containers for seperating the website*/
 #InfoContent, #ImageContent{
     background-color: #5cdb95;
     color: #053361;
@@ -13,6 +18,7 @@ body > div {
     position: relative;
     top: 10vh;
 }
+
 /*Sources Information div*/
 #InfoContent {
     width: 100vw;
@@ -79,7 +85,7 @@ body > div {
                                     top: 10vh;
                                     padding-left: 5vw;
                                 }
-
+    /*Styles the images on the website*/
     .sourceImg {
         height: 12vh;
         width: 8vw;
@@ -87,6 +93,8 @@ body > div {
         right: 18vw;
     }
 
+/*------------------------------Meetings and group---------------------------------------*/
+/*Creates containers for meeting and group*/
 #meetingsContent, #sourceGroupContent {
     height: auto;
     width: 100vw;
@@ -95,10 +103,13 @@ body > div {
     border: 1px solid #376E6F;
     position: relative;
 }
+
+/*Div for content in the meeting container*/
 #meetingsContent {
     position: relative;
     top: 10vh;
 }
+    /*Styles the list of the meetings*/
     .listMeetGroup {
             line-height: 10vh;
             margin-left: 12vw;
@@ -110,17 +121,21 @@ body > div {
         margin-left: 12vw;
     }
 
+    /*Links within the list*/
     .listMeetGroup a{
         text-decoration: none;
         color: #053361;
     }
 
+/*Styles the headline*/
 .sourcesHeadline1 {
     position: relative;
     top: 10vh;
     padding: 9px 35px;
 }
 
+/* This code only applies when window width is smaller than 700px */
+/*It sets the properties to better adjust to smaller screens*/
 @media (max-width:700px){
     .sourcesInfo{
         height: 25vh;
@@ -135,6 +150,7 @@ body > div {
     }
 }
 /*-------------------------NAV on site----------------------------------------------------------------*/
+/*Properties of the menu*/
 .sourceMenu {
     position: relative;
     left: 2px;
@@ -149,7 +165,8 @@ body > div {
     right: 2px;
     top: 10vh;
     z-index: 1;
-}
+}   
+    /*More properties for the menu within the <ul> tag*/
     .sourceMenuUl {
         list-style-type: none;
         display: flex;
@@ -160,20 +177,27 @@ body > div {
         color: #25274D;
         border-bottom: 2px solid green;
     }
+        /*More properties for the menu within the <li> tag*/
         .sourceMenuLi {
             padding: 5px;
         }
+            /*Styles the links*/
             .sourceMenuLi a{
                 text-decoration: none;
                 color: inherit;
             }
+                /*Properties when hovered over*/
                 .sourceMenuLi:hover {
                     transform: scale(1.1);
                 }
+                    /*Properties of the text*/
                     .siteNavDisplayed {
                         font-weight: bold;
                         font-size: larger;
                     }
+
+/* This code only applies when window width is smaller than 700px */
+/*It sets the properties to better adjust to smaller screens*/                    
 @media (max-width: 700px) {
     .sourceMenuUl {
         flex-direction: column;
@@ -208,5 +232,10 @@ body > div {
     #meetingsContent{
         top: 0;
     }
+}
+@media (max-width: 400px) {
+.sourcesInfoName {
+    font-size: 80%;
+    word-break: break-all;
 }
 

@@ -62,7 +62,7 @@ body {
     .headlineHamMeny{
         display: none;
     }
-
+    /*header container*/
     header {
         background-color: #edf5e1;
         width: 100%;
@@ -95,11 +95,13 @@ body {
         margin-right: 5vw;
     }
 
+    /*Text withing the header*/
     .menuLi {
         font-size: 2em;
         text-transform: uppercase;
     }
 
+    /*links withing the header*/
     .menuLi a {
         padding-bottom: 5px;
         text-decoration: none;
@@ -134,9 +136,8 @@ body {
 
 }
 
+/* This code only applies when window size is smaller than 900px */
 @media screen and (max-width: 900px) {
-
-    /* This code only applies when window size is smaller than 900px */
 
     #hamburgerMeny {
         margin-top: 15px;
