@@ -57,6 +57,9 @@
     #sideNav{
         display: none;
     }
+    .contentImg{
+        display: none;
+    }
 }
 @media screen and (max-height: 700px), (max-width: 900px) {
     #sideNav{
@@ -100,21 +103,21 @@
 /*Text*/
 .paragraph {
     letter-spacing: 1px;
-    line-height: 1.3em;
+    line-height: 1.5em;
     font-size: 1.5em;
-    width: 90vw;
+    width: 70vw;
     padding: 0;
     height: auto;
 }
 .contentImg {
-    right: 0vw;
+    position: absolute;
+    right: 15vw;
     top: 45vh;
     height: auto;
     width: 15vw;
     float: right;
     border-radius: 25px;
 }
-
 
 /*-----------ALL THE SITES---------------------------------------------------------------------------------------------------------------*/
 #page1, #page2, #page3{
@@ -125,8 +128,8 @@
     color: #053361;
 }
     .contentContainer {
-        height: 80vh;
-        width: 100vw;
+        height: 88vh;
+        width: 95vw;
         top: 12vh;
         left: 5vw;
         color: #053361;
@@ -227,7 +230,7 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #8ee4af;
+    background-color: #5cdb95;
 }
 /*Image in the box*/
 #contentImg3 {
