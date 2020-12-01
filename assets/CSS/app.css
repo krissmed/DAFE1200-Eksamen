@@ -142,6 +142,24 @@
 #sideNav img {
     position: relative;
 }
+
+#appstore{
+    position: absolute;
+    right: 50px;
+    top: 70vh;
+    height: auto;
+    width: 380px;
+}
+
+#googleplay{
+    position: absolute;
+    right: 80px;
+    top: 58vh;
+    height: auto;
+    width:325px;
+}
+
+
 /*Properties for the sidenav elements*/
 .sideNavElements {
     display: flex;
@@ -228,6 +246,8 @@
         z-index: 0;
         top: 0px;
     }
+
+    
 
     #appSlogan {
         margin-left: auto;
