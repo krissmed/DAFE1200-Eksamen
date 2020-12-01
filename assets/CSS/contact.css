@@ -133,12 +133,12 @@
   }
 
 /* Titles in the card*/
-.cost_title {
+.costTitle {
   list-style: none;
   font-size: 2em;
   font-weight: bold;
 }
-.cost_title2{
+.costTitle2{
     list-style: none;
     text-align: center;
     margin-right: 10vw;
@@ -160,15 +160,20 @@
    color: #053361;
   }
 
-    .cost_ul--extra {
+    .costul--extra {
       column-count: 2;
       column-gap: 1.25em;
       }
 
 /*styles the li tags*/
-.cost_li {
+.costli {
   line-height: 3em;
   
+}
+
+/*styles the telefon number*/
+.costTlf{
+  font-size: 20px;
 }
 
 /*Styles the links*/
@@ -177,34 +182,31 @@
 }
 
 /*navigation menu on the footer*/
-.cost_nav {
+.costNav {
   display: flex;
     flex-flow: row wrap;
     text-align: center;
     
     
 }
-    .cost_nav > * {
+    .costNav > * {
     flex: 1 50%;
     margin-right: 1.25em;
     }
 
 /*Makes the footer flex*/
 @media screen and (min-width: 40.375em) {
-  .cost_nav > * {
+  .costNav > * {
     flex: 1;
   }
 
-  .cost_item--extra {
+  .costItem--extra {
     flex-grow: 2;
   }
 
-
-  .cost_nav {
+  .costNav {
     flex: 2 0;
   }
-/*styles the telefon number*/
-.cost_tlf{
-    font-size: 20px;
 }
-}
+
+
