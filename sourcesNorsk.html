@@ -15,11 +15,10 @@
     <link rel="stylesheet" href="assets/CSS/footer.css">
 </head>
 <body>
-<img id="toTop" style="display: none " onclick="moveToTop()" src="assets/Images/scrollToTop.jpg" alt="To top button">
 <!--HEADER-->
 <header>
     <!-- LOGO. Only visible in format where window > 900px -->
-    <a href="index.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
+    <a href="indexNorsk.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
     <!-- Hamburger Menu (Only visible in format where window < 900px)-->
     <div onclick="toggleMenu()" id="hamburgerMenu" onkeypress="toggleMenu()">
         <div class="hamMenu" id="line1"></div>
@@ -29,11 +28,15 @@
     </div>
     <!--MENU-->
     <ul id="headerMenu">
-        <li class="menuLi main" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="index.html"> Home </a></li>
-        <li class="menuLi challenge" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="challenge.html"> Challenge </a></li>
-        <li class="menuLi solution" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="solution.html"> Solution </a></li>
-        <li class="menuLi app" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="app.html"> App </a></li>
+        <li class="menuLi main" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="indexNorsk.html"> Hjem </a></li>
+        <li class="menuLi challenge" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="challengeNorsk.html"> Utfordring </a></li>
+        <li class="menuLi solution" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="solutionNorsk.html"> Løsning </a></li>
+        <li class="menuLi app" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="appNorsk.html"> App </a></li>
     </ul>
+    <div class="langSwitch">
+        <a href="sources.html"> <img class="lang english" alt="USA" src="assets/Images/united-states.svg"> </a>
+        <a href="sourcesNorsk.html"> <img class="lang norsk" alt="Norway" src="assets/Images/norway.svg"> </a>
+    </div>
 </header>
 
 
@@ -41,18 +44,18 @@
 <!--Sources information-->
 <div id="sourcesInfoContent"></div>
 <div id="InfoContent">
-    <h1 class="sourcesHeadline">Sources Information</h1>
+    <h1 class="sourcesHeadline">Kilder</h1>
     <div class="sourceMenu">
         <ul class="sourceMenuUl">
-            <li class="sourceMenuLi Content"> <a href="#sourcesInfoContent"> Content </a> </li>
-            <li class="sourceMenuLi Images"> <a href="#sourceImageContent"> Images </a></li>
-            <li class="sourceMenuLi Meeting"> <a href="#sourceMeetingsContent"> Meeting Logs </a></li>
-            <li class="sourceMenuLi Group"> <a href="#sourceGroupContent"> Group Member </a></li>
+            <li class="sourceMenuLi Content"> <a href="#sourcesInfoContent"> Innhold </a> </li>
+            <li class="sourceMenuLi Images"> <a href="#sourceImageContent"> Bilder/Grafikk </a></li>
+            <li class="sourceMenuLi Meeting"> <a href="#sourceMeetingsContent"> Møtereferater </a></li>
+            <li class="sourceMenuLi Group"> <a href="#sourceGroupContent"> Gruppemedlemmer </a></li>
         </ul>
     </div>
     <div class="sourcesInfo" id="1">
         <span class="sourcesInfoName"><b>1. Innovation and Climate Change.</b></span>
-        <a href="challenge.html#page1" class="sourcesLinkText">Link to the page </a>
+        <a href="challenge.html#page1" class="sourcesLinkText">Link til siden </a>
         <a href="https://www.bbvaopenmind.com/en/articles/innovation-and-climate-change/" class="sourcesLink">https://www.bbvaopenmind.com/en/articles/innovation-and-climate-change/</a>
         <i class="sourcesAuthor">Rubin, Edward S. (2011)</i>
         <i class="sourcesDate">November 2nd 2020</i>
@@ -60,7 +63,7 @@
 
     <div class="sourcesInfo" id="2">
         <span class="sourcesInfoName"><b>2. Predictions of Future Global Climate </b></span>
-        <a href="challenge.html#page2" class="sourcesLinkText">Link to the page </a>
+        <a href="challenge.html#page2" class="sourcesLinkText">Link til siden </a>
         <a href="https://scied.ucar.edu/learning-zone/impacts-climate-change/predictions-future-global-climate" class="sourcesLink">https://scied.ucar.edu/learning-zone/impacts-climate-change/predictions-future-global-climate</a>
         <i class="sourcesAuthor">Unknown. University Corporation for Atmospheric Research</i>
         <i class="sourcesDate">November 2nd 2020</i>
@@ -68,7 +71,7 @@
 
     <div class="sourcesInfo" id="3">
         <span class="sourcesInfoName"><b>3. The Effects of Climate Change </b></span>
-        <a href="challenge.html#page2" class="sourcesLinkText">Link to the page </a>
+        <a href="challenge.html#page2" class="sourcesLinkText">Link til siden </a>
         <a href="https://climate.nasa.gov/effects/" class="sourcesLink">https://climate.nasa.gov/effects/</a>
         <i class="sourcesAuthor">Unknown. NASA - Global Climate Change</i>
         <i class="sourcesDate">November 3rd 2020</i>
@@ -76,7 +79,7 @@
 
     <div class="sourcesInfo" id="4">
         <span class="sourcesInfoName"><b>4. Why Should We Worry About Sea Level Change? </b></span>
-        <a href="challenge.html#page2" class="sourcesLinkText">Link to the page </a>
+        <a href="challenge.html#page2" class="sourcesLinkText">Link til siden </a>
         <a href="https://kids.frontiersin.org/article/10.3389/frym.2017.00041" class="sourcesLink">https://kids.frontiersin.org/article/10.3389/frym.2017.00041</a>
         <i class="sourcesAuthor">Siegert Martin J. (July 31st 2017)</i>
         <i class="sourcesDate">November 3rd 2020</i>
@@ -84,7 +87,7 @@
 
     <div class="sourcesInfo" id="5">
         <span class="sourcesInfoName"><b>5. Reducing Carbon Dioxide Emissions <br>from Electricity Sector Using Smart Electric<br> Grid Applications </b></span>
-        <a href="challenge.html#page3" class="sourcesLinkText">Link to the page </a>
+        <a href="challenge.html#page3" class="sourcesLinkText">Link til siden </a>
         <a href="https://www.hindawi.com/journals/je/2013/845051/" class="sourcesLink">https://www.hindawi.com/journals/je/2013/845051/</a>
         <i class="sourcesAuthor">Abdallah, Lamiaa & El-Shennawy, Tarek (April 9th 2013)</i>
         <i class="sourcesDate">November 7th 2020</i>
@@ -92,7 +95,7 @@
 
     <div class="sourcesInfo" id="6">
         <span class="sourcesInfoName">6. How much carbon dioxide is produced<br> per kilowatthour of U.S. electricity generation?</span>
-        <a href="challenge.html#page3" class="sourcesLinkText">Link to the page </a>
+        <a href="challenge.html#page3" class="sourcesLinkText">Link til siden </a>
         <a href="https://www.eia.gov/tools/faqs/faq.php?id=74&t=11" class="sourcesLink">https://www.eia.gov/tools/faqs/faq.php?id=74&t=11</a>
         <i class="sourcesAuthor">Unknown. U.S. Energy Information Administration (February 20th 2020)</i>
         <i class="sourcesDate">November 7th 2020</i>
@@ -100,7 +103,7 @@
 
     <div class="sourcesInfo"  id="7">
         <span class="sourcesInfoName">7. Climate - Cambridge Dictionary</span>
-        <a href="index.html#challengeSite" class="sourcesLinkText">Link to the page </a>
+        <a href="index.html#challengeSite" class="sourcesLinkText">Link til siden </a>
         <a href="https://dictionary.cambridge.org/dictionary/english/climate" class="sourcesLink">https://dictionary.cambridge.org/dictionary/english/climate</a>
         <i class="sourcesAuthor">Cambridge Dictionary</i>
         <i class="sourcesDate">November 2nd 2020</i>
@@ -108,7 +111,7 @@
 
     <div class="sourcesInfo">
         <span class="sourcesInfoName">30 of the Most Impactful Climate Change Quotes</span>
-        <a href="sources.html" class="sourcesLinkText">Link to the page </a>
+        <a href="sources.html" class="sourcesLinkText">Link til siden </a>
         <a href="https://curious.earth/blog/climate-change-quotes/" class="sourcesLink">https://curious.earth/blog/climate-change-quotes/</a>
         <i class="sourcesAuthor">Davies, Paul (February 20th 2020)</i>
         <i class="sourcesDate">November 10th 2020</i>
@@ -119,21 +122,21 @@
 <!--Sources Images-->
 <div id="sourceImageContent"></div>
 <div id="ImageContent">
-    <h1 class="sourcesHeadline">Images</h1>
+    <h1 class="sourcesHeadline">Grafikk/Bilder</h1>
 
     <div class="sourceMenu">
         <ul class="sourceMenuUl">
-            <li class="sourceMenuLi Content"> <a href="#sourcesInfoContent"> Content </a> </li>
-            <li class="sourceMenuLi Images1"> <a href="#sourceImageContent"> Images </a></li>
-            <li class="sourceMenuLi Meeting"> <a href="#sourceMeetingsContent"> Meeting Logs </a></li>
-            <li class="sourceMenuLi Group"> <a href="#sourceGroupContent"> Group Member </a></li>
+            <li class="sourceMenuLi Content"> <a href="#sourcesInfoContent"> Innhold </a> </li>
+            <li class="sourceMenuLi Images1"> <a href="#sourceImageContent"> Grafikk/Bilder </a></li>
+            <li class="sourceMenuLi Meeting"> <a href="#sourceMeetingsContent"> Møtereferat </a></li>
+            <li class="sourceMenuLi Group"> <a href="#sourceGroupContent"> Gruppemedlemmer </a></li>
         </ul>
     </div>
 
     <div class="sourcesInfo">
         <div class="sourcesInfoDiv">
             <span class="sourcesInfoName">Windmill</span>
-            <a href="solution.html#page2" class="sourcesLinkText">Link to the page</a>
+            <a href="solution.html#page2" class="sourcesLinkText">Link til siden</a>
             <a href="https://www.flaticon.com/free-icon/windmill_182315?term=windmill&page=1&position=43&related_item_id=182315" class="sourcesLink">https://www.flaticon.com/free-icon/windmill_182315?term=windmill&page=1&position=43&related_item_id=182315</a>
             <i class="sourcesAuthor">Najdenovski, Zlatko</i>
             <i class="sourcesDate">10.11.2020</i>
@@ -144,7 +147,7 @@
     <div class="sourcesInfo">
         <div class="sourcesInfoDiv">
             <span class="sourcesInfoName">Polar Bear</span>
-            <a href="index.html#challengeSite" class="sourcesLinkText">Link to the page</a>
+            <a href="index.html#challengeSite" class="sourcesLinkText">Link til siden</a>
             <a href="https://www.flaticon.com/free-icon/polar-bear_3095216?related_item_id=3095231&term=polarbear" class="sourcesLink">https://www.flaticon.com/free-icon/polar-bear_3095216?related_item_id=3095231&term=polarbear</a>
             <i class="sourcesAuthor">Artist: dDara</i>
             <i class="sourcesDate">10.11.2020</i>
@@ -155,7 +158,7 @@
     <div class="sourcesInfo">
         <div class="sourcesInfoDiv">
             <span class="sourcesInfoName">Thinking</span>
-            <a href="index.html#solutionSite" class="sourcesLinkText">Link to the page</a>
+            <a href="index.html#solutionSite" class="sourcesLinkText">Link til siden</a>
             <a href="https://www.flaticon.com/free-icon/thinking_1491165?term=thinking&page=1&position=7&related_item_id=1491165" class="sourcesLink">https://www.flaticon.com/free-icon/thinking_1491165?term=thinking&page=1&position=7&related_item_id=1491165</a>
             <i class="sourcesAuthor">SmashIcons</i>
             <i class="sourcesDate">10.11.2020</i>
@@ -166,7 +169,7 @@
     <div class="sourcesInfo">
         <div class="sourcesInfoDiv">
             <span class="sourcesInfoName">App</span>
-            <a href="index.html#app" class="sourcesLinkText">Link to the page</a>
+            <a href="index.html#app" class="sourcesLinkText">Link til siden</a>
             <a href="https://www.flaticon.com/free-icon/thinking_1491165?term=thinking&page=1&position=7&related_item_id=1491165" class="sourcesLink">https://www.flaticon.com/free-icon/thinking_1491165?term=thinking&page=1&position=7&related_item_id=1491165</a>
             <i class="sourcesAuthor">SmashIcons</i>
             <i class="sourcesDate">10.11.2020</i>
@@ -177,7 +180,7 @@
     <div class="sourcesInfo">
         <div class="sourcesInfoDiv">
             <span class="sourcesInfoName">Factory</span>
-            <a href="challenge.html#page1" class="sourcesLinkText">Link to the page</a>
+            <a href="challenge.html#page1" class="sourcesLinkText">Link til siden</a>
             <a href="https://www.flaticon.com/free-icon/factory_3095182" class="sourcesLink">https://www.flaticon.com/free-icon/factory_3095182</a>
             <i class="sourcesAuthor">dDara</i>
             <i class="sourcesDate">10.11.2020</i>
@@ -188,7 +191,7 @@
     <div class="sourcesInfo">
         <div class="sourcesInfoDiv">
             <span class="sourcesInfoName">Sea Level</span>
-            <a href="challenge.html#page2" class="sourcesLinkText">Link to the page</a>
+            <a href="challenge.html#page2" class="sourcesLinkText">Link til siden</a>
             <a href="https://www.flaticon.com/free-icon/sea-level_3095218?term=climate%20change&page=1&position=38" class="sourcesLink">https://www.flaticon.com/free-icon/sea-level_3095218?term=climate%20change&page=1&position=38</a>
             <i class="sourcesAuthor">dDara</i>
             <i class="sourcesDate">10.11.2020</i>
@@ -199,7 +202,7 @@
     <div class="sourcesInfo">
         <div class="sourcesInfoDiv">
             <span class="sourcesInfoName">Tower</span>
-            <a href="challenge.html#page3" class="sourcesLinkText">Link to the page</a>
+            <a href="challenge.html#page3" class="sourcesLinkText">Link til siden</a>
             <a href="https://www.flaticon.com/free-icon/electricity-tower_2084085?term=tower&page=1&position=29&related_item_id=2084085" class="sourcesLink">https://www.flaticon.com/free-icon/electricity-tower_2084085?term=tower&page=1&position=29&related_item_id=2084085</a>
             <i class="sourcesAuthor">Eucalyp</i>
             <i class="sourcesDate">10.11.2020</i>
@@ -210,7 +213,7 @@
     <div class="sourcesInfo">
         <div class="sourcesInfoDiv">
             <span class="sourcesInfoName">Planet Earth</span>
-            <a href="challenge.html#page4" class="sourcesLinkText">Link to the page</a>
+            <a href="challenge.html#page4" class="sourcesLinkText">Link til siden</a>
             <a href="https://www.flaticon.com/free-icon/planet-earth_1598238?related_item_id=1598431&term=planet%20earth" class="sourcesLink">https://www.flaticon.com/free-icon/planet-earth_1598238?related_item_id=1598431&term=planet%20earth</a>
             <i class="sourcesAuthor">Freepik</i>
             <i class="sourcesDate">10.11.2020</i>
@@ -221,7 +224,7 @@
     <div class="sourcesInfo">
         <div class="sourcesInfoDiv">
             <span class="sourcesInfoName">Group</span>
-            <a href="solution.html#page1" class="sourcesLinkText">Link to the page</a>
+            <a href="solution.html#page1" class="sourcesLinkText">Link til siden</a>
             <a href="https://www.flaticon.com/free-icon/group_554724?term=group&page=1&position=5&related_item_id=554724" class="sourcesLink">https://www.flaticon.com/free-icon/group_554724?term=group&page=1&position=5&related_item_id=554724</a>
             <i class="sourcesAuthor">Freepik</i>
             <i class="sourcesDate">10.11.2020</i>
@@ -232,7 +235,7 @@
     <div class="sourcesInfo">
         <div class="sourcesInfoDiv">
             <span class="sourcesInfoName">Smartphone</span>
-            <a href="solution.html#page3" class="sourcesLinkText">Link to the page</a>
+            <a href="solution.html#page3" class="sourcesLinkText">Link til siden</a>
             <a href="https://www.flaticon.com/free-icon/smartphone_254638?term=smartphone&page=1&position=3&related_item_id=254638" class="sourcesLink">https://www.flaticon.com/free-icon/smartphone_254638?term=smartphone&page=1&position=3&related_item_id=254638</a>
             <i class="sourcesAuthor">Roundicons</i>
             <i class="sourcesDate">10.11.2020</i>
@@ -315,34 +318,34 @@
 <!--Sources meeting logs-->
 <div id="sourceMeetingsContent"></div>
 <div id="meetingsContent">
-    <h1 class="sourcesHeadline">Summary of group-meetings</h1>
+    <h1 class="sourcesHeadline">Oppsummering av møter</h1>
     <div class="sourceMenu">
         <ul class="sourceMenuUl">
-            <li class="sourceMenuLi Content"> <a href="#sourcesInfoContent"> Content </a> </li>
-            <li class="sourceMenuLi Images"> <a href="#sourceImageContent"> Images </a></li>
-            <li class="sourceMenuLi Meeting2"> <a href="#sourceMeetingsContent"> Meeting Logs </a></li>
-            <li class="sourceMenuLi Group"> <a href="#sourceGroupContent"> Group Member </a></li>
+            <li class="sourceMenuLi Content"> <a href="#sourcesInfoContent"> Innhold </a> </li>
+            <li class="sourceMenuLi Images"> <a href="#sourceImageContent"> Grafikk/Bilder </a></li>
+            <li class="sourceMenuLi Meeting2"> <a href="#sourceMeetingsContent"> Møtereferater</a></li>
+            <li class="sourceMenuLi Group"> <a href="#sourceGroupContent"> Gruppemedlemmer </a></li>
         </ul>
     </div>
-    <h2 class="sourcesSubtitle">Download the documents here:</h2>
+    <h2 class="sourcesSubtitle">Last ned dokumentene her:</h2>
     <ol class="listMeetGroup">
-        <li> <a href="assets/Docs/Meeting1.pdf"> First meeting - 27.10 2020 </a> </li>
-        <li> <a href="assets/Docs/Meeting2.pdf"> Second meeting - 09.11 2020 </a> </li>
-        <li> <a href="assets/Docs/Meeting3.pdf"> Third meeting - 18.11 2020 </a> </li>
-        <li> <a href="assets/Docs/Meeting4.pdf"> Fourth meeting - 27.11 2020 </a> </li>
+        <li> <a href="assets/Docs/Meeting1.pdf"> Første møte - 27.10 2020 </a> </li>
+        <li> <a href="assets/Docs/Meeting2.pdf"> Andre møte - 09.11 2020 </a> </li>
+        <li> <a href="assets/Docs/Meeting3.pdf"> Tredje møte - 18.11 2020 </a> </li>
+        <li> <a href="assets/Docs/Meeting4.pdf"> Fjerde møte - 27.11 2020 </a> </li>
         <li></li>
     </ol>
 </div>
 
 <!--Group Members-->
 <div id="sourceGroupContent">
-    <h1 class="sourcesHeadline1">Group-members</h1>
+    <h1 class="sourcesHeadline1">Gruppemedlemmer</h1>
     <div class="sourceMenu1">
         <ul class="sourceMenuUl">
-            <li class="sourceMenuLi Content"> <a href="#sourcesInfoContent"> Content </a> </li>
-            <li class="sourceMenuLi Images"> <a href="#sourceImageContent"> Images </a></li>
-            <li class="sourceMenuLi Meeting"> <a href="#sourceMeetingsContent"> Meeting Logs </a></li>
-            <li class="sourceMenuLi Group3"> <a href="#sourceGroupContent"> Group Members </a></li>
+            <li class="sourceMenuLi Content"> <a href="#sourcesInfoContent"> Innhold </a> </li>
+            <li class="sourceMenuLi Images"> <a href="#sourceImageContent"> Grafikk/Bilder </a></li>
+            <li class="sourceMenuLi Meeting2"> <a href="#sourceMeetingsContent"> Møtereferater</a></li>
+            <li class="sourceMenuLi Group"> <a href="#sourceGroupContent"> Gruppemedlemmer </a></li>
         </ul>
     </div>
     <ul class="listMeetGroup1">
@@ -362,26 +365,26 @@
         <!--Adding the logo-->
         <img class="footerlogo" src="assets/Images/logo.png" alt="logo footer">
 
-        <h2>Address</h2>
+        <h2>Addresse</h2>
 
         <address>
-            Osloveien 23, Oslo, Norway<br>
+            Osloveien 23, Oslo, Norge<br>
             <!--Makes the mail us button-->
-            <a class="footerbtn" href="mailto:Support@energy++.com">Email Us</a>
+            <a class="footerbtn" href="mailto:Support@energy++.com">Email Oss</a>
         </address>
     </div>
     <!--Makes a bracket for the for the links for navigation-->
     <ul class="footernav">
         <li class="navitem">
             <!--Makes the titel over the bracket-->
-            <h2 class="navtitle">Support</h2>
+            <h2 class="navtitle">Brukerstøtte</h2>
             <!--Creates the bracket-->
             <ul class="navul">
                 <li>
                     <a href="contact.html#faqDiv">FAQ</a>
                 </li>
                 <li>
-                    <a href="contact.html#costDiv">Contact us</a>
+                    <a href="contact.html#costDiv">Kontakt Oss</a>
                 </li>
 
             </ul>
@@ -390,17 +393,17 @@
             <!--Makes a bracket for the for the links for navigation-->
         <li class="navitem">
             <!--Makes the titel over the bracket-->
-            <h2 class="navtitle">Our work</h2>
+            <h2 class="navtitle">Vårt Arbeid</h2>
             <!--Creates the bracket-->
             <ul class="navul">
                 <li>
-                    <a href="sources.html">Sources</a>
+                    <a href="sources.html">Kilder</a>
                 </li>
                 <li>
-                    <a href="sources.html#sourceMeetingsContent">Meeting logs</a>
+                    <a href="sources.html#sourceMeetingsContent">Møtereferater</a>
                 </li>
                 <li>
-                    <a href="sources.html#sourceGroupContent">Group Members</a>
+                    <a href="sources.html#sourceGroupContent">Gruppemedlemmer</a>
                 </li>
             </ul>
         </li>
