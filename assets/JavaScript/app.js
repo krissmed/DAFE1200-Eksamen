@@ -6,6 +6,8 @@ var appImg5 = document.getElementById("appImg5");
 var appImg6 = document.getElementById("appImg6");
 var appImg7 = document.getElementById("appImg7");
 var appImg8 = document.getElementById("appImg8");
+
+// Enlarges images
 function enlargeImg(img){
     if(img == "1"){
         console.log("Bilde 1");

@@ -73,13 +73,14 @@ function switchNor() {
     }
 }
 
-    function switchEng() {
-        for (let i = 0; i < norskText.length; i++) {
-            for (let j = 0; j < englishText.length; j++)
+// Switches to either english or norwegian
+function switchEng() {
+    for (let i = 0; i < norskText.length; i++) {
+        for (let j = 0; j < englishText.length; j++)
                 //Makes sure every element of this class changes
-            {
-                englishText[j].style.display = "inline";
-                norskText[i].style.display = "none";
-            }
+        {
+            englishText[j].style.display = "inline";
+            norskText[i].style.display = "none";
         }
-    }
+     }
+ }
