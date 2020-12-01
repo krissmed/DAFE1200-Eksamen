@@ -140,7 +140,7 @@
                 cursor: pointer;
                 position: relative;
                 left: 10vw;
-                top: 20vh;
+                top: 10vh;
             }
             .readMorebtn:hover {
                 transition: box-shadow 0.2s;
@@ -154,7 +154,7 @@
 }
 
 /*When the browser width is 650px or lower*/
-@media (max-width: 650px) {
+@media (max-width: 900px) {
     .contentContainer {
         font-size: 75%;
     }
