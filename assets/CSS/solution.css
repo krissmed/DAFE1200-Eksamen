@@ -153,6 +153,24 @@
     }
 }
 
+/*When the browser width is 650px or lower*/
+@media (max-width: 650px) {
+    .contentContainer {
+        font-size: 75%;
+    }
+
+    #welcomePage {
+        height: 100vh;
+        font-size: 80%;
+    }
+        .welcomeQuote {
+            top: 20vh;
+            line-height: 35px;
+        }
+
+}
+
+
 /*-----------Page1 (box with content)---------------------------------------------------------------------------------------------------------------*/
 #page1 {
     height: 100vh;
