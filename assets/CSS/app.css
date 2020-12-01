@@ -7,13 +7,6 @@
     background-color: #8ee4af;
 }
 
-#frontImg {
-    margin-top: 15vh;
-    width: auto;
-    height: 60vh;
-    position: absolute;
-    left: 15vw;
-}
 
 #appSlogan {
     padding-top: 7vh;
@@ -263,6 +256,7 @@
         margin-top: 25%;
         width: 100%;
         font-size: 3em;
+        min-height: 80vh;
     }
 
     #FrontPage {
@@ -325,5 +319,13 @@
 
     #points {
         height: 800px;
+    }
+}
+@media (max-height: 400px) {
+    #appSlogan {
+        margin-top: 10vh;
+        width: 100%;
+        font-size: 3em;
+        min-height: 100vh;
     }
 }
