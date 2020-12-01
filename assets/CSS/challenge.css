@@ -1,6 +1,9 @@
 /*--------------------------------SIDE NAV --------------------------------------------------*/
-@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */
+/* This code only applies when window size is bigger than 900px */
 
+@media (min-width: 900px) { /* This code only applies when window size is bigger than 900px */
+    
+    /*The propreties of the sidenav*/
     #sideNav{
         display: flex;
         flex-direction: column;
@@ -16,14 +19,17 @@
         font-size: 2em; 
         border-radius: 0 5px 5px 0; 
     }
+    /*Links within sidenav <div>*/
     #sideNav a{
         text-decoration: none;
         padding-right: 3px;
     }
+    /*Images within sidenav <div>*/
     #sideNav img{
         position: relative;
         padding-left: 3px;
     }
+    /*Properties for the sidenav elements*/
     .sideNavElements {
         display: flex;
         justify-content: space-between;
@@ -37,6 +43,7 @@
         color: #053361;
         background-color: #edf5e1;
     }
+    /*Properties when hovered over*/
     .sideNavElements:hover {
         margin-top: 2vh;
         height: 5vh;
@@ -45,20 +52,19 @@
         color: white;
         border-radius: 0 5px 5px 0;
     }
+        /*Properties when hovered over*/
         #sideNav:hover{
             left: -15px;
         }
-                    /*This class gets added to sideNavElements in JS*/
+                    /*(This class gets added to sideNavElements in JS) Properties when active*/
                     .sideNavActive {
                         background-color: #053361;
                         color: white;
                     }
 }
-@media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
-    #sideNav{
-        display: none;
-    }
-}
+
+/* This code only applies when window width is smaller than 900px and the height 700px */
+/*It sets the properties to better adjust to smaller screens*/
 @media screen and (max-height: 700px), (max-width: 900px) {
     #sideNav{
         display: none;
@@ -66,12 +72,14 @@
 }
 
 /*--------------------Welcome Page------------------------------------------*/
+/* Makes the welcome page container*/
 #welcomePage {
     height: 100vh;
     width: 100vw;
     color: #053361;
     background-color: #8ee4af;
 }
+    /* The slogan/qoute on the welcome page*/
     .welcomeQuote {
         background-color: #5cdb95;
         width: 100%;
@@ -86,6 +94,7 @@
         margin: auto 0;
         padding: 5px 0;
     }
+        /*Margins for the quote*/
         .quote {
             word-break: break-word;
             margin-left: 10vw;
@@ -94,6 +103,7 @@
         
 
 /*-----------ALL THE SITES---------------------------------------------------------------------------------------------------------------*/
+/* Makes a container with flex abilities*/
 #page1, #page2, #page3, #page4{
     height: 100vh;
     width: 100vw;
@@ -101,19 +111,20 @@
     flex-direction: row;
     color: #053361;
 }
+    /* Makes a container for the content*/
     .contentContainer {
         height: 80vh;
         width: 60vw;
         margin: 10vh 45px 0;
     }
-    /*Text*/
+    /*Used for scaling and forming the text */
     .paragraph {
         letter-spacing: 1px;
         line-height: 1.5em;
         font-size: 1.5em;
         height: auto;
     }
-    /* Headline */
+    /* Styles the headline*/
     .headline {
         font-weight: bolder;
         font-size: 3em;
@@ -122,6 +133,7 @@
         text-transform: uppercase;
         width: 80vw;
     }
+/*Styles the read more button*/
 .readMorebtn {
     display: flex;
     align-items: center;
@@ -140,11 +152,14 @@
     position: relative;
     left: 10vw;
     top: 20vh;
-}
+}   
+    /*Properties when hovered over*/
     .readMorebtn:hover {
         transition: box-shadow 0.2s;
         box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     }
+
+/*Syles all the images on the webpage*/
 img[class^="contentImg"]{
     position: absolute;
     right: 10vw;
@@ -165,6 +180,7 @@ img[class^="contentImg"]{
                 .contentImg4{
                      top: 445vh;
                  }
+/*Syles the headline*/                 
 .headline {
     font-weight: bolder;
     font-size: 3em;
@@ -175,6 +191,7 @@ img[class^="contentImg"]{
     width: 80vw;
 }
 
+/*Sets background color fo all the containers*/
 /*-----------SITE1---------------------------------------------------------------------------------------------------------------*/
 #page1 {
     background-color: #5cdb95;
@@ -215,16 +232,6 @@ img[class^="contentImg"]{
         #sideNav {
             display: none;
         }
-
-        /*----------1st SITE along with the <p> elements---------------------------------------------------------*/
-        #challengeSite {
-            min-height: 100vh;
-            width: 100vw;
-            display: flex;
-            flex-direction: row;
-            background-color: #5cdb95;
-        }
-
     }
 
 
@@ -256,7 +263,8 @@ img[class^="contentImg"]{
     }
 }
 
-/*When the browser width is 650px or lower*/
+/* This code only applies when window height is smaller than 650px */
+/*It sets the properties to better adjust to smaller screens*/
 @media (max-height: 650px) {
     .welcomeQuote {
         top: 5vh;
@@ -268,6 +276,8 @@ img[class^="contentImg"]{
         height: 180vh;
     }
 }
+/* This code only applies when window height is smaller than 500px */
+/*It sets the properties to better adjust to smaller screens*/
 @media screen and (max-height: 500px) {
 
     #welcomePage,
@@ -279,6 +289,9 @@ img[class^="contentImg"]{
         height: 800px;
     }
 }
+
+/* This code only applies when window width is bigger than 1500px */
+/*It sets the properties to better adjust to smaller screens*/
 @media(min-width: 1500px){
     .paragraph{
         font-size: 2em;
