@@ -201,7 +201,7 @@
     }
 
     #moveDown {
-        height: 0;
+        height: 0px;
     }
 
     #appSlogan {
@@ -226,19 +226,13 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-
-}
 @media (max-width: 800px) {
-    #FrontPage,
-    #automation,
-    #points{
+    #FrontPage{
         height: 1000px;
     }
     #Rooms{
         height: 1250px;
     }
-    
     #automation{
         height: 1200px;
     }
@@ -258,5 +252,18 @@
     }
     .paragraph{
         width: 90%;
+    }
+}
+@media (max-height: 650px){
+    #FrontPage, #automation, #points, #Rooms, #provider{
+        height: 600px; 
+    }
+    .appImg{
+        margin-top: 25px;
+    }
+}
+@media (max-height: 700px){
+    #sideNav{
+        display: none;
     }
 }
