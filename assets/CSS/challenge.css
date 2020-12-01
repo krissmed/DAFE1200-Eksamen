@@ -113,7 +113,6 @@
         font-size: 1.5em;
         width: 70vw;
         height: auto;
-        padding: 0;
     }
 
 .readMorebtn {
@@ -199,7 +198,10 @@ img[class^="contentImg"]{
 /*Makes the text take all of the width*/
         .contentContainer {
             width: 100%;
-            margin-right: 10vw;
+            margin-right: 6vw;
+        }
+        #page2 {
+            height: 110vh;
         }
 
         /* This code only applies when window size is smaller than 900px */
@@ -216,15 +218,6 @@ img[class^="contentImg"]{
             background-color: #5cdb95;
         }
 
-        /*Text*/
-        .paragraph {
-            letter-spacing: 1px;
-            line-height: 1.3em;
-            font-size: 1.5em;
-            width: 90vw;
-            padding: 0;
-            height: auto;
-        }
     }
 
 
