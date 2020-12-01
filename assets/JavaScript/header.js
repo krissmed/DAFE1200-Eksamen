@@ -1,35 +1,3 @@
-/*--------------------------------------------------------------*/
-// To make it easier to move to the top of the page
-function moveToTop() {
-
-    window.scrollTo(0, 0);
-}
-
-let toTopButton = document.getElementById("toTop");
-function scrollToTop() {
-//makes the scrollToTop button visible when user is scrolled 90px down and hides it when under 90px
-if(window.innerWidth < 900){
-    if (window.scrollY <= 90) {
-        toTopButton.style.display = "none";
-    }
-    else if (window.scrollY > 90) {
-        toTopButton.style.display = "block";
-    }
-}
-}
-
-/*-------------------------------------------------*/
-/*MAKING THE SIDE-NAV ACTIVE DEPENDING ON WHERE ON SITE THE USER IS*/
-
-/*when the windown scrolls, the functions starts*/
-window.onscroll = function () {
-    scrollToTop();
-};
-
-
-
-/*-------------------------------------------------------------------------*/
-
 /* Making the hamburger menu show/not show the menu */
 
 // Gather HTML elements
@@ -86,3 +54,32 @@ function collapseHamMenu() {
     line3.style.transform = "rotate(0deg)";
     line3.style.opacity = "1";
 }
+
+/*----------------Switch language-------------------------------*/
+let englishText = document.getElementsByClassName("eng");
+let norskText = document.getElementsByClassName("no");
+
+
+function switchNor() {
+    //These for-loops makes sure that every element gets changed. So that each element is defined and change pr loop. Without this the
+    //program would not be able to change them because they wouldnt be declared.
+    for (let i = 0; i < englishText.length; i++) {
+        for (let j = 0; j < norskText.length; j++)
+            //Makes sure every element of this class changes
+        {
+            englishText[i].style.display = "none";
+            norskText[j].style.display = "inline";
+        }
+    }
+}
+
+    function switchEng() {
+        for (let i = 0; i < norskText.length; i++) {
+            for (let j = 0; j < englishText.length; j++)
+                //Makes sure every element of this class changes
+            {
+                englishText[j].style.display = "inline";
+                norskText[i].style.display = "none";
+            }
+        }
+    }
