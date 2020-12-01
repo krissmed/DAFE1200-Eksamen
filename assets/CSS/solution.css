@@ -88,6 +88,25 @@
     margin-left: 10vw;
     margin-right: 10vw;
 }
+.headline {
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80vw;
+
+}
+
+/*Text*/
+.paragraph {
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    font-size: 1.5em;
+    width: 90vw;
+    padding: 0;
+    height: auto;
+}
 
 /*-----------ALL THE SITES---------------------------------------------------------------------------------------------------------------*/
 #page1, #page2, #page3{
