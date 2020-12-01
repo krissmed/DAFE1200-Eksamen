@@ -1,0 +1,204 @@
+<html lang="no">
+
+<head>
+
+    <link rel="icon" href="assets/Images/icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Energy++</title>
+    <!--Stylesheet for the header/Menu-->
+    <link rel="stylesheet" href="assets/CSS/header.css">
+    <!--Stylesheet for the content-->
+    <link rel="stylesheet" href="assets/CSS/contact.css">
+    <!--Stylesheet for the footer-->
+    <link rel="stylesheet" href="assets/CSS/footer.css">
+
+</head>
+
+<body>
+<header>
+    <!-- LOGO. Only visible in format where window > 900px -->
+    <a href="indexNorsk.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
+    <!-- Hamburger Menu (Only visible in format where window < 900px)-->
+    <!-- Hamburger Menu (Only visible in format where window < 900px)-->
+    <div onclick="toggleMenu()" onkeypress="toggleMenu()" id="hamburgerMenu">
+        <div class="hamMenu" id="line1"></div>
+        <div class="hamMenu" id="line2"></div>
+        <div class="hamMenu" id="line3"></div>
+        <h3 class="headlineHamMeny">Energy++</h3>
+    </div>
+    <!--MENU-->
+    <ul id="headerMenu">
+        <li class="menuLi main" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="indexNorsk.html"> Hjem </a></li>
+        <li class="menuLi challenge" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="challengeNorsk.html"> Utfordring </a></li>
+        <li class="menuLi solution" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="solutionNorsk.html"> Løsning </a></li>
+        <li class="menuLi app" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="appNorsk.html"> App </a></li>
+    </ul>
+</header>
+<!------------------------SIDENAV--------------------------->
+<div id="sideNav">
+    <a href="#faqDiv" class="sideNavElements 2">
+        <p>FAQ</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#solutionSite" class="sideNavElements 3">
+        <p>Kundeservice</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+</div>
+
+<!----------------------------FAQ-------------------------->
+<div id="faqDiv">
+    <h1 id="faqHeadline">FAQ</h1>
+    <p id="faqSubHeadline"> Her er noen vanlige spørsmål:</p>
+    <div id="faq">
+        <h1>Hvilke land er appen tilgjengelig i?</h1>
+        <p>Denne appen er tilgjengelig i alle land og husstander som har en moderne elektrisk infrastruktur.</p>
+
+        <h1>Hvilke data samler dere inn?</h1>
+        <p>
+            Vi samler kun inn nødvendig data for at appen skal fungere som tenkt. Dette inkluderer personlig-info som navn, fødselsdato,
+            bostedslang og e-post. Vi samler også inn informasjon om ditt strømforbruk. Du kan når som helst deaktivere kontoen din.
+        </p>
+
+        <h1>Er det noe abonnomentsgebyrer?</h1>
+        <p>Appen er gratis å bruke, og det er verken gebyrer eller annonser i appen.</p>
+
+        <h1>Er det mulig at alle i familien kan se på appen?</h1>
+        <p>Ja, du har flere alternativer. Alternativ en er å ha grafene vist gjennom Google-Home. Alternativ to er at du kan dele
+        påloggingsinformasjonen med familien i husstanden din</p>
+
+        <h1>Finnes det en desktop-versjon?</h1>
+        <p>Desktop-versjonen er for tiden under utvikling og vil være tilgjengelig i nær fremtid</p>
+    </div>
+</div>
+
+<div id="costDiv">
+    <div class="cost">
+        <div class="cost_title2">
+            <h1>Kundeservice</h1>
+            <p>Hvis du ikke fant svaret på det du ønsket, kontakt oss gjerne på email eller telefon</p>
+        </div>
+        <ul class="cost_nav">
+            <li class="cost_item">
+                <h2 class="cost_title">Epost</h2>
+
+                <ul>
+                    <li>
+                        <p>Kontakt oss på denne epost-adressen og vi vil svare så raskt det lar seg gjøre.
+                        </p>
+
+                    </li>
+
+                    <li>
+                        <a href="mailto:support@energy++.com">Support@energy++.com</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cost_item">
+                <h2 class="cost_title">Telefon</h2>
+
+                <ul class="cost_ul">
+                    <li>
+                        <p>Kontakt oss gjerne på dette telefonnummeret
+                        </p>
+
+                    </li>
+
+                    <li>
+                        <p class="cost_tlf">+47 225 80 320</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- FOOTER CONTAINER -->
+<footer class="footer">
+
+    <!--Box where the adress, logo and mail button will be-->
+    <div class="footeraddr">
+        <!--Adding the logo-->
+        <img class="footerlogo" src="assets/Images/logo.png" alt="logo footer">
+
+        <h2>Address</h2>
+
+        <address>
+            Osloveien 23, Oslo, Norge
+            <br>
+            <!--Makes the mail us button-->
+            <a class="footerbtn" href="mailto:Support@energy++.com">Email Oss </a>
+        </address>
+    </div>
+    <!--Makes a bracket for the for the links for navigation-->
+    <ul class="footernav">
+        <li class="navitem">
+            <!--Makes the titel over the bracket-->
+            <h2 class="navtitle">Brukerstøtte</h2>
+            <!--Creates the bracket-->
+            <ul class="navul">
+                <li>
+                    <a href="contactNorsk.html#faqDiv">FAQ</a>
+                </li>
+                <li>
+                    <a href="contactNorsk.html#costDiv">Kontakt Oss</a>
+                </li>
+
+            </ul>
+
+
+            <!--Makes a bracket for the for the links for navigation-->
+        <li class="navitem">
+            <!--Makes the titel over the bracket-->
+            <h2 class="navtitle">Vårt Arbeid</h2>
+            <!--Creates the bracket-->
+            <ul class="navul">
+                <li>
+                    <a href="sourcesNorsk.html">Kilder</a>
+                </li>
+                <li>
+                    <a href="sourcesNorsk.html#sourceMeetingsContent">Møtereferater</a>
+                </li>
+                <li>
+                    <a href="sourcesNorsk.html#sourceGroupContent">Gruppe Medlemmer</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="navitem">
+
+            <h2 class="navtitle">Sosiale Medier</h2>
+            <ul class="navul">
+                <li>
+                    <a href="https://facebook.com"><img src="assets/images/facebook.svg" class=sosialimg
+                                                        alt="facebook"></a>
+                    <a href="https://instagram.com"><img src="assets/images/instagram.svg" class=sosialimg
+                                                         alt="instagram"></a>
+                    <a href="https://twitter.com"><img src="assets/images/twitter.svg" class=sosialimg
+                                                       alt=twitter></a>
+                    <a href="https://github.com/krissmed/DAFE1200-Eksamen/"><img src="assets/images/github.svg"
+                                                                                 class=sosialimg alt="github"></a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <!--Creates the copyright line for the bottom of the footer-->
+    <div class="legal">
+        <p>&copy; 2020 Energy++. Alle Rettigheter Forbeholdes</p>
+    </div>
+</footer>
+
+<!--Placed at bottom to load body first-->
+<!--Script for contactSite-->
+<script src="assets/JavaScript/contact.js"></script>
+<!--Script for header-->
+<script src="assets/JavaScript/header.js"></script>
+<!--Script for siteNav-->
+<script src="assets/JavaScript/indexSiteNav.js"></script>
+</body>
+
+</html>
