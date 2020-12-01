@@ -132,19 +132,7 @@
         position: relative;
        
     }
-        .pageHeadline {
-            font-weight: bolder;
-            font-size: 3em;
-            font-style: normal;
-            text-align: center;
-            text-transform: uppercase;
-        }
-        .contentPage {
-            letter-spacing: 1px;
-            line-height: 1.7em;
-            font-size: 1.5em;
-            height: auto;
-        }
+
             .readMorebtn {
                 display: flex;
                 align-items: center;

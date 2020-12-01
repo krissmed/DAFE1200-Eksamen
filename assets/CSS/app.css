@@ -327,4 +327,6 @@
         height: 800px;
     }
 }
-@media (min)
+#strom{
+    font-size: 2.4em;
+}

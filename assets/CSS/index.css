@@ -95,7 +95,6 @@
         padding: 0;
         height: auto;
     }
-}
 
 @media screen and (max-height: 700px), (max-width: 900px) { /* Removes the sidenav when the windows becomes small enough */
     #sideNav, .contentImg, #mainLogo { /*Removes the icons on the pages*/
