@@ -169,10 +169,10 @@
         height: 100vh;
         font-size: 80%;
     }
-        .welcomeQuote {
-            top: 20vh;
-            line-height: 35px;
-        }
+    .welcomeQuote {
+        top: 20vh;
+        line-height: 35px;
+    }
     .paragraph{
         width: 90vw;
     }
