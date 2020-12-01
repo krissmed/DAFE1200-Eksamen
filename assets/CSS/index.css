@@ -143,13 +143,12 @@
 
 /*logo on mainSite*/
     #mainLogo {
+        display: initial;
         position: relative;
-        width: 18vw;
         height: auto;
         top: 60vh;
-        left: 41vw;
-        min-width: 200px;
-        
+        left: 44vw;
+        max-width: 200px;
     }
 
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
@@ -284,5 +283,14 @@
     #appSite {
         position: relative;
         height: 550px;
+    }
+}
+@media(min-width: 1500px){
+    .paragraph{
+        font-size: 2em;
+        line-height: 1.8em;
+    }
+    .headline{
+        font-size: 4.5em;
     }
 }

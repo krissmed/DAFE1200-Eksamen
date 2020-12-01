@@ -114,14 +114,15 @@
             position: relative;
             left: 3vw;
         }
-        .contentPage {
-            letter-spacing: 1px;
-            line-height: 1.7em;
-            font-size: 1.5em;
-            height: auto;
-            position: relative;
-            left: 3vw;
-        }
+    /*Text*/
+    .paragraph {
+        letter-spacing: 1px;
+        line-height: 1.3em;
+        font-size: 1.5em;
+        width: 90vw;
+        padding: 0;
+        height: auto;
+    }
 
 .readMorebtn {
     display: flex;
@@ -265,5 +266,14 @@
     #page4 {
         position: relative;
         height: 800px;
+    }
+}
+@media(min-width: 1500px){
+    .paragraph{
+        font-size: 2em;
+        line-height: 1.8em;
+    }
+    .headline{
+        font-size: 4.5em;
     }
 }

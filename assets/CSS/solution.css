@@ -222,3 +222,12 @@
     left: 70vw;
     top: 350vh;
 }
+@media(min-width: 1500px){
+    .paragraph{
+        font-size: 2em;
+        line-height: 1.8em;
+    }
+    .headline{
+        font-size: 4.5em;
+    }
+}
