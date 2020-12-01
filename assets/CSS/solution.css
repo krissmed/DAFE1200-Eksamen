@@ -167,7 +167,7 @@
                 box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
             }
 
-@media screen and (max-height: 700px), (max-width: 900px) { /* Removes the sidenav when the windows becomes small enough */
+@media screen and (max-height: 820px), (max-width: 900px) { /* Removes the sidenav when the windows becomes small enough */
     #contentImg1, #contentImg2, #contentImg3 { /*Removes the icons on the pages*/
          display: none;
     }
@@ -232,7 +232,79 @@
     width: 230px;
     position: absolute;
     left: 70vw;
-    top: 350vh;
+    top: 365vh;
+}
+/*When the browser-width is under 900px*/
+@media (max-width: 900px) {
+    /*Makes the images not displayed*/
+    #contentImg {
+        display: none;
+    }
+        #contentImg2 {
+            display: none;
+        }
+            #contentImg3 {
+                display: none;
+            }
+                
+
+/*Makes the text take all of the width*/
+        .contentContainer {
+            width: 100%;
+            margin-right: 10vw;
+        }
+
+}
+
+/*When the browser width is 650px or lower*/
+@media (max-width: 660px) {
+    .contentContainer {
+        font-size: 75%;
+    }
+
+    #welcomePage {
+        height: 100vh;
+        font-size: 80%;
+    }
+        .welcomeQuote {
+            top: 20vh;
+            line-height: 35px;
+        }
+
+}
+
+/*When the browser width is 650px or lower*/
+@media (max-width: 375px) {
+    .contentContainer {
+        font-size: 65%;
+    }
+
+    .welcomeQuote {
+        top: 10vh;
+    }
+}
+
+/*When the browser width is 650px or lower*/
+@media (max-height: 650px) {
+    .welcomeQuote {
+        top: 5vh;
+    }
+    #page1{
+        height: 120vh;
+    }
+    #page2 {
+        height: 180vh;
+    }
+}
+@media screen and (max-height: 500px) {
+
+    #welcomePage,
+    #page1,
+    #page2,
+    #page3 {
+        position: relative;
+        height: 800px;
+    }
 }
 @media(min-width: 1500px){
     .paragraph{
