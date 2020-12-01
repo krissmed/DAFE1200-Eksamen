@@ -225,12 +225,12 @@
 }                
 
 /*Makes the text take all of the width*/
-        .contentContainer {
-            width: 100%;
-            margin-right: 10vw;
-        }
-
+.contentContainer {
+    width: 100%;
+    margin-right: 10vw;
 }
+
+
 
 /*When the browser width is 650px or lower*/
 @media (max-width: 660px) {
