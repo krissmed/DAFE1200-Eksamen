@@ -99,7 +99,7 @@
 
 
 @media screen and (max-height: 700px), (max-width: 900px) { /* Removes the sidenav when the windows becomes small enough */
-    #sideNav, #challengeImg, #solutionImg, #appImg { /*Removes the icons on the pages*/
+    #sideNav, #challengeImg, #solutionImg, #appImg, .mainLogo { /*Removes the icons on the pages*/
         display: none;
     }
 }
