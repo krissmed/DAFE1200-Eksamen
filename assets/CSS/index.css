@@ -152,7 +152,9 @@
 
 /*The three sites within the Challenge site*/
 #challengeSite1 {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 88vh;
     width: 95vw;
     top: 12vh;
     left: 5vw;
