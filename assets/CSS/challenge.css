@@ -35,13 +35,14 @@
         text-decoration: none;
         border-radius: 0 5px 5px 0;
         color: #053361;
-        background-color: green;
+        background-color: #edf5e1;
     }
     .sideNavElements:hover {
         margin-top: 2vh;
         height: 5vh;
         left: 0;
-        background-color: rgb(233,244,221);
+        background-color: #053361;
+        color: white;
         border-radius: 0 5px 5px 0;
     }
         #sideNav:hover{
@@ -49,8 +50,8 @@
         }
                     /*This class gets added to sideNavElements in JS*/
                     .sideNavActive {
-                        background-color: white;
-                        color: green;
+                        background-color: #053361;
+                        color: white;
                     }
 }
 @media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */

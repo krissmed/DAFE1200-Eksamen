@@ -31,27 +31,27 @@
         text-align: center;
         padding-left: 50px;
         text-decoration: none;
-        background-color: green;
+        background-color: #edf5e1;
         border-radius: 0 5px 5px 0;
         left: -305px;
-        color: white;
+        color: #053361;
     }
     .sideNavElements:hover{
         margin-top: 2vh;
         height: 5vh;
         left: 0px;
-        background-color: white;
+        background-color: #053361;
         border-radius: 0 5px 5px 0;
-        color: green;
+        color: white;
     }
     #sideNav:hover{
         left: -15px;
     }
-                    /*This class gets added to sideNavElements in JS*/
-                    .sideNavActive {
-                        background-color: white;
-                        color: green;
-                    }
+    /*This class gets added to sideNavElements in JS*/
+    .sideNavActive {
+        background-color: #053361;
+        color: white;
+    }
 }
 @media screen and (max-width: 900px){ /* This code only applies when window size is smaller than 900px */
     #sideNav{

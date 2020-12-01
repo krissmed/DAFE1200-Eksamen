@@ -149,48 +149,28 @@
     padding-left: 50px;
     text-decoration: none;
     color: #053361;
-    background-color: rgb(233, 244, 221);
+    background-color: #edf5e1;
     border-radius: 0 5px 5px 0;
+    left: -200px;
 }
 
 .sideNavElements:hover {
     margin-top: 2vh;
     height: 5vh;
     left: 0;
-    background-color: white;
+    background-color: #053361;
     border-radius: 0 5px 5px 0;
+    color: white;
 }
 
 #sideNav:hover {
     left: -15px;
 }
 
-.sideNavElements {
-    margin-top: 2vh;
-    left: -200px;
-    height: 5vh;
-    align-items: center;
-    text-align: center;
-    padding-left: 50px;
-    text-decoration: none;
-    color: white;
-    background-color: rgb(233, 244, 221);
-    border-radius: 0 5px 5px 0;
-}
-
-.sideNavElements:hover {
-    margin-top: 2vh;
-    height: 5vh;
-    left: 0;
-    background-color: rgb(233, 244, 221);
-    color: #00E000;
-    border-radius: 0 5px 5px 0;
-}
-
 /*This class gets added to sideNavElements in JS*/
 .sideNavActive {
-    background-color: green;
-    color: #00E000;
+    background-color: #053361;
+    color: white;
 }
 
 #moveDown {
