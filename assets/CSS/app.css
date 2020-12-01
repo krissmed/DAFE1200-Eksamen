@@ -143,6 +143,7 @@
     position: relative;
 }
 
+/*Styles the appstore logo*/
 #appstore{
     position: absolute;
     right: 50px;
@@ -151,6 +152,7 @@
     width: 380px;
 }
 
+/*Styles the google play logo*/
 #googleplay{
     position: absolute;
     right: 80px;
