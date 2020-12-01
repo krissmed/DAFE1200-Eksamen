@@ -1,5 +1,5 @@
-/*--------------------------------SIDE NAV --------------------------------------------------*/
-/*InfoText*/
+
+/*Used for scaling and forming the text */
 .paragraph {
   /* This has to be over the other.infoText in @media in order for the container to scale on phone */
   letter-spacing: 1px;
@@ -9,6 +9,9 @@
   height: auto;
   padding: 0;
 }
+/*--------------------------------SIDE NAV --------------------------------------------------*/
+/* This code only applies when window size is bigger than 900px */
+/*The propreties of the sidenav*/
 #sideNav {
   display: flex;
   flex-direction: column;
