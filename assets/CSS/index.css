@@ -149,8 +149,12 @@
 /*logo on mainSite*/
     .mainLogo {
         position: relative;
-        top: 65vh;
-        left: 42vw;
+        width: 18vw;
+        height: auto;
+        top: 60vh;
+        left: 41vw;
+        min-width: 200px;
+        
     }
 
 
