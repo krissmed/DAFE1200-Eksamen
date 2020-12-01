@@ -234,26 +234,26 @@
         display: none;
     }
     #FrontPage{
-        height: 1000px;
+        height: 950px;
     }
     #Rooms{
-        height: 1250px;
+        height: 1350px;
     }
     #automation{
-        height: 1200px;
+        height: 1350px;
     }
     #provider{
-        height: 1550px;
+        height: 1800px;
     }
     #points{
-        height: 1210px;
+        height: 1310px;
     }
 
     .appImg{
     position: initial;
     margin-top: 0vh; 
     margin-right: 40vw;
-    width: 20vw;
+    width: 40vw;
     z-index: 0;
     top: 0px;
     margin-bottom: 40px;
@@ -261,21 +261,12 @@
     .paragraph{
         width: 90%;
         z-index: 0;
-    
+    }
 @media (max-height: 650px){
-    #FrontPage, #automation, #points, #Rooms, #provider{
-        height: 600px; 
-    }
-    .appImg{
-        margin-top: 25px;
-    }
 }
 }
 @media (max-height: 700px){
     #sideNav{
         display: none;
     }
-}
-@media screen and (max-width: 900px) {
-
 }
