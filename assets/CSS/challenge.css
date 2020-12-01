@@ -193,7 +193,7 @@
     top: 350vh;
 }
 
-/*When the beowser-width is under 900px*/
+/*When the browser-width is under 900px*/
 @media (max-width: 900px) {
     /*Makes the images not displayed*/
     .challengeImage {
