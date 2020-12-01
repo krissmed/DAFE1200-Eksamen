@@ -20,7 +20,7 @@
 <!--HEADER-->
 <header>
     <!-- LOGO. Only visible in format where window > 900px -->
-    <a href="index.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
+    <a href="indexNorsk.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
     <!-- Hamburger Menu (Only visible in format where window < 900px)-->
     <div onclick="toggleMenu()" onkeypress="toggleMenu()" id="hamburgerMenu">
         <div class="hamMenu" id="line1"></div>
@@ -28,19 +28,18 @@
         <div class="hamMenu" id="line3"></div>
         <h3 class="headlineHamMeny">Energy++</h3>
     </div>
-
     <!--MENU-->
     <ul id="headerMenu"><!--Runs function in javascript when clicked-->
-        <li class="menuLi active " onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="index.html">
-            Home
+        <li class="menuLi active" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="indexNorsk.html">
+            Hjem
         </a></li>
-        <li class="menuLi " onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="challenge.html">
-            Challenge
+        <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="challengeNorsk.html">
+            Utfordring
         </a></li>
-        <li class="menuLi " onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="solution.html">
-            Solution
+        <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="solutionNorsk.html">
+            Løsning
         </a></li>
-        <li class="menuLi " onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="app.html">
+        <li class="menuLi  no" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="appNorsk.html">
             App
         </a></li>
     </ul>
@@ -53,15 +52,15 @@
 <!------------------------SIDENAV--------------------------->
 <div id="sideNav">
     <a href="#welcomeSlide" class="sideNavElements 1">
-        <p>Home</p>
+        <p>Hjem</p>
         <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
     </a>
     <a href="#challengeSite" class="sideNavElements 2">
-        <p>Challenge</p>
+        <p>Utfordring</p>
         <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
     </a>
     <a href="#solutionSite" class="sideNavElements 3">
-        <p>Solution</p>
+        <p>Løsning</p>
         <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
     </a>
     <a href="#appSite" class="sideNavElements 4">
@@ -75,8 +74,8 @@
 
     <!--MAINQUOTE-->
     <span id="quote">
-            Going green has never been this easy!
-        <br><br>
+                Det har aldri vært så lett å bli grønn!
+            <br><br>
             <i id="underQuote">ENERGY++</i>
         </span>
     <img class="mainLogo" src="assets/Images/logo.png" alt="Logo Mainsite">
@@ -88,70 +87,63 @@
         <!-- JS isn't working well with external css code. So some things we use in JS has to be put into the HTML element. -->
         <!-- Intro Container -->
         <div id="challengeSite1">
-            <span class="headline">The Challenge</span>
+            <span class="headline">Utfordringen</span>
             <p class="paragraph">
-
-                        The climate is defined as the general weather conditions usually found in a particular place
-                        <sup><a href="sources.html#6">[7]</a></sup>.<br>
-                        The climate affects each and every one of us, and its change can be catastrophic for humanity.
-                        This is one of the biggest challenges of our time.
+                        Klimaet er definert som de generelle værforholdene som vanligvis finnes på et bestemt sted
+                        <sup><a href="sourcesNorsk.html#6">[7]</a></sup>.<br>
+                         Klimaet påvirker hver og en av oss, og endringene kan være katastrofale for menneskeheten.
+                         Dette er en av vår tids største utfordringer.
             </p>
             <!--Challenge intro image and button-->
             <img id="challengeImg" src="assets/Images/polar-bear.svg" alt="polar Bear">
-            <a href="challenge.html" class="readMorebtn">Read more</a>
+            <a href="challengeNorsk.html" class="readMorebtn">Les mer</a>
         </div>
     </div>
 </div>
 
-    <!---------------------------------------Container Solution-------------------------------------->
+<!--Container Solution-->
 <div id="solutionSite">
     <div>
         <!-- Intro Container -->
         <div id="solutionSite1">
-            <span class="headline">The Solution</span>
+            <span class="headline">Løsningen</span>
             <p class="paragraph">
-
-
-
-                        Change is the essence of life. Therefore, we must be able to change our ways to more eco-friendly ways.
-                     We must support the planet, and help to battle the environmental changes. But most importantly to secure a planet for the upcoming generations.
+                        Endring er en del av livet.<br>
+                        Derfor må vi kunne endre våre levemåter til mer miljøvennlige måter.
+                        Vi må støtte planeten, og være med på å bekjempe miljøendringene. Men viktigst av alt å sikre en planet for de kommende generasjonene.
             </p>
             <!--Image down right-->
             <img id="solutionImg" src="assets/Images/thinking.svg" alt="Solution icon">
-            <a href="solution.html" class="readMorebtn">Read more</a>
+            <a href="solutionNorsk.html" class="readMorebtn">Les mer</a>
         </div>
     </div>
 </div>
 
-<!-----------------------------------CONTAINER APP------------------------------------------------> 
 <div id="app"></div><!-- This is to make sure the header moves above the site menu-->
+<!--CONTAINER APP-->
 <div id="appSite">
     <div>
         <!-- Intro Container -->
         <div id="appSiteContainer">
             <!-- JS isn't working well with external css code. So everything we use in JS has to be put into the HTML element. -->
 
-            <span class="headline">The App</span>
-
-   
-
+            <span class="headline">App'en</span>
 
             <p class="paragraph">
-                        Energy++ is a revolutionary new app.<br>
-                        When you've installed the energy++ module in your fuse box, data about your power usage will be collected which you can see on your phone.
-                        You can also see other functions like tips, automation ideas and earn points.
-                        You can use these points at our partners to get gifts and goods like giftcards.
+                        Energy ++ er en revolusjonerende ny app. <br>
+                        Når du har installert energy ++ -modulen i sikringsboksen din, blir data om strømforbruket ditt samlet, som du deretter kan se på telefonen din.
+                        Du kan også se andre funksjoner som tips, automatiseringsideer og tjene opp poeng.
+                        Du kan bruke disse poengene hos våre partnere for å få gaver og varer som gavekort.
             </p>
 
             <!--Image down right-->
             <img id="appImg" src="assets/Images/app.svg" alt="App Site1">
-            <a href="app.html" class="readMorebtn">Read more</a>
+            <a href="appNorsk.html" class="readMorebtn">Les mer</a>
         </div>
     </div>
 </div>
 
-
-    <!------------------------- FOOTER CONTAINER ----------------------------------->
+<!-- FOOTER CONTAINER -->
 <footer class="footer">
 
     <!--Box where the adress, logo and mail button will be-->
@@ -162,24 +154,24 @@
         <h2>Address</h2>
 
         <address>
-            Osloveien 23, Oslo, Norway
+            Osloveien 23, Oslo, Norge
             <br>
             <!--Makes the mail us button-->
-            <a class="footerbtn" href="mailto:Support@energy++.com">Email Us</a>
+            <a class="footerbtn" href="mailto:Support@energy++.com">Email Oss </a>
         </address>
     </div>
     <!--Makes a bracket for the for the links for navigation-->
     <ul class="footernav">
         <li class="navitem">
             <!--Makes the titel over the bracket-->
-            <h2 class="navtitle">Support</h2>
+            <h2 class="navtitle">Brukerstøtte</h2>
             <!--Creates the bracket-->
             <ul class="navul">
                 <li>
-                    <a href="contact.html#faqDiv">FAQ</a>
+                    <a href="contactNorsk.html#faqDiv">FAQ</a>
                 </li>
                 <li>
-                    <a href="contact.html#costDiv">Contact Us</a>
+                    <a href="contactNorsk.html#costDiv">Kontakt Oss</a>
                 </li>
 
             </ul>
@@ -188,24 +180,24 @@
             <!--Makes a bracket for the for the links for navigation-->
         <li class="navitem">
             <!--Makes the titel over the bracket-->
-            <h2 class="navtitle">Our Work</h2>
+            <h2 class="navtitle">Vårt Arbeid</h2>
             <!--Creates the bracket-->
             <ul class="navul">
                 <li>
-                    <a href="sources.html">Sources</a>
+                    <a href="sourcesNorsk.html">Kilder</a>
                 </li>
                 <li>
-                    <a href="sources.html#sourceMeetingsContent">Meeting Logs</a>
+                    <a href="sourcesNorsk.html#sourceMeetingsContent">Møtereferater</a>
                 </li>
                 <li>
-                    <a href="sources.html#sourceGroupContent">Group Members</a>
+                    <a href="sourcesNorsk.html#sourceGroupContent">Gruppe Medlemmer</a>
                 </li>
             </ul>
         </li>
 
         <li class="navitem">
 
-            <h2 class="navtitle">Social</h2>
+            <h2 class="navtitle">Sosiale Medier</h2>
             <ul class="navul">
                 <li>
                     <a href="https://facebook.com"><img src="assets/images/facebook.svg" class=sosialimg
@@ -224,7 +216,7 @@
 
     <!--Creates the copyright line for the bottom of the footer-->
     <div class="legal">
-        <p>&copy; 2020 Energy++. All Rights Reserved</p>
+        <p>&copy; 2020 Energy++. Alle Rettigheter Forbeholdes</p>
     </div>
 </footer>
 
@@ -235,8 +227,6 @@
 <script src="assets/JavaScript/header.js"></script>
 <!--Script for siteNav-->
 <script src="assets/JavaScript/indexSiteNav.js"></script>
-
-
 </body>
 
 </html>
