@@ -141,15 +141,6 @@
     padding-top: 1vw;
 }
 
-/*logo on mainSite*/
-    #mainLogo {
-        display: initial;
-        position: relative;
-        height: auto;
-        top: 60vh;
-        left: 44vw;
-        max-width: 200px;
-    }
 
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
 #challengeSite {
