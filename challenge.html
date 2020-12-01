@@ -29,13 +29,13 @@
         <!--MENU-->
         <ul id="headerMenu"><!--Runs function in javascript when clicked-->
             <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="index.html">
-                <span class="eng"> Home </span> <span class="no" style="display: none"> Hjem </span>
+                Home
             </a></li>
             <li class="menuLi active" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="challenge.html">
-                <span class="eng"> Challenge </span>  <span class="no" style="display: none"> Utfordring </span>
+                Challenge
             </a></li>
             <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="solution.html">
-                <span class="eng"> Solution </span> <span class="no" style="display: none"> Løsning </span>
+                Solution
             </a></li>
             <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="app.html">
                 App
@@ -43,30 +43,30 @@
         </ul>
 
         <div class="langSwitch">
-            <img class="lang norsk" alt="Norway" src="assets/Images/norway.svg" onclick="switchNor()" onkeypress="switchNor()"
-            > <img class="lang english" alt="USA" src="assets/Images/united-states.svg" onclick="switchEng()" onkeypress="switchEng()">
+            <a href="challenge.html"> <img class="lang english" alt="USA" src="assets/Images/united-states.svg"> </a>
+            <a href="challengeNorsk.html"> <img class="lang norsk" alt="Norway" src="assets/Images/norway.svg"> </a>
         </div>
     </header>
     <!------------------------SIDENAV--------------------------->
     <div id="sideNav">
         <a href="#welcomePage" class="sideNavElements 1">
-            <p class="eng">Home</p> <p class="no" style="display: none">Hjem</p>
+            <p>Home</p>
             <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
         </a>
         <a href="#page1" class="sideNavElements 2">
-            <p class="eng">What is climate change?</p> <p class="no" style="display: none">Hva er klima-endringer?</p>
+            <p>What is climate change?</p>
             <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
         </a>
         <a href="#page2" class="sideNavElements 3">
-            <p class="eng">How does it affect us?</p> <p class="no" style="display: none">Påvirkning på oss</p>
+            <p>How does it affect us?</p>
             <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
         </a>
         <a href="#page3" class="sideNavElements 4">
-            <p class="eng">Electricity</p> <p class="no" style="display: none">Elektrisitet</p>
+            <p>Electricity</p>
             <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
         </a>
         <a href="#page4" class="sideNavElements 5">
-            <p class="eng">Visions</p> <p class="no" style="display: none">Visjoner</p>
+            <p>Visions</p>
             <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
         </a>
 
@@ -75,13 +75,8 @@
     <div id="welcomePage">
         <div class="welcomeQuote">
             <p class="quote">
-                <span class="eng"> <b><u>Goal 13</u></b><br>
+                <h2>Goal 13</h2><br>
                         Take urgent action to combat climate change and its impacts
-               </span>
-                <span class="no" style="display: none">
-                    <b><u>Mål 13</u></b><br>
-                        Ta tiltak for å bekjempe klimaendringene og dens innvirkning
-                </span>
             </p>
         </div>
     </div>
@@ -89,18 +84,11 @@
     <!--Challenge Container-->
     <div id="page1">
         <div class="contentContainer">
-            <h1 class="pageHeadline"><span class="eng">What is climate change?</span> <span class="no">Hva er klima-endringer?</span> </h1>
+            <h1 class="pageHeadline">What is climate change?</h1>
             <p class="contentPage">
-                <span class="eng">
                     The greenhouse gases, carbon dioxide- , methane-  and nitrous oxide-levels have increased significantly in the last 150 years <sup><a href="sources.html">[1]</a></sup>.
                     The greenhouse gases trap heat in the atmosphere which raises the average temperature on the planet.
                     This affects the ocean-currents and air-flow all around the world, which will directly influence our climate.
-                </span>
-                <span class="no" style="display: none">
-                    Klimagassene, karbondioksid-, metan- og lystgassnivået har økt betydelig de siste 150 årene <sup> <a href="sources.html"> [1] </a> </sup>.
-                    Klimagassene fanger opp varmen i atmosfæren som hever gjennomsnittstemperaturen på planeten.
-                    Dette påvirker havstrømmene og luftstrømmene over hele verden, noe som direkte vil påvirke vårt klima.
-                </span>
             </p>
             <img class="challengeImage" src="assets/Images/factory.svg" alt="Factory Image">
         </div>
@@ -108,24 +96,14 @@
     <!--CONTAINER-->
     <div id="page2">
         <div class="contentContainer">
-            <h1 class="pageHeadline"><span class="eng">How does it affect us?</span> <span class="no">Hvordan påvirker det oss?</span></h1>
+            <h1 class="pageHeadline">How does it affect us?</h1>
             <p class="contentPage">
-                <span class="eng">
                     Various computer models predict that the global temperature may rise 4°Celsius <sup><a href="sources.html#1">[2]</a></sup> during the 21st century. This rise in temperature will have drastically consequences for the environment.
                     More specifically this temperature rise will create a warmer climate, with more droughts and heat waves which will damage crops and influence the world's food supply.
                     Especially in the more poor parts of the world.
                     It is also predicted that sea level may rise approximately 2,5m by the year 2100 <sup><a href="sources.html#2">[3]</a></sup>.
                     This will be a globally more visual consequence. Around 250 million people live less than 5m above today's sea level <sup><a href="sources.html#3">[4]</a></sup>.
                     These 250 million people will be very exposed to floods and other damaging changes in the ocean.
-                </span>
-                <span class="no" style="display: none">
-                    Ulike datamodeller forutsier at den globale temperaturen kan stige 4°C <sup> <a href="sources.html#1"> [2] </a> </sup>  i løpet av det 21. århundre. Denne temperaturøkningen vil få drastiske konsekvenser for vårt miljø.
-                    Mer spesifikt vil denne temperaturstigningen skape et varmere klima, med mer tørke og flere hetebølger som vil skade avlingene og påvirke verdens matforsyning.
-                    Spesielt i de mer fattige delene av verden.
-                    Det er også spådd at havnivået kan øke omtrent 2,5m innen år 2100 <sup> <a href="sources.html#2"> [3] </a> </sup>.
-                    Dette vil være en globalt mer visuell konsekvens. Rundt 250 millioner mennesker lever mindre enn 5 meter over dagens havnivå <sup> <a href="sources.html#3"> [4] </a> </sup>.
-                    Disse 250 millioner menneskene vil være veldig utsatt for flom og andre skadelige endringer i havet.
-                </span>
             </p>
             <img class="challengeImage2" src="assets/Images/sea-level.svg" alt="Sea Level Image">
         </div>
@@ -133,18 +111,11 @@
     <!--CONTAINER-->
     <div id="page3">
         <div class="contentContainer">
-            <h1 class="pageHeadline"><span class="eng">How much pollution is created from electricity production?</span> <span class="no">Hvor mye forurensning oppstår av strømproduksjonen?</span></h1>
+            <h1 class="pageHeadline">How much pollution is created from electricity production?</h1>
             <p class="contentPage">
-            <span class="eng">
                 Approxiamtely 40% of all global CO2 emissions are from the production of electricity <sup><a href="sources.html#4">[5]</a></sup>. The pollution comes mainly from all combustion of fossil fuels.
                 In 2019 the USA alone, was accountable for 1.619 million metric tons of CO2 emission related to energy production <sup><a href="sources.html#5">[6]</a></sup>.
                 This means that energy production has a huge impact on the environmental changes in the world. However, this also means that we as humans also have a possibility to change that.
-            </span>
-            <span class="no" style="display: none">
-                Cirka 40% av alle globale CO2-utslipp kommer fra produksjon av strøm <sup> <a href="sources.html#4"> [5] </a> </sup>. Forurensningen kommer hovedsakelig fra forbrenningen av fossilt brensel.
-                I 2019 var USA alene, ansvarlig for 1.619 millioner tonn CO2-utslipp relatert til energiproduksjon <sup> <a href="sources.html#5"> [6] </a> </sup>.
-                Dette betyr at energiproduksjon har stor innvirkning på miljøendringene i verden. Dette betyr imidlertid også at vi som mennesker har en mulighet til å endre det.
-            </span>
             </p>
             <img class="challengeImage3" src="assets/Images/tower.svg" alt="tower">
         </div>
@@ -152,18 +123,11 @@
     <!--CONTAINER-->
     <div id="page4">
         <div class="contentContainer">
-            <h1 class="pageHeadline"><span class="eng">Our Vision</span> <span class="no">Vår Visjon</span></h1>
+            <h1 class="pageHeadline">Our Vision</h1>
             <p class="contentPage">
-                <span class="eng">
                     We believe that our app will make power saving an easy and fun activity,
                     in addition to doing our climate a favor.<br>
                     <b>Together we can move towards a greener future!</b>
-                </span>
-                <span class="no" style="display: none">
-                    Vi tror at appen vår vil gjøre strømsparing til en enkel og morsom aktivitet,
-                    i tillegg til å gjøre klimaet vårt en stor tjeneste. <br>
-                    <b> Sammen kan vi bevege oss mot en grønnere fremtid! </b>
-                </span>
             </p>
             <a href="solution.html" class="readMorebtn"><span class="eng">Read more</span><span class="no" style="display: none">Les mer</span></a>
             <img class="challengeImage4" src="assets/Images/planet-earth.svg" alt="Planet Earth Image">
@@ -181,25 +145,24 @@
             <h2>Address</h2>
 
             <address>
-                <span class="eng"> Osloveien 23, Oslo, Norway</span>
-                <span class="no" style="display: none"> Osloveien 23, Oslo, Norge</span>
+                Osloveien 23, Oslo, Norway
                 <br>
                 <!--Makes the mail us button-->
-                <a class="footerbtn" href="mailto:Support@energy++.com"> <span class="eng">Email Us</span> <span class="no" style="display: none">Email Oss</span> </a>
+                <a class="footerbtn" href="mailto:Support@energy++.com">Email Us</a>
             </address>
         </div>
         <!--Makes a bracket for the for the links for navigation-->
         <ul class="footernav">
             <li class="navitem">
                 <!--Makes the titel over the bracket-->
-                <h2 class="navtitle"> <span class="eng">Support</span> <span class="no" style="display: none">Brukerstøtte</span> </h2>
+                <h2 class="navtitle">Support</h2>
                 <!--Creates the bracket-->
                 <ul class="navul">
                     <li>
                         <a href="contact.html#faqDiv">FAQ</a>
                     </li>
                     <li>
-                        <a href="contact.html#costDiv"><span class="eng">Contact Us</span> <span class="no" style="display: none">Kontakt Oss</span></a>
+                        <a href="contact.html#costDiv">Contact Us</a>
                     </li>
 
                 </ul>
@@ -208,24 +171,24 @@
                 <!--Makes a bracket for the for the links for navigation-->
             <li class="navitem">
                 <!--Makes the titel over the bracket-->
-                <h2 class="navtitle"><span class="eng">Our Work</span> <span class="no" style="display: none">Vårt Arbeid</span></h2>
+                <h2 class="navtitle">Our Work</h2>
                 <!--Creates the bracket-->
                 <ul class="navul">
                     <li>
-                        <a href="sources.html"><span class="eng">Sources</span> <span class="no" style="display: none">Kilder</span></a>
+                        <a href="sources.html">Sources</a>
                     </li>
                     <li>
-                        <a href="sources.html#sourceMeetingsContent"><span class="eng">Meeting Logs</span> <span class="no" style="display: none">Møtereferater</span></a>
+                        <a href="sources.html#sourceMeetingsContent">Meeting Logs</a>
                     </li>
                     <li>
-                        <a href="sources.html#sourceGroupContent"><span class="eng">Group Members</span> <span class="no" style="display: none">Gruppe Medlemmer</span></a>
+                        <a href="sources.html#sourceGroupContent">Group Members</a>
                     </li>
                 </ul>
             </li>
 
             <li class="navitem">
 
-                <h2 class="navtitle"><span class="eng">Social</span> <span class="no" style="display: none">Sosiale Medier</span></h2>
+                <h2 class="navtitle">Social</h2>
                 <ul class="navul">
                     <li>
                         <a href="https://facebook.com"><img src="assets/images/facebook.svg" class=sosialimg
@@ -244,7 +207,7 @@
 
         <!--Creates the copyright line for the bottom of the footer-->
         <div class="legal">
-            <p>&copy; 2020 Energy++. All rights reserved.</p>
+            <p>&copy; 2020 Energy++. All Rights Reserved</p>
         </div>
     </footer>
 

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/Images/icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Challenge</title>
+    <!-- Stylesheet for the header/Menu -->
+    <link rel="stylesheet" href="assets/CSS/header.css">
+    <!-- Stylesheet for the content -->
+    <link rel="stylesheet" href="assets/CSS/challenge.css">
+    <!-- Stylesheet for the footer -->
+    <link rel="stylesheet" href="assets/CSS/footer.css">
+</head>
+<body>
+<!------------------- HEADER ----------------------------------------------->
+<!--HEADER-->
+<header>
+    <!-- LOGO. Only visible in format where window > 900px -->
+    <a href="indexNorsk.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
+    <!-- Hamburger Menu (Only visible in format where window < 900px)-->
+    <div onclick="toggleMenu()" onkeypress="toggleMenu()" id="hamburgerMenu">
+        <div class="hamMenu" id="line1"></div>
+        <div class="hamMenu" id="line2"></div>
+        <div class="hamMenu" id="line3"></div>
+        <h3 class="headlineHamMeny">Energy++</h3>
+    </div>
+    <!--MENU-->
+    <ul id="headerMenu"><!--Runs function in javascript when clicked-->
+        <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="indexNorsk.html">
+             Hjem
+        </a></li>
+        <li class="menuLi active" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="challengeNorsk.html">
+            Utfordring
+        </a></li>
+        <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="solutionNorsk.html">
+            Løsning
+        </a></li>
+        <li class="menuLi" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="appNorsk.html">
+            App
+        </a></li>
+    </ul>
+
+    <div class="langSwitch">
+        <a href="challenge.html"> <img class="lang english" alt="USA" src="assets/Images/united-states.svg"> </a>
+        <a href="challengeNorsk.html"> <img class="lang norsk" alt="Norway" src="assets/Images/norway.svg"> </a>
+    </div>
+</header>
+<!------------------------SIDENAV--------------------------->
+<div id="sideNav">
+    <a href="#welcomePage" class="sideNavElements 1">
+        <p>Hjem</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#page1" class="sideNavElements 2">
+        <p>Hva er klima-endringer?</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#page2" class="sideNavElements 3">
+        <p>Påvirkning på oss</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#page3" class="sideNavElements 4">
+        <p>Elektrisitet</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#page4" class="sideNavElements 5">
+        <p >Visjoner</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+
+</div>
+<!--CONTAINER MAINSITE-->
+<div id="welcomePage">
+    <div class="welcomeQuote">
+        <p class="quote">
+                    <h2>Mål 13</h2><br>
+                        Ta tiltak for å bekjempe klimaendringene og dens innvirkning
+        </p>
+    </div>
+</div>
+
+<!--Challenge Container-->
+<div id="page1">
+    <div class="contentContainer">
+        <h1 class="pageHeadline">Hva er klima-endringer?</h1>
+        <p class="contentPage">
+                    Klimagassene, karbondioksid-, metan- og lystgassnivået har økt betydelig de siste 150 årene <sup> <a href="sourcesNorsk.html"> [1] </a> </sup>.
+                    Klimagassene fanger opp varmen i atmosfæren som hever gjennomsnittstemperaturen på planeten.
+                    Dette påvirker havstrømmene og luftstrømmene over hele verden, noe som direkte vil påvirke vårt klima.
+        </p>
+        <img class="challengeImage" src="assets/Images/factory.svg" alt="Factory Image">
+    </div>
+</div>
+<!--CONTAINER-->
+<div id="page2">
+    <div class="contentContainer">
+        <h1 class="pageHeadline">Hvordan påvirker det oss?</h1>
+        <p class="contentPage">
+                    Ulike datamodeller forutsier at den globale temperaturen kan stige 4°C <sup> <a href="sourcesNorsk.html#1"> [2] </a> </sup>  i løpet av det 21. århundre. Denne temperaturøkningen vil få drastiske konsekvenser for vårt miljø.
+                    Mer spesifikt vil denne temperaturstigningen skape et varmere klima, med mer tørke og flere hetebølger som vil skade avlingene og påvirke verdens matforsyning.
+                    Spesielt i de mer fattige delene av verden.
+                    Det er også spådd at havnivået kan øke omtrent 2,5m innen år 2100 <sup> <a href="sourcesNorsk.html#2"> [3] </a> </sup>.
+                    Dette vil være en globalt mer visuell konsekvens. Rundt 250 millioner mennesker lever mindre enn 5 meter over dagens havnivå <sup> <a href="sourcesNorsk.html#3"> [4] </a> </sup>.
+                    Disse 250 millioner menneskene vil være veldig utsatt for flom og andre skadelige endringer i havet.
+        </p>
+        <img class="challengeImage2" src="assets/Images/sea-level.svg" alt="Sea Level Image">
+    </div>
+</div>
+<!--CONTAINER-->
+<div id="page3">
+    <div class="contentContainer">
+        <h1 class="pageHeadline">Hvor mye forurensning oppstår av strømproduksjonen?</h1>
+        <p class="contentPage">
+                Cirka 40% av alle globale CO2-utslipp kommer fra produksjon av strøm <sup> <a href="sourcesNorsk.html#4"> [5] </a> </sup>. Forurensningen kommer hovedsakelig fra forbrenningen av fossilt brensel.
+                I 2019 var USA alene, ansvarlig for 1.619 millioner tonn CO2-utslipp relatert til energiproduksjon <sup> <a href="sourcesNorsk.html#5"> [6] </a> </sup>.
+                Dette betyr at energiproduksjon har stor innvirkning på miljøendringene i verden. Dette betyr imidlertid også at vi som mennesker har en mulighet til å endre det.
+        </p>
+        <img class="challengeImage3" src="assets/Images/tower.svg" alt="tower">
+    </div>
+</div>
+<!--CONTAINER-->
+<div id="page4">
+    <div class="contentContainer">
+        <h1 class="pageHeadline">Vår Visjon</h1>
+        <p class="contentPage">
+                    Vi tror at appen vår vil gjøre strømsparing til en enkel og morsom aktivitet,
+                    i tillegg til å gjøre klimaet vårt en stor tjeneste. <br>
+                    <b> Sammen kan vi bevege oss mot en grønnere fremtid! </b>
+        </p>
+        <a href="solutionNorsk.html" class="readMorebtn">Les mer</a>
+        <img class="challengeImage4" src="assets/Images/planet-earth.svg" alt="Planet Earth Image">
+    </div>
+</div>
+
+<!-- FOOTER CONTAINER -->
+<footer class="footer">
+
+    <!--Box where the adress, logo and mail button will be-->
+    <div class="footeraddr">
+        <!--Adding the logo-->
+        <img class="footerlogo" src="assets/Images/logo.png" alt="logo footer">
+
+        <h2>Address</h2>
+
+        <address>
+            Osloveien 23, Oslo, Norge
+            <br>
+            <!--Makes the mail us button-->
+            <a class="footerbtn" href="mailto:Support@energy++.com">Email Oss </a>
+        </address>
+    </div>
+    <!--Makes a bracket for the for the links for navigation-->
+    <ul class="footernav">
+        <li class="navitem">
+            <!--Makes the titel over the bracket-->
+            <h2 class="navtitle">Brukerstøtte</h2>
+            <!--Creates the bracket-->
+            <ul class="navul">
+                <li>
+                    <a href="contactNorsk.html#faqDiv">FAQ</a>
+                </li>
+                <li>
+                    <a href="contactNorsk.html#costDiv">Kontakt Oss</a>
+                </li>
+
+            </ul>
+
+
+            <!--Makes a bracket for the for the links for navigation-->
+        <li class="navitem">
+            <!--Makes the titel over the bracket-->
+            <h2 class="navtitle">Vårt Arbeid</h2>
+            <!--Creates the bracket-->
+            <ul class="navul">
+                <li>
+                    <a href="sourcesNorsk.html">Kilder</a>
+                </li>
+                <li>
+                    <a href="sourcesNorsk.html#sourceMeetingsContent">Møtereferater</a>
+                </li>
+                <li>
+                    <a href="sourcesNorsk.html#sourceGroupContent">Gruppe Medlemmer</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="navitem">
+
+            <h2 class="navtitle">Sosiale Medier</h2>
+            <ul class="navul">
+                <li>
+                    <a href="https://facebook.com"><img src="assets/images/facebook.svg" class=sosialimg
+                                                        alt="facebook"></a>
+                    <a href="https://instagram.com"><img src="assets/images/instagram.svg" class=sosialimg
+                                                         alt="instagram"></a>
+                    <a href="https://twitter.com"><img src="assets/images/twitter.svg" class=sosialimg
+                                                       alt=twitter></a>
+                    <a href="https://github.com/krissmed/DAFE1200-Eksamen/"><img src="assets/images/github.svg"
+                                                                                 class=sosialimg alt="github"></a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <!--Creates the copyright line for the bottom of the footer-->
+    <div class="legal">
+        <p>&copy; 2020 Energy++. Alle Rettigheter Forbeholdes</p>
+    </div>
+</footer>
+
+
+<!--Placed at bottom to load body first-->
+<!--Script for header-->
+<script src="assets/JavaScript/header.js"></script>
+<!--Script for siteNav-->
+<script src="assets/JavaScript/indexSiteNav.js"></script>
+</body>
+
+</html>

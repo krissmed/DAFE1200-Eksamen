@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/Images/icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>The Energy++ App</title>
+    <!--Stylesheet for the header/Menu-->
+    <link rel="stylesheet" href="assets/CSS/header.css">
+    <!--Stylesheet for the content-->
+    <link rel="stylesheet" href="assets/CSS/app.css">
+    <!-- Stylesheet for the footer-->
+    <link rel="stylesheet" href="assets/CSS/footer.css">
+</head>
+
+<body>
+<!------------------- HEADER ----------------------------------------------->
+<header>
+    <!-- LOGO (Only visible in format where window > 900px) -->
+    <a href="indexNorsk.html"><img id="headerLogo" src="assets/Images/logo.png" alt="logo header"></a>
+    <!-- Hamburger Menu (Only visible in format where window < 900px)-->
+    <div onclick="toggleMenu()" id="hamburgerMenu" onkeypress="toggleMenu()">
+        <div class="hamMenu" id="line1"></div>
+        <div class="hamMenu" id="line2"></div>
+        <div class="hamMenu" id="line3"></div>
+        <h3 class="headlineHamMeny">Energy++</h3>
+    </div>
+    <!--Full Size Menu-->
+    <ul id="headerMenu">
+        <li class="menuLi main" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="indexNorsk.html"> Hjem </a></li>
+        <li class="menuLi challenge" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="challengeNorsk.html"> Utfordring </a></li>
+        <li class="menuLi solution" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="solutionNorsk.html"> Løsning </a></li>
+        <li class="menuLi app active" onclick="collapseHamMenu()" onkeypress="collapseHamMenu()"><a href="appNorsk.html"> App </a></li>
+    </ul>
+</header>
+<!------------------------SIDENAV--------------------------->
+<div id="sideNav">
+    <a href="#mainSite" class="sideNavElements 1">
+        <p>PLACEHOLDER</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#challengeSite" class="sideNavElements 2">
+        <p>PLACEHOLDER</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#solutionSite" class="sideNavElements 3">
+        <p>PLACEHOLDER</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+    <a href="#appSite" class="sideNavElements 4">
+        <p>PLACEHOLDER</p>
+        <img class="sideNavImg" src="assets/Images/SidemenuIcon.svg" alt="SideMenuIkon">
+    </a>
+
+</div>
+<!--CONTAINER MAINSITE-->
+<div id="welcomePage">
+    <div id="moveDown"></div> <!-- To move elements below the header -->
+    <h1 id="appSlogan">Your power usage, organised in one easy-to-use app!</h1>
+    <img id="frontImg" src="assets/Images/834aaa1be22d75a363e1c26f821a8730.png" alt="">
+</div>
+
+<!-- Front page Slide -->
+<div id="FrontPage">
+    <div class="slideContainer">
+        <span class="headline">Front page</span>
+        <p class="paragraph">
+            As you open your app, you are greeted by a summary of your energy usage in a room-by-room basis. At a
+            quick glance you know exactly what room is using the most electricity. When you click on that room you
+            can look into further details.
+        </p>
+        <img class="appImg" id="appImg1" src="assets/Images/FrontPage.png" alt="">
+    </div>
+</div>
+<!--Room details Slide-->
+<div id="Rooms">
+    <div class="slideContainer">
+        <span class="headline">Rooms</span>
+        <p class="paragraph">
+            You can also get a detailed view of your power electricity usage on a room by room basis. The app will
+            automatically detect what type applience is connected to the socket and assume which room it is. Here
+            you can see the energy usage compared to last week and the usage of each applience. The app will
+            automatically detect what is using the most electricity and give you community made automations for
+            lowering your electricity waste. You can find more automation that can easily be integrated in the
+            automation section of the app.
+        </p>
+        <img class="appImg" id="appImg1" src="assets/Images/Room.png" alt="">
+    </div>
+</div>
+<!--Automation Slide-->
+<div id="automation">
+    <div class="slideContainer">
+        <span class="headline">Community made automation</span>
+        <p class="paragraph">
+            Here you can choose from a range of pre-programmed automation that can be integrated into your home with
+            one click. All you need to do is authorize that Energy++ can access your different smart home
+            appliences, and the app will automatically give you suggestion for lowering your power consumption.
+            These are made by the Energy++ community and by manufacturers. Each automation has a title, description
+            and rating. You can also filter and sort to find the automation that suits you the best.
+        </p>
+        <img class="appImg" id="appImg1" src="assets/Images/automation.png" alt="">
+    </div>
+</div>
+<!-- Provider Slide -->
+<div id="provider">
+    <div class="slideContainer">
+        <span class="headline">Easily switch electricity provider</span>
+        <p class="paragraph">
+            Energy++ also give you the opportunity to easily choose susatainable energy provider. Based on our
+            algorithm which takes into account total climate gas emisions, destroyed forestry, carbon capture and
+            storage, etc. we rate all electricity provider on a scale of sustainable (green globe), neutral (yellow
+            globe) and non-sustainable (red globe). This gives you an easy-to-understand indication of how
+            sustainable each electricity provider is. We also understand that sustainablility is not everything when
+            it comes to electricity provider. Therefore we've made a rating system based on our user experience with
+            the provider and can use that, in addition to our sustainablility index to make a good decision when it
+            comes to your electricity provider.
+        </p>
+        <img class="appImg" id="appImg1" src="assets/Images/Provider.png" alt="">
+    </div>
+</div>
+<!-- Points Slide -->
+<div id="points">
+    <div class="slideContainer">
+        <span class="headline">Energy++ points</span>
+        <p class="paragraph">
+            We in Energy++ also reward people who take sustainable decisions. Therefore we also have a point system
+            which gives you befits such as giftcard to spas, cinemas, online stores, etc. These points are earned
+            through using the app, but the less electricity and the more susatainable your electricity is, the more points you get.
+            In addition to that, if you're helping out other Energy++ user, by leaving a rating, making
+            automations or growing the community by refering your friend, you will earn even more points.
+        </p>
+        <img class="appImg" id="appImg1" src="assets/Images/Points.png" alt="">
+    </div>
+</div>
+
+<!-- FOOTER CONTAINER -->
+<footer class="footer">
+
+    <!--Box where the adress, logo and mail button will be-->
+    <div class="footeraddr">
+        <!--Adding the logo-->
+        <img class="footerlogo" src="assets/Images/logo.png" alt="logo footer">
+
+        <h2>Address</h2>
+
+        <address>
+            Osloveien 23, Oslo, Norge
+            <br>
+            <!--Makes the mail us button-->
+            <a class="footerbtn" href="mailto:Support@energy++.com">Email Oss </a>
+        </address>
+    </div>
+    <!--Makes a bracket for the for the links for navigation-->
+    <ul class="footernav">
+        <li class="navitem">
+            <!--Makes the titel over the bracket-->
+            <h2 class="navtitle">Brukerstøtte</h2>
+            <!--Creates the bracket-->
+            <ul class="navul">
+                <li>
+                    <a href="contactNorsk.html#faqDiv">FAQ</a>
+                </li>
+                <li>
+                    <a href="contactNorsk.html#costDiv">Kontakt Oss</a>
+                </li>
+
+            </ul>
+
+
+            <!--Makes a bracket for the for the links for navigation-->
+        <li class="navitem">
+            <!--Makes the titel over the bracket-->
+            <h2 class="navtitle">Vårt Arbeid</h2>
+            <!--Creates the bracket-->
+            <ul class="navul">
+                <li>
+                    <a href="sourcesNorsk.html">Kilder</a>
+                </li>
+                <li>
+                    <a href="sourcesNorsk.html#sourceMeetingsContent">Møtereferater</a>
+                </li>
+                <li>
+                    <a href="sourcesNorsk.html#sourceGroupContent">Gruppe Medlemmer</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="navitem">
+
+            <h2 class="navtitle">Sosiale Medier</h2>
+            <ul class="navul">
+                <li>
+                    <a href="https://facebook.com"><img src="assets/images/facebook.svg" class=sosialimg
+                                                        alt="facebook"></a>
+                    <a href="https://instagram.com"><img src="assets/images/instagram.svg" class=sosialimg
+                                                         alt="instagram"></a>
+                    <a href="https://twitter.com"><img src="assets/images/twitter.svg" class=sosialimg
+                                                       alt=twitter></a>
+                    <a href="https://github.com/krissmed/DAFE1200-Eksamen/"><img src="assets/images/github.svg"
+                                                                                 class=sosialimg alt="github"></a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <!--Creates the copyright line for the bottom of the footer-->
+    <div class="legal">
+        <p>&copy; 2020 Energy++. Alle Rettigheter Forbeholdes</p>
+    </div>
+</footer>
+
+
+<!--Placed at bottom to load body first-->
+<!--Script for Text formatting-->
+<script src="assets/JavaScript/index.js"></script>
+<!--Script for header-->
+<script src="assets/JavaScript/header.js"></script>
+<!--Script for siteNav-->
+<script src="assets/JavaScript/indexSiteNav.js"></script>
+<!-- Script for app.html-->
+<script src="assets/JavaScript/app.js"></script>
+</body>
+
+</html>
