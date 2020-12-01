@@ -173,6 +173,9 @@
             top: 20vh;
             line-height: 35px;
         }
+    .paragraph{
+        width: 95vw;
+    }
 
 }
 
