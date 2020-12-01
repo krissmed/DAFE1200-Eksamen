@@ -1,7 +1,6 @@
 /*--------------------------------SIDE NAV --------------------------------------------------*/
-/*InfoText*/
+/* This has to be over the other.infoText in @media in order for the container to scale on phone */
 .paragraph {
-    /* This has to be over the other.infoText in @media in order for the container to scale on phone */
     letter-spacing: 1px;
     line-height: 1.5em;
     font-size: 1.5em;
@@ -9,6 +8,10 @@
     height: auto;
     padding: 0;
 }
+
+/*--------------------------------SIDE NAV --------------------------------------------------*/
+/* This code only applies when window size is bigger than 900px */
+/*The propreties of the sidenav*/
 #sideNav {
     display: flex;
     flex-direction: column;
@@ -24,6 +27,7 @@
     font-size: 2em;
     border-radius: 0 5px 5px 0;
 }
+/*Properties for the sidenav elements*/
 .sideNavElements {
     display: flex;
     justify-content: space-between;
@@ -37,6 +41,7 @@
     color: #053361;
     background-color:  #edf5e1;
 }
+/*Properties when hovered over*/
 .sideNavElements:hover {
     margin-top: 2vh;
     height: 5vh;
@@ -52,15 +57,14 @@
     left: -15px;
 }
 
-/*This class gets added to sideNavElements in JS*/
+/*(This class gets added to sideNavElements in JS) Properties when active*/
 .sideNavActive {
     background-color:#053361;
     color: white;
 }
 
+/* This code only applies when window size is smaller than 900px */
 @media screen and (max-width: 900px) {
-
-    /* This code only applies when window size is smaller than 900px */
     #sideNav {
         display: none;
     }
@@ -103,6 +107,7 @@
 }
 
 /*--------------------Welcome Page------------------------------------------*/
+/* Makes the welcome page container*/
 #welcomeSlide {
     height: 100vh;
     width: 100vw;
@@ -111,7 +116,7 @@
 }
 
 /*---------------------  Quotes----------------------------------------------*/
-/*Quote*/
+/* The slogan/qoute on the welcome page*/
 #quote {
     height: auto;
     width: 80vw;
@@ -145,6 +150,7 @@
 
 
 /*-----------CHALLENGE SITE---------------------------------------------------------------------------------------------------------------*/
+/* Makes a container with flex abilities*/
 #challengeSite {
     height: 105vh;
     width: 100vw;
@@ -153,7 +159,7 @@
     background-color: #8ee4af;
 }
 
-/*The three sites within the Challenge site*/
+/*Challenge site container*/
 #challengeSite1 {
     display: flex;
     flex-direction: column;
@@ -166,6 +172,7 @@
 }
 
 /*--------------------READ MORE BUTTON----------------------*/
+/*Styles the read more button*/
 .readMorebtn {
     display: flex;
     align-items: center;
@@ -185,13 +192,14 @@
     top: 79vh;
     transition: box-shadow 0.2s;
 }
-
+    /*Properties when hovered over*/
     .readMorebtn:hover {
         transition: box-shadow 0.2s;
         box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     }
 
 /*----------FIRST CHALLENGE SITE---------------------------------------------------------*/
+/*Syles images*/
 .contentImg {
     position: absolute;
     right: 15vw;
@@ -213,6 +221,7 @@
     }
 
 /*-----------SOLUTION SITE---------------------------------------------------------------------------------------------------------------*/
+/*Solutionsite container*/
 #solutionSite {
     height: 105vh;
     width: 100vw;
@@ -220,7 +229,7 @@
     flex-direction: row;
     background-color: #5cdb95;
 }
-
+/*Solutionsite container for content*/
 #solutionSite1 {
     height: auto;
     width: 100vw;
@@ -230,7 +239,7 @@
     position: relative;
 }
 
-/*Image site 2*/
+/*Styling the image in the solution container*/
 #solutionImg {
     position: absolute;
     right: 15vw;
@@ -242,6 +251,7 @@
 }
 
 /*-----------APP SITE---------------------------------------------------------------------------------------------------------------*/
+/*Appsite container*/
 #appSite {
     height: 105vh;
     width: 100vw;
@@ -250,6 +260,7 @@
     background-color: #8ee4af;
 }
 
+/*app site container for content*/
 #appSiteContainer {
     height: 80vh;
     width: 100vw;
@@ -259,7 +270,7 @@
     position: relative;
 }
 
-/*Image*/
+/*Styling the image in the app site container*/
 #appImg {
     position: absolute;
     right: 15vw;
@@ -269,6 +280,8 @@
     float: right;
 }
 
+/* This code only applies when window height is smaller than 500px */
+/*It sets the properties to better adjust to smaller screens*/
 @media screen and (max-height: 500px) {
 
     #welcomeSlide,
@@ -279,6 +292,9 @@
         height: 550px;
     }
 }
+
+/* This code only applies when window width is bigger than 1500px */
+/*It sets the properties to better adjust to bigger screens*/
 @media(min-width: 1500px){
     .paragraph{
         font-size: 2em;
