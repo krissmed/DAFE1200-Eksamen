@@ -116,8 +116,6 @@
 
 
 /*--------------------------------SIDE NAV --------------------------------------------------*/
-@media (min-width: 900px) {
-
     /* This code only applies when window size is bigger than 900px */
     #sideNav {
         display: flex;
@@ -125,7 +123,7 @@
         margin-top: 20vh;
         color: black;
         position: fixed;
-        left: -210px;
+        left: -450px;
         transition: 0.4s;
         padding: 15px;
         z-index: 99;
@@ -136,6 +134,7 @@
     }
 
     #sideNav a {
+        color: #053361;
         text-decoration: none;
     }
 
@@ -152,7 +151,8 @@
         text-align: center;
         padding-left: 50px;
         text-decoration: none;
-        background-color: green;
+        color: #053361;
+        background-color: rgb(233,244,221);
         border-radius: 0 5px 5px 0;
     }
 
@@ -177,7 +177,7 @@
         padding-left: 50px;
         text-decoration: none;
         color: white;
-        background-color: green;
+        background-color: rgb(233,244,221);
         border-radius: 0 5px 5px 0;
     }
 
@@ -185,8 +185,8 @@
         margin-top: 2vh;
         height: 5vh;
         left: 0;
-        background-color: white;
-        color: green;
+        background-color:  rgb(233,244,221);
+        color: #00E000;
         border-radius: 0 5px 5px 0;
     }
 
@@ -196,8 +196,8 @@
 
     /*This class gets added to sideNavElements in JS*/
     .sideNavActive {
-        background-color: white;
-        color: green;
+        background-color:  green;
+        color: #00E000;
     }
 
     #moveDown {
@@ -218,7 +218,6 @@
         margin-left: 35%;
         position: absolute;
     }
-}
 
 @media screen and (max-width: 900px) {
     /* This code only applies when window size is smaller than 900px */
@@ -241,7 +240,7 @@
     }
     
     #automation{
-        height: 160vh;
+        height: 1200px;
     }
     #provider{
         height: 1550px;
@@ -251,7 +250,7 @@
     }
 
     .appImg{
-     margin-top: 0px; 
+     margin-top: 50px; 
     position: relative;
     transform: scale(2);
     margin-right: 40vw;
@@ -260,7 +259,4 @@
     .paragraph{
         width: 90%;
     }
-}
-@media (max-height: ***){
-    
 }
