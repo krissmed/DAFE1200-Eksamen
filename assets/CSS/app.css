@@ -263,6 +263,9 @@
         z-index: 0;
     }
 @media (max-height: 650px){
+    .appImg{
+        width: 60vw;
+    }
 }
 }
 @media (max-height: 700px){
