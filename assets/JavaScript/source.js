@@ -1,5 +1,5 @@
 /*----Makes the menu on the sites active depending on where the user is-------------*/
-
+        //Works like the other JS except this is for a different type of menu
 /*Gathering the elements*/
 let contentPage = document.getElementsByClassName("Content")[0];
 let imgPage1 = document.getElementsByClassName("Images1")[0];
@@ -22,7 +22,8 @@ let groupPage3 = document.getElementsByClassName("Group3")[0];
     function pageMenuActive() {
             /*if the window is scrolled down further than 3.9 of the height of the browser (390vh)*/
             if (window.scrollY > window.innerHeight * 8.6) {
-                    /*adds the .activeSitenav class to the group-siteNav*/
+
+                    /*adds the .siteNavDisplayed class to the group-siteNav*/
                 groupPage3.classList.add("siteNavDisplayed");
 
                     /*Removes from other so just 1 is active*/
