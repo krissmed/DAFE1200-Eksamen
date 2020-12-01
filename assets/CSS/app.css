@@ -286,6 +286,26 @@
         font-size: 3em;
     }
 
+    #FrontPage {
+        height: 800px;
+    }
+
+    #Rooms {
+        height: 900px;
+    }
+
+    #automation {
+        height: 1000px;
+    }
+
+    #provider {
+        height: 1000px;
+    }
+
+    #points {
+        height: 800px;
+    }
+
 }
 
 @media(min-width: 1500px) {
@@ -304,6 +324,7 @@
         position: absolute;
         left: 30vw;
     }
+
 
 }
 @media(min-width: 900px) and (max-height:1000px){
