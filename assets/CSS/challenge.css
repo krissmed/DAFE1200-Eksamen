@@ -115,7 +115,16 @@
         padding: 0;
         height: auto;
     }
-
+    /* Headline */
+    .headline {
+        font-weight: bolder;
+        font-size: 3em;
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+        width: 80vw;
+        border: solid black 1px;
+    }
 .readMorebtn {
     display: flex;
     align-items: center;
